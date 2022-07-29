@@ -106,7 +106,7 @@ After creating your first app, and entering the above commands ("cd <i>your_proj
 <div class="q-pt-sm">
 In the directory/folder that you chose you will find a folder named after your app.
  This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu. Another way is to type "code ." after the the "Quasar •  SUCCESS" message to open the working directory.
- If you have already entered quasar dev, hold down the "control" and "c" keys together to stop the program first.
+ If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program first.
  <div class="q-pt-sm">
  You can see the current directory by typing “cd” and change it by typing "cd " ('cd' followed by a space) and then the full path. An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
 </div>
