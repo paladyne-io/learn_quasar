@@ -26,13 +26,13 @@ This is the basic order of tasks (assuming you have a PC).
  </q-item-label>
 
 <q-item-label class="q-pt-md">
-2. <a href="https://nodejs.org/en/download/"> <b>Download and install node.js</b></a>
-* Download and run one of the LTS version installers
+2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a>
+* Download and run one of the <b>LTS</b> installers appropriate for your computer.
 </q-item-label>
 
 <q-item-label class="q-pt-md">
 
-3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal (Mac), <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows), or the Terminal window in Visual Studio Code.
+3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal application (Mac), <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows), or the Terminal window in Visual Studio Code.
 If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
 <router-link to="/vscodeterminal">Click here for details</router-link>. The $ character represents the shell prompt. It might appear as a %. You enter commands after this symbol and press Return or Enter to run them.
 </q-item-label>

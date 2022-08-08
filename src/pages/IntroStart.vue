@@ -23,6 +23,7 @@ JavaScript is a programming language that has been around for almost 30 years an
  Originally a scripting language  for web pages, it has evolved while its core functionality was extended by other libraries.
  Big steps were the introduction of the node.js framework and npm which bundles Javascript into packages and helps users to find and install them.
 </div>
+<!--
 <q-list class="q-pa-sm">
    <q-item-section>
  <q-item-label>
@@ -36,6 +37,7 @@ JavaScript is a programming language that has been around for almost 30 years an
 </q-item-label>
    </q-item-section>
 </q-list>
+-->
 <!--
 <div class="q-pt-sm">
 Which framework to learn depends on what you want to achieve.
@@ -55,7 +57,8 @@ Which framework to learn depends on what you want to achieve.
 </div>
 -->
 <div class="q-pt-sm">
-Recently Vue was updated from version 2 to version 3. Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.
+Recently Vue was updated from version 2 to version 3.
+<!-- Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.-->
 Quasar version 2 was released in 2021 and is built on Vue version 3.
 All these versions and numbers can become overwhelming.
  The main thing to understand is that if you start with Quasar now, you will be using Vue version 3.
