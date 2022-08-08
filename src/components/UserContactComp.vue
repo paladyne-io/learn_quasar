@@ -67,10 +67,6 @@ const newMessage = ref()
 const fromName = ref('')
 const replyTo = ref('')
 
-const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
-const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
-const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
-
 const templateParams = ref({
   from_name: fromName,
   message: newMessage,
@@ -87,12 +83,16 @@ onMounted(() => {
 function sendEmail () {
   console.log('send email...')
 
-  // console.log('Public key: ' + EMAILJS_PUBLIC_KEY)
-  // console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
-  // console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
+  // let EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
+  // let EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
+  // let EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
+
+  // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
+  // console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
+  console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
   // console.log('templateParams: ' + JSON.stringify(templateParams.value))
 
-  if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
+  if (!process.env.EMAILJS_PUBLIC_KEY || !process.env.EMAILJS_SERVICE_ID || !process.env.EMAILJS_TEMPLATE_ID) {
     console.log('Error. One or more email service parameters was not supplied.')
     alert('Error. One or more email service parameters was not supplied.')
     return
@@ -118,10 +118,10 @@ function sendEmail () {
   */
   emailjs
     .send(
-      EMAILJS_SERVICE_ID,
-      EMAILJS_TEMPLATE_ID,
+      process.env.EMAILJS_SERVICE_ID,
+      process.env.EMAILJS_TEMPLATE_ID,
       templateParams.value,
-      EMAILJS_PUBLIC_KEY)
+      process.env.EMAILJS_PUBLIC_KEY)
     .then(
       (result) => {
         console.log('SUCCESS!', result.text)
