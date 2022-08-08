@@ -44,6 +44,15 @@
 
       <q-list>
         <q-item-label header>
+          Feedback
+        </q-item-label>
+        <AppLink
+           v-bind= "feedbackLink"
+        />
+      </q-list>
+
+      <q-list>
+        <q-item-label header>
           Other Links
         </q-item-label>
       <q-expansion-item
@@ -72,7 +81,20 @@ import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
 import AppLink from 'components/AppLink.vue'
 
+const feedbackLink = {
+  title: 'Send Feedback',
+  caption: 'Your comments and suggestions',
+  icon: 'fa fa-comment',
+  link: 'feedback'
+}
+
 const navlinksList = [
+  {
+    title: 'Prolouge',
+    caption: 'Prolouge',
+    icon: 'school',
+    link: 'prologue'
+  },
   {
     title: 'Intro',
     caption: 'Introduction',
@@ -92,10 +114,22 @@ const navlinksList = [
     link: 'helloworld'
   },
   {
+    title: 'Programming Basics',
+    caption: 'Make it do stuff',
+    icon: 'school',
+    link: 'programming1'
+  },
+  {
     title: 'Add a library',
     caption: 'Extend it',
     icon: 'school',
     link: 'images'
+  },
+  {
+    title: 'Sending email',
+    caption: 'Communicate with your users',
+    icon: 'school',
+    link: 'sendemail'
   }
 ]
 const qlinksList = [
@@ -157,6 +191,7 @@ export default defineComponent({
       essentialLinks: qlinksList,
       navigationLinks: navlinksList,
       leftDrawerOpen,
+      feedbackLink,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }

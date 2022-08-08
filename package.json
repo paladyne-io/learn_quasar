@@ -10,7 +10,9 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@quasar/extras": "^1.0.0",
+    "dotenv": "^16.0.1",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",

@@ -12,12 +12,17 @@
       Your mission today is to get to this:
     </div>
   <div class="q-pt-sm">
-    <carousel :items-to-show="1">
+    <carousel wrapAround :items-to-show="1">
     <slide v-for="slide in slides" :key="slide.id">
-    <img :src= slide.src />
-    <div class="q-pt-sm text-center">
+     <div class="row">
+     <div class="col-12">
+       <img :src= slide.src />
+        </div>
+    <div class="col-12">
       {{ slide.text }}
     </div>
+
+     </div>
     </slide>
 
     <template #addons>
@@ -44,17 +49,14 @@
 <div class="q-pt-sm">
 As mentioned previously, you can extend the functionality of your app by adding libraries.
 For example we can add the <b>vue-carousel</b> library to display images in a slideshow or 'slider'.
-<div class="q-py-sm">
+
 The page that describes the library is here:
 <a href="https://ismail9k.github.io/vue3-carousel/">vue3-carousel</a>
-</div>
+<div class="q-py-sm">
 For this task you need to use the terminal again.
 Type "control c" (press the 'control' key and 'c' key at the same time) to exit the quasar development environment.
- Then follow the instructions to install the library.
-Usually these are shown on the installation page.
-
-It is common to be something like, "npm install vue3-carousel".
-
+ Then follow the instructions to install the library. Usually these are shown on the installation page. It is common to be something like, <b>"npm install vue3-carousel"</b>.
+ </div>
 <div class="q-pa-sm q-mb-sm bg-blue-2">
 <pre>
 dcs@Darrens-MacBook-Pro learn_quasar % npm install vue3-carousel
@@ -80,9 +82,9 @@ dcs@Darrens-MacBook-Pro learn_quasar %
 </pre>
 </div>
 
-The library is now installed so you need to relaunch the Quasar dev environment by typing 'quasar dev'
+The library is now installed so you need to relaunch the Quasar dev environment by typing 'quasar dev'.
 <div class="tip q-py-sm">
-<q-item-label class="bulb">Tip:Use the up/down arrow keys on your keyboard to select previous shell commands so you don't have to retype them.
+<q-item-label class="bulb">Tip: Use the up/down arrow keys on your keyboard to select previous shell commands so you don't have to retype them.
 </q-item-label>
 </div>
   <q-item-label class="q-pt-md text-subheader">
@@ -109,11 +111,11 @@ export default defineComponent&#40;&#123;
   setup &#40;&#41; &#123;
     const slides = &#91;
        &#123; id: 1, name: 'slide1', src: 'https://picsum.photos/800/600?random=1',
-      text: 'this is a slider demo 1' &#125;,
+      text: 'Slide 1' &#125;,
        &#123; id: 2, name: 'slide2', src: 'https://picsum.photos/800/600?random=2',
-      text: 'this is a slider demo 2' &#125;,
+      text: 'Slide 2' &#125;,
        &#123; id: 3, name: 'slide3', src: 'https://picsum.photos/800/600?random=3',
-      text: 'this is a slider demo 3' &#125;&#93;
+      text: 'Slide 3' &#125;&#93;
 
     return &#123;
       slides
@@ -145,18 +147,28 @@ Finally, in the <b>template</b> section of your page or component, add the prese
       </q-list>
 
 It may not be clear exactly what is happening here. For now just try to remember the steps.
-1) Install the library using the Terminal,
-2) Import it in the file where you want to use it by adding some code in the script section
-3) (If it is a GUI component), add it into the html area in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes even just &lt;ImportedComp/&gt;.
-
-        <div class="row text-subheader q-pt-sm">
+<ol> <li> Install the library using the Terminal</li>
+<li> Import it in the component (file) where you want to use it by adding some code in the script section</li>
+<li> (If it is a GUI component), add it into the html area in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
+</ol>
+<div class="row text-subheader q-pt-sm">
+    <q-item class="col"
+          clickable
+          v-ripple
+          to="programming1"
+          @click="link = 'programming1'"
+        >
+        Previous (Programming basics)
+    </q-item>
           <q-item class="col"
             clickable
             v-ripple
-            to="startprogramming"
-            @click="link = 'startprogramming'"
+            to="sendemail"
+            @click="link = 'sendemail'"
           >
-        Previous
+          <div style="text-align:right" class="full-width">
+            Next: Send emails
+        </div>
     </q-item>
 </div>
 </q-card>
@@ -180,9 +192,9 @@ export default defineComponent({
   },
   setup () {
     const slides = [
-      { id: 1, name: 'slide1', src: 'https://picsum.photos/800/600?random=1', class: 'np-slider np-slide-1', text: 'this is a slider demo 1' },
-      { id: 2, name: 'slide2', src: 'https://picsum.photos/800/600?random=2', class: 'np-slider np-slide-1', text: 'this is a slider demo 2' },
-      { id: 3, name: 'slide3', src: 'https://picsum.photos/800/600?random=3', class: 'np-slider np-slide-1', text: 'this is a slider demo 3' }]
+      { id: 1, name: 'slide1', src: 'https://picsum.photos/800/600?random=1', class: 'np-slider np-slide-1', text: 'Slide 1' },
+      { id: 2, name: 'slide2', src: 'https://picsum.photos/800/600?random=2', class: 'np-slider np-slide-1', text: 'Slide 2' },
+      { id: 3, name: 'slide3', src: 'https://picsum.photos/800/600?random=3', class: 'np-slider np-slide-1', text: 'Slide 3' }]
 
     /*
     onMounted(() => {

@@ -40,15 +40,14 @@ module.exports = configure(function (/* ctx */) {
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
-      // 'ionicons-v4',
+      // 'ionicons-v4',r
       // 'mdi-v5',
-      // 'fontawesome-v6',
+      'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
-
-      'roboto-font', // optional, you are not bound to it
+      // 'roboto-font', // optional, you are not bound to it
       'material-icons' // optional, you are not bound to it
     ],
 
@@ -73,7 +72,8 @@ module.exports = configure(function (/* ctx */) {
       // ignorePublicFolder: true,
       // minify: false,
       // polyfillModulePreload: true,
-      distDir: 'workspace/dist',
+      distDir: 'dist',
+      env: require('dotenv').config().parsed,
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},

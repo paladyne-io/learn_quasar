@@ -12,7 +12,7 @@ Getting started programming with Quasar (Preparation)
 <div class="q-pt-sm">
 Your mission today is to get to this:
 </div>
-<q-img src="images/QuasarAppTopPage.png" alt="Quasar default app screen"> </q-img>
+<q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
 
 <div class="q-pt-sm">
 This is the basic order of tasks (assuming you have a PC).
@@ -22,7 +22,7 @@ This is the basic order of tasks (assuming you have a PC).
       <q-item-section>
        <q-item-label>
 
-1. <a href="https://code.visualstudio.com/download"><b>Download and install Visual Studio Code</b></a>(Highly recommended)
+1. <a href="https://code.visualstudio.com/download"><b>Download and install Visual Studio Code</b></a> (Highly recommended)
  </q-item-label>
 
 <q-item-label class="q-pt-md">
@@ -32,9 +32,9 @@ This is the basic order of tasks (assuming you have a PC).
 
 <q-item-label class="q-pt-md">
 
-3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal (Mac) <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows), or the Terminal window in Visual Studio Code.
+3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal (Mac), <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows), or the Terminal window in Visual Studio Code.
 If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
-<router-link to="/vscodeterminal">Click here for details</router-link>.The $ character represents the shell prompt. It might appear as a %. You enter commands after this symbol and press Return or Enter to run them.
+<router-link to="/vscodeterminal">Click here for details</router-link>. The $ character represents the shell prompt. It might appear as a %. You enter commands after this symbol and press Return or Enter to run them.
 </q-item-label>
 <div class="q-pt-sm bg-blue-2">
 
@@ -48,7 +48,7 @@ $ npm i -g @quasar/cli
 $ npm init quasar
 </pre>
 </div>
-* When installing Quasar you will be given the choice of using Vite or Webpack. If you dont have a strong preference, I recommend to choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
+* When installing Quasar you will be given the choice of using Vite or Webpack. If you dont have a strong preference, I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
 
 <q-item-label class="q-pt-md">
 </q-item-label>
@@ -104,15 +104,23 @@ You're nearly done!
 After creating your first app, and entering the above commands ("cd <i>your_project_name</i>" followed by "quasar dev"), you should see the default Quasar app screen as displayed at the top of this page.
 </div>
 <div class="q-pt-sm">
-In the directory/folder that you chose you will find a folder named after your app.
- This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu. Another way is to type "code ." after the the "Quasar •  SUCCESS" message to open the working directory.
- If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program first.
+If you cannot see the app, please check that the working directory is correct.
+<div class="bg-blue-2 q-pa-sm">
+<pre>
+dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
+</pre>
+</div>
  <div class="q-pt-sm">
- You can see the current directory by typing “cd” and change it by typing "cd " ('cd' followed by a space) and then the full path. An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
+ You can verify the current working directory by typing 'pwd' and change it by typing 'cd ' ('cd' followed by a space) and then the full path. An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
+</div>
 </div>
 <div class="q-pt-sm">
-The working directory will remain set until you close the Terminal window. If you ever see an error such as “This is not a Quasar directory” when you run quasar dev it is probably because your working directory changed.
-“run” means typing a command and then pressing the Enter or Return key on your keyboard.
+In the directory/folder that you chose you will find a folder named after your app.
+ This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu. Another way is to type "code ." in the terminal after the the "Quasar •  SUCCESS" message to open the working directory.
+ If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program (exit the development environment).
+
+<div class="q-pt-sm">
+The working directory will remain set until you close the Terminal window. If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.
@@ -135,7 +143,9 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
           to="helloworld"
           @click="link = 'helloworld'"
         >
-        Next: Making it on your own
+      <div style="text-align:right" class="full-width">
+            Next: Making it your own
+        </div>
     </q-item>
 </div>
 </q-card>

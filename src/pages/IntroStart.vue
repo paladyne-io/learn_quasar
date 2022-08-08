@@ -4,18 +4,18 @@
 
 <div>
 <q-card flat class="q-pa-md">
-<div class="heading text-subheader q-pa-sm">
+<div class="text-subheader q-py-sm">
 Do you want to build an app, a game or a website with interactive features?
  Not sure how to start or which software to use?
 </div>
 <div class="q-py-sm">
 This series of articles and interactive examples will help you to use the <b> Quasar </b>framework to develop applications that can run on a variety of devices.
 </div>
-<div class="heading text-subheader q-pt-sm">Target</div>
+<div class="heading text-subheader  q-py-xs q-pt-md">Target</div>
 People who want to develop an app or interactive website.
-<div class="heading text-subheader q-pt-sm">Level</div>
+<div class="heading text-subheader q-py-xs q-pt-md">Level</div>
 Beginner
-<div class="heading text-subheader q-pt-sm">Background</div>
+<div class="heading text-subheader q-py-xs q-pt-md">Background</div>
 <div>
 Quasar is built on top of <b>Vue</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, along with React and Angular.
@@ -55,7 +55,7 @@ Which framework to learn depends on what you want to achieve.
 </div>
 -->
 <div class="q-pt-sm">
-Recently Vue was updated from version 2 to version 3. Some libraries and tutorials may have not yet been updated so this might be confusing at first.
+Recently Vue was updated from version 2 to version 3. Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.
 Quasar version 2 was released in 2021 and is built on Vue version 3.
 All these versions and numbers can become overwhelming.
  The main thing to understand is that if you start with Quasar now, you will be using Vue version 3.
@@ -65,7 +65,8 @@ All these versions and numbers can become overwhelming.
  A web-browser based app is easier for users to start using but the functionality is limited. Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however they would often accept this in an app. An app can also ask users for permission to access data and access to hardware.
 <div class="q-pt-sm">One of the best features of Quasar is that it allows you to choose the kind of app you build without significantly changing your code.
  You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on on a PC (Windows, Mac OS or Linux).</div>
-<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, lists and cards and also some utilities that will speed up your development.</div>
+<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, lists and cards and other utilities that will speed up your development.</div>
+
 <div class="text-subheader q-pt-sm">
 How much does it cost?
 </div>
@@ -76,6 +77,7 @@ How much does it cost?
 <div class="q-pt-sm">It depends on your experience. It’s like learning a language or a musical instrument. It takes time, commitment, practice and perseverance. Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature. It generally comes down to how well you understand. Sometimes it can be frustrating but it can also be rewarding.
 There are many resources and tutorials on-line.
 </div>
+<!--
 <div class="heading text-subheader q-pt-sm">
 How much do you know?
 </div>
@@ -95,6 +97,7 @@ If not, click here for a basic explanation.
 Do you know what SASS, PASS, MAAS, etc. are?
 If not, click here for a basic explanation.
 </div>
+-->
 <div class="heading text-subheader q-pt-sm">
 Some things to consider when making an app...
 </div>
@@ -102,25 +105,21 @@ Some things to consider when making an app...
 You don't need to decide these things now but it's useful to consider the scope of your app before you start.
 </div>
 <div class="q-pt-sm">
-<q-list>
-   <q-item>
-      <q-item-section>
- <q-item-label>Who are your target users?</q-item-label>
- <q-item-label>Which Operating Systems will you support ?(IOS, Android, Mac OS, Windows, Linux)</q-item-label>
- <q-item-label>Which  types of devices will you support? (Mobile or desktop, custom electronic devices)</q-item-label>
- <q-item-label>Will you provide support for displaying the interface in other languages (A multi-lingual app)</q-item-label>
- <q-item-label>What types of functionality are required? (Do you need to access hardware including the camera, bluetooth/BLE or NFC?)</q-item-label>
- <q-item-label>Color scheme, logos, icons and graphics. (Quasar has some features to help with all of these)</q-item-label>
- <q-item-label>Dark mode?</q-item-label>
- <q-item-label>What kind of data will you store and where will you store it? (Locally - on the device, or in the cloud, or both)</q-item-label>
- <q-item-label>How will you manage user data and privacy?</q-item-label>
- <q-item-label>Will your app be used for free, paid (one time) or by subscription?</q-item-label>
- <q-item-label>Will users log in and manage their own account or profile?</q-item-label>
- <q-item-label>Do you need an administration interface? (often known as an Admin dashboard)</q-item-label>
- <q-item-label>How will you market your app?</q-item-label>
-  </q-item-section>
-   </q-item>
-</q-list>
+<ul>
+ <li>Who are your target users?</li>
+ <li>Which Operating Systems will you support ?(IOS, Android, Mac OS, Windows, Linux)</li>
+ <li>Which  types of devices will you support? (Mobile or desktop, custom electronic devices)</li>
+ <li>Will you provide support for displaying the interface in other languages (A multi-lingual app)</li>
+ <li>What types of functionality are required? (Do you need to access hardware including the camera, bluetooth/BLE or NFC?)</li>
+ <li>Color scheme, logos, icons and graphics. (Quasar has some features to help with all of these)</li>
+ <li>Dark mode?</li>
+ <li>What kind of data will you store and where will you store it? (Locally - on the device, or in the cloud, or both)</li>
+ <li>How will you manage user data and privacy?</li>
+ <li>Will your app be used for free, paid (one time) or by subscription?</li>
+ <li>Will users log in and manage their own account or profile?</li>
+ <li>Do you need an administration interface? (often known as an Admin dashboard)</li>
+ <li>How will you market your app?</li>
+</ul>
 </div>
 <div class="q-pt-sm">
 If you are not sure, it's better to start simple. Complexity will increase as you add new features or deploy to new types of devices. Complexity will slow you down. However implementing certain features can often be leveraged into another app. Gradually you will build up your own  library of code and components.
@@ -148,9 +147,9 @@ Break it down
           to="startprogramming"
           @click="link = 'startprogramming'"
         >
-          <q-item-section nav>
-          </q-item-section>
-          Next: Getting started with programming
+        <div style="text-align:right" class="full-width">
+            Next: Getting started
+        </div>
     </q-item>
 </div>
 
@@ -169,13 +168,12 @@ export default defineComponent({
 
 <style lang="scss">
 div .heading {
-  background-color: $grey-1;
+  // background-color: $grey-1;
 }
 </style>
 
 <style>
 .text-subheader {
-  font-family: verdana;
   font-size: 16px;
   font-weight: bold;
   color:darkblue;
