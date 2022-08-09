@@ -69,8 +69,8 @@ module.exports = configure(function (ctx) {
       // analyze: true,
       env: {
         EMAILJS_SERVICE_ID: ctx.dev
-          ? 'EMAILJS_SERVICE_ID_DEV' // dev
-          : 'EMAILJS_SERVICE_ID_PROD' // prod
+          ? 'EMAILJS_SERVICE_ID_DEV- ' + process.env.EMAILJS_SERVICE// dev
+          : 'EMAILJS_SERVICE_ID_PROD- ' + process.env.EMAILJS_SERVICE // prod
       },
       // rawDefine: {}
       // ignorePublicFolder: true,
