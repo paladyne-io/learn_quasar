@@ -57,6 +57,9 @@
 import { defineComponent, ref } from 'vue'
 import emailjs from '@emailjs/browser'
 
+const EMAILJS_SERVICE_ID_2 = process.env.EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID_2 = process.env.EMAILJS_TEMPLATE_ID
+
 export default defineComponent({
   name: 'UserContactComponnet',
 
@@ -83,11 +86,17 @@ export default defineComponent({
     sendEmail () {
       console.log('send email...')
 
-      // let EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
-      // let EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
-      // let EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
+      const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
+      const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
+      // const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
 
       // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
+      console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
+      console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
+
+      console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)
+      console.log('EMAILJS_TEMPLATE_ID_2: ' + EMAILJS_TEMPLATE_ID_2)
+
       console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
       console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
 
