@@ -53,85 +53,88 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue' // ref, toRef, watch,
+<script>
+import { defineComponent, ref } from 'vue'
 import emailjs from '@emailjs/browser'
 
-// import { useQuasar } from 'quasar'
-// import { supabaseClient } from 'boot/supabase.js'
-// import { useRoute } from "vue-router";
+export default defineComponent({
+  name: 'UserContactComponnet',
 
-// const $q = useQuasar()
+  setup () {
+    const newMessage = ref()
+    const fromName = ref('')
+    const replyTo = ref('')
 
-const newMessage = ref()
-const fromName = ref('')
-const replyTo = ref('')
+    const templateParams = ref({
+      from_name: fromName,
+      message: newMessage,
+      reply_to: replyTo
+    })
 
-const templateParams = ref({
-  from_name: fromName,
-  message: newMessage,
-  reply_to: replyTo
-})
+    return {
+      templateParams,
+      newMessage,
+      fromName,
+      replyTo
+    }
+  },
 
-// read from localstorage
-onMounted(() => {
-  // console.log('this.onMounted: ' + EMAILJS_PUBLIC_KEY)
-  // selected_email_option.value = selected_pp_option.value
-  // getSelectedEmailOption()
-})
+  methods: {
+    sendEmail () {
+      console.log('send email...')
 
-function sendEmail () {
-  console.log('send email...')
+      // let EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
+      // let EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
+      // let EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
 
-  // let EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
-  // let EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
-  // let EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
+      // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
+      // console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
+      console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
+      // console.log('templateParams: ' + JSON.stringify(templateParams.value))
 
-  // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
-  // console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
-  console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
-  // console.log('templateParams: ' + JSON.stringify(templateParams.value))
-
-  if (!process.env.EMAILJS_PUBLIC_KEY || !process.env.EMAILJS_SERVICE_ID || !process.env.EMAILJS_TEMPLATE_ID) {
-    console.log('Error. One or more email service parameters was not supplied.')
-    alert('Error. One or more email service parameters was not supplied.')
-    return
-  }
-
-  if (!templateParams.value.message) {
-    console.log('Error. No message.')
-    alert('Please type a message.')
-    return
-  }
-
-  if (!templateParams.value.reply_to) {
-    console.log('Error. No reply_to email address.')
-    alert('Please type your email address.')
-    return
-  }
-
-  /**
-  const i = 1
-  if (i === 1) {
-    return
-  }
-  */
-  emailjs
-    .send(
-      process.env.EMAILJS_SERVICE_ID,
-      process.env.EMAILJS_TEMPLATE_ID,
-      templateParams.value,
-      process.env.EMAILJS_PUBLIC_KEY)
-    .then(
-      (result) => {
-        console.log('SUCCESS!', result.text)
-        // this.notify('Email sent.')
-      },
-      (error) => {
-        console.log('FAILED...', error.text)
-        // this.notify('Sorry the email was not sent.')
+      if (!process.env.EMAILJS_PUBLIC_KEY || !process.env.EMAILJS_SERVICE_ID || !process.env.EMAILJS_TEMPLATE_ID) {
+        console.log('Error. One or more email service parameters was not supplied.')
+        alert('Error. One or more email service parameters was not supplied.')
+        return
       }
-    )
-}
 
+      if (!this.templateParams.message) {
+        console.log('Error. No message.')
+        alert('Please type a message.')
+        return
+      }
+
+      if (!this.templateParams.reply_to) {
+        console.log('Error. No reply_to email address.')
+        alert('Please type your email address.')
+        return
+      }
+
+      /*
+      const i = 1
+      if (i === 1) {
+        console.log('Stopped sending email!')
+        return
+      }
+      */
+
+      emailjs
+        .send(
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
+          this.templateParams,
+          process.env.EMAILJS_PUBLIC_KEY)
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.text)
+            alert('email sent')
+            // this.notify('Email sent.')
+          },
+          (error) => {
+            console.log('FAILED...', error.text)
+            // this.notify('Sorry the email was not sent.')
+          })
+    }
+  }
+})
 </script>
