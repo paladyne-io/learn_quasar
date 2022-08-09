@@ -73,7 +73,7 @@ module.exports = configure(function (/* ctx */) {
       // minify: false,
       // polyfillModulePreload: true,
       distDir: 'dist',
-      env: require('dotenv').config().parsed,
+      // env: require('dotenv').config().parsed,
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},

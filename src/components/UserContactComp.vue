@@ -67,7 +67,11 @@ export default defineComponent({
   name: 'UserContactComponnet',
 
   setup () {
-    console.log('VITE EMAILJS_SERVICE' + import.meta.env.EMAILJS_SERVICE) // 123
+    console.log('VITE EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
+    console.log('VITE EMAILJS_SERVICE_2: ' + import.meta.env.VITE_EMAILJS_SERVICE) // 123
+
+    console.log('VITE EMAILJS_SERVICE 22: ' + import.meta.EMAILJS_SERVICE) // 123
+    console.log('VITE EMAILJS_SERVICE_22: ' + import.meta.VITE_EMAILJS_SERVICE) // 123
 
     const newMessage = ref()
     const fromName = ref('')
