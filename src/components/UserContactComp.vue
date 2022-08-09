@@ -95,15 +95,15 @@ export default defineComponent({
     sendEmail () {
       console.log('send email 2...')
 
-      const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
-      const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
+      // const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
+      // const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
       // const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
 
-      console.log('Process.env: ' + JSON.stringify(process.env))
+      // console.log('Process.env: ' + JSON.stringify(process.env))
 
       // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
-      console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
-      console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
+      // console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
+      // console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
 
       console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)
       console.log('EMAILJS_TEMPLATE_ID_2: ' + EMAILJS_TEMPLATE_ID_2)

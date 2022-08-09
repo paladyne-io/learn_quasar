@@ -67,17 +67,19 @@ module.exports = configure(function (ctx) {
 
       // publicPath: '/',
       // analyze: true,
+      /*
       env: {
-        EMAILJS_SERVICE_ID: ctx.dev
-          ? 'EMAILJS_SERVICE_ID_DEV- ' + process.env.EMAILJS_SERVICE// dev
-          : 'EMAILJS_SERVICE_ID_PROD- ' + process.env.EMAILJS_SERVICE // prod
+        EMAILJS_SERVICE: ctx.dev
+          ? 'EMAILJS_SERVICE_ID_DEV- ' + process.env.EMAILJS_SERVICE_ID// dev
+          : 'EMAILJS_SERVICE_ID_PROD- ' + process.env.EMAILJS_SERVICE_ID // prod
       },
+      */
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
       // polyfillModulePreload: true,
       distDir: 'dist',
-      // env: require('dotenv').config().parsed,
+      env: require('dotenv').config().parsed,
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
