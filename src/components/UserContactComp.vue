@@ -93,7 +93,7 @@ export default defineComponent({
 
   methods: {
     sendEmail () {
-      console.log('send email...')
+      console.log('send email 2...')
 
       const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
       const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
