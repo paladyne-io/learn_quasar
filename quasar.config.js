@@ -11,7 +11,7 @@
 const { configure } = require('quasar/wrappers')
 const path = require('path')
 
-module.exports = configure(function (/* ctx */) {
+module.exports = configure(function (ctx) {
   return {
     eslint: {
       // fix: true,
@@ -67,7 +67,11 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      env: {},
+      env: {
+        EMAILJS_SERVICE_ID: ctx.dev
+          ? 'EMAILJS_SERVICE_ID_DEV' // dev
+          : 'EMAILJS_SERVICE_ID_PROD' // prod
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
