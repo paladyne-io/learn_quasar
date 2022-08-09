@@ -67,14 +67,13 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {},
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
       // polyfillModulePreload: true,
       distDir: 'dist',
       // env: require('dotenv').config().parsed,
-
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
