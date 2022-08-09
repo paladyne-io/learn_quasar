@@ -99,6 +99,8 @@ export default defineComponent({
       const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
       // const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
 
+      console.log('Process.env: ' + JSON.stringify(process.env))
+
       // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
       console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
       console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
