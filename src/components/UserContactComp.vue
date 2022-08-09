@@ -60,10 +60,15 @@ import emailjs from '@emailjs/browser'
 const EMAILJS_SERVICE_ID_2 = process.env.EMAILJS_SERVICE_ID
 const EMAILJS_TEMPLATE_ID_2 = process.env.EMAILJS_TEMPLATE_ID
 
+const EMAILJS_SERVICE_ID_3 = process.env.EMAILJS_SERVICE
+const EMAILJS_TEMPLATE_ID_3 = process.env.EMAILJS_TEMPLATE
+
 export default defineComponent({
   name: 'UserContactComponnet',
 
   setup () {
+    console.log('VITE EMAILJS_SERVICE' + import.meta.env.EMAILJS_SERVICE) // 123
+
     const newMessage = ref()
     const fromName = ref('')
     const replyTo = ref('')
@@ -96,6 +101,9 @@ export default defineComponent({
 
       console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)
       console.log('EMAILJS_TEMPLATE_ID_2: ' + EMAILJS_TEMPLATE_ID_2)
+
+      console.log('EMAILJS_SERVICE_ID_3: ' + EMAILJS_SERVICE_ID_3)
+      console.log('EMAILJS_TEMPLATE_ID_3: ' + EMAILJS_TEMPLATE_ID_3)
 
       console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
       console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
