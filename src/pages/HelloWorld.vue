@@ -66,9 +66,9 @@
 
  <div class="q-pa-sm bg-blue-2">
 <pre>
-&lt;div class="full-width text-center"&gt;
+ &lt;div class="full-width text-center"&gt;
     Quasar Image coutesy of NASA
-&lt;/div&gt;
+ &lt;/div&gt;
 </pre>
 </div>
   <q-item-label class="q-pt-md text-subheader" >
@@ -82,9 +82,9 @@
 
  <div class="q-pa-sm bg-blue-2">
  <pre>
-   &lt;div class="text-center"&gt;
-     &lt;q-btn&gt; label="My Page" color="green" to="mypage"&gt;&lt;/q-btn&gt;
-   &lt;/div&gt;
+  &lt;div class="text-center"&gt;
+    &lt;q-btn label="My Page" color="green" to="mypage"&gt;&lt;/q-btn&gt;
+  &lt;/div&gt;
 </pre>
 
 </div>
@@ -93,7 +93,7 @@
 </q-item-label>
 
 <div class="q-pt-sm">
-1. Copy a previous page or create and save a new page (file).
+1. Copy an existing page (an 'xxx.vue' file in the pages folder) or create and save a new page (file).
 It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
 Note that the file name must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
 </div>

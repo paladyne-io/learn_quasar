@@ -1,12 +1,12 @@
 <template>
   <div no-border class="q-pa-md" style="min-width: 320px">
     <div class="q-pa-sm font-semibold">
-      If you have any requests or suggestions, please email darren@paladyne.co or fill out the form below.
+      If you have any requests or suggestions, please email darren@paladyne.co.jp or fill out the form below.
       I greatly appreciate your input and will respond to every well-intentioned message.
     </div>
   </div>
   <!-- Email area to modify and send email -->
-  <div class="container q-pa-sm q-ma-md" style="background-color: linen">
+  <div class="container q-pa-sm q-ma-md">
     <form ref="form" @submit.prevent="sendEmail">
       <div class="field">
         <q-input
@@ -67,11 +67,11 @@ export default defineComponent({
   name: 'UserContactComponnet',
 
   setup () {
-    console.log('VITE EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
-    console.log('VITE EMAILJS_SERVICE_2: ' + import.meta.env.VITE_EMAILJS_SERVICE) // 123
+    // console.log('EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
+    // console.log('VITE EMAILJS_SERVICE_2: ' + import.meta.env.VITE_EMAILJS_SERVICE) // 123
 
-    console.log('VITE EMAILJS_SERVICE 22: ' + import.meta.EMAILJS_SERVICE) // 123
-    console.log('VITE EMAILJS_SERVICE_22: ' + import.meta.VITE_EMAILJS_SERVICE) // 123
+    // console.log('EMAILJS_SERVICE: ' + import.meta.EMAILJS_SERVICE) // 123
+    // console.log('VITE EMAILJS_SERVICE_22: ' + import.meta.VITE_EMAILJS_SERVICE) // 123
 
     const newMessage = ref()
     const fromName = ref('')

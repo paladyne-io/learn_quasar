@@ -1,13 +1,12 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Programming Start </div>
+<div class="q-pa-md text-h5 text-bold"> Programming Start</div>
 
 <div>
 <q-card flat class="q-pa-md">
 
-<div class="text-subheader q-pt-sm">
-Getting started programming with Quasar (Preparation)
-</div>
+<SubHeaderComponentDA mytext="Getting started programming with Quasar (Preparation)"
+/>
 
 <div class="q-pt-sm">
 Your mission today is to get to this:
@@ -36,18 +35,18 @@ This is the basic order of tasks (assuming you have a PC).
 If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
 <router-link to="/vscodeterminal">Click here for details</router-link>. The $ character represents the shell prompt. It might appear as a %. You enter commands after this symbol and press Return or Enter to run them.
 </q-item-label>
-<div class="q-pt-sm bg-blue-2">
 
-<pre>
+<PreComponentDA
+mytext="
 $ yarn global add @quasar/cli
 $ yarn create quasar
 
 # or:
 
 $ npm i -g @quasar/cli
-$ npm init quasar
-</pre>
-</div>
+$ npm init quasar"
+/>
+
 * When installing Quasar you will be given the choice of using Vite or Webpack. If you dont have a strong preference, I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
 
 <q-item-label class="q-pt-md">
@@ -155,9 +154,13 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 
 <script>
 import { defineComponent } from 'vue'
+import SubHeaderComponentDA from 'components/SubHeaderComponentDA.vue'
+// import PreComponent from 'components/PreComponent.vue'
+import PreComponentDA from 'components/PreComponentDA.vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'ProgrammingStartPage',
+  components: { SubHeaderComponentDA, PreComponentDA } // PreComponent,
 })
 </script>
 
@@ -166,6 +169,5 @@ export default defineComponent({
   font-family: verdana;
   font-size: 16px;
   font-weight: bold;
-  color:darkblue;
 }
 </style>

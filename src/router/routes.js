@@ -12,11 +12,13 @@ const routes = [
       { path: 'mypage', component: () => import('pages/MyPage.vue') },
       { path: 'mypage2', component: () => import('pages/MyPage2.vue') },
       { path: 'feedback', component: () => import('pages/UserFeedbackPage.vue') },
+      { path: 'preferences', component: () => import('pages/PreferencesPage.vue') },
       { path: 'helloworld', component: () => import('pages/HelloWorld.vue') },
       { path: 'programming1', component: () => import('pages/ProgrammingBasics.vue') },
       { path: 'sendemail', component: () => import('pages/EmailSendingPage.vue') },
       { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
-      { path: 'images', component: () => import('pages/ImageCarousel.vue') }
+      { path: 'images', component: () => import('pages/ImageCarousel.vue') },
+      { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') }
     ]
   },
 

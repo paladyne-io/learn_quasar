@@ -30,8 +30,8 @@
         </q-item-label>
         <q-expansion-item
         icon="perm_identity"
-        label="Navigation Links"
-        caption="Links to pages in this app"
+        label="Lesson Links"
+        caption="Links to tutorials in this app"
         default-opened>
 
         <AppLink
@@ -44,10 +44,13 @@
 
       <q-list>
         <q-item-label header>
-          Feedback
+          This app
         </q-item-label>
         <AppLink
            v-bind= "feedbackLink"
+        />
+        <AppLink
+           v-bind= "preferencesLink"
         />
       </q-list>
 
@@ -84,8 +87,15 @@ import AppLink from 'components/AppLink.vue'
 const feedbackLink = {
   title: 'Send Feedback',
   caption: 'Your comments and suggestions',
-  icon: 'fa fa-comment',
+  icon: 'fa fa-pen',
   link: 'feedback'
+}
+
+const preferencesLink = {
+  title: 'Preferences',
+  caption: 'App settings',
+  icon: 'fa  fa-gear',
+  link: 'preferences'
 }
 
 const navlinksList = [
@@ -192,6 +202,7 @@ export default defineComponent({
       navigationLinks: navlinksList,
       leftDrawerOpen,
       feedbackLink,
+      preferencesLink,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }

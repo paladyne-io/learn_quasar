@@ -132,7 +132,7 @@ The onMounted function is a special function provided by vue.
 
 <div class="q-pt-sm">
 Both of these methods are very useful for debugging your code.
-This is the process of testing and fixing code. For exampe you can add a call to  console.log() at the begning of a function to make sure it is being called when you expect it to be.
+This is the process of testing and fixing code. For example, you can add a call to  console.log() at the beginning of a function to make sure it is being called when you expect it to be.
 You can also use it to print out the result of calculations or the value of variables to check that they are what you expect.
 </div>
 
