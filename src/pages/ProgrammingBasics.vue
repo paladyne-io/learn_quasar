@@ -12,21 +12,18 @@
       Your mission today is to get to this:
     </div>
 
-<div class="q-pt-sm">
-  This is the basic order of tasks.
-</div>
+  <div class="q-pt-sm">
+    This is the basic order of tasks.
+  </div>
 
-<q-list>
-   <q-item>
-      <q-item-section>
-       <q-item-label class="q-pt-md text-subheader" >
+<div class="q-pa-sm">
+
+      <div class="q-pt-md text-subheader">
         1. Add interactivty
-        </q-item-label>
-        <div class="q-pt-sm">
 
     So far we have covered how to set up and use Quasar and how to create, modify and navigate between pages.
     I'd like to focus this exercise on showing how to actually program some activity.
-    </div>
+   </div>
       <div class="q-pt-sm">
     Each Vue page or component (xx.vue file) can have up to 3 sections:
     <ul>
@@ -73,7 +70,7 @@ What we will come back to later:
 <ul>
     <li>Reactivity</li>
     <li>v-if and v-for</li>
-    <li>Props and emits</li>
+    <li>Props and slots</li>
     <li>Local storage</li>
     <li>Axios, i18n and boot files</li>
 </ul>
@@ -82,27 +79,30 @@ What we will come back to later:
     1. In the previous article we added a navigation button with a "to" element.
      More often you would add "@click=methodName" to the button like this:
 </div>
- <div class="q-pa-sm bg-blue-2">
- <pre>
-   &lt;q-btn label="Test button" color="blue" @click="btnClicked"&gt; &lt;/q-btn&gt;
-</pre>
-</div>
+
+<PreComponentDA
+  mytext="
+  &lt;q-btn label=&quot;Test button&quot;
+   color=&quot;blue&quot;
+   @click=&quot;btnClicked&quot;&gt;
+  &lt;/q-btn&gt;"
+/>
 btnClicked is the name of the function that will be called in the Script section.
 If you are completely new to programming and would like to understand terms such as function, method, parameter, variable etc.,
 click here.
 </div>
 When you click the button, code in the btnClicked function will run.
-<div class="text-center">
+<div class="text-center q-pa-md">
 <q-btn label="Test button" color="blue" @click="btnClicked"> </q-btn>
 </div>
  <div class="q-pt-sm">
-In version 3.2 of Vue, "script setup" was added as a new simpler way to format and use Javascript.
+In version 3.2 of Vue, "script setup" was added as a new simpler way to format and use JavaScript.
 
  <a href="https://vuejs.org/api/sfc-script-setup.html">Read more</a>.
-</div>
+
 It looks like this.
- <div class="q-pa-sm bg-blue-2">
- <pre>
+<PreComponentDA
+  mytext="
   &lt;script setup&gt;
     import { onMounted } from 'vue'
 
@@ -113,8 +113,8 @@ It looks like this.
     function btnClicked () {
       alert('btnClicked')
     }
-  &lt;/script&gt;
-</pre>
+  &lt;/script&gt;"
+/>
 </div>
 <div class="q-pt-sm">
 The onMounted function is a special function provided by vue.
@@ -143,10 +143,7 @@ Click the button to see the whole page.
     </div>
 </div>
 
-</q-item-section>
-    </q-item>
-    </q-list>
-
+</div>
 <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -174,11 +171,12 @@ Click the button to see the whole page.
 
 <script>
 import { defineComponent } from 'vue' //, onMounted, version
+import PreComponentDA from 'components/PreComponentDA.vue'
 
 export default defineComponent({
   name: 'HelloWorld',
   components: {
-
+    PreComponentDA
   },
 
   setup () {

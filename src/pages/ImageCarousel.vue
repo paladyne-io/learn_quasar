@@ -11,37 +11,37 @@
     <div class="q-pt-sm">
       Your mission today is to get to this:
     </div>
-  <div class="q-pt-sm">
-    <carousel wrapAround :items-to-show="1">
-    <slide v-for="slide in slides" :key="slide.id">
-     <div class="row">
-     <div class="col-12">
-       <img :src= slide.src />
+
+    <div class="q-pt-sm">
+      <carousel wrapAround :items-to-show="1">
+      <slide v-for="slide in slides" :key="slide.id">
+       <div class="row">
+        <div class="col-12">
+          <img :src= slide.src />
         </div>
-    <div class="col-12">
-      {{ slide.text }}
-    </div>
+        <div class="col-12">
+          {{ slide.text }}
+        </div>
+        </div>
+      </slide>
 
-     </div>
-    </slide>
-
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
+      <template #addons>
+        <navigation />
+        <pagination />
+      </template>
     </carousel>
   </div>
+
   <div class="q-pt-sm">
   Quasar provides its own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
    This is an example to show how to install and import an external library.
 </div>
+
 <div class="q-pt-sm">
   This is the basic order of tasks.
 </div>
 
-<q-list>
-   <q-item>
-      <q-item-section>
+<div class="q-pt-sm">
         <q-item-label class="q-pt-sm text-subheader">
         1. Install a library
         </q-item-label>
@@ -52,6 +52,7 @@ For example we can add the <b>vue-carousel</b> library to display images in a sl
 
 The page that describes the library is here:
 <a href="https://ismail9k.github.io/vue3-carousel/">vue3-carousel</a>
+</div>
 <div class="q-py-sm">
 For this task you need to use the terminal again.
 Type "control c" (press the 'control' key and 'c' key at the same time) to exit the quasar development environment.
@@ -141,16 +142,14 @@ Finally, in the <b>template</b> section of your page or component, add the prese
   &lt;/carousel&gt;
 </pre>
   </div>
-    </div>
-   </q-item-section>
-    </q-item>
-      </q-list>
-
+   </div>
+<div>
 It may not be clear exactly what is happening here. For now just try to remember the steps.
 <ol> <li> Install the library using the Terminal</li>
 <li> Import it in the component (file) where you want to use it by adding some code in the script section</li>
 <li> (If it is a GUI component), add it into the html area in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
 </ol>
+</div>
 <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -172,7 +171,6 @@ It may not be clear exactly what is happening here. For now just try to remember
     </q-item>
 </div>
 </q-card>
-
 </div>
 </q-page>
 </template>

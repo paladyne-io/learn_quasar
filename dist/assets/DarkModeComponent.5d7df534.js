@@ -1,0 +1,1 @@
+import{u as o}from"./use-quasar.b45ba28e.js";import{r as s,L as t,V as n,a2 as c,a3 as p}from"./index.09400d3f.js";const u={__name:"DarkModeComponent",props:{type:[String,Object]},setup(l){const a=o(),r=s(a.dark.isActive);return(e,m)=>(t(),n("div",{class:p([r.value?"background-dark":"background-light"])},[c(e.$slots,"component")],2))}};export{u as _};

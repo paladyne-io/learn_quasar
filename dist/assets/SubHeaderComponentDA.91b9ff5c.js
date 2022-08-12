@@ -1,0 +1,1 @@
+import{_ as e}from"./DarkModeComponent.5d7df534.js";import{_ as t,L as o,M as n,N as r,U as s,R as _}from"./index.09400d3f.js";const d={class:"sub q-py-sm"},c={__name:"SubHeaderComponentDA",props:{mytext:String},setup(a){return(i,p)=>(o(),n(e,null,{component:r(()=>[s("div",d,_(a.mytext),1)]),_:1}))}};var v=t(c,[["__scopeId","data-v-18846808"]]);export{v as S};

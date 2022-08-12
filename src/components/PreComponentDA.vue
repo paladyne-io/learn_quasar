@@ -51,7 +51,7 @@ are added by the DarkMode(Aware)Component
     background-color: #AFDBF5;
   }
 
-  div .body-light {
+  .body--light {
    background-color: red;
   }
 
