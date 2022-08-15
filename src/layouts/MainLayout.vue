@@ -100,8 +100,8 @@ const preferencesLink = {
 
 const navlinksList = [
   {
-    title: 'Prolouge',
-    caption: 'Prolouge',
+    title: 'prologue',
+    caption: 'prologue',
     icon: 'school',
     link: 'prologue'
   },
