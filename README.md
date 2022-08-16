@@ -5,7 +5,7 @@ A series of articles and interactive examples that teach how to use the Quasar f
 It is targeted at beginners who want to develop an app or interactive website.
 
 Features of interest.
-* Dark mode (Try it in app preferences. Rrticle to come soon)
+* Dark mode (Try it in app preferences. Article to come soon)
 * Sending emails with emailjs
 https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
 
