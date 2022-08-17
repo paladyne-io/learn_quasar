@@ -29,7 +29,7 @@
       alt="Quasar image"
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png"&gt;
      &lt;div class="full-width text-center"&gt;
-        Quasar Image courtesy of NASA
+        Quasar image courtesy of NASA
      &lt;/div>
         &lt;div class="full-width text-center"&gt;
      &lt;div class="text-center"&gt;
