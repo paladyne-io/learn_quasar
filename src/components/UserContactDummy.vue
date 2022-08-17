@@ -33,7 +33,7 @@
       class="q-ml-md"
       label="Send email"
       size="md"
-      icon="fas fa-copy"
+      icon="fa fa-paper-plane"
       color="green"
       @click="sendEmail"
     />

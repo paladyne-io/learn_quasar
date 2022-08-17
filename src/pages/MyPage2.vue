@@ -6,7 +6,7 @@
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png">
 
     <div class="full-width text-center">
-        Quasar Image courtesy of NASA
+        Quasar image courtesy of NASA
      </div>
        <div class="full-width text-center">
     <div class="text-center q-pa-md">
