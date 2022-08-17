@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="heading q-pa-md text-h5 text-bold"> Prologue </div>
+<div class="heading q-pa-md text-h5 text-bold">Prologue</div>
 
 <div>
 <q-card flat class="q-pa-md">
@@ -58,7 +58,7 @@ In the near future I will provide articles about how to deploy your webapp to Di
 
 </q-card>
 </div>
-  </q-page>
+</q-page>
 </template>
 
 <script>

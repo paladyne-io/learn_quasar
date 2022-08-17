@@ -3,7 +3,7 @@
     <img
       alt="Quasar logo"
       src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
+      style="width: 200px; height: 200px; background-color:white; padding:14px"
     >
     <div class="full-width text-center">
         Welcome to Learning Quasar...

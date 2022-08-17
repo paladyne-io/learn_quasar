@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Programming Basics</div>
+<div class="heading q-pa-md"> Programming Basics</div>
 
 <div>
   <q-card flat class="q-pa-md">
@@ -20,7 +20,8 @@
 
       <div class="q-pt-md text-subheader">
         1. Add interactivty
-
+   </div>
+   <div>
     So far we have covered how to set up and use Quasar and how to create, modify and navigate between pages.
     I'd like to focus this exercise on showing how to actually program some activity.
    </div>
@@ -45,7 +46,7 @@
     </div>
 
   <div class="q-pt-sm">
-    <q>In modern UI development, we have found that instead of dividing the codebase into three huge layers that interweave with one another, it makes much more sense to divide them into loosely-coupled components and compose them.
+  <q>In modern UI development, we have found that instead of dividing the codebase into three huge layers that interweave with one another, it makes much more sense to divide them into loosely-coupled components and compose them.
      Inside a component, its template, logic, and styles are inherently coupled, and colocating them actually makes the component more cohesive and maintainable.
   </q>
    </div>
@@ -80,13 +81,12 @@ What we will come back to later:
      More often you would add "@click=methodName" to the button like this:
 </div>
 
-<PreComponentDA
-  mytext="
+<pre>
   &lt;q-btn label=&quot;Test button&quot;
    color=&quot;blue&quot;
    @click=&quot;btnClicked&quot;&gt;
   &lt;/q-btn&gt;"
-/>
+</pre>
 btnClicked is the name of the function that will be called in the Script section.
 If you are completely new to programming and would like to understand terms such as function, method, parameter, variable etc.,
 click here.
@@ -101,8 +101,7 @@ In version 3.2 of Vue, "script setup" was added as a new simpler way to format a
  <a href="https://vuejs.org/api/sfc-script-setup.html">Read more</a>.
 
 It looks like this.
-<PreComponentDA
-  mytext="
+<pre>
   &lt;script setup&gt;
     import { onMounted } from 'vue'
 
@@ -115,6 +114,7 @@ It looks like this.
     }
   &lt;/script&gt;"
 />
+</pre>
 </div>
 <div class="q-pt-sm">
 The onMounted function is a special function provided by vue.
@@ -138,7 +138,7 @@ You can also use it to print out the result of calculations or the value of vari
 
 <div class="q-pt-sm">
 Click the button to see the whole page.
-  <div class="text-center">
+  <div class="text-center q-pa-md">
       <q-btn label="My Page 2" color="green" to="/mypage2"> </q-btn>
     </div>
 </div>
@@ -171,12 +171,12 @@ Click the button to see the whole page.
 
 <script>
 import { defineComponent } from 'vue' //, onMounted, version
-import PreComponentDA from 'components/PreComponentDA.vue'
+// import PreComponentDA from 'components/PreComponentDA.vue'
 
 export default defineComponent({
   name: 'HelloWorld',
-  components: {
-    PreComponentDA
+  components: { //  PreComponentDA
+
   },
 
   setup () {

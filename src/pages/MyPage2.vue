@@ -9,18 +9,19 @@
         Quasar Image coutesy of NASA
      </div>
        <div class="full-width text-center">
-    <div class="text-center">
+    <div class="text-center q-pa-md">
       <q-btn label="Change picture" color="blue" @click="btnClicked"> </q-btn>
     </div>
 
      </div>
   </div>
-    <div>
+
+  <div class="q-pa-md">
   <div class="text-center">
       The code for this page
     </div>
-      <div class="q-pa-sm bg-blue-2">
-      <pre>
+
+  <pre>
   &lt;template&gt;
    &lt;q-page class="flex flex-center"&gt;
      &lt;div&gt;
@@ -42,7 +43,7 @@
    &lt;/q-page&gt;
  &lt;/template&gt;
 
-&lt;script setup&gt;
+ &lt;script setup&gt;
     import { onMounted } from 'vue'
 
     onMounted(() => {
@@ -52,11 +53,11 @@
     function btnClicked () {
       alert('btnClicked')
     }
-&lt;/script&gt;
-      </pre>
+ &lt;/script&gt;
+  </pre>
     </div>
-    </div>
-    <div class="text-center">
+
+    <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
     </div>
   </q-page>

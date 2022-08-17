@@ -58,7 +58,7 @@ For this task you need to use the terminal again.
 Type "control c" (press the 'control' key and 'c' key at the same time) to exit the quasar development environment.
  Then follow the instructions to install the library. Usually these are shown on the installation page. It is common to be something like, <b>"npm install vue3-carousel"</b>.
  </div>
-<div class="q-pa-sm q-mb-sm bg-blue-2">
+
 <pre>
 dcs@Darrens-MacBook-Pro learn_quasar % npm install vue3-carousel
 
@@ -81,7 +81,6 @@ a different dependency.
 Run `npm audit` for details.
 dcs@Darrens-MacBook-Pro learn_quasar %
 </pre>
-</div>
 
 The library is now installed so you need to relaunch the Quasar dev environment by typing 'quasar dev'.
 <div class="tip q-py-sm">
@@ -94,20 +93,20 @@ The library is now installed so you need to relaunch the Quasar dev environment 
 After adding the library to your project, you have to add it to the page or component in the script section.
 
 If your new page file doesnt have a script section, add one like this:
-<div class="q-pa-sm bg-blue-2">
+
 <pre>
 &lt;script&gt;
-import &#123; defineComponent &#125; from 'vue'
-import 'vue3-carousel/dist/carousel.css'
-import &#123; Carousel, Slide, Pagination, Navigation &#125; from 'vue3-carousel'
+  import &#123; defineComponent &#125; from 'vue'
+  import 'vue3-carousel/dist/carousel.css'
+  import &#123; Carousel, Slide, Pagination, Navigation &#125; from 'vue3-carousel'
 
-export default defineComponent&#40;&#123;
-  name: 'ImageCarouselPage',
-  components: &#123;
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation
+  export default defineComponent&#40;&#123;
+    name: 'ImageCarouselPage',
+    components: &#123;
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation
   &#125;,
   setup &#40;&#41; &#123;
     const slides = &#91;
@@ -125,11 +124,11 @@ export default defineComponent&#40;&#123;
 &#125;&#41;
 &lt;/script&gt;
 </pre>
-</div>
+
 <div class="q-pa-sm">
 Finally, in the <b>template</b> section of your page or component, add the presentation (html) code:
 </div>
-<div class="q-pa-sm bg-blue-2">
+
 <pre>
   &lt;carousel :items-to-show="1.0"&gt;
     &lt;slide v-for="slide in slides" :key="slide.id"&gt;
@@ -141,7 +140,7 @@ Finally, in the <b>template</b> section of your page or component, add the prese
     &lt;/template&gt;
   &lt;/carousel&gt;
 </pre>
-  </div>
+
    </div>
 <div>
 It may not be clear exactly what is happening here. For now just try to remember the steps.

@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Making it your own</div>
+<div class="heading q-pa-md text-bold"> Making it your own</div>
 <div>
 <q-card flat q-card class="q-pa-md">
 
@@ -47,7 +47,7 @@
       </ol>
       </div>
       As in the example above, you can put your own image in one of these folders and then change the code in the 'img' tag to display it.
-<div class="q-pa-sm bg-blue-2">
+
 <pre>
 &lt;img
   alt="Quasar logo"
@@ -55,7 +55,7 @@
   style="width: 200px; height: 200px" &lt;- Change the size here
 &gt;
 </pre>
-</div>
+
   <div class="q-pt-md text-subheader" >
       2. Add some text
   </div>
@@ -64,7 +64,6 @@
    We add a 'div' around the text as a container to help keep it in the center of the page. The words written after 'class=' are key words Quasar recognizes to help with layout.
 </div>
 
- <div class="q-pa-sm bg-blue-2">
 <pre>
  &lt;div class="full-width text-center"&gt;
     Quasar Image coutesy of NASA
@@ -80,14 +79,12 @@
    There are many of them with descriptions and examples on the Quasar website. Feel free to change the color, label etc.
 </div>
 
- <div class="q-pa-sm bg-blue-2">
  <pre>
   &lt;div class="text-center"&gt;
     &lt;q-btn label="My Page" color="green" to="mypage"&gt;&lt;/q-btn&gt;
   &lt;/div&gt;
 </pre>
 
-</div>
 <q-item-label class="q-pt-md text-subheader">
 2. Add a new page
 </q-item-label>
@@ -96,8 +93,7 @@
 1. Copy an existing page (an 'xxx.vue' file in the pages folder) or create and save a new page (file).
 It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
 Note that the file name must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
-</div>
-<div class="q-pa-sm bg-blue-2">
+
 <pre>
 &lt;template&gt;
   &lt;q-p_ge class="flex flex-center"&gt;
@@ -109,7 +105,7 @@ Note that the file name must have 2 or more words, like <b>'MyPage.vue'</b>. Thi
   &lt;/q-page&gt;
 &lt;/template&gt;
 </pre>
-</div>
+
 <div class="q-pt-sm">
 2. While you have added a new page, Quasar doesn't know about it.
  You might think that it could be automatically detectetd but it isnt - you have to add this page to the Router.
@@ -180,12 +176,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style>
-.text-subheader {
-  font-family: verdana;
-  font-size: 16px;
-  font-weight: bold;
-  color:darkblue;
-}
-</style>

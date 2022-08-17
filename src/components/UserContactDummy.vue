@@ -1,16 +1,6 @@
 <template>
-  <!--
-  <div no-border class="q-pa-md" style="min-width: 320px">
-
-    <div class="q-pa-sm font-semibold">
-      If you have any requests or suggestions, please email xxx@yyy.com or fill out the form below.
-      I greatly appreciate your input and will respond to every well-intentioned message.
-    </div>
-
-  </div>
-    -->
   <!-- Email area to modify and send email -->
-  <div class="container q-pa-sm q-ma-md" style="background-color: linen">
+  <div class="container q-pa-sm q-ma-md">
     <form ref="form" @submit.prevent="sendEmail">
         <q-input
           autogrow
@@ -53,11 +43,9 @@
 <script setup>
 import { ref, onMounted } from 'vue' // ref, toRef, watch,
 // import emailjs from '@emailjs/browser'
-
 // import { useQuasar } from 'quasar'
 // import { supabaseClient } from 'boot/supabase.js'
 // import { useRoute } from "vue-router";
-
 // const $q = useQuasar()
 
 const newMessage = ref()
@@ -72,7 +60,6 @@ const templateParams = ref({
 })
 */
 
-// read from localstorage
 onMounted(() => {
   console.log('this.onMounted')
   // selected_email_option.value = selected_pp_option.value

@@ -168,17 +168,3 @@ export default defineComponent({
   name: 'IndexPage'
 })
 </script>
-
-<style lang="scss">
-div .heading {
-  // background-color: $grey-1;
-}
-</style>
-
-<style>
-.text-subheader {
-  font-size: 16px;
-  font-weight: bold;
-  color:darkblue;
-}
-</style>
