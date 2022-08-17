@@ -55,7 +55,7 @@ The page that describes the library is here:
 </div>
 <div class="q-py-sm">
 For this task you need to use the terminal again.
-Type "control c" (press the 'control' key and 'c' key at the same time) to exit the quasar development environment.
+Type "control c" (press the 'control' and 'c' keys at the same time) to exit the quasar development environment.
  Then follow the instructions to install the library. Usually these are shown on the installation page. It is common to be something like, <b>"npm install vue3-carousel"</b>.
  </div>
 

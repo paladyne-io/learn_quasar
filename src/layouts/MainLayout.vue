@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Learning Quasar
+          Learn Quasar
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>

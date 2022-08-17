@@ -6,7 +6,7 @@
       style="width: 200px; height: 200px; background-color:white; padding:14px"
     >
     <div class="full-width text-center">
-        Welcome to Learning Quasar...
+        Welcome to Learn Quasar...
      </div>
     <div class="text-center">
     <q-btn label="Introduction" color="green" to="intro">   </q-btn>

@@ -32,30 +32,91 @@
 
         <div class="q-pt-sm">
         For this task you need to use the terminal again.
-        Type "control c" (press the 'control' key and 'c' key at the same time) to exit the Quasar development environment.
+        Type "control c" (press the 'control' and 'c' keys at the same time) to exit the Quasar development environment.
         Then install the library by entering the following command:
-        <div class="q-pa-sm"><b>
-          npm install @emailjs/browser --save
-          </b>
         </div>
+        <pre>npm install @emailjs/browser --save</pre>
+        <div class="q-pt-sm">
           Assuming there are no errors, the library is now installed so relaunch the Quasar development environment by typing 'quasar dev'
       </div>
 
       <div class="q-pt-md text-subheader">
-          2. Import and customise the library
+          2. Import and customize the library
       </div>
        <div class="q-pt-sm">
       After adding the library to your project, you have to add it to the page or component in the script section.
       If the file doesn't have a script section, add one like this:
-     </div>
-  <div class="q-pt-md text-subheader">
-      3. Modify the template to display the entry fields
+
+    <pre>
+    &lt;script setup&gt;
+      import { ref } from 'vue'
+      import emailjs from '@emailjs/browser'
+
+      const message = ref()
+      const fromName = ref('')
+      const replyTo = ref('')
+
+      function sendEmail () {
+        console.log('send email...')
+        if (!message.value) {
+          alert('Please type a message.')
+          return
+        }
+        alert('This is a test email from: ' + fromName.value + ' with message: ' + message.value)
+      }
+    &lt;/script&gt;
+  </pre>
   </div>
-  <div class="q-px-sm">
+
+  <div class="q-pt-md text-subheader">
+      3. Modify the template to display the user entry fields
+  </div>
+  <div class="q-pt-sm">
   In the <b>template</b> section of your page or component, add the presentation (html) code below.
-  This is a simple html form. Study it so you can get an idea of how the email js code submits each field (using the name as a tag).
+  This is a simple html form with three fields (message, from_name and reply_to email address ) and a 'Send' button.
+   Study it so you can get an idea of how the email js code submits each field.
+   (The name of each field is used in the template you create on the emailjs website.)
 </div>
 
+<pre>
+  &lt;div class="container q-pa-sm q-ma-md"&gt;
+    &lt;form ref="form" @submit.prevent="sendEmail"&gt;
+         &lt;q-input
+          autogrow
+          type="textarea"
+          name="message"
+          label="Message:"
+          v-model="newMessage"
+        /&gt;
+        &lt;q-input
+          id="from_name"
+          type="text"
+          label="Your name: "
+          v-model="fromName"
+          name="from_name"
+          placeholder="Your Name"
+        /&gt;
+        &lt;q-input
+          id="reply_to"
+          type="email"
+          label="Your email address:"
+          v-model="replyTo"
+          name="reply_to"
+          placeholder="Your email address"
+          /&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class="text-center q-pa-md full-width"&gt;
+     &lt;q-btn
+      class="q-ml-md"
+      label="Send email"
+      size="md"
+      icon="fas fa-copy"
+      color="green"
+      @click="sendEmail"
+    /&gt;
+  &lt;/div&gt;
+</pre>
   <div class="q-pt-sm">
   This will display like this:
     <UserContactComp/>
