@@ -6,7 +6,7 @@
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png">
 
     <div class="full-width text-center">
-        Quasar Image coutesy of NASA
+        Quasar Image courtesy of NASA
      </div>
        <div class="full-width text-center">
     <div class="text-center q-pa-md">
@@ -29,7 +29,7 @@
       alt="Quasar image"
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png"&gt;
      &lt;div class="full-width text-center"&gt;
-        Quasar Image coutesy of NASA
+        Quasar Image courtesy of NASA
      &lt;/div>
         &lt;div class="full-width text-center"&gt;
      &lt;div class="text-center"&gt;

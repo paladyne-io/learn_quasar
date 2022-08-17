@@ -126,7 +126,7 @@ The onMounted function is a special function provided by vue.
 <div class="q-pt-sm">
   Note the use of alert() and console.log() which are two useful Javascript methods.
   alert() will display a pop-up message to the user.
-  console.log() will print a message to the JavaScript console which can be seen by choosing 'Display Javscript Console' in your browser.
+  console.log() will print a message to the JavaScript console which can be seen by choosing 'Display JavaScript Console' in your browser.
 
 </div>
 

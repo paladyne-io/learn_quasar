@@ -23,8 +23,9 @@
         1. Add your own pictures, text and a button to the main screen.
         </div>
         <div class="q-pa-sm">
-        The first page that is displayed when your app starts up is IndexPage.vue in the src folder. In this exercise we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immmediately shown.
-        This speeds up programming a lot as you don't have to save, complile and restart the app each time.
+        The first page that is displayed when your app starts up is IndexPage.vue in the src folder.
+         In this exercise we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immediately shown.
+        This speeds up programming a lot as you don't have to save, compile and restart the app each time.
         This is how the file looks in Visual Studio Code.
         </div>
         <div class="q-pa-sm">
@@ -119,13 +120,13 @@ Copy and paste one of the 'children' (the line between {}), then rename the <b>p
 </div>
  'path' is the name that will appear after the "/" in the browser's address bar*.
 </div>
-<div class="q-pa-sm bg-blue-2">
+
 <pre>
 { path: '<b>mypage</b>', component: () => import('pages/<b>MyPage.vue</b>') }
 </pre>
-</div>
+
 <div class="q-pt-sm">
-*You may notice the "#" in the address. Dont worry about it for now.
+*You may notice the "#" in the address. Don't worry about it for now.
  It is the default mode and can be changed in the Quasar.conf file.
 </div>
 

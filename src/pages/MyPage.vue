@@ -5,7 +5,7 @@
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png">
     </q-img>
     <div class="full-width text-center">
-        Quasar Image coutesy of NASA
+        Quasar Image courtesy of NASA
      </div>
     <div class="text-center">
     <q-btn label="My Page" color="green" to="mypage">   </q-btn>

@@ -59,7 +59,7 @@ Copy and paste one of the children, then rename the <b>path</b> and <b>page titl
 </pre>
 </div>
 <div class="q-pt-sm">
-*You may notice the "#" in the address. Dont worry about it for now.
+*You may notice the "#" in the address. Don't worry about it for now.
  It is the default mode and can be changed in the Quasar.conf file.
 </div>
 <q-item-label class="q-pt-md text-subheader">
@@ -67,7 +67,7 @@ Copy and paste one of the children, then rename the <b>path</b> and <b>page titl
 </q-item-label>
 
 <div class="q-pt-sm">
-1. As mentioned previously, you can extend the functionalty of your app by adding other libraries.
+1. As mentioned previously, you can extend the functionality of your app by adding other libraries.
 For example we can add the popular vue-chartjs library to add graphs.
 
 For this you need to use the terminal again.
@@ -105,12 +105,12 @@ dcs@Darrens-MacBook-Pro learn_quasar %
 
 </pre>
 </div>
-The library is now installed so you need to releanch the Qusar dev environment by typing 'quasar dev'
+The library is now installed so you need to relaunch the Quasar dev environment by typing 'quasar dev'
 <div class="tip q-pt-sm">
 <q-item-label class="bulb">Tip:</q-item-label> lUse the up/down arrow keys on your keyboard to select previous shell commands so you don't have to retype them.
 </div>
-2. After adding the librarry to your projext you need to add it to the page or component in teh script section of yourh page.
-If you page file doesnt have a script section, add one like this:
+2. After adding the library to your project you need to add it to the page or component in teh script section of yourh page.
+If you page file doesn't have a script section, add one like this:
 <div class="q-pa-sm bg-blue-2">
 <pre>
 &lt;script&gt;

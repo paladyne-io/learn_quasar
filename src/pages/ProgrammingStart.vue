@@ -28,9 +28,13 @@ This is the basic order of tasks (assuming you have a PC).
   </q-item-label>
 
   <q-item-label class="q-pt-md">
-  3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal application (Mac), <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows), or the Terminal window in Visual Studio Code.
+  3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal application (Mac),
+   <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows),
+    or the Terminal window in Visual Studio Code.
   If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
-  <router-link to="/vscodeterminal">Click here for details</router-link>. The $ character represents the shell prompt. It might appear as a %. You enter commands after this symbol and press Return or Enter to run them.
+  <router-link to="/vscodeterminal">Click here for details</router-link>.
+   The $ character represents the shell prompt. It might appear as a %.
+    You enter commands after this symbol and press Return or Enter to run them.
   </q-item-label>
 
 <pre>
@@ -44,12 +48,14 @@ $ npm init quasar"
 </pre>
 
 <q-item-label class="q-pt-md">
-* When installing Quasar you will be given the choice of using Vite or Webpack. If you dont have a strong preference, I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
+* When installing Quasar you will be given the choice of using Vite or Webpack. If you don't have a strong preference,
+ I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
 </q-item-label>
 
 <div class="q-pt-sm">
 Answer the questions, following the prompts.
-See below for an example. Of course you can/should choose your own Project folder, Package name and Project product name and put your own contact Information after Author.
+See below for an example. Of course you can/should choose your own Project folder,
+ Package name and Project product name and put your own contact Information after Author.
 </div>
 
 <pre>
@@ -110,11 +116,13 @@ dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
 
 <div class="q-pt-sm">
 In the directory/folder that you chose you will find a folder named after your app.
- This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu. Another way is to type "code ." in the terminal after the the "Quasar •  SUCCESS" message to open the working directory.
+ This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu.
+ Another way is to type "code ." in the terminal after the the "Quasar •  SUCCESS" message to open the working directory.
  If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program (exit the development environment).
 </div>
 <div class="q-pt-sm">
-The working directory will remain set until you close the Terminal window. If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
+The working directory will remain set until you close the Terminal window.
+ If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.

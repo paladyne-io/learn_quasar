@@ -77,7 +77,9 @@ How much does it cost?
  However to publish your app on Apple's App Store or Google Play store you will need to pay. At the time of writing, the cost is is $100 per year to join Apple's developer program and $25 for Google.</div>
 <div class="text-subheader q-pt-sm">Is it difficult to write a program in Quasar and Vue?</div>
 </div>
-<div class="q-pt-sm">It depends on your experience. It’s like learning a language or a musical instrument. It takes time, commitment, practice and perseverance. Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature. It generally comes down to how well you understand. Sometimes it can be frustrating but it can also be rewarding.
+<div class="q-pt-sm">It depends on your experience. It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
+ Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
+  It generally comes down to how well you understand. Sometimes it can be frustrating but it can also be rewarding.
 There are many resources and tutorials on-line.
 </div>
 <!--
@@ -130,9 +132,10 @@ If you are not sure, it's better to start simple. Complexity will increase as yo
 <div class="heading text-subheader q-pt-sm">
 Break it down
 </div>
-<div class="q-pt-sm">Speaking of components, it is important to understand from the beginning that it is better to create reusable components rather than what’s known as a monolithic app. Such an app, with hundreds or thousands of lines of code in one file, will quickly become unmanageable.
+<div class="q-pt-sm">Speaking of components, it is important to understand from the beginning that it is better to create reusable components rather than what's known as a monolithic app.
+ Such an app, with hundreds or thousands of lines of code in one file, will quickly become unmanageable.
  The real benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
-  If you don’t really understand what this means, don't worry.
+  If you don't really understand what this means, don't worry.
    Just think of lego and when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.
     Refactoring your code periodically will reward you with a manageable code base that you can understand, even when you come back to it later.

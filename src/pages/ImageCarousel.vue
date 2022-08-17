@@ -88,11 +88,11 @@ The library is now installed so you need to relaunch the Quasar dev environment 
 </q-item-label>
 </div>
   <q-item-label class="q-pt-md text-subheader">
-    2. Import and customise the library
+    2. Import and customize the library
  </q-item-label>
 After adding the library to your project, you have to add it to the page or component in the script section.
 
-If your new page file doesnt have a script section, add one like this:
+If your new page file doesn't have a script section, add one like this:
 
 <pre>
 &lt;script&gt;
