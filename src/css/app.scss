@@ -21,6 +21,11 @@
   padding:8px
 }
 
+.body--dark .q-header {
+  color: rgb(255, 255, 255);
+  background-color: rgb(23, 23, 23);
+}
+
 .body--light pre {
   color: rgb(5, 32, 42);
   background-color: lightskyblue;
