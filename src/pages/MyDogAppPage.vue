@@ -51,7 +51,7 @@
     Note that we have added some Quasar helper classes to automatically change the position of the table based on the width of the display.
      This is called Responsive design. When we load this page on a mobile phone, the table will display under the image.
       If we load it on a PC or tablet, the table wil be shown on the right side.
-     Further, if we resize the browser window the display will update
+     Further, if we resize the browser window the display will update automatically.
   </div>
 
   <div class="q-pa-md">
