@@ -59,21 +59,3 @@ watchEffect((darkModeStatus) => {
 */
 
 </script>
-
-<style lang="scss">
-
-div {
-  // background-color: $grey-1;
-}
-div .heading {
-  // background-color: $grey-1;
-}
-</style>
-
-<style>
-.text-subheader {
-  font-family: verdana;
-  font-size: 16px;
-  font-weight: bold;
-}
-</style>

@@ -1,0 +1,95 @@
+<template>
+  <q-layout view="lHh Lpr lFf">
+    <q-header elevated>
+      <q-toolbar>
+        <q-btn
+          flat
+          dense
+          round
+          icon="menu"
+          aria-label="Menu"
+          @click="toggleLeftDrawer"
+        />
+
+        <q-toolbar-title> My Dog App </q-toolbar-title>
+      </q-toolbar>
+    </q-header>
+
+    <q-footer bordered class="bg-white text-primary">
+      <q-tabs
+        no-caps
+        active-color="primary"
+        indicator-color="transparent"
+        class="text-grey"
+      >
+      <!--
+        <q-route-tab name="Example 1" :label="$t('example_1')" to="/2" />
+        <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
+        <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
+      -->
+        <q-route-tab name="Example 1" label="Example 1" to="2" />
+        <q-route-tab name="Example 2" label="Example 2" to="3" />
+        <q-route-tab name="Example 3" label="Example 3" to="5" />
+      </q-tabs>
+    </q-footer>
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+      <q-list>
+        <q-item-label header> Example Links </q-item-label>
+
+        <AppLink v-for="link in appLinks" :key="link.title" v-bind="link" />
+      </q-list>
+    </q-drawer>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
+</template>
+
+<script>
+import { defineComponent, ref } from 'vue'
+// import EssentialLink from 'components/EssentialLink.vue'
+import AppLink from 'components/AppLink.vue'
+
+const dummyApplinksList = [
+  {
+    title: 'Example 1',
+    caption: 'Using transition with v-if',
+    icon: 'school',
+    link: '2'
+  },
+  {
+    title: 'Example 2',
+    caption: 'Using transition with q-Carousel',
+    icon: 'school',
+    link: '3'
+  },
+  {
+    title: 'Example 3',
+    caption: 'Using vue-flip library',
+    icon: 'school',
+    link: '5'
+  }
+]
+
+export default defineComponent({
+  name: 'MainLayout',
+
+  components: {
+    AppLink
+  },
+
+  setup () {
+    const leftDrawerOpen = ref(false)
+
+    return {
+      appLinks: dummyApplinksList,
+      leftDrawerOpen,
+
+      toggleLeftDrawer () {
+        leftDrawerOpen.value = !leftDrawerOpen.value
+      }
+    }
+  }
+})
+</script>

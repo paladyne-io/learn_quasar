@@ -140,6 +140,12 @@ const navlinksList = [
     caption: 'Communicate with your users',
     icon: 'school',
     link: 'sendemail'
+  },
+  {
+    title: 'Dummy app',
+    caption: 'Let\'s build an app',
+    icon: 'rocket',
+    link: 'dummyapp/'
   }
 ]
 const qlinksList = [

@@ -11,14 +11,29 @@ const routes = [
       { path: 'dotenv', component: () => import('pages/DotEnvFile.vue') },
       { path: 'mypage', component: () => import('pages/MyPage.vue') },
       { path: 'mypage2', component: () => import('pages/MyPage2.vue') },
+      { path: 'mydogapp', component: () => import('pages/MyDogAppPage.vue') },
       { path: 'feedback', component: () => import('pages/UserFeedbackPage.vue') },
       { path: 'preferences', component: () => import('pages/PreferencesPage.vue') },
       { path: 'helloworld', component: () => import('pages/HelloWorld.vue') },
       { path: 'programming1', component: () => import('pages/ProgrammingBasics.vue') },
+      { path: 'github', component: () => import('pages/GitHubDeploy.vue') },
       { path: 'sendemail', component: () => import('pages/EmailSendingPage.vue') },
       { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
       { path: 'images', component: () => import('pages/ImageCarousel.vue') },
       { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') }
+    ]
+  },
+  {
+    path: '/dummyapp',
+    component: () => import('layouts/DummyAppLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/MyDogAppDayOne.vue') },
+      { path: '1', component: () => import('pages/MyDogAppPage.vue') },
+      { path: '2', component: () => import('pages/MyDogAppPage2.vue') },
+      { path: '3', component: () => import('pages/MyDogAppPage3.vue') },
+      { path: '4', component: () => import('pages/MyDogAppPage4.vue') },
+      { path: '5', component: () => import('pages/MyDogAppPage5.vue') }
+
     ]
   },
 

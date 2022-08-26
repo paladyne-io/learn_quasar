@@ -5,7 +5,7 @@
       alt="Quasar image"
       src="images/nasa_images/stsci-h-2010a-d-1280x720.png">
 
-    <div class="full-width text-center">
+    <div class="full-width text-subheader text-center">
         Quasar image courtesy of NASA
      </div>
        <div class="full-width text-center">
@@ -13,7 +13,7 @@
       <q-btn label="Change picture" color="blue" @click="btnClicked"> </q-btn>
     </div>
 
-     </div>
+    </div>
   </div>
 
   <div class="q-pa-md">
