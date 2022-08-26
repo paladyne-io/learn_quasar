@@ -14,11 +14,11 @@
     </transition>
 <!--
     transition-delay='1000ms'
--->
+
     <transition
         @after-leave="statsHidden"
       >
-
+-->
     <q-card v-show="dogStatsVisible" flat class="col column">
       <div class="q-pa-md">
         <q-table
@@ -31,10 +31,10 @@
         />
       </div>
     </q-card>
-    </transition>
+
     <div class="full-width text-center">
       <div class="text-center q-pa-md">
-        <q-btn :label="dogStatsTitle" color="blue" @click="flip"> </q-btn>
+        <q-btn :label="buttonLabel" color="blue" @click="flip"> </q-btn>
       </div>
     </div>
     <!-- Explanation part -->
@@ -74,10 +74,10 @@ import { onMounted, ref } from 'vue'
 const dogStatsVisible = ref(false)
 const imageVisible = ref(true)
 
-// const dogName = ref('Reggie')
-// const dogStatsTitle = dogName.value + "'s stats"
+const dogName = ref('Reggie')
+const dogStatsTitle = dogName.value + "'s stats"
 
-const dogStatsTitle = ref('Show stats')
+const buttonLabel = ref('Show stats')
 
 onMounted(() => {
   console.log('mounted')
@@ -162,22 +162,23 @@ function imageHidden () {
   dogStatsVisible.value = !dogStatsVisible.value
 }
 
+/*
 function statsHidden () {
   console.log('statsHidden - dogStatsVisible: ' + dogStatsVisible.value)
   // dogStatsVisible.value = !dogStatsVisible.value
   imageVisible.value = true
 }
+*/
 
 function flip () {
   console.log('flip')
   if (imageVisible.value) {
     imageVisible.value = false
-    dogStatsVisible.value = true
-    dogStatsTitle.value = 'Hide stats'
+    buttonLabel.value = 'Hide stats'
   } else {
     imageVisible.value = true
     dogStatsVisible.value = false
-    dogStatsTitle.value = 'Show stats'
+    buttonLabel.value = 'Show stats'
   // dogStatsVisible.value = !dogStatsVisible.value
   }
 }
