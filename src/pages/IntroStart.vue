@@ -19,7 +19,8 @@ Beginner
 <div>
 Quasar is built on top of <b>Vue</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, along with React and Angular.
-JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
+</div>
+<div class="q-pt-sm"> JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
  Originally a scripting language  for web pages, it has evolved while its core functionality was extended by other libraries.
  Big steps were the introduction of the node.js framework and npm which bundles Javascript into packages and helps users to find and install them.
 </div>
@@ -60,8 +61,7 @@ Which framework to learn depends on what you want to achieve.
 Recently Vue was updated from version 2 to version 3.
 <!-- Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.-->
 Quasar version 2 was released in 2021 and is built on Vue version 3.
-All these versions and numbers can become overwhelming.
- The main thing to understand is that if you start with Quasar now, you will be using Vue version 3.
+If you start with Quasar now, you will be using Vue version 3.
 </div>
 <div class="text-subheader q-pt-sm">What is an SPA and/or a 'web app'?</div>
 <div class="q-pt-sm">A Single Page Application (SPA) is an application that runs in a web browser and dynamically loads data as required instead of refreshing the whole page.

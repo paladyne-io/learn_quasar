@@ -39,8 +39,8 @@
     </div>
     <!-- Explanation part -->
      <div class="q-pa-md">
-      <b>Method:</b> Wrap the component in a  &lt;Transition&gt; with 'v-show' or 'v-if' and a variable (i.e 'dogStatsVisible').
-    The transition is triggered when the (boolean) value of the variable is changed, switching the visibility of the component.
+      <b>Method:</b> Same as the first example, wrap the q-card in a &lt;Transition&gt; with 'v-show' or 'v-if' and a variable (i.e 'dogStatsVisible').
+    The transition is triggered when the value of the variable is changed.
     </div>
   <pre>
   &lt;transition
@@ -186,7 +186,7 @@ function flip () {
 function showDogStats () {
   console.log('showDogStats: ' + dogStatsVisible.value)
   imageVisible.value = false
-  dogStatsTitle.value = 'Hide stats'
+  buttonLabel.value = 'Hide stats'
   // dogStatsVisible.value = !dogStatsVisible.value
 }
 

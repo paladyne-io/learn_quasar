@@ -25,33 +25,35 @@
 
     <div class="full-width text-center">
       <div class="text-center q-pa-md">
-        <q-btn label="Show stats" color="blue" @click="showDogStats"> </q-btn>
+        <q-btn label="Show/hide stats" color="blue" @click="showDogStats"> </q-btn>
       </div>
     </div>
 
       <!-- Explanation part -->
      <div class="q-pa-md">
-     In this first example we just display the data table when the button is clicked.
-     Method: Wrap the component in a &lt;Transition&gt; with 'v-if' and a variable, 'dogStatsVisible'.
+     In this first example we just display the data table with an effect when the button is clicked.
+        </div>
+     <div class="q-pa-md"><b>Method:</b> Wrap the component in a &lt;Transition&gt; with 'v-if' and a variable, 'dogStatsVisible'.
 
-     The transition is triggered when the (boolean) value of the 'dogStatsVisible' variable is changed, switching the visibility of the component.
+     The transition is triggered when the (boolean) value of the 'dogStatsVisible' variable is changed, which switches the visibility of the component.
     </div>
   <pre>
   &lt;transition
-     appear
-        enter-active-class="animated bounceIn"
-        leave-active-class="animated fadeOut"
+    appear
+    enter-active-class="animated bounceIn"
+    leave-active-class="animated fadeOut"
   &gt;
-  &lt;div v-if="dogStatsVisible" class="col-12 col-md-6">
-  ...
+    &lt;div v-if="dogStatsVisible" class="col-12 col-md-6"&gt;
+    ...
+    &lt;/div&gt;
   &lt;/transition&gt;
   </pre>
 
   <div class="q-pa-md full-width ">
-    Note that we have added some Quasar helper classes to automatically change the position of the table based on the width of the display.
+     WIth this example we have added some Quasar helper classes to automatically change the position of the table based on the width of the display.
      This is called Responsive design. When we load this page on a mobile phone, the table will display under the image.
-      If we load it on a PC or tablet, the table wil be shown on the right side.
-     Further, if we resize the browser window the display will update automatically.
+     If we open it on a PC or tablet, the table will be shown on the right side.
+     Further, if we resize the browser window the position will adjust automatically.
   </div>
 
   <div class="q-pa-md">

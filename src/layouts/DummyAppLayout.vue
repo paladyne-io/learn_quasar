@@ -34,7 +34,11 @@
     </q-footer>
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Example Links </q-item-label>
+        <q-item-label header> Navigation</q-item-label>
+        <AppLink
+           v-bind= "homeLink"
+        />
+        <q-item-label header> Examples </q-item-label>
 
         <AppLink v-for="link in appLinks" :key="link.title" v-bind="link" />
       </q-list>
@@ -50,6 +54,13 @@
 import { defineComponent, ref } from 'vue'
 // import EssentialLink from 'components/EssentialLink.vue'
 import AppLink from 'components/AppLink.vue'
+
+const homeLink = {
+  title: 'Home',
+  caption: 'Back to where it all began',
+  icon: 'home',
+  link: '/'
+}
 
 const dummyApplinksList = [
   {
@@ -84,6 +95,7 @@ export default defineComponent({
 
     return {
       appLinks: dummyApplinksList,
+      homeLink,
       leftDrawerOpen,
 
       toggleLeftDrawer () {
