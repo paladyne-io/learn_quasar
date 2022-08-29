@@ -49,9 +49,10 @@
 
   <div class="q-pa-md">
      <b> Issues.</b> The transition is smooth but there is a delay afterwards and the top part of the stats table is visible underneath.
+  I can't find a way to change the focal point of the transition.
   </div>
   <div class="q-pa-md">
-      Let's try <router-link to="5">another way</router-link>.
+      Let's try <router-link to="da_ui_example_5">another way</router-link>.
   </div>
 
    <div class="text-center q-pa-md">

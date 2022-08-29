@@ -52,7 +52,7 @@
   <div class="q-pa-md full-width ">
      WIth this example we have added some Quasar helper classes to automatically change the position of the table based on the width of the display.
      This is called Responsive design. When we load this page on a mobile phone, the table will display under the image.
-     If we open it on a PC or tablet, the table will be shown on the right side.
+     If we open it on a PC or large tablet, the table will be shown on the right side.
      Further, if we resize the browser window the position will adjust automatically.
   </div>
 
@@ -60,9 +60,8 @@
      It works but it's pretty basic. Ideally we would like to show the data table as if it is printed on the back and visually flip the card.
     </div>
     <div class="q-pa-md full-width">
-         Lets try <router-link to="2"> that</router-link>.
+         Lets try <router-link to="da_ui_example_2"> that</router-link>.
     </div>
-
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
     </div>

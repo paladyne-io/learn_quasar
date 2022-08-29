@@ -27,9 +27,10 @@
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
       -->
-        <q-route-tab name="Example 1" label="Example 1" to="2" />
-        <q-route-tab name="Example 2" label="Example 2" to="3" />
-        <q-route-tab name="Example 3" label="Example 3" to="5" />
+        <q-route-tab name="UI Example 1" label="UI Example 1" to="da_ui_example_2" />
+        <q-route-tab name="UI Example 2" label="UI Example 2" to="da_ui_example_3" />
+        <q-route-tab name="UI Example 3" label="UI Example 3" to="da_ui_example_5" />
+                <q-route-tab name="Using Local storage" label="Local storage" to="da_local_storage" />
       </q-tabs>
     </q-footer>
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
@@ -38,9 +39,11 @@
         <AppLink
            v-bind= "homeLink"
         />
-        <q-item-label header> Examples </q-item-label>
+        <q-item-label header>UI Examples</q-item-label>
+        <AppLink v-for="link in appUILinks" :key="link.title" v-bind="link" />
 
-        <AppLink v-for="link in appLinks" :key="link.title" v-bind="link" />
+        <q-item-label header>Other functionality</q-item-label>
+        <AppLink v-for="link in appFunctionLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -62,24 +65,33 @@ const homeLink = {
   link: '/'
 }
 
-const dummyApplinksList = [
+const dummyAppFunctionsList = [
+  {
+    title: 'Saving and restoring data',
+    caption: 'Using local storage',
+    icon: 'school',
+    link: 'da_local_storage'
+  }
+]
+
+const dummyAppUIExamplesList = [
   {
     title: 'Example 1',
     caption: 'Using transition with v-if',
     icon: 'school',
-    link: '2'
+    link: 'da_ui_example_2'
   },
   {
     title: 'Example 2',
     caption: 'Using transition with q-Carousel',
     icon: 'school',
-    link: '3'
+    link: 'da_ui_example_3'
   },
   {
     title: 'Example 3',
     caption: 'Using vue-flip library',
     icon: 'school',
-    link: '5'
+    link: 'da_ui_example_5'
   }
 ]
 
@@ -94,7 +106,8 @@ export default defineComponent({
     const leftDrawerOpen = ref(false)
 
     return {
-      appLinks: dummyApplinksList,
+      appUILinks: dummyAppUIExamplesList,
+      appFunctionLinks: dummyAppFunctionsList,
       homeLink,
       leftDrawerOpen,
 

@@ -28,11 +28,12 @@ const routes = [
     component: () => import('layouts/DummyAppLayout.vue'),
     children: [
       { path: '', component: () => import('pages/MyDogAppDayOne.vue') },
-      { path: '1', component: () => import('pages/MyDogAppPage.vue') },
-      { path: '2', component: () => import('pages/MyDogAppPage2.vue') },
-      { path: '3', component: () => import('pages/MyDogAppPage3.vue') },
-      { path: '4', component: () => import('pages/MyDogAppPage4.vue') },
-      { path: '5', component: () => import('pages/MyDogAppPage5.vue') }
+      { path: 'da_ui_example_1', component: () => import('pages/MyDogAppPage.vue') },
+      { path: 'da_ui_example_2', component: () => import('pages/MyDogAppPage2.vue') },
+      { path: 'da_ui_example_3', component: () => import('pages/MyDogAppPage3.vue') },
+      { path: 'da_ui_example_4', component: () => import('pages/MyDogAppPage4.vue') },
+      { path: 'da_ui_example_5', component: () => import('pages/MyDogAppPage5.vue') },
+      { path: 'da_local_storage', component: () => import('pages/DA_LocalStorage.vue') }
 
     ]
   },

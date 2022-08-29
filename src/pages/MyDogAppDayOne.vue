@@ -17,7 +17,7 @@
    If you examine the source code (from Github) you will see that it adds a different header and footer.
   </div>
     <div class="text-center q-pa-md full-width">
-      <q-btn label="Get started" color="primary" to="1"> </q-btn>
+      <q-btn label="Get started" color="primary" to="da_ui_example_1"> </q-btn>
     </div>
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>

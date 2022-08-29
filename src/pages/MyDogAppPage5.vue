@@ -44,7 +44,7 @@
   <div class="q-ma-md">
     <b> Method: </b> Use the Vue-flip library.
      More information is <a href="https://github.com/kgrandemange/vue-flip">here</a>.
-     The transition can triggered programmatically by changing the model or automatically by adding "active-click" like below.
+     The transition can triggered programmatically, by changing the model, or automatically by adding "active-click" like below.
     </div>
 
 <pre>
@@ -57,10 +57,13 @@
      <b>Issues.</b> So far this is the best solution but I would prefer the text not show through the image when it starts to flip.
   </div>
 
+  <div class="q-pa-md">
+     Next: <b><router-link to="da_local_storage">Storing and restoring (reading) data</router-link>...</b>
+  </div>
+
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
     </div>
-
   </q-page>
 </template>
 
