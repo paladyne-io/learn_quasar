@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> My Game App </q-toolbar-title>
+        <q-toolbar-title> A silly game app </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -26,12 +26,11 @@
         <q-route-tab name="Example 1" :label="$t('example_1')" to="/2" />
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
-
+      -->
         <q-route-tab name="UI Example 1" label="UI Example 1" to="da_ui_example_2" />
         <q-route-tab name="UI Example 2" label="UI Example 2" to="da_ui_example_3" />
         <q-route-tab name="UI Example 3" label="UI Example 3" to="da_ui_example_5" />
         <q-route-tab name="Using Local storage" label="Local storage" to="da_local_storage" />
-        -->
       </q-tabs>
     </q-footer>
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
@@ -68,31 +67,19 @@ const homeLink = {
 
 const dummyAppFunctionsList = [
   {
-    title: 'Saving and restoring data',
-    caption: 'Using local storage',
+    title: 'TBD',
+    caption: '',
     icon: 'school',
-    link: 'da_local_storage'
+    link: ''
   }
 ]
 
 const dummyAppUIExamplesList = [
   {
-    title: 'Example 1',
-    caption: 'Using transition with v-if',
+    title: 'TBD',
+    caption: '',
     icon: 'school',
-    link: 'da_ui_example_2'
-  },
-  {
-    title: 'Example 2',
-    caption: 'Using transition with q-Carousel',
-    icon: 'school',
-    link: 'da_ui_example_3'
-  },
-  {
-    title: 'Example 3',
-    caption: 'Using vue-flip library',
-    icon: 'school',
-    link: 'da_ui_example_5'
+    link: ''
   }
 ]
 

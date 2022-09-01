@@ -142,10 +142,16 @@ const navlinksList = [
     link: 'sendemail'
   },
   {
-    title: 'Dummy app',
-    caption: 'Let\'s build an app',
-    icon: 'rocket',
+    title: 'My Dog',
+    caption: 'Let\'s build a simple app',
+    icon: 'fas fa-dog',
     link: 'dummyapp/'
+  },
+  {
+    title: 'Rocket Man',
+    caption: 'A simple demo game',
+    icon: 'rocket',
+    link: 'gameapp/rm_game'
   }
 ]
 const qlinksList = [

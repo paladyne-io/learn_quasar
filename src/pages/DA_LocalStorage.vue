@@ -12,6 +12,7 @@
     For example, 'onMounted' is a special event that is called when a page loads.
     More information is <a href="https://vuejs.org/api/composition-api-lifecycle.html">here</a>.
     <p></p><p></p>This is simple example when using script setup...
+    </div>
     <pre>
     &lt;script setup&gt;
     import { onMounted } from 'vue'
@@ -22,10 +23,9 @@
     })
     &lt;/script&gt;
   </pre>
-  </div>
 
    <div class="q-pa-md">
-   This can be a useful place to take some action, for example to load some data into our table.
+   This can be a useful place to take some actions, for example to load data into our table.
    There are various ways to accomplish this. Let's start with the easiest which is Quasar's built-in LocalStorage plugin.
     More information is <a href="https://quasar.dev/quasar-plugins/web-storage">here</a>.
 
@@ -33,12 +33,13 @@
   <p></p><p></p>
   First some set up. We have to load the Quasar plugin  by modifying the Quasar.conf file.
   Add 'LocalStorage' after plugins in the Quasar.conf file like this:
+</div>
 <pre>
   // Quasar plugins
   plugins: ['LocalStorage']
 </pre>
 <div class="q-pa-md">
-  Then we have to add some code and import "useQuasar" to access the plugin.
+  Then we have to import "useQuasar" to use the plugin and add some code to access local storage.
 </div>
 <pre>
 &lt;script setup&gt;
@@ -62,8 +63,8 @@ function getData (dataName) {
   }
 }
 </pre>
-</div>
-   <div class="q-pa-md">
+
+<div class="q-pa-md">
 When you use LocalStorage you save data in named pairs, for example, "name: George" and "age: 5" and you read it by asking for that name.
 We created a method called getData that does this so we can call getData('name'). If the data has been saved, it will be returned by the method.
 If there is no data, it will return 'undefined' which means it doesn't exist.
@@ -100,7 +101,7 @@ Next - connecting our 'getData' function to the table.
 </div>
 
     <div class="text-center q-pa-md full-width">
-      <q-btn label="Loading data to a table" color="primary"> </q-btn>
+      <q-btn label="Loading data to a table" color="primary" to="da_table"> </q-btn>
     </div>
 
     <div class="text-center q-pa-md">

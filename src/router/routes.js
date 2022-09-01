@@ -33,8 +33,17 @@ const routes = [
       { path: 'da_ui_example_3', component: () => import('pages/MyDogAppPage3.vue') },
       { path: 'da_ui_example_4', component: () => import('pages/MyDogAppPage4.vue') },
       { path: 'da_ui_example_5', component: () => import('pages/MyDogAppPage5.vue') },
-      { path: 'da_local_storage', component: () => import('pages/DA_LocalStorage.vue') }
+      { path: 'da_local_storage', component: () => import('pages/DA_LocalStorage.vue') },
+      { path: 'da_table', component: () => import('pages/DA_DataTable.vue') },
+      { path: 'da_rm_game', component: () => import('pages/DA_RocketMan.vue') }
 
+    ]
+  },
+  {
+    path: '/gameapp',
+    component: () => import('layouts/RocketManAppLayout.vue'),
+    children: [
+      { path: 'rm_game', component: () => import('pages/DA_RocketMan.vue') }
     ]
   },
 

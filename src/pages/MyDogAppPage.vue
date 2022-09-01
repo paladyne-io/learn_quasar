@@ -10,8 +10,8 @@
         enter-active-class="animated bounceIn"
         leave-active-class="animated fadeOut"
       >
-        <div v-if="dogStatsVisible" class="col-12 col-md-6">
-          <div class="q-pa-md">
+        <div v-if="dogStatsVisible" class="col-12 col-md-6 ">
+          <div class="q-pa-md justify-center x-center" style="width:400px;">
             <q-table
               title="My Dog"
               :rows="rows"
@@ -51,9 +51,9 @@
 
   <div class="q-pa-md full-width ">
      WIth this example we have added some Quasar helper classes to automatically change the position of the table based on the width of the display.
-     This is called Responsive design. When we load this page on a mobile phone, the table will display under the image.
+     When we load this page on a mobile phone, the table will display under the image.
      If we open it on a PC or large tablet, the table will be shown on the right side.
-     Further, if we resize the browser window the position will adjust automatically.
+     Further, if we resize the browser window the position will adjust automatically. This is called Responsive design.
   </div>
 
   <div class="q-pa-md">
@@ -79,68 +79,33 @@ onMounted(() => {
 
 const columns = [
   {
-    name: 'name',
-    required: true,
+    name: 'exercise',
     label: 'Exercise',
-    align: 'left',
-    field: (row) => row.name,
-    format: (val) => `${val}`,
-    sortable: true
+    field: 'exercise',
+    align: 'left'
   },
   {
-    name: 'Time',
-    align: 'left',
-    label: 'Time (minutes)',
-    field: 'time',
-    sortable: true
+    name: 'time',
+    label: 'Time',
+    field: 'time'
   },
   {
     name: 'calories',
-    align: 'center',
     label: 'Calories',
-    field: 'calories',
-    sortable: true
-  },
-  { name: 'fat', label: 'Fat (g)', field: 'fat', sortable: true }
-
+    field: 'calories'
+  }
 ]
 
 const rows = [
   {
-    name: 'Walking',
+    exercise: 'Walking',
     time: 30,
-    calories: 159,
-    fat: 6.0
+    calories: 100
   },
   {
-    name: 'Running in the park',
+    exercise: 'Chasing cars',
     time: 30,
-    calories: 237,
-    fat: 9.0
-  },
-  {
-    name: 'Sleeping',
-    time: 90,
-    calories: 10,
-    fat: 1.0
-  },
-  {
-    name: 'Chasing cars',
-    time: 10,
-    calories: 200,
-    fat: 3.7
-  },
-  {
-    name: 'Chasing cats',
-    time: 10,
-    calories: 100,
-    fat: 8.0
-  },
-  {
-    name: 'Chasing tail',
-    time: 30,
-    calories: 50,
-    fat: 10.0
+    calories: 200
   }
 ]
 

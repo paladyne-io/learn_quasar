@@ -67,7 +67,7 @@
 
 <pre>
  &lt;div class="full-width text-center"&gt;
-    Quasar Image coutesy of NASA
+    Quasar Image courtesy of NASA
  &lt;/div&gt;
 </pre>
 </div>
@@ -109,7 +109,7 @@ Note that the file name must have 2 or more words, like <b>'MyPage.vue'</b>. Thi
 
 <div class="q-pt-sm">
 2. While you have added a new page, Quasar doesn't know about it.
- You might think that it could be automatically detectetd but it isnt - you have to add this page to the Router.
+ You might think that it could be automatically detected but it isn't - you have to add this page to the Router.
  The router is a common concept for frameworks like Vue. It's job is to manage and load pages.
   (It took me a while to get my head around this concept so if it's confusing, don't worry.)
 Locate the file "routes.js" in the router folder.
