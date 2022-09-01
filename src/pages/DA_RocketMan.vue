@@ -327,7 +327,7 @@ function fly (timestamp) {
 
 <style>
  .animation-frame{
-    background-image:  url("images/background_stars.png");
+    background-image:  url("/images/background_stars.png");
     border: solid;
     border-color: black;
     width: 500px;
