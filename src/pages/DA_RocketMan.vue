@@ -1,13 +1,15 @@
 <template>
-<div>
+<div class="center flex-center x-center">
+  <!--
   <div class="heading q-pa-md text-center">Rocket Man</div>
-  <q-scroll-area ref="scrollAreaRef" :visible="sbVisible" style="height: 600px; width: 500px;">
+  -->
+  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 600px; width: 500px;">
     <div ref="bg" class="x-center animation-frame">
         <div ref="rocket" class="rocket-box image-stack">
         <div class="image-stack__item image-stack__item--bottom">
         <q-img v-if="enginesOn"
           width="90px"
-          alt="Rocket with engines on image"
+          alt="Rocket with engines on - image"
           src="images/rocket.png"
         />
          <q-img v-else ref="rocket" class="rocket-box"
@@ -16,7 +18,6 @@
           src="images/rocket_noflame.png"
         />
         </div>
-
         <div v-show="explosion" class="image-stack__item image-stack__item--top">
         <q-img
           width="140px"
@@ -27,12 +28,9 @@
       </div>
     </div>
   </q-scroll-area>
-  </div>
+<div class="center flex-center x-center  q-gutter-xs  row">
 
-    <div class="q-pa-md" style="max-width: 600px">
-    <div class="q-gutter-xs row ">
-
-      <q-input style="max-width: 120px"
+      <q-input style="max-width: 100px"
         label="Boost"
         type="number"
         outlined
@@ -48,7 +46,8 @@
       </q-btn>
       <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
       </q-btn>
-  </div>
+
+ </div>
     <div v-if="debug" class="q-pa-sm">
     Rocket loc: {{ rocketLoc }} px
     </div>

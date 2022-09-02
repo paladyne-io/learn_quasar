@@ -142,7 +142,7 @@ const navlinksList = [
     link: 'sendemail'
   },
   {
-    title: 'My Dog',
+    title: 'My Pet',
     caption: 'Let\'s build a simple app',
     icon: 'fas fa-dog',
     link: 'dummyapp/'

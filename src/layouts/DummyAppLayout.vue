@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> My Game App </q-toolbar-title>
+        <q-toolbar-title>My Pet App</q-toolbar-title>
       </q-toolbar>
     </q-header>
 

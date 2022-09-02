@@ -11,10 +11,11 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> A silly game app </q-toolbar-title>
+        <q-toolbar-title>Rocket Man</q-toolbar-title>
       </q-toolbar>
     </q-header>
 
+   <!--
     <q-footer bordered class="bg-white text-primary">
       <q-tabs
         no-caps
@@ -22,17 +23,18 @@
         indicator-color="transparent"
         class="text-grey"
       >
-      <!--
+
         <q-route-tab name="Example 1" :label="$t('example_1')" to="/2" />
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
-      -->
+
         <q-route-tab name="UI Example 1" label="UI Example 1" to="da_ui_example_2" />
         <q-route-tab name="UI Example 2" label="UI Example 2" to="da_ui_example_3" />
         <q-route-tab name="UI Example 3" label="UI Example 3" to="da_ui_example_5" />
         <q-route-tab name="Using Local storage" label="Local storage" to="da_local_storage" />
       </q-tabs>
     </q-footer>
+    -->
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header> Navigation</q-item-label>
