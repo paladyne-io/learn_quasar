@@ -1,9 +1,9 @@
 <template>
-<div class="center flex-center x-center">
+<div class="center flex-center x-center" style="min-height: inherit;">
   <!--
   <div class="heading q-pa-md text-center">Rocket Man</div>
   -->
-  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 600px; width: 500px;">
+  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh; width: 500px;">
     <div ref="bg" class="x-center animation-frame">
         <div ref="rocket" class="rocket-box image-stack">
         <div class="image-stack__item image-stack__item--bottom">
@@ -18,25 +18,32 @@
           src="images/rocket_noflame.png"
         />
         </div>
-        <div v-show="explosion" class="image-stack__item image-stack__item--top">
+        <div v-if="explosion" class="image-stack__item image-stack__item--top">
         <q-img
           width="140px"
           alt="animated explosion"
           src="images/explosion.gif"
         />
-          </div>
+         </div>
       </div>
+      <div v-if="debug" class="text-white q-pa-sm row full-width ">
+      Rocket loc: {{ finalRocketLoc }} px
+    </div>
+    <q-btn style="max-width: 100px "
+        label="Quit"
+        color="primary"
+        @click="quit"
+        to="/"
+      />
     </div>
   </q-scroll-area>
-<div class="center flex-center x-center  q-gutter-xs  row">
-
+<div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
       <q-input style="max-width: 100px"
         label="Boost"
         type="number"
         outlined
         v-model.number="launchHeight"
       />
-
       <q-btn
         label="Launch"
         icon="rocket"
@@ -46,14 +53,10 @@
       </q-btn>
       <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
       </q-btn>
-
- </div>
-    <div v-if="debug" class="q-pa-sm">
-    Rocket loc: {{ rocketLoc }} px
-    </div>
-    <div class="q-pa-sm">
+    <div class="q-pa-sm row full-width">
       Sound Effects from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179">Pixabay</a>
     </div>
+ </div>
   </div>
 
 </template>
@@ -80,9 +83,11 @@ const bg = ref(null)
 const scrollAreaRef = ref(null)
 // const animationWindowHeight = ref(700)
 const rocketLoc = ref(0)
+const finalRocketLoc = ref(0)
 const launchHeight = ref(300)
 const maxAnimationTime = ref(9000)
 const rocketsInitialLocation = ref()
+const controlsVisible = ref(true)
 
 /* Sounds from Pixabay - https://pixabay.com/sound-effects/ */
 const launchSound = new Audio('sounds/rocket9s.m4a')
@@ -95,6 +100,11 @@ onMounted(() => {
   init()
 })
 
+function quit () {
+  console.log('quit')
+  reset()
+}
+
 function stopExplosion () {
   console.log('stopExplosion')
   reset()
@@ -105,6 +115,7 @@ function startLaunch () {
   launchSound.volume = 0.4
   launchSound.play()
   enginesOn.value = true
+  controlsVisible.value = false
 }
 
 function startFall () {
@@ -121,6 +132,7 @@ function explodeRocket () {
   explosionSound.play()
   // enginesOn.value = false
   setTimeout(() => stopExplosion(), 3000)
+  controlsVisible.value = true // or reset
 }
 
 function fallRocket () {
@@ -147,19 +159,9 @@ function init () {
   // const yPos2 = rocket.value.getBoundingClientRect().y
   // console.log('Initial y pos: ' + yPos2 + 'px')
   scrollAreaRef.value.setScrollPosition('vertical', launchHeight.value)
+  rocket.value.style.transform = `translateY(${60}px)` // ??
   // setInterval(moveObjectToRight, 10)
 }
-
-/*
-
-function pause () {
-  console.log('Pausing...')
-}
-
-function waitAWhile (s) {
-  setTimeout(() => pause(), 2000)
-}
-*/
 
 function notifyMessage (msg) {
   $q.notify(msg)
@@ -175,8 +177,6 @@ function launch () {
 
   const i = 0
   if (i === 0) {
-    // const mySound = new Audio('sounds/rocket9s.m4a')
-    // const mySound = new Audio('images/rocketmp3-94928.mp3')
     startLaunch()
     setTimeout(() => window.requestAnimationFrame(fly), 1000)
   }
@@ -185,20 +185,22 @@ function launch () {
 function reset () {
   console.log('reset...')
 
-  rocket.value.style.transform = `translateY(${0}px)`
+  rocket.value.style.transform = `translateY(${60}px)`
   rocketsInitialLocation.value = rocket.value.getBoundingClientRect()
   rocketLoc.value = rocketsInitialLocation.value.y
 
   // console.log('rocketloc: ' + rocketLoc.value + 'px')
   // console.log('rocketsInitialLocation: ' + JSON.stringify(rocketsInitialLocation.value))
 
-  scrollAreaRef.value.setScrollPosition('vertical', launchHeight.value + 100)
+  scrollAreaRef.value.setScrollPosition('vertical', launchHeight.value)
   start.value = null
   previousTimeStamp.value = null
   done.value = false
   explosion.value = false
   falling.value = false
   enginesOn.value = false
+  controlsVisible.value = true
+  // finalRocketLoc.value = 0
 }
 
 function fall (timestamp) {
@@ -233,11 +235,12 @@ function fall (timestamp) {
     if (launchHeight.value > 200) {
       scrollAreaRef.value.setScrollPosition('vertical', scrollPosition)
     }
-    rocket.value.style.transform = `translateY(${count - launchHeight.value}px)`
+    rocket.value.style.transform = `translateY(${count - launchHeight.value + 60}px)`
 
     if (count === launchHeight.value) {
       done.value = true
       console.log('Animation done')
+      controlsVisible.value = true // or reset
     }
   }
 
@@ -249,7 +252,7 @@ function fall (timestamp) {
       window.requestAnimationFrame(fall)
     }
   } else { // animation is finished
-
+    controlsVisible.value = true // or reset
   }
 }
 
@@ -274,7 +277,7 @@ function fly (timestamp) {
       return
     }
 
-    const scrollPosition = (400 - count)
+    const scrollPosition = (360 - count)
     rocket.value.style.transform = `translateY(${-count}px)`
 
     console.log('scroll area scroll position: ', scrollPosition)
@@ -299,7 +302,9 @@ function fly (timestamp) {
 
   function checkResult () {
     rocketLoc.value = rocket.value.getBoundingClientRect().y
-    console.log('rocketLoc: ', rocketLoc.value)
+    finalRocketLoc.value = rocket.value.getBoundingClientRect().y
+
+    console.log('finalRocketLoc: ', finalRocketLoc.value)
     // waitAWhile(2000)
 
     if (rocketLoc.value < -20) {
@@ -307,16 +312,16 @@ function fly (timestamp) {
       notifyMessage('You went too far! Less boost.')
       setTimeout(() => reset(), 2000)
       // alert('You went too far!')
-    } else if (rocketLoc.value > 200) {
+    } else if (rocketLoc.value > 100) {
       console.log('Animation done - falling...')
       notifyMessage('Not enough juice! Add more boost.')
       setTimeout(() => fallRocket(), 2000)
-    } else if (rocketLoc.value < 80) {
+    } else if (rocketLoc.value < 60) {
       // alert('The Eagle has landed!')
       successSound.volume = 0.4
       successSound.play()
       notifyMessage('The Eagle has landed!')
-      // play da-da sound
+      controlsVisible.value = true // or reset
     } else {
       explodeRocket()
     }

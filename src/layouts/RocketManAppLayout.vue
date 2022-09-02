@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+  <!--
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -14,6 +15,7 @@
         <q-toolbar-title>Rocket Man</q-toolbar-title>
       </q-toolbar>
     </q-header>
+    -->
 
    <!--
     <q-footer bordered class="bg-white text-primary">
