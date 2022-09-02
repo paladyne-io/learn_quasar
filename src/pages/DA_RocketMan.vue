@@ -3,9 +3,9 @@
   <!--
   <div class="heading q-pa-md text-center">Rocket Man</div>
   -->
-  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh; width: 500px;">
+  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh;">
     <div ref="bg" class="x-center animation-frame">
-        <div ref="rocket" class="rocket-box image-stack">
+        <div ref="rocket"  class="rocket-box image-stack">
         <div class="image-stack__item image-stack__item--bottom">
         <q-img v-if="enginesOn"
           width="90px"
@@ -29,12 +29,6 @@
       <div v-if="debug" class="text-white q-pa-sm row full-width ">
       Rocket loc: {{ finalRocketLoc }} px
     </div>
-    <q-btn style="max-width: 100px "
-        label="Quit"
-        color="primary"
-        @click="quit"
-        to="/"
-      />
     </div>
   </q-scroll-area>
 <div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
@@ -45,18 +39,27 @@
         v-model.number="launchHeight"
       />
       <q-btn
+        dense
         label="Launch"
         icon="rocket"
         color="primary"
         @click="launch"
       >
       </q-btn>
-      <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
+      <q-btn dense label="Reset" icon="clear" color="secondary" @click="reset">
       </q-btn>
+      <q-btn style="max-width: 100px "
+        dense
+        label="Quit"
+        color="orange"
+        @click="quit"
+        to="/"
+      />
     <div class="q-pa-sm row full-width">
-      Sound Effects from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179">Pixabay</a>
+      Sound Effects from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179"> Pixabay</a>
     </div>
  </div>
+
   </div>
 
 </template>
@@ -127,12 +130,12 @@ function startFall () {
 
 function explodeRocket () {
   console.log('Explode')
-  explosion.value = true
+  explosion.value = true // shows the explosion graphic
   explosionSound.volume = 0.4
   explosionSound.play()
   // enginesOn.value = false
-  setTimeout(() => stopExplosion(), 3000)
-  controlsVisible.value = true // or reset
+  setTimeout(() => stopExplosion(), 4000)
+  // controlsVisible.value = true // or reset
 }
 
 function fallRocket () {
@@ -145,21 +148,24 @@ function fallRocket () {
   setTimeout(() => window.requestAnimationFrame(fall), 1000)
 }
 
-/*
-const testData = 'some data'
-const posX = ref(100)
+function explodeAndFallOver () {
+  explosion.value = true // shows the explosion graphic
+  console.log('fallOverRocket...')
 
-const location = computed(() => {
-  return 'width:300px;height:100; left:' + posX.value + 'px;border:1px solid #000; position: absolute;'
-})
-*/
+  rocket.value.classList.add('fallover')
+  explosionSound.volume = 0.4
+  explosionSound.play()
+
+  // console.log('Rocket classes: ' + JSON.stringify(rocket.value.classList))
+  setTimeout(() => reset(), 2000) // will remove fallover
+}
 
 function init () {
   // rocketsInitialLocation.value = rocket.value.getBoundingClientRect()
   // const yPos2 = rocket.value.getBoundingClientRect().y
   // console.log('Initial y pos: ' + yPos2 + 'px')
   scrollAreaRef.value.setScrollPosition('vertical', launchHeight.value)
-  rocket.value.style.transform = `translateY(${60}px)` // ??
+  // rocket.value.style.transform = `translateY(${60}px)` // ??
   // setInterval(moveObjectToRight, 10)
 }
 
@@ -169,25 +175,29 @@ function notifyMessage (msg) {
 
 function launch () {
   reset()
-  if (launchHeight.value > 999) {
-    notifyMessage('Too much boost.')
-    setTimeout(() => explodeRocket(), 1000)
-    return
-  }
 
   const i = 0
   if (i === 0) {
     startLaunch()
+
+    if (launchHeight.value > 999) {
+      notifyMessage('Too much boost!')
+      explodeAndFallOver()
+      return
+    }
     setTimeout(() => window.requestAnimationFrame(fly), 1000)
   }
 }
 
 function reset () {
   console.log('reset...')
+  rocket.value.classList.remove('fallover')
 
-  rocket.value.style.transform = `translateY(${60}px)`
+  rocket.value.style.transform = `translateY(${0}px)`
   rocketsInitialLocation.value = rocket.value.getBoundingClientRect()
   rocketLoc.value = rocketsInitialLocation.value.y
+
+  // rocket.value.style.transform = 'none'
 
   // console.log('rocketloc: ' + rocketLoc.value + 'px')
   // console.log('rocketsInitialLocation: ' + JSON.stringify(rocketsInitialLocation.value))
@@ -201,6 +211,7 @@ function reset () {
   enginesOn.value = false
   controlsVisible.value = true
   // finalRocketLoc.value = 0
+  // fallOverRocket()
 }
 
 function fall (timestamp) {
@@ -231,11 +242,13 @@ function fall (timestamp) {
       return
     }
 
+    // console.log('count: ', count)
+
     const scrollPosition = (count)
     if (launchHeight.value > 200) {
       scrollAreaRef.value.setScrollPosition('vertical', scrollPosition)
     }
-    rocket.value.style.transform = `translateY(${count - launchHeight.value + 60}px)`
+    rocket.value.style.transform = `translateY(${count - launchHeight.value}px)`
 
     if (count === launchHeight.value) {
       done.value = true
@@ -280,7 +293,7 @@ function fly (timestamp) {
     const scrollPosition = (360 - count)
     rocket.value.style.transform = `translateY(${-count}px)`
 
-    console.log('scroll area scroll position: ', scrollPosition)
+    // console.log('scroll area scroll position: ', scrollPosition)
     scrollAreaRef.value.setScrollPosition('vertical', scrollPosition)
 
     if (count >= launchHeight.value) {
@@ -332,17 +345,62 @@ function fly (timestamp) {
 <style>
  .animation-frame{
     background-image:  url("/images/background_stars.png");
+    /*
     border: solid;
     border-color: black;
-    width: 500px;
-    height: 800px;
+    */
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    min-height: 800px;
+    max-height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: bottom;
   }
 
+ /*
+  .fallover {
+    transform: rotate(90deg) !Important ;
+    transform-origin: center, 10%;
+  }
+  */
+
+  .fallover {
+    transform-origin: center, 10%;
+    animation: fallover-slowly 2s;
+  }
+
+ @keyframes fallover-slowly {
+  from { transform: rotate(0deg)}
+  to { transform: rotate(90deg)
+  }
+ }
+
+/*
+  @keyframes fallover-slowly {
+
+    0% {
+        transform: rotate(0deg);
+     }
+     20% {
+        transform: rotate(30deg);
+     }
+     50% {
+        transform: rotate(45deg);
+     }
+     70% {
+        transform: rotate(60deg);
+     }
+     100% {
+        transform: rotate(90deg);
+     }
+}
+*/
+
   .rocket-box{
      /* background: #f00; */
+     /* height:151px; */
      margin-top: auto;
      margin-left: auto;
      margin-right: auto;
@@ -365,7 +423,7 @@ function fly (timestamp) {
 .image-stack__item--top {
   grid-row: 1;
   grid-column: 1 / span 11;
-  padding-top: 20%;
+  padding-top: 50%;
   z-index: 1; /* tells the browser to make this image on top */
 }
 

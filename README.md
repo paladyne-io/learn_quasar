@@ -13,6 +13,8 @@ Features of interest:
 * Dark mode (Try it in app preferences. Article to come soon)
 * Sending emails with emailjs
 https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
+* A simple animated game (Rocket man). Can you land the craft safely?
+https://learn-quasar-p764s.ondigitalocean.app/#/gameapp/rm_game
 
 ## Install the dependencies
 ```bash
