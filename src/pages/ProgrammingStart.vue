@@ -47,15 +47,15 @@ $ npm i -g @quasar/cli
 $ npm init quasar"
 </pre>
 
-<q-item-label class="q-pt-md">
-* When installing Quasar you will be given the choice of using Vite or Webpack. If you don't have a strong preference,
- I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
-</q-item-label>
-
 <div class="q-pt-sm">
 Answer the questions, following the prompts.
 See below for an example. Of course you can/should choose your own Project folder,
  Package name and Project product name and put your own contact Information after Author.
+</div>
+
+<div class="q-pt-sm">
+* When installing Quasar you will be given the choice of using Vite or Webpack. If you don't have a strong preference,
+ I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
 </div>
 
 <pre>
@@ -100,18 +100,19 @@ You're nearly done!
 </div>
 
 <div class="q-pt-sm">
-After creating your first app, and entering the above commands ("cd <i>your_project_name</i>" followed by "quasar dev"), you should see the default Quasar app screen as displayed at the top of this page.
+After creating your first app, and entering the above commands ("cd <i>your_project_name</i>", followed by "quasar dev"), you should see the default Quasar app screen as displayed at the top of this page.
 </div>
 
 <div class="q-pt-sm">
 If you cannot see the app, please check that the working directory is correct.
+ You can verify the current working directory by typing 'pwd' and change it by typing 'cd ' ('cd' followed by a space) and then the full path.
 </div>
 <pre>
 dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
 </pre>
 
 <div class="q-pt-sm">
- You can verify the current working directory by typing 'pwd' and change it by typing 'cd ' ('cd' followed by a space) and then the full path. An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
+An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
 </div>
 
 <div class="q-pt-sm">
@@ -126,7 +127,7 @@ The working directory will remain set until you close the Terminal window.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.
-<div class="q-pt-sm">If something didn't work, drop a note in the comments* or email me at darren@paladyne.co.jp to get help. (* Comments are coming soon, in a later lesson. )
+<div class="q-pt-sm">If something didn't work, please use the <router-link to="feedback"> feedback form</router-link> to get help.
 </div>
 </div>
 </div>

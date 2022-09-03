@@ -117,7 +117,7 @@ You don't need to decide these things now but it's useful to consider the scope 
  <li>Will you provide support for displaying the interface in other languages (A multi-lingual app)</li>
  <li>What types of functionality are required? (Do you need to access hardware including the camera, bluetooth/BLE or NFC?)</li>
  <li>Color scheme, logos, icons and graphics. (Quasar has some features to help with all of these)</li>
- <li>Dark mode?</li>
+ <li>Will you implement dark mode?</li>
  <li>What kind of data will you store and where will you store it? (Locally - on the device, or in the cloud, or both)</li>
  <li>How will you manage user data and privacy?</li>
  <li>Will your app be used for free, paid (one time) or by subscription?</li>
@@ -132,9 +132,7 @@ If you are not sure, it's better to start simple. Complexity will increase as yo
 <div class="heading text-subheader q-pt-sm">
 Break it down
 </div>
-<div class="q-pt-sm">Speaking of components, it is important to understand from the beginning that it is better to create reusable components rather than what's known as a monolithic app.
- Such an app, with hundreds or thousands of lines of code in one file, will quickly become unmanageable.
- The real benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
+<div class="q-pt-sm">Speaking of components, one of the real benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
   If you don't really understand what this means, don't worry.
    Just think of lego and when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.
@@ -151,7 +149,7 @@ Break it down
           clickable
           v-ripple
           to="startprogramming"
-          @click="link = 'startprogramming'"
+          @click="link='startprogramming'"
         >
         <div style="text-align:right" class="full-width">
             Next: Getting started

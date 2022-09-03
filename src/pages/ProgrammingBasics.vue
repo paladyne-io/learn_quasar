@@ -8,18 +8,10 @@
       The world is your stage
     </div>
 
-    <div class="q-pt-sm">
-      Your mission today is to get to this:
-    </div>
-
-  <div class="q-pt-sm">
-    This is the basic order of tasks.
-  </div>
-
-<div class="q-pa-sm">
+    <div class="q-pa-sm">
 
       <div class="q-pt-md text-subheader">
-        1. Add interactivty
+        Adding interactivity
    </div>
    <div>
     So far we have covered how to set up and use Quasar and how to create, modify and navigate between pages.
@@ -41,7 +33,7 @@
     Why combine them into one file?
    </div>
    <div class="q-pt-sm">
-    This is called a SingleFileComponent and you can read more about it
+    This is called a SingleFileComponent which you can read more about
      <a href="https://vuejs.org/guide/scaling-up/sfc.html">here</a>.
     </div>
 
@@ -54,7 +46,7 @@
   When you integrate all 3 types of code into one file this becomes a stand-alone object that you can use in other parts of your app.
   It comes fully formed and ready to work. If you decide later to modify this component, everywhere it is used will gain the benefit of the improvements.
   Of course this is a double-edged sword as if you do something wrong it could affect other parts of your app.
-  Embedding the behaviour (logic) inside an object is a key principle of Object Oriented Programming.
+  Embedding the behavior (logic) inside an object is a key principle of Object Oriented Programming.
   Thinking in terms of independent objects and their interactions will make your code more usable and easier to manage.
   Once you get used to it I don't think you will want to do it another way.
  </div>
@@ -64,12 +56,13 @@ Some areas we will cover:
 <ul>
     <li>Handling user activity such as a button click</li>
     <li>script setup</li>
-    <li>Composition vs Options API</li>
+    <li>onMounted (lifecycle hooks)</li>
 </ul>
 
 What we will come back to later:
 <ul>
     <li>Reactivity</li>
+    <li>Composition vs Options API</li>
     <li>v-if and v-for</li>
     <li>Props and slots</li>
     <li>Local storage</li>
@@ -78,7 +71,7 @@ What we will come back to later:
 
  <div class="q-pt-sm">
     1. In the previous article we added a navigation button with a "to" element.
-     More often you would add "@click=methodName" to the button like this:
+     If it is not a button used for navigation, you should add "@click=methodName" to the button like this:
 </div>
 
 <pre>
@@ -89,16 +82,20 @@ What we will come back to later:
 </pre>
 btnClicked is the name of the function that will be called in the Script section.
 If you are completely new to programming and would like to understand terms such as function, method, parameter, variable etc.,
-click here.
+don't worry for now. The meanings of these terms should become clear over time.
 </div>
+
+<div class="q-pt-sm">
 When you click the button, code in the btnClicked function will run.
+</div>
 <div class="text-center q-pa-md">
+
 <q-btn label="Test button" color="blue" @click="btnClicked"> </q-btn>
 </div>
  <div class="q-pt-sm">
 In version 3.2 of Vue, "script setup" was added as a new simpler way to format and use JavaScript.
 
- <a href="https://vuejs.org/api/sfc-script-setup.html">Read more</a>.
+ <a href="https://vuejs.org/api/sfc-script-setup.html">Read more here </a> if you are interested.
 
 It looks like this.
 <pre>
@@ -110,7 +107,7 @@ It looks like this.
     })
 
     function btnClicked () {
-      alert('btnClicked')
+      alert('You clicked me!')
     }
   &lt;/script&gt;"
 />
@@ -124,7 +121,7 @@ The onMounted function is a special function provided by vue.
 </div>
 
 <div class="q-pt-sm">
-  Note the use of alert() and console.log() which are two useful Javascript methods.
+  Note the use of 'alert()' and 'console.log()' which are two useful Javascript methods.
   alert() will display a pop-up message to the user.
   console.log() will print a message to the JavaScript console which can be seen by choosing 'Display JavaScript Console' in your browser.
 

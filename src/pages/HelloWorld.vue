@@ -47,8 +47,7 @@
         <li> in the <b>src/assets folder</b> (referenced in Quasar as: 'src="~assets/img.png') </li>
       </ol>
       </div>
-      As in the example above, you can put your own image in one of these folders and then change the code in the 'img' tag to display it.
-
+      You can add your own images to either of these folders and then change the code in the 'img' tag to display them, like this.
 <pre>
 &lt;img
   alt="Quasar logo"
@@ -93,8 +92,11 @@
 <div class="q-pt-sm">
 1. Copy an existing page (an 'xxx.vue' file in the pages folder) or create and save a new page (file).
 It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
-Note that the file name must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
+The filename must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
 
+<div class='note q-pt-sm'> Note. A plugin called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the Explorer window.
+ After installing the extension, right click on a file to show a menu with "Duplicate file or directory" at the bottom.
+</div>
 <pre>
 &lt;template&gt;
   &lt;q-p_ge class="flex flex-center"&gt;
@@ -116,7 +118,7 @@ Locate the file "routes.js" in the router folder.
 Copy and paste one of the 'children' (the line between {}), then rename the <b>path</b> and <b>page title</b> as below.
  Make sure to add a comma after the previous child.
 <div class="q-pt-sm">
- If you add a child for a page that doesn't exist you will see an error.
+ If you add a child for a page that doesn't exist you will see an error when you save the Routes.js file.
 </div>
  'path' is the name that will appear after the "/" in the browser's address bar*.
 </div>
