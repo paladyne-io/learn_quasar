@@ -37,6 +37,7 @@
       </q-tabs>
     </q-footer>
     -->
+    <!--
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header> Navigation</q-item-label>
@@ -50,7 +51,7 @@
         <AppLink v-for="link in appFunctionLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
-
+    -->
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -60,7 +61,7 @@
 <script>
 import { defineComponent, ref } from 'vue'
 // import EssentialLink from 'components/EssentialLink.vue'
-import AppLink from 'components/AppLink.vue'
+// import AppLink from 'components/AppLink.vue'
 
 const homeLink = {
   title: 'Home',
@@ -91,7 +92,7 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    AppLink
+    // AppLink
   },
 
   setup () {

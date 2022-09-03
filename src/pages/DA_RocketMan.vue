@@ -24,39 +24,61 @@
           alt="animated explosion"
           src="images/explosion.gif"
         />
-         </div>
+        </div>
       </div>
       <div v-if="debug" class="text-white q-pa-sm row full-width ">
       Rocket loc: {{ finalRocketLoc }} px
+      <br>
+      Boost: {{ boost }}
     </div>
+
     </div>
   </q-scroll-area>
-<div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
+  <div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
+      <!--
       <q-input style="max-width: 100px"
         label="Boost"
         type="number"
         outlined
         v-model.number="launchHeight"
       />
+      -->
+    <div class="q-pa-md" >
+    <q-badge class="q-pa-sm" color="pink">
+      Boost: {{ boost }} (100 to 1500)
+    </q-badge>
+    <div class="row justify-around" style="width: 360px;" >
+      <q-slider
+        v-model="boost"
+        color="red"
+        :min="100"
+        :max="1500"
+        label
+        switch-label-side
+        label-always
+      />
+    </div>
+      </div>
+      <div class="row justify-around" style="width: 360px;">
       <q-btn
-        dense
         label="Launch"
         icon="rocket"
         color="primary"
         @click="launch"
       >
       </q-btn>
-      <q-btn dense label="Reset" icon="clear" color="secondary" @click="reset">
+      <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
       </q-btn>
       <q-btn style="max-width: 100px "
-        dense
         label="Quit"
         color="orange"
         @click="quit"
         to="/"
       />
-    <div class="q-pa-sm row full-width">
-      Sound Effects from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179"> Pixabay</a>
+
+      </div>
+         <div class="row q-pa-sm row full-width">
+         Sound Effects from&nbsp;<a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179">Pixabay</a>
     </div>
  </div>
 
@@ -70,11 +92,12 @@ import { useQuasar } from 'quasar'
 
 const $q = useQuasar()
 
-const debug = false
+const debug = true
 
 /* is the scrollbar visible? */
 const sbVisible = false
 
+const boost = ref(300)
 const done = ref(false)
 const explosion = ref(false)
 const falling = ref(false)
@@ -180,7 +203,7 @@ function launch () {
   if (i === 0) {
     startLaunch()
 
-    if (launchHeight.value > 999) {
+    if (boost.value > 999) {
       notifyMessage('Too much boost!')
       explodeAndFallOver()
       return
@@ -210,6 +233,7 @@ function reset () {
   falling.value = false
   enginesOn.value = false
   controlsVisible.value = true
+
   // finalRocketLoc.value = 0
   // fallOverRocket()
 }
@@ -236,7 +260,7 @@ function fall (timestamp) {
 
   if (previousTimeStamp.value !== timestamp) {
     // Math.min() is used here to make sure the element stops at exactly 300px
-    const count = Math.min(Math.round(0.1 * elapsed), launchHeight.value)
+    const count = Math.min(Math.round(0.1 * elapsed), boost.value)
 
     if (isNaN(count)) {
       return
@@ -248,9 +272,9 @@ function fall (timestamp) {
     if (launchHeight.value > 200) {
       scrollAreaRef.value.setScrollPosition('vertical', scrollPosition)
     }
-    rocket.value.style.transform = `translateY(${count - launchHeight.value}px)`
+    rocket.value.style.transform = `translateY(${count - boost.value}px)`
 
-    if (count === launchHeight.value) {
+    if (count === boost.value) {
       done.value = true
       console.log('Animation done')
       controlsVisible.value = true // or reset
@@ -284,7 +308,7 @@ function fly (timestamp) {
 
   if (previousTimeStamp.value !== timestamp) {
     // Math.min() is used here to make sure the element stops at exactly 300px
-    const count = Math.min(Math.round(0.1 * elapsed), launchHeight.value)
+    const count = Math.min(Math.round(0.1 * elapsed), boost.value)
 
     if (isNaN(count)) {
       return
@@ -296,7 +320,7 @@ function fly (timestamp) {
     // console.log('scroll area scroll position: ', scrollPosition)
     scrollAreaRef.value.setScrollPosition('vertical', scrollPosition)
 
-    if (count >= launchHeight.value) {
+    if (count >= boost.value) {
       done.value = true
       checkResult()
       return
@@ -350,10 +374,11 @@ function fly (timestamp) {
     border-color: black;
     */
     width: 100%;
-    max-width: 500px;
+    min-width: 414px;
+    max-width: 560px;
     height: 100%;
     min-height: 800px;
-    max-height: 1000px;
+    max-height: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: bottom;
