@@ -34,7 +34,7 @@ This is the basic order of tasks (assuming you have a PC).
   If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
   <router-link to="/vscodeterminal">Click here for details</router-link>.
    The $ character represents the shell prompt. It might appear as a %.
-    You enter commands after this symbol and press Return or Enter to run them.
+    Enter commands after this symbol and press Return or Enter to run them.
   </q-item-label>
 
 <pre>

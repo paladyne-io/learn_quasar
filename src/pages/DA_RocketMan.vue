@@ -92,7 +92,7 @@ import { useQuasar } from 'quasar'
 
 const $q = useQuasar()
 
-const debug = true
+const debug = false
 
 /* is the scrollbar visible? */
 const sbVisible = false
@@ -152,7 +152,7 @@ function startFall () {
 }
 
 function explodeRocket () {
-  console.log('Explode')
+  // console.log('Explode')
   explosion.value = true // shows the explosion graphic
   explosionSound.volume = 0.4
   explosionSound.play()
@@ -173,8 +173,7 @@ function fallRocket () {
 
 function explodeAndFallOver () {
   explosion.value = true // shows the explosion graphic
-  console.log('fallOverRocket...')
-
+  // console.log('fallOverRocket...')
   rocket.value.classList.add('fallover')
   explosionSound.volume = 0.4
   explosionSound.play()
@@ -221,7 +220,6 @@ function reset () {
   rocketLoc.value = rocketsInitialLocation.value.y
 
   // rocket.value.style.transform = 'none'
-
   // console.log('rocketloc: ' + rocketLoc.value + 'px')
   // console.log('rocketsInitialLocation: ' + JSON.stringify(rocketsInitialLocation.value))
 

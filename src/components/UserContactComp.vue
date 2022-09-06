@@ -2,7 +2,7 @@
   <div no-border class="q-pa-md" style="min-width: 320px">
     <div class="q-pa-sm font-semibold">
       If you have any requests or suggestions, please email darren@paladyne.co.jp or fill out the form below.
-      I greatly appreciate your input and will respond to every well-intentioned message.
+      I appreciate your input and will respond to every well-intentioned message.
     </div>
   </div>
   <!-- Email area to modify and send email -->
