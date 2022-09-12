@@ -11,7 +11,7 @@
     Lifecycle hooks allow code to be run at certain times.
     For example, 'onMounted' is a special event that is called when a page loads.
     More information is <a href="https://vuejs.org/api/composition-api-lifecycle.html">here</a>.
-    <p></p><p></p>This is simple example when using script setup...
+    <p></p><p></p>This is a simple example using script setup...
     </div>
 <pre>&lt;script setup&gt;
   import { onMounted } from 'vue'
@@ -29,8 +29,8 @@
 
    Just a note that this is the easiest but not necessarily the best way. It's probably not suitable if you are using a shared computer and the data will be deleted if the browser cache is cleared.
   <p></p><p></p>
-  First some set up. We have to load the Quasar plugin  by modifying the Quasar.conf file.
-  Add 'LocalStorage' after plugins in the Quasar.conf file like this:
+  First some setup. We have to load the Quasar plugin  by modifying the Quasar.conf file.
+  Add 'LocalStorage' after plugins in the <b>quasar.config.js</b> file like this:
 </div>
 <pre>
 // Quasar plugins
@@ -64,7 +64,7 @@ plugins: ['LocalStorage']
 </pre>
 
 <div class="q-pa-md">
-When you use LocalStorage you save data in named pairs, for example, "name: George" and "age: 5" and you read it by asking for that name.
+When you use LocalStorage you save data in named pairs, for example, "name: George" and "age: 5", and you read it by asking for that name.
 We created a method called getData that does this so we can call <b>getData(dataName)</b>. If the data has been saved, it will be returned by the method.
 If there is no data, it will return 'undefined' which means it doesn't exist.
 In Javascript if we want to check whether or not something (an object) exists, the easiest way is just to write 'if (object)...'.
