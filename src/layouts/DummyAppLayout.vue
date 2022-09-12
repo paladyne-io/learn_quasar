@@ -68,10 +68,16 @@ const homeLink = {
 
 const dummyAppFunctionsList = [
   {
-    title: 'Saving and restoring data',
+    title: 'Saving and reading data',
     caption: 'Using local storage',
     icon: 'school',
     link: 'da_local_storage'
+  },
+  {
+    title: 'Working with data',
+    caption: 'JSON and Reactivity',
+    icon: 'school',
+    link: 'da_table'
   }
 ]
 

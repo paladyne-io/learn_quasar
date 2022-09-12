@@ -8,28 +8,43 @@
   </div>
 
    <div class="q-pa-md">
-    A simple element such as a button probably only requires setting a label, however other more complex elements might require loading various types of data.
-    A javascript object can be described with JSON (JavaScript Object Notation). JSON is a set of named objects.
-  A table is actually a form of array. An array is a set of data than can be arranged in a grid.
+    A simple element such as a button probably only requires setting a label, however other more complex components such as a table might, require loading various types of data.
+    A javascript object can be described with <b>JSON</b> (JavaScript Object Notation).
+    JSON can describe an array or a set of named elements.
+     It is often used to save data and to send it over the network (to and from a server).
   </div>
-  <pre>
-  Header 1    Header 2     Header 3
+  <div class="q-pa-md full-width text-center text-bold">
+Some simple examples of JSON
+  </div>
+  <div class="q-pa-md">
+  A plain array:
+<pre>{"John", "Sarah", "Hiroyuki", "Maria"}
+</pre>
+</div>
+<div class="q-pa-md">
+   Describing an object (or a person).
+<pre>{"name":"John", "age":25, "hobbies":["running", "swimming", "reading"]}</pre>
+    Within JSON "[ ]" is used to describe an array or list of items.
+ </div>
+ <div class="q-pa-md">
+  A table is a form of array. An array is a set of data than can be arranged in a grid.
+ </div>
+  <pre>Header 1    Header 2     Header 3
   Row 1         H2/R1         H3/R1
   Row 2         H2/R2         H3/R2
-  Row 3         H2/R3         H3/R3
-  </pre>
+  Row 3         H2/R3         H3/R3</pre>
 
    <div class="q-pa-md">
 
-   Many elements in Vue and Quasar use a model. A model is a representation of the data that applies to the element.
-   The contents of the element are contained in the model and when you add or change data in the model the display will change.
+   Many components in Vue and Quasar use a <b>model</b>. A model is a representation of the data that applies to the component.
+   The data used by the component are contained in the model and when the data in the model changes, the display will change.
    This might seem difficult to understand at first but it is related the concept of reactivity.
-   The element (such as a table) reacts to the changes in the model.
-    Also if the element is editable, changing the data will update the model.
-
+   The component (such as a table) reacts to the changes in the model.
+   Also, if the component is editable, changing the data inside the component will update the model. This is sometimes called 2-way binding.
+</div>
 <div class="q-pa-md">
 Let's look at in terms of our example app.
-We want to load the table data and save it if it changed by the user.
+We want to load the table data and save it when it is changed by the user.
 (Using local storage means that the data is saved even after we close the page or app.)
 
 </div>
@@ -52,27 +67,31 @@ let rows = [
   {
     exercise: 'Chasing cars', time: 60, calories: 400
   }
-]
+]</pre>
 
-</pre>
+<div class="q-pa-md">
+A small side note here about data types.
+Plain words such as names, are called strings and have to be enclosed by single (') or double quotes (").
+Numbers however do not have quotes. There is a small but important difference between 1 and "1".
+There are some other types but numbers and strings are the most commonly used in the UI.
 </div>
 
-   <div class="q-pa-md">
+<div class="q-pa-md">
 The syntax for a table looks like this and you can see the columns are assigned to the variable "columns" and rows to "rows"
 
 </div>
 <pre>
-  &lt;q-table
-    dense
-    title="Data"
-    :rows="rows"
-    :columns="columns"
-    row-key="name"
-  /&gt;
+&lt;q-table
+  dense
+  title="Data"
+  :rows="rows"
+  :columns="columns"
+  row-key="name"
+/&gt;
 </pre>
 
 <div class="q-pa-md">
-So the data is displayed in the table like this (note the heading which is specified in "title" )
+So the data is displayed in the table like this. Note the heading which is specified in "title" and the ':' before rows and columns which means 'look up the data from Javascript'.
 </div>
 
 <div class="q-pa-md full-width">
@@ -86,8 +105,9 @@ So the data is displayed in the table like this (note the heading which is speci
   </div>
 
 <div class="q-pa-md">
-Now we had to add functions to read and write this data to local storage.DA_RocketMan</div>
 
+Now we had to add functions to read and write this data to local storage.
+</div>
 <pre>
  function saveTableData () {
   console.log('saving TableData...')
@@ -122,13 +142,14 @@ When saving or writing, it is just called 'set'.
 </div>
 
 <div class="q-pa-md text-center full-width">
-Next - connecting our 'getData' function to the table.
+  Coming soon -  using an online database...
 </div>
 
+  <!--
     <div class="text-center q-pa-md full-width">
-      <q-btn label="Loading data to a table" color="primary"> </q-btn>
+      <q-btn label="Using an online database" color="primary"> </q-btn>
     </div>
-
+   -->
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
     </div>

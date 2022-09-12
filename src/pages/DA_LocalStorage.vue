@@ -13,18 +13,16 @@
     More information is <a href="https://vuejs.org/api/composition-api-lifecycle.html">here</a>.
     <p></p><p></p>This is simple example when using script setup...
     </div>
-    <pre>
-    &lt;script setup&gt;
-    import { onMounted } from 'vue'
+<pre>&lt;script setup&gt;
+  import { onMounted } from 'vue'
 
-    onMounted(() => {
-      console.log('mounted')
-      alert('I am alive!')
-    })
-    &lt;/script&gt;
-  </pre>
+  onMounted(() => {
+    console.log('mounted')
+    alert('I am alive!')
+  })
+&lt;/script&gt;</pre>
 
-   <div class="q-pa-md">
+  <div class="q-pa-md">
    This can be a useful place to take some actions, for example to load data into our table.
    There are various ways to accomplish this. Let's start with the easiest which is Quasar's built-in LocalStorage plugin.
     More information is <a href="https://quasar.dev/quasar-plugins/web-storage">here</a>.
@@ -35,44 +33,45 @@
   Add 'LocalStorage' after plugins in the Quasar.conf file like this:
 </div>
 <pre>
-  // Quasar plugins
-  plugins: ['LocalStorage']
+// Quasar plugins
+plugins: ['LocalStorage']
 </pre>
+
 <div class="q-pa-md">
   Then we have to import "useQuasar" to use the plugin and add some code to access local storage.
 </div>
 <pre>
 &lt;script setup&gt;
-import { onMounted } from 'vue'
-import { useQuasar } from 'quasar'
+  import { onMounted } from 'vue'
+  import { useQuasar } from 'quasar'
 
-onMounted(() => {
-  console.log('mounted')
-  alert('I\'m alive!')
-  const data = getData('name') &lt;-- Look up the name
-})
+  onMounted(() => {
+    console.log('mounted')
+    alert('I\'m alive!')
+    const data = getData('name') &lt;-- Look up the name
+  })
 
-const $q = useQuasar()
+  const $q = useQuasar()
 
-function getData (dataName) {
-  try {
-    return $q.localStorage.getItem(dataName)
-  } catch (e) {
-    // data wasn't successfully read due to
-    // a Web Storage API error
+  function getData (dataName) {
+    try {
+      return $q.localStorage.getItem(dataName)
+    } catch (e) {
+      // data wasn't successfully read due to
+      // a Web Storage API error
+    }
   }
-}
 </pre>
 
 <div class="q-pa-md">
 When you use LocalStorage you save data in named pairs, for example, "name: George" and "age: 5" and you read it by asking for that name.
-We created a method called getData that does this so we can call getData('name'). If the data has been saved, it will be returned by the method.
+We created a method called getData that does this so we can call <b>getData(dataName)</b>. If the data has been saved, it will be returned by the method.
 If there is no data, it will return 'undefined' which means it doesn't exist.
-In Javascript if we want to check whether or not something (an object) exists, the easiest way is just to write 'if (object)'.
+In Javascript if we want to check whether or not something (an object) exists, the easiest way is just to write 'if (object)...'.
 </div>
 
  <div class="q-pa-md">
-  Since we haven't yet stored any data we should add a saveData() function to add some new data if the data doesn't exist.
+  Since we haven't yet stored any data we should add a <b>saveData()</b> function to add some new data if the data doesn't exist.
   Note: with computers it is possible that there will be an error when reading or writing data.
   The memory might be full or it might be locked. You can't always assume that reading or writing data will be successful.
   That is why we have some code called a try/catch block that catches such errors.
@@ -120,12 +119,11 @@ onMounted(() => {
   const data = getData('name')
   console.log('Data: ' + data)
   if (data) {
-    alert('Data: ' + data)
+    // alert('Data: ' + data)
   } else {
     // let's save some data
     saveData('name', 'George')
     saveData('age', '5')
-
     const data2 = getData('name')
     console.log('Data: ' + data2)
   }
