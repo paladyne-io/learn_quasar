@@ -59,7 +59,11 @@
      however the transition effect issue is still not resolved.
     </div>
     <div class="q-pa-md">
-         We will try some alternative approaches in the <router-link to="da_ui_example_3">next examples</router-link>.
+
+         We will try some alternative approaches in the next examples<router-link to="da_ui_example_3"></router-link>.
+        <div class="text-center q-pa-md full-width">
+            <q-btn label="UI Example 1" color="primary" to="da_ui_example_3"> </q-btn>
+      </div>
     </div>
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>

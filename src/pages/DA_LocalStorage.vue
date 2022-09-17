@@ -100,7 +100,7 @@ Next - connecting our 'getData' function to the table.
 </div>
 
     <div class="text-center q-pa-md full-width">
-      <q-btn label="Loading data to a table" color="primary" to="da_table"> </q-btn>
+      <q-btn label="Loading data into a table" color="primary" to="da_table"> </q-btn>
     </div>
 
     <div class="text-center q-pa-md">

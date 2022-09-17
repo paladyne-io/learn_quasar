@@ -73,7 +73,7 @@
   </div>
   <div class="q-pt-sm">
   In the <b>template</b> section of your page or component, add the presentation (html) code below.
-  This is a simple html form with three fields (message, from_name and reply_to email address ) and a 'Send' button.
+  This is a simple html form with three fields (message, from_name and reply_to email address) and a 'Send' button.
    Study it so you can get an idea of how the email js code submits each field.
    (The name of each field is used in the template you create on the emailjs website.)
 </div>

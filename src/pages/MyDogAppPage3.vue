@@ -52,9 +52,11 @@
   I can't find a way to change the focal point of the transition.
   </div>
   <div class="q-pa-md">
-      Let's try <router-link to="da_ui_example_5">another way</router-link>.
+      Let's try another way<router-link to="da_ui_example_5"></router-link>.
   </div>
-
+    <div class="text-center q-pa-md full-width">
+      <q-btn label="UI Example 3" color="primary" to="da_ui_example_5"> </q-btn>
+    </div>
    <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
     </div>
