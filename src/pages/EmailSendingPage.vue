@@ -126,15 +126,24 @@
 </q-card>
   <div class="row text-subheader q-pt-sm">
     <q-item class="col"
-      clickable
-      v-ripple
-      to="startprogramming"
-      @click="link = 'startprogramming'"
-    >
-    Previous
+          clickable
+          v-ripple
+          to="images"
+          @click="link = 'images'"
+        >
+        Previous: Add an image slider
     </q-item>
-
-    </div>
+    <q-item class="col"
+          clickable
+          v-ripple
+          to="dummyapp/"
+          @click="link = '/dummyapp/'"
+        >
+        <div style="text-align:right" class="full-width">
+            Next: Build a simple app
+        </div>
+    </q-item>
+</div>
 </div>
 </q-page>
 </template>

@@ -43,7 +43,7 @@
 
 <div class="q-pt-sm">
         <q-item-label class="q-pt-sm text-subheader">
-        1. Install a library
+        1. Install the library
         </q-item-label>
 
 <div class="q-pt-sm">
@@ -82,7 +82,7 @@ Run `npm audit` for details.
 dcs@Darrens-MacBook-Pro learn_quasar %
 </pre>
 
-The library is now installed so you need to relaunch the Quasar dev environment by typing 'quasar dev'.
+The library is now installed so you need to relaunch the Quasar development environment by typing 'quasar dev'.
 <div class="tip q-py-sm">
 <q-item-label class="bulb">Tip: Use the up/down arrow keys on your keyboard to select previous shell commands so you don't have to retype them.
 </q-item-label>
@@ -146,7 +146,7 @@ Finally, in the <b>template</b> section of your page or component, add the prese
 It may not be clear exactly what is happening here. For now just try to remember the steps.
 <ol> <li> Install the library using the Terminal</li>
 <li> Import it in the component (file) where you want to use it by adding some code in the script section</li>
-<li> (If it is a GUI component), add it into the html area in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
+<li> (If it is a GUI component), add it into the html area (template) in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
 </ol>
 </div>
 <div class="row text-subheader q-pt-sm">

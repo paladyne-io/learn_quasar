@@ -60,7 +60,7 @@
      It works but it's pretty basic. Ideally we would like to show the data table as if it is printed on the back and visually flip the card.
     </div>
     <div class="q-pa-md full-width">
-         Lets try  that<router-link to="da_ui_example_2"></router-link>.
+         Let's try  that<router-link to="da_ui_example_2"></router-link>.
     </div>
          <div class="text-center q-pa-md full-width">
             <q-btn label="UI Example 1" color="primary" to="da_ui_example_2"> </q-btn>

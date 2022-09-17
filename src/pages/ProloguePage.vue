@@ -15,7 +15,7 @@ If you are new to programming you are about to enter a new world.
 -->
 <div class="q-pa-sm">
 The idea for this app came from my own experience learning Quasar.
- While I had programmed in a variety of other languages previously, it took quite a long time for me to understand the basics of Vue and Quasar.
+ While I had programmed in various languages, it took quite a long time for me to understand the basics of Vue and Quasar.
  I wanted to help people to get started faster and reduce the frustration that comes when learning something new.
 </div>
 <!--
@@ -31,9 +31,9 @@ The idea for this app came from my own experience learning Quasar.
 </div>
 
 <div class="q-pa-sm">
-This app is currently hosted on Digital Ocean.
+This app is hosted on Digital Ocean.
 Digital Ocean offers up to 3 static websites for free and these websites can be used to host apps created with Quasar.
-<a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-static-website-to-the-cloud-with-digitalocean-app-platform">If you want to know more click here.</a>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-static-website-to-the-cloud-with-digitalocean-app-platform">To learn more click here.</a>
 In the near future I will provide articles about how to deploy your webapp to Digital Ocean and also how to connect it to a cloud database <a href="https://supabase.com">Supabase</a>.
 </div>
 

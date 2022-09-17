@@ -149,6 +149,7 @@ When saving or writing, it is just called 'set'.
    -->
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
+      <q-btn class="q-ma-md" label="Time for a  Game?" color="blue" to="../gameapp/rm_game/"> </q-btn>
     </div>
   </q-page>
 </template>
@@ -158,7 +159,7 @@ import { onMounted } from 'vue'
 import { useQuasar } from 'quasar'
 
 onMounted(() => {
-  console.log('mounted. Reading table data...')
+  console.log('Mounted. Reading table data...')
   // alert('I\'m alive!')
   // const data = getData('name')
 
@@ -167,7 +168,6 @@ onMounted(() => {
   readTableData()
   console.log('Rows: ' + rows)
   console.log('Columns: ' + columns)
-
   console.log('Rows: ' + JSON.stringify(rows))
   console.log('Columns: ' + JSON.stringify(columns))
 })
