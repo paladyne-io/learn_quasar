@@ -94,7 +94,7 @@
 It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
 The filename must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
 
-<div class='note q-pt-sm'> Note. A plugin called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the Explorer window.
+<div class='note q-pt-sm'> Note. A plugin called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the EXPLORER pane.
  After installing the extension, right click on a file to show a menu with "Duplicate file or directory" at the bottom.
 </div>
 <pre>

@@ -9,7 +9,7 @@ Do you want to build an app, a game or a website with interactive features?
  Not sure how to start or which software to use?
 </div>
 <div class="q-py-sm">
-This series of articles and interactive examples will help you to use the <b> Quasar </b>framework to develop applications that can run on a variety of devices.
+This series of articles and interactive examples will help you to use the <b> Quasar framework</b> to develop applications that can run on a variety of devices.
 </div>
 <div class="heading text-subheader  q-py-xs q-pt-md">Target</div>
 People who want to develop an app or interactive website.
@@ -17,12 +17,12 @@ People who want to develop an app or interactive website.
 Beginner
 <div class="heading text-subheader q-py-xs q-pt-md">Background</div>
 <div>
-Quasar is built on top of <b>Vue</b> which is based on JavaScript.
+Quasar is built on top of <b>Vue.js</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, along with React and Angular.
 </div>
 <div class="q-pt-sm"> JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
- Originally a scripting language  for web pages, it has evolved while its core functionality was extended by other libraries.
- Big steps were the introduction of the node.js framework and npm which bundles Javascript into packages and helps users to find and install them.
+ Originally a scripting language  for web pages, it has evolved and its core functionality has been extended by other libraries.
+ Big advances were the introduction of the node.js framework and npm which bundles Javascript into packages and helps users to find and install them.
 </div>
 <!--
 <q-list class="q-pa-sm">
@@ -68,7 +68,7 @@ If you start with Quasar now, you will be using Vue version 3.
  A web-browser based app is easier for users to start using but the functionality is limited. Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however they would often accept this in an app. An app can also ask users for permission to access data and access to hardware.
 <div class="q-pt-sm">One of the best features of Quasar is that it allows you to choose the kind of app you build without significantly changing your code.
  You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on on a PC (Windows, Mac OS or Linux).</div>
-<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, lists and cards and other utilities that will speed up your development.</div>
+<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, calendars, cards and functions to speed up your development.</div>
 
 <div class="text-subheader q-pt-sm">
 How much does it cost?
@@ -79,7 +79,7 @@ How much does it cost?
 </div>
 <div class="q-pt-sm">It depends on your experience. It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
  Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
-  It generally comes down to how well you understand. Sometimes it can be frustrating but it can also be rewarding.
+  It generally comes down to how well you understand. Sometimes it can be frustrating but it is also rewarding.
 There are many resources and tutorials on-line.
 </div>
 <!--
@@ -133,7 +133,7 @@ If you are not sure, it's better to start simple. Complexity will increase as yo
 Break it down
 </div>
 <div class="q-pt-sm">Speaking of components, one of the real benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
-  If you don't really understand what this means, don't worry.
+  If you don't understand what this means, don't worry.
    Just think of lego and when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.
     Refactoring your code periodically will reward you with a manageable code base that you can understand, even when you come back to it later.

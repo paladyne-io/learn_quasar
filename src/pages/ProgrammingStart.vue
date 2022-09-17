@@ -7,7 +7,7 @@
 />
 
 <div class="q-pt-sm">
-    Your mission today is to get to this:
+    Your goal today is to get to this:
 </div>
 
 <q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
@@ -33,7 +33,7 @@ This is the basic order of tasks (assuming you have a PC).
     or the Terminal window in Visual Studio Code.
   If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
   <router-link to="/vscodeterminal">Click here for details</router-link>.
-   The $ character represents the shell prompt. It might appear as a %.
+   <br>The $ character represents the shell prompt. It might appear as a %.
     Enter commands after this symbol and press Return or Enter to run them.
   </q-item-label>
 
@@ -118,7 +118,7 @@ An easy way to get the full path to a folder is to drag and drop the folder/dire
 <div class="q-pt-sm">
 In the directory/folder that you chose you will find a folder named after your app.
  This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu.
- Another way is to type "code ." in the terminal after the the "Quasar •  SUCCESS" message to open the working directory.
+ Another way is to type "code ." in the terminal after the "Quasar •  SUCCESS" message to open the working directory.
  If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program (exit the development environment).
 </div>
 <div class="q-pt-sm">

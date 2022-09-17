@@ -2,6 +2,14 @@
 .thumbs.db
 .env*
 node_modules
+package-lock.json
+
+# /VS Code workspace folder?
+/workspace
+.editorconfig
+
+# git files
+.git*
 
 # Quasar core related directories
 .quasar

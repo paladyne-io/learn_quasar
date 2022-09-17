@@ -15,7 +15,7 @@
    </div>
    <div>
     So far we have covered how to set up and use Quasar and how to create, modify and navigate between pages.
-    I'd like to focus this exercise on showing how to actually program some activity.
+    I'd like to focus this exercise on showing how to program some interactivity.
    </div>
       <div class="q-pt-sm">
     Each Vue page or component (xx.vue file) can have up to 3 sections:
@@ -71,7 +71,7 @@ What we will come back to later:
 
  <div class="q-pt-sm">
     1. In the previous article we added a navigation button with a "to" element.
-     If it is not a button used for navigation, you should add "@click=methodName" to the button like this:
+     If it is not a button used for navigation, you should add "@click=<i>methodName</i>" to the button like this:
 </div>
 
 <pre>
