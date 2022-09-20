@@ -18,11 +18,11 @@ Beginner
 <div class="heading text-subheader q-py-xs q-pt-md">Background</div>
 <div>
 Quasar is built on top of <b>Vue.js</b> which is based on JavaScript.
-The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, along with React and Angular.
+The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, together with React and Angular.
 </div>
 <div class="q-pt-sm"> JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
  Originally a scripting language  for web pages, it has evolved and its core functionality has been extended by other libraries.
- Big advances were the introduction of the node.js framework and npm which bundles Javascript into packages and helps users to find and install them.
+ Big advances were the introduction of the <b>node.js</b> framework and <b>npm</b>, which bundles Javascript into packages and helps users to find and install them.
 </div>
 <!--
 <q-list class="q-pa-sm">

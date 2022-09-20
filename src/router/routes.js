@@ -9,7 +9,7 @@ const routes = [
       { path: 'intro', component: () => import('pages/IntroStart.vue') },
       { path: 'startprogramming', component: () => import('pages/ProgrammingStart.vue') },
       { path: 'dotenv', component: () => import('pages/DotEnvFile.vue') },
-      { path: 'mypage', component: () => import('pages/MyPage.vue') },
+      { path: 'mypage', component: () => import('src/pages/QuasarTestPage.vue') },
       { path: 'mypage2', component: () => import('pages/MyPage2.vue') },
       { path: 'mydogapp', component: () => import('pages/MyDogAppPage.vue') },
       { path: 'feedback', component: () => import('pages/UserFeedbackPage.vue') },
@@ -44,6 +44,13 @@ const routes = [
     component: () => import('layouts/RocketManAppLayout.vue'),
     children: [
       { path: 'rm_game', component: () => import('pages/DA_RocketMan.vue') }
+    ]
+  },
+  {
+    path: '/test',
+    component: () => import('layouts/RocketManAppLayout.vue'),
+    children: [
+      { path: 'quasar', component: () => import('src/pages/QuasarTestPage.vue') }
     ]
   },
 

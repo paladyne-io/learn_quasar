@@ -9,7 +9,7 @@
 
    <div class="q-pa-md">
     Lifecycle hooks allow code to be run at certain times.
-    For example, 'onMounted' is a special event that is called when a page loads.
+    For example, 'onMounted' is a special event that is triggered when a page loads.
     More information is <a href="https://vuejs.org/api/composition-api-lifecycle.html">here</a>.
     <p></p><p></p>This is a simple example using script setup...
     </div>
@@ -46,9 +46,11 @@ plugins: ['LocalStorage']
   import { useQuasar } from 'quasar'
 
   onMounted(() => {
-    console.log('mounted')
-    alert('I\'m alive!')
+    console.log('Mounted')
     const data = getData('name') &lt;-- Look up the name
+    if (data) {
+      console.log('Read: ' + data)
+    }
   })
 
   const $q = useQuasar()

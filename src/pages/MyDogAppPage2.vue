@@ -53,16 +53,15 @@
   </pre>
 
   <div class="q-pa-md">
-    <b>Issues.</b> The stats table is displayed too soon.
-     The flip doesn't reval the other card in a natural way.
-     Can partially fix by 'listening' to the imageHidden or statsHidden events,
-     however the transition effect issue is still not resolved.
+    <b>Issues.</b>
+     The flip transition doesn't reval the other card in a natural way.
+     This can be partially fixed by 'listening' to the imageHidden or statsHidden events that are emitted when the next card is revealed,
+     however the transition effect is still not very satisfactory.
     </div>
     <div class="q-pa-md">
-
          We will try some alternative approaches in the next examples<router-link to="da_ui_example_3"></router-link>.
         <div class="text-center q-pa-md full-width">
-            <q-btn label="UI Example 1" color="primary" to="da_ui_example_3"> </q-btn>
+            <q-btn label="UI Example 2" color="primary" to="da_ui_example_3"> </q-btn>
       </div>
     </div>
     <div class="text-center q-pa-md">

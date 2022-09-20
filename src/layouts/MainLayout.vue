@@ -152,6 +152,12 @@ const navlinksList = [
     caption: 'A simple demo game',
     icon: 'rocket',
     link: 'gameapp/rm_game'
+  },
+  {
+    title: 'About Quasars',
+    caption: 'Transition demo',
+    icon: 'star',
+    link: 'test/quasar'
   }
 ]
 const qlinksList = [
