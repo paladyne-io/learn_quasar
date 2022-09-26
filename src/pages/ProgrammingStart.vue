@@ -131,7 +131,15 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 </div>
 </div>
 </div>
-<div class="row text-subheader q-pt-sm">
+<div class="row q-pt-md">
+
+<div class="row full-width text-subheader q-pt-sm">
+  <q-btn outline style="color: goldenrod" label="Previous" to="programming1" />
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Making it your own" to="images" />
+</div>
+
+<!---
     <q-item class="col"
           clickable
           v-ripple
@@ -150,6 +158,7 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
             Next: Making it your own
         </div>
     </q-item>
+  -->
 </div>
 
 </q-card>

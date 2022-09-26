@@ -141,6 +141,12 @@ Click the button to see the whole page.
 </div>
 
 </div>
+<div class="row full-width text-subheader q-pt-sm">
+  <q-btn outline style="color: goldenrod" label="Previous" to="helloworld" />
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Add a library" to="sendemail" />
+</div>
+<!--
 <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -161,6 +167,7 @@ Click the button to see the whole page.
         </div>
     </q-item>
 </div>
+-->
 </q-card>
 </div>
 </q-page>

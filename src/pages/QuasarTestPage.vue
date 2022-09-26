@@ -4,9 +4,10 @@
      @after-enter="imageShown"
      @after-leave="imageHidden"
      >
-    <img id="quasar_image" v-show="showImage" class="quasar_image"
-      alt="Quasar image"
-      src="images/nasa_images/stsci-h-2010a-d-1280x720.png"/>
+      <img id="quasar_image" v-show="showImage" class="quasar_image"
+        alt="Quasar image"
+        src="images/nasa_images/stsci-h-2010a-d-1280x720.png"
+      />
     </transition>
 
     <transition enter-active-class="animated fadeInUp"

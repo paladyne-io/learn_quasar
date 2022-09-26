@@ -9,7 +9,7 @@
         Welcome to Learn Quasar...
      </div>
     <div class="text-center">
-    <q-btn label="Introduction" color="green" to="intro">   </q-btn>
+    <q-btn label="Introduction" color="green" to="intro"> </q-btn>
     </div>
   </q-page>
 </template>

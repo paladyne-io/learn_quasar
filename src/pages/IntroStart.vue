@@ -144,17 +144,25 @@ Break it down
 </div>
 -->
 </div>
-<div class="text-subheader q-pt-sm">
+<div class="row q-pt-md">
+    <q-space />
+      <q-btn class="text-right" outline style="color: goldenrod;ext-align:right;" label="Getting started" to="startprogramming" />
+  </div>
+
+<div class="text-subheader q-pt-md">
+    <!--
     <q-item
           clickable
           v-ripple
           to="startprogramming"
           @click="link='startprogramming'"
         >
-        <div style="text-align:right" class="full-width">
+
+        <div onclick="" style="text-align:right" class="full-width">
             Next: Getting started
         </div>
     </q-item>
+    -->
 </div>
 
 </q-card>

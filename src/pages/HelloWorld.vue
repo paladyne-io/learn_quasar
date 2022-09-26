@@ -134,6 +134,13 @@ Copy and paste one of the 'children' (the line between {}), then rename the <b>p
 
 </div>
 
+<div class="row full-width text-subheader q-pt-sm">
+  <q-btn outline style="color: goldenrod" label="Previous" to="helloworld" />
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Making it move" to="programming1" />
+</div>
+
+<!--
 <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -154,6 +161,7 @@ Copy and paste one of the 'children' (the line between {}), then rename the <b>p
         </div>
     </q-item>
 </div>
+-->
 </q-card>
 </div>
 

@@ -149,6 +149,12 @@ It may not be clear exactly what is happening here. For now just try to remember
 <li> (If it is a GUI component), add it into the html area (template) in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
 </ol>
 </div>
+<div class="row full-width text-subheader q-pt-sm">
+  <q-btn outline style="color: goldenrod" label="Previous" to="programming1" />
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Send emails" to="sendemail" />
+</div>
+<!--
 <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -169,6 +175,7 @@ It may not be clear exactly what is happening here. For now just try to remember
         </div>
     </q-item>
 </div>
+-->
 </q-card>
 </div>
 </q-page>

@@ -123,7 +123,14 @@
     You can't send an email with this form but to see how it works, click the "Send Feedback" menu in the side menu.
 </div>
 
+<div class="row full-width text-subheader q-pt-sm">
+  <q-btn outline style="color: goldenrod" label="Previous" to="images" />
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Build an app" to="/dummyapp/" />
+</div>
+
 </q-card>
+<!---
   <div class="row text-subheader q-pt-sm">
     <q-item class="col"
           clickable
@@ -144,6 +151,7 @@
         </div>
     </q-item>
 </div>
+-->
 </div>
 </q-page>
 </template>
