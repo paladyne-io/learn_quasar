@@ -1,9 +1,9 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Programming Start</div>
+<div class="q-pa-md text-h5 text-bold"> Start Programming</div>
 <q-card flat class="q-pa-md">
   <SubHeaderComponentDA
-    mytext="Getting started programming with Quasar (Preparation)"
+    mytext="Getting started with Quasar (Preparation)"
 />
 
 <div class="q-pt-sm">
@@ -13,7 +13,7 @@
 <q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
 
 <div class="q-pt-sm">
-This is the basic order of tasks (assuming you have a PC).
+This is the order of tasks.
 </div>
 
 <div class="q-pt-sm">
@@ -31,10 +31,10 @@ This is the basic order of tasks (assuming you have a PC).
   3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal application (Mac),
    <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows),
     or the Terminal window in Visual Studio Code.
-  If you have not used the Mac Terminal or Windows Command Prompt it might be better to try the Terminal window in Visual Studio Code first.
+  If you have not used the Mac Terminal or Windows Command Prompt I suggest you use the Terminal window in Visual Studio Code.
   <router-link to="/vscodeterminal">Click here for details</router-link>.
-   <br>The $ character represents the shell prompt. It might appear as a %.
-    Enter commands after this symbol and press Return or Enter to run them.
+   <br><br>The $ character represents the shell prompt. It might appear as a %.
+    Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
   </q-item-label>
 
 <pre>
@@ -49,13 +49,13 @@ $ npm init quasar"
 
 <div class="q-pt-sm">
 Answer the questions, following the prompts.
-See below for an example. Of course you can/should choose your own Project folder,
- Package name and Project product name and put your own contact Information after Author.
+See below for an example. Of course, you can/should choose your own Project folder,
+ Package name and Project product name and put your own contact information after Author.
 </div>
 
 <div class="q-pt-sm">
 * When installing Quasar you will be given the choice of using Vite or Webpack. If you don't have a strong preference,
- I recommend you choose Vite as its faster. (Suprising or not, 'Vite' means quick in French.)
+ I recommend you choose Vite as it's faster. (Surprising or not, 'Vite' means quick in French.)
 </div>
 
 <pre>
@@ -105,15 +105,14 @@ After creating your first app, and entering the above commands ("cd <i>your_proj
 
 <div class="q-pt-sm">
 If you cannot see the app, please check that the working directory is correct.
- You can verify the current working directory by typing 'pwd' and change it by typing 'cd ' ('cd' followed by a space) and then the full path.
+ You can verify the current working directory by typing 'pwd'.
 </div>
 <pre>
 dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
 </pre>
 
-<div class="q-pt-sm">
+The current working directory can be changed by typing 'cd ' ('cd' followed by a space) and then the full path.
 An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
-</div>
 
 <div class="q-pt-sm">
 In the directory/folder that you chose you will find a folder named after your app.

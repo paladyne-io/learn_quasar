@@ -68,16 +68,16 @@ Copy and paste one of the children, then rename the <b>path</b> and <b>page titl
 
 <div class="q-pt-sm">
 1. As mentioned previously, you can extend the functionality of your app by adding other libraries.
-For example we can add the popular vue-chartjs library to add graphs.
+For example, we can add the popular vue-chartjs library to add graphs.
 
-For this you need to use the terminal again.
+For this, you need to use the terminal again.
 Type "control c" (press the 'control' key and 'c' key at the same time) to exit the running program. Then follow the instructions to install the library.
-Usually these are shown on the installation page.
+Usually, these are shown on the installation page.
 
 https://www.npmjs.com/package/vue-chartjs
 
 It is common to be something like, "npm install vue-chartjs"
-In this case the installation says to use this command:
+In this case, the installation says to use this command:
 
 npm i vue-chartjs chart.js
 <div class="q-pa-sm bg-blue-2">
@@ -110,7 +110,7 @@ The library is now installed so you need to relaunch the Quasar dev environment 
 <q-item-label class="bulb">Tip:</q-item-label> lUse the up/down arrow keys on your keyboard to select previous shell commands so you don't have to retype them.
 </div>
 2. After adding the library to your project you need to add it to the page or component in teh script section of yourh page.
-If you page file doesn't have a script section, add one like this:
+If your page file doesn't have a script section, add one like this:
 <div class="q-pa-sm bg-blue-2">
 <pre>
 &lt;script&gt;

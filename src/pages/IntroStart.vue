@@ -21,7 +21,7 @@ Quasar is built on top of <b>Vue.js</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, together with React and Angular.
 </div>
 <div class="q-pt-sm"> JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
- Originally a scripting language  for web pages, it has evolved and its core functionality has been extended by other libraries.
+ Originally a scripting language for web pages, it has evolved and its core functionality has been extended by other libraries.
  Big advances were the introduction of the <b>node.js</b> framework and <b>npm</b>, which bundles Javascript into packages and helps users to find and install them.
 </div>
 <!--
@@ -80,7 +80,7 @@ How much does it cost?
 <div class="q-pt-sm">It depends on your experience. It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
  Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
   It generally comes down to how well you understand. Sometimes it can be frustrating but it is also rewarding.
-There are many resources and tutorials on-line.
+There are many resources and tutorials online.
 </div>
 <!--
 <div class="heading text-subheader q-pt-sm">
@@ -112,13 +112,13 @@ You don't need to decide these things now but it's useful to consider the scope 
 <div class="q-pt-sm">
 <ul>
  <li>Who are your target users?</li>
- <li>Which Operating Systems will you support ?(IOS, Android, Mac OS, Windows, Linux)</li>
- <li>Which  types of devices will you support? (Mobile or desktop, custom electronic devices)</li>
+ <li>Which Operating Systems will you support? (IOS, Android, Mac OS, Windows, Linux)</li>
+ <li>Which types of devices will you support? (Mobile or desktop, custom electronic devices)</li>
  <li>Will you provide support for displaying the interface in other languages (A multi-lingual app)</li>
  <li>What types of functionality are required? (Do you need to access hardware including the camera, bluetooth/BLE or NFC?)</li>
  <li>Color scheme, logos, icons and graphics. (Quasar has some features to help with all of these)</li>
  <li>Will you implement dark mode?</li>
- <li>What kind of data will you store and where will you store it? (Locally - on the device, or in the cloud, or both)</li>
+ <li>What kind of data will you store and where will you store it? (Locally - on the device, in the cloud, or both)</li>
  <li>How will you manage user data and privacy?</li>
  <li>Will your app be used for free, paid (one time) or by subscription?</li>
  <li>Will users log in and manage their own account or profile?</li>
@@ -127,12 +127,13 @@ You don't need to decide these things now but it's useful to consider the scope 
 </ul>
 </div>
 <div class="q-pt-sm">
-If you are not sure, it's better to start simple. Complexity will increase as you add new features or deploy to new types of devices. Complexity will slow you down. However implementing certain features can often be leveraged into another app. Gradually you will build up your own  library of code and components.
+If you are not sure, it's better to start simple. Complexity will increase as you add new features or deploy to new types of devices. Complexity will slow you down.
+However, implementing certain features can often be leveraged into another app. Gradually you will build up your own library of code and components.
 </div>
 <div class="heading text-subheader q-pt-sm">
 Break it down
 </div>
-<div class="q-pt-sm">Speaking of components, one of the real benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
+<div class="q-pt-sm">Speaking of components, one of the real benefits of frameworks such as Vue and Quasar is that they encourage using code to build components.
   If you don't understand what this means, don't worry.
    Just think of lego and when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.

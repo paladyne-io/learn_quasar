@@ -13,18 +13,25 @@ Choose Terminal from the View menu to display the terminal.
 <q-img src="images/VSCode_Terminal.png" alt="Quasar default app screen"> </q-img>
 <a href="https://code.visualstudio.com/docs/terminal/basics">For more information...</a>
 
+<div class="row full-width text-subheader q-pt-sm">
+  <q-space />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Start Programming" to="startprogramming" />
+</div>
+
+<!---
 <div class="text-subheader q-pt-sm">
     <q-item
           clickable
           v-ripple
           to="startprogramming"
-          @click="link = 'startprogramming'"
+          @click="link='startprogramming'"
         >
           <q-item-section nav>
           </q-item-section>
           Next: Getting started with programming
     </q-item>
 </div>
+-->
 </q-card>
 </div>
   </q-page>

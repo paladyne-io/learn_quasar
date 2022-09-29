@@ -24,7 +24,7 @@
         </div>
         <div class="q-pa-sm">
         The first page that is displayed when your app starts up is IndexPage.vue in the src folder.
-         In this exercise we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immediately shown.
+         In this exercise, we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immediately shown.
         This speeds up programming a lot as you don't have to save, compile and restart the app each time.
         This is how the file looks in Visual Studio Code.
         </div>
@@ -41,7 +41,7 @@
         1. Change the image.
            </div>
         <div class="q-pt-sm">
-        There are two places that images can be added to the project:
+        There are two places where images can be added to the project:
        <ol>
          <li> in the <b>public/images</b> folder (referenced in Quasar as: 'src="images/img.png')</li>
         <li> in the <b>src/assets folder</b> (referenced in Quasar as: 'src="~assets/img.png') </li>
@@ -92,14 +92,14 @@
 <div class="q-pt-sm">
 1. Copy an existing page (an 'xxx.vue' file in the pages folder) or create and save a new page (file).
 It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
-The filename must have 2 or more words, like <b>'MyPage.vue'</b>. This is called camel case.
+The filename must have 2 or more words, like <b>'MyPage.vue'</b>. This is called Camel case.
 
 <div class='note q-pt-sm'> Note. A plugin called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the EXPLORER pane.
- After installing the extension, right click on a file to show a menu with "Duplicate file or directory" at the bottom.
+ After installing the extension, right-click on a file to show a menu with "Duplicate file or directory" at the bottom.
 </div>
 <pre>
 &lt;template&gt;
-  &lt;q-p_ge class="flex flex-center"&gt;
+  &lt;q-page class="flex flex-center"&gt;
     &lt;img
       alt="Quasar logo"
       src="~assets/quasar-logo-vertical.svg"
