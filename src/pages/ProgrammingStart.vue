@@ -48,7 +48,7 @@ $ npm init quasar"
 </pre>
 
 <div class="q-pt-sm">
-Answer the questions, following the prompts.
+Proceed with the application initialization process by answering the questions following the prompts.
 See below for an example. Of course, you can/should choose your own Project folder,
  Package name and Project product name and put your own contact information after Author.
 </div>

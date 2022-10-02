@@ -33,8 +33,8 @@
   </div>
 
   <div class="q-pt-sm">
-  Quasar provides its own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
    This is an example to show how to install and import an external library.
+    Quasar provides its own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
 </div>
 
 <div class="q-pt-sm">

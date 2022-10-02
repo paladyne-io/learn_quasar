@@ -47,10 +47,11 @@ const routes = [
     ]
   },
   {
-    path: '/test',
-    component: () => import('layouts/RocketManAppLayout.vue'),
+    path: '/examples',
+    component: () => import('layouts/ExamplesLayout.vue'),
     children: [
-      { path: 'quasar', component: () => import('src/pages/QuasarTestPage.vue') }
+      { path: 'transitions', component: () => import('src/pages/examples/QuasarTestPage.vue') },
+      { path: 'imagegrid', component: () => import('src/pages/examples/GridCardPage.vue') }
     ]
   },
 

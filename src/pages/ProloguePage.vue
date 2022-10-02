@@ -34,7 +34,7 @@ The idea for this app came from my own experience learning Quasar.
 This app is hosted on Digital Ocean.
 Digital Ocean offers up to 3 static websites for free and these websites can be used to host apps created with Quasar.
 <a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-static-website-to-the-cloud-with-digitalocean-app-platform">To learn more click here.</a>
-In the near future, I will provide articles about how to deploy your web app to Digital Ocean and also how to connect it to a cloud database such as <a href="https://supabase.com">Supabase</a>.
+In the near future, I will provide articles about how to deploy your web app and also how to connect it to a cloud database such as <a href="https://supabase.com">Supabase</a>.
 </div>
 
 <div class="q-pa-sm">

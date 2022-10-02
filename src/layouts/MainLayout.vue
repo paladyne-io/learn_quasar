@@ -25,11 +25,9 @@
       bordered
     >
     <q-list>
-        <q-item-label header>
-          Navigation Links
-        </q-item-label>
+
         <q-expansion-item
-        icon="perm_identity"
+        icon=""
         label="Lesson Links"
         caption="Links to tutorials in this app"
         default-opened>
@@ -42,9 +40,34 @@
         </q-expansion-item>
       </q-list>
 
+      <q-expansion-item
+        icon=""
+        label="Demo apps"
+        caption=""
+        default-opened>
+
+        <AppLink
+          v-for="link in demoAppLinks"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-expansion-item>
+
+      <q-expansion-item
+        icon=""
+        label="Examples"
+        caption=""
+        default-opened>
+
+        <AppLink
+          v-for="link in exampleLinks"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-expansion-item>
       <q-list>
         <q-item-label header>
-          This app
+          Learn Quasar
         </q-item-label>
         <AppLink
            v-bind= "feedbackLink"
@@ -59,7 +82,7 @@
           Other Links
         </q-item-label>
       <q-expansion-item
-        icon="perm_identity"
+        icon=""
         label="Quasar Links"
         caption="Links related to Quasar"
         default-closed
@@ -98,49 +121,22 @@ const preferencesLink = {
   link: 'preferences'
 }
 
-const navlinksList = [
+const exampleLinks = [
   {
-    title: 'Prologue',
-    caption: 'prologue',
-    icon: 'school',
-    link: 'prologue'
+    title: 'Image Grid layout',
+    caption: 'Imagegrid demo (Colcade)',
+    icon: 'fas fa-border-all',
+    link: 'examples/imagegrid'
   },
   {
-    title: 'Intro',
-    caption: 'Introduction',
-    icon: 'school',
-    link: 'intro'
-  },
-  {
-    title: 'Let\'s Start',
-    caption: 'Preparation and installation',
-    icon: 'school',
-    link: 'startprogramming'
-  },
-  {
-    title: 'Hello World',
-    caption: 'Make it your own',
-    icon: 'school',
-    link: 'helloworld'
-  },
-  {
-    title: 'Programming Basics',
-    caption: 'Make it do stuff',
-    icon: 'school',
-    link: 'programming1'
-  },
-  {
-    title: 'Add a library',
-    caption: 'Extend it',
-    icon: 'school',
-    link: 'images'
-  },
-  {
-    title: 'Sending email',
-    caption: 'Communicate with your users',
-    icon: 'school',
-    link: 'sendemail'
-  },
+    title: 'Transition demo ',
+    caption: 'About Quasars',
+    icon: 'star',
+    link: 'examples/transtions'
+  }
+]
+
+const demoAppLinks = [
   {
     title: 'My Pet',
     caption: 'Let\'s build a simple app',
@@ -152,13 +148,53 @@ const navlinksList = [
     caption: 'A simple demo game',
     icon: 'rocket',
     link: 'gameapp/rm_game'
+  }
+]
+
+const navlinksList = [
+  {
+    title: 'Prologue',
+    caption: '',
+    icon: 'school',
+    link: 'prologue'
   },
   {
-    title: 'About Quasars',
-    caption: 'Transition demo',
-    icon: 'star',
-    link: 'test/quasar'
+    title: 'Introduction',
+    caption: '',
+    icon: 'school',
+    link: 'intro'
+  },
+  {
+    title: 'Lesson 1',
+    caption: 'Preparation and installation',
+    icon: 'school',
+    link: 'startprogramming'
+  },
+  {
+    title: 'Lesson 2',
+    caption: 'Hello World',
+    icon: 'school',
+    link: 'helloworld'
+  },
+  {
+    title: 'Lesson 3',
+    caption: 'Programming Basics',
+    icon: 'school',
+    link: 'programming1'
+  },
+  {
+    title: 'Lesson 4',
+    caption: 'Add a library',
+    icon: 'school',
+    link: 'images'
+  },
+  {
+    title: 'Lesson 5',
+    caption: 'Send emails',
+    icon: 'school',
+    link: 'sendemail'
   }
+
 ]
 const qlinksList = [
   {
@@ -218,6 +254,8 @@ export default defineComponent({
     return {
       essentialLinks: qlinksList,
       navigationLinks: navlinksList,
+      exampleLinks,
+      demoAppLinks,
       leftDrawerOpen,
       feedbackLink,
       preferencesLink,

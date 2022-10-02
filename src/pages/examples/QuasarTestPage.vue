@@ -9,11 +9,11 @@
         src="images/nasa_images/stsci-h-2010a-d-1280x720.png"
       />
     </transition>
-
+    <!-- @after-leave="aboutText1Hidden"> -->
     <transition enter-active-class="animated fadeInUp"
     leave-active-class="animated fadeOut"
-    @after-enter="aboutText1Shown"
-    @after-leave="aboutText1Hidden">
+    @after-enter="aboutText1Shown">
+
     <div v-show="showText" class="quasar_image_about" >
         {{quasarInfo}}
     </div>

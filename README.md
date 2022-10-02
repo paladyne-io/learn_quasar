@@ -17,6 +17,10 @@ https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
 https://learn-quasar-p764s.ondigitalocean.app/#/gameapp/rm_game
 * How to use the Quasar LocalStorage plugin to save and read data
 https://learn-quasar-p764s.ondigitalocean.app/#/dummyapp/da_local_storage
+* Adding an image grid using colcade, based on this article
+  https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
+
+https://learn-quasar-p764s.ondigitalocean.app/#/examples/imagegrid
 
 ## Install the dependencies
 ```bash

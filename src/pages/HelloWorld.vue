@@ -135,7 +135,7 @@ Copy and paste one of the 'children' (the line between {}), then rename the <b>p
 </div>
 
 <div class="row full-width text-subheader q-pt-sm">
-  <q-btn outline style="color: goldenrod" label="Previous" to="helloworld" />
+  <q-btn outline style="color: goldenrod" label="Previous" to="intro" />
   <q-space />
   <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Making it move" to="programming1" />
 </div>
