@@ -80,7 +80,7 @@ Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
 ✔ Pick script type: › Javascript
 ✔ Pick Quasar App CLI variant: › Quasar App CLI with Vite
 ✔ Package name: … learn-quasar
-✔ Project product name: (must start with letter if building mobile apps) … Learn Quasar App
+✔ Project product name: (must start wit...) … Learn Quasar App
 ✔ Project description: … An app to teach Quasar
 ✔ Author: … darren@paladyne.co.jp
 ✔ Pick your CSS preprocessor: › Sass with SCSS syntax
@@ -112,7 +112,7 @@ dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
 </pre>
 
 The current working directory can be changed by typing 'cd ' ('cd' followed by a space) and then the full path.
-An easy way to get the full path to a folder is to drag and drop the folder/directory on to the Terminal window after “cd ”.
+An easy way to get the full path to a folder is to drag and drop the folder/directory onto the Terminal window after “cd ”.
 
 <div class="q-pt-sm">
 In the directory/folder that you chose you will find a folder named after your app.
@@ -133,9 +133,9 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 <div class="row q-pt-md">
 
 <div class="row full-width text-subheader q-pt-sm">
-  <q-btn outline style="color: goldenrod" label="Previous" to="programming1" />
+  <q-btn outline style="color: goldenrod" label="Previous" to="introduction" />
   <q-space />
-  <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Making it your own" to="images" />
+  <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Making it your own" to="helloworld" />
 </div>
 
 <!---

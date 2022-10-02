@@ -126,8 +126,8 @@ You don't need to decide these things now but it's useful to consider the scope 
 </ul>
 </div>
 <div class="q-pt-sm">
-If you are not sure, it's better to start simple. Complexity will increase as you add new features or deploy to new types of devices. Complexity will slow you down.
-However, implementing certain features can often be leveraged into another app. Gradually you will build up your own library of code and components.
+If you are not sure, it's better to start simply. Complexity will increase as you add new features or target your app to new types of devices. Complexity will slow you down.
+However, any new features you add could be used in another app. Gradually you can build up your own library of code and components.
 </div>
 <div class="heading text-subheader q-pt-sm">
 Break it down

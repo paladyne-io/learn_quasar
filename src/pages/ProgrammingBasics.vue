@@ -144,7 +144,7 @@ Click the button to see the whole page.
 <div class="row full-width text-subheader q-pt-sm">
   <q-btn outline style="color: goldenrod" label="Previous" to="helloworld" />
   <q-space />
-  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Add a library" to="sendemail" />
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Add a library" to="images" />
 </div>
 <!--
 <div class="row text-subheader q-pt-sm">

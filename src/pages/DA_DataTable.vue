@@ -16,12 +16,13 @@
   <div class="q-pa-md full-width text-center text-bold">
 Some simple examples of JSON
   </div>
-  <div class="q-pa-md">
+  <div class="q-pa-md full-width text-center">
   A plain array:
+</div>
 <pre>{"John", "Sarah", "Hiroyuki", "Maria"}
 </pre>
-</div>
-<div class="q-pa-md">
+
+<div class="q-pa-md full-width text-center">
    Describing an object (or a person).
    </div>
 <pre>{"name":"John", "age":25, "hobbies":["running", "swimming", "reading"]}</pre>
@@ -37,13 +38,13 @@ Some simple examples of JSON
 <div class="q-pa-md">
    Many components in Vue and Quasar use a <b>model</b>. A model is a representation of the data that applies to the component.
    The data used by the component are contained in the model and when the data in the model changes, the display will change.
-   This might seem difficult to understand at first but it is related the concept of reactivity.
+   This might seem difficult to understand at first but it is related to the concept of reactivity.
    The component (such as a table) reacts to the changes in the model.
    Also, if the component is editable, changing the data inside the component will update the model.
     This is sometimes called 2-way binding.
 </div>
 <div class="q-pa-md">
-Let's look at in terms of our example app.
+Let's look at this further using our example app.
 We want to load the table data and save it when it is changed by the user.
 (Using local storage means that the data is saved even after we close the page or app.)
 </div>
