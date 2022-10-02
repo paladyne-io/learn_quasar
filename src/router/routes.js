@@ -50,8 +50,8 @@ const routes = [
     path: '/examples',
     component: () => import('layouts/ExamplesLayout.vue'),
     children: [
-      { path: 'transitions', component: () => import('src/pages/examples/QuasarTestPage.vue') },
-      { path: 'imagegrid', component: () => import('src/pages/examples/GridCardPage.vue') }
+      { path: 'transitions', component: () => import('pages/QuasarTestPage.vue') },
+      { path: 'imagegrid', component: () => import('pages/GridCardPage.vue') }
     ]
   },
 
