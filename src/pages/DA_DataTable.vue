@@ -9,26 +9,26 @@
 
    <div class="q-pa-md">
     A simple element such as a button probably only requires setting a label, however other more complex components, such as a table, might require loading various types of data.
-    A javaScript object can be described with <b>JSON</b> (JavaScript Object Notation).
-    JSON can describe an array or a set of named elements.
+    A javaScript object can be described with <a href="https://www.json.org/json-en.html"><b>JSON</b></a> (JavaScript Object Notation).
+     JSON can describe an object, an array or a set of named elements.
      It is often used to save data and to send it over the network (to and from a server).
   </div>
   <div class="q-pa-md full-width text-center text-bold">
 Some simple examples of JSON
   </div>
   <div class="q-pa-md full-width text-center">
-  A plain array:
+  A plain JSON array is used to contain a list of items.
 </div>
-<pre>{"John", "Sarah", "Hiroyuki", "Maria"}
+<pre>["John", "Sarah", "Hiroyuki", "Maria"]
 </pre>
-
 <div class="q-pa-md full-width text-center">
-   Describing an object (or a person).
+  An object (in this case a person) can be described by adding named elements between {}.
+  An array is added inside the object.
    </div>
 <pre>{"name":"John", "age":25, "hobbies":["running", "swimming", "reading"]}</pre>
-    Within JSON "[ ]" is used to describe an array, or list, of items.
- <div class="q-pa-md">
-  A table is a form of array. An array is a set of data than can be arranged in a grid.
+
+ <div class="full-width text-center q-pa-md">
+  A table is comprised of an array of data arranged in a grid.
  </div>
   <pre>Header 1    Header 2     Header 3
   Row 1         H2/R1         H3/R1

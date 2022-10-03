@@ -65,15 +65,13 @@ plugins: ['LocalStorage']
 
 <div class="q-pa-md">
 When you use LocalStorage you save data in named pairs, for example, "name: George" and "age: 5", and you read it by asking for that name.
-We created a method called getData that does this so we can call <b>getData(dataName)</b>. If the data has been saved, it will be returned by the method.
+Let's create a method called getData that does this so we can call <b>getData(dataName)</b>. If the data has been saved, it will be returned by the method.
 If there is no data, it will return 'undefined' which means it doesn't exist.
-In Javascript if we want to check whether or not something (an object) exists, the easiest way is just to write 'if (object)...'.
-</div>
+In JavaScript if we want to check whether or not something (an object) exists, the easiest way is just to write 'if (object)...'.
 
- <div class="q-pa-md">
+<br><br>
   Since we haven't yet stored any data we should add a <b>saveData()</b> function to add some new data if the data doesn't exist.
-  Note: with computers it is possible that there will be an error when reading or writing data.
-  The memory might be full or it might be locked. You can't always assume that reading or writing data will be successful.
+  Note: There may be an error when reading or writing data. For example, the memory might be full or the storage media might be locked. You can't always assume that reading or writing data will be successful.
   That is why we have some code called a try/catch block that catches such errors.
 
   <p></p><p></p>Here is our saveData function which is similar to getData except we have to provide 2 pieces of information, the name for the data and the actual data...
