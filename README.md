@@ -1,26 +1,36 @@
 # learn_quasar
 
-A series of articles and interactive examples that teach how to use the Quasar framework to develop applications that can run on a variety of devices.
+A series of articles and interactive examples explaining how to use the Quasar framework to develop applications that can run on a variety of devices.
 
-It is targeted at beginners who want to develop an app or interactive website starting with preparation instructions and a basic 'how-to' with Visual Code.
+This instructional app is aimed at beginners starting with preparation, including how to use Visual Studio Code.
 
-View the app here
+The app is hosted here:
 https://learn-quasar-p764s.ondigitalocean.app/#/intro
 
 Features of interest:
 * Collapsible side panel menus
-* Add a slider using vue3-carousel https://ismail9k.github.io/vue3-carousel/
+* A slider using vue3-carousel https://ismail9k.github.io/vue3-carousel/
 * Dark mode (Try it in app preferences. Article to come soon.)
-* Send emails with emailjs
+* Sending emails with emailjs
 https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
-* A simple animated game (Rocket man). Can you land the craft safely?
+* A simple animated game (Rocket man). Can you get the craft to the moon?
 https://learn-quasar-p764s.ondigitalocean.app/#/gameapp/rm_game
 * How to use the Quasar LocalStorage plugin to save and read data
 https://learn-quasar-p764s.ondigitalocean.app/#/dummyapp/da_local_storage
-* Adding an image grid using colcade, based on this article
+* An image grid example using Colcade,
+https://learn-quasar-p764s.ondigitalocean.app/#/examples/imagegrid
+based on this article:
   https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
 
-https://learn-quasar-p764s.ondigitalocean.app/#/examples/imagegrid
+After downloading or cloning this repository...
+Open a terminal and <b>'cd '</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
+
+After typing 'quasar dev', your default web browser should open to display the app.
+Press Control + C to exit the development environment. Type 'code .'' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.
+
+Type 'quasar dev' again to renter the dev environment. Changes you make in the <b>src</b> folder should be updated in the browser without manually reloading the page.
+
+Prepare your app for hosting on a web server by running 'quasar build'.
 
 ## Install the dependencies
 ```bash
@@ -38,7 +48,4 @@ quasar dev
 ```bash
 quasar build
 ```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
 
