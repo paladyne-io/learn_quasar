@@ -23,33 +23,59 @@ This is the order of tasks.
   </q-item-label>
 
   <q-item-label class="q-pt-md">
-  2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a>
-  Download and run one of the <b>LTS</b> installers appropriate for your computer.
-  </q-item-label>
+  2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the <b>LTS</b> installer appropriate for your computer *.
 
   <q-item-label class="q-pt-md">
-  3. <b>Install Quasar CLI and create your app</b>*. To do these steps you can use the Terminal application (Mac),
-   <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows),
-    or the Terminal window in Visual Studio Code.
-  If you have not used the Mac Terminal or Windows Command Prompt I suggest you use the Terminal window in Visual Studio Code.
-  <router-link to="/vscodeterminal">Click here for details</router-link>.
+  3. <b>Install Quasar CLI</b>. To do this and the following steps you have to use the Terminal application (Mac) or the
+   <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows.)
+
+    <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
+    <b>On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>.
+
+    <router-link to="/vscodeterminal">Click here for details</router-link>.
    <br><br>The $ character represents the shell prompt. It might appear as a %.
     Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
   </q-item-label>
 
 <pre>
 $ yarn global add @quasar/cli
-$ yarn create quasar
 
 # or:
 
 $ npm i -g @quasar/cli
-$ npm init quasar
+</pre>
+
+  *If you experience problems installing Quasar on a Mac, try installing Node using nvm (Node Version Manager).
+  </q-item-label>
+<pre>
+1) Install NVM by copying and pasting the curl command below into a terminal window.
+    (Check the latest version here: <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a>)
+
+   <b> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash  </b>
+
+2) Close and reopen the terminal for the System to recognize the changes…
+
+3) check that NVM is installed
+     nvm -v
+
+4) Install the latest Long Term Support version of node
+     nvm install —lts
 </pre>
 
 <div class="q-pt-sm">
-Proceed with the application initialization process by answering the questions following the prompts.
-See below for an example. You can/should choose your own Project folder, Package name and Project product name and put your own contact information after Author.
+  4. Use the QUasar CLI to Create your app by entering one of the following commands.</div>
+
+<pre>
+  $ yarn create quasar
+
+  # or:
+
+  $ npm init quasar
+  </pre>
+
+<div class="q-pt-sm">
+ 5. Proceed with the Quasar initialization process by answering the questions following the prompts.
+ See below for an example. You can/should choose your own Project folder, Package name and Project product name and put your own contact information after Author.
 </div>
 
 <div class="q-pt-sm">

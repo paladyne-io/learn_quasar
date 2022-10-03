@@ -40,7 +40,7 @@ In the near future, I will provide articles about how to deploy your web app and
 <div class="q-pa-sm">
  I wish you success on your journey to learn Quasar and Vue.js and I will try to help if you get lost or confused.
 
- <div class="q-pt-sm">
+ <div class="q-pt-sm dark">
   You can contact me directly using the <router-link to="feedback">contact page</router-link>.
 </div>
  <div class="q-pt-sm">

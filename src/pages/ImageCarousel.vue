@@ -35,6 +35,7 @@
   <div class="q-pt-sm">
    This is an example to show how to install and import an external library.
     Quasar provides its own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
+    Consider this to be an exercise rather than a recommendation.
 </div>
 
 <div class="q-pt-sm">
@@ -48,15 +49,16 @@
 
 <div class="q-pt-sm">
 As mentioned previously, you can extend the functionality of your app by adding libraries.
-For example we can add the <b>vue-carousel</b> library to display images in a slideshow or 'slider'.
+For example we can add this <b>vue-carousel</b> library to display images in a slideshow or 'slider'.
 
 The page that describes the library is here:
 <a href="https://ismail9k.github.io/vue3-carousel/">vue3-carousel</a>
 </div>
 <div class="q-py-sm">
 For this task you need to use the terminal again.
-Type "control c" (press the 'control' and 'c' keys at the same time) to exit the quasar development environment.
- Then follow the instructions to install the library. Usually these are shown on the installation page. It is common to be something like, <b>"npm install vue3-carousel"</b>.
+Press the 'Control' and 'C' keys at the same time to exit the quasar development environment.
+ Then follow the instructions to install the library. Usually these are shown on the installation page.
+  It is common to be something like, <b>"npm install vue3-carousel"</b>.
  </div>
 
 <pre>

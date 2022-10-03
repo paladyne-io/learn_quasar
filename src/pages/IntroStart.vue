@@ -69,7 +69,7 @@ Quasar version 2 was released in 2021 and is built on Vue 3.
   An app can also ask users for permission to access data and access to hardware. -->
 <div class="q-pt-sm">One of the best features of Quasar is that it allows you to choose the kind of app you build without significantly changing your code.
  You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on on a PC (Windows, Mac OS or Linux).</div>
-<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, calendars, cards and functions to speed up your development.</div>
+<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, calendars, cards and functions to speed up development.</div>
 
 <div class="text-subheader q-pt-sm">
 How much does it cost?
@@ -115,13 +115,13 @@ You don't need to decide these things now but it's useful to consider the scope 
  <li>Who are your target users?</li>
  <li>Which Operating Systems will you support? (IOS, Android, Mac OS, Windows, Linux)</li>
  <li>Which types of devices will you support? (Mobile or desktop, custom electronic devices)</li>
- <li>Will you provide support for displaying the interface in other languages (A multi-lingual app)</li>
+ <li>Will you provide support for displaying the interface in other languages? (A multi-lingual app)</li>
  <li>What types of functionality are required? (Do you need to access hardware including the camera, Bluetooth/BLE or NFC?)</li>
  <li>The color scheme, logos, icons and graphics. (Quasar has some features to help with all of these)</li>
  <!--
  <li>Will you implement dark mode?</li>
  -->
- <li>What kind of data will you store and where will you store it? (Locally - on the device, in the cloud, or both)</li>
+ <li>What kinds of data will you store and where will you store it? (Locally - on the device, in the cloud, or both)</li>
  <li>How will you manage user data and privacy?</li>
  <li>Will users log in and manage their own account or profile?</li>
  <li>Do you need an administration interface? (often known as an Admin dashboard)</li>

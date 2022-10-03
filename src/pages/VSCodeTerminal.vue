@@ -10,8 +10,19 @@ How to set up and use the VS Code Terminal
 
 Choose Terminal from the View menu to display the terminal.
 
-<q-img src="images/VSCode_Terminal.png" alt="Quasar default app screen"> </q-img>
-<a href="https://code.visualstudio.com/docs/terminal/basics">For more information...</a>
+<q-img src="images/VSCode_Terminal.png" alt="VS Code Terminal screenshot"> </q-img>
+
+On Windows, you can switch from PowerShell (default) to Command Prompt by clicking the small v (arrow) next to + at the top right of the Terminal.
+Try this (and set Command Prompt as the default) if you experience errors when installing Node or Quasar.
+<div class="text-center">
+<q-img style="max-width: 600px;"
+  src="https://code.visualstudio.com/assets/docs/terminal/basics/select-shell-dropdown.png"
+  alt="Visual Studio Code Terminal select shell screenshot"
+ >
+</q-img>
+</div>
+<br><br>
+<a href="https://code.visualstudio.com/docs/terminal/basics">For more information on using the terminal in Visual Studio Code...</a>
 
 <div class="row full-width text-subheader q-pt-sm">
   <q-space />

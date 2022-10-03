@@ -118,11 +118,11 @@ export default defineComponent({
 }
 
 .test_btn{
-  padding-bottom: 4px;
+  padding-bottom: 38px;
 }
 
 .credit_text {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 .quasar_image_about
     {

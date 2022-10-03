@@ -121,7 +121,7 @@ Now we have to add functions to read and write this data to local storage.
 }
 
 function readTableData () {
-   console.log('Reading Table Data...')
+  console.log('Reading Table Data...')
   try {
     rows = $q.localStorage.getItem('rows')
     columns = $q.localStorage.getItem('columns')
