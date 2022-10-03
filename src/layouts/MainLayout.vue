@@ -129,7 +129,7 @@ const exampleLinks = [
     link: 'examples/imagegrid'
   },
   {
-    title: 'Transition demo ',
+    title: 'Transition demo',
     caption: 'About Quasars',
     icon: 'star',
     link: 'examples/transitions'
