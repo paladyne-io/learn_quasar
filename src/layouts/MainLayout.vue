@@ -132,7 +132,7 @@ const exampleLinks = [
     title: 'Transition demo ',
     caption: 'About Quasars',
     icon: 'star',
-    link: 'examples/transtions'
+    link: 'examples/transitions'
   }
 ]
 

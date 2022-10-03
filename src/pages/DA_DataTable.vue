@@ -30,18 +30,18 @@ Some simple examples of JSON
  <div class="full-width text-center q-pa-md">
   A table is comprised of an array of data arranged in a grid.
  </div>
-  <pre>Header 1    Header 2     Header 3
-  Row 1         H2/R1         H3/R1
-  Row 2         H2/R2         H3/R2
-  Row 3         H2/R3         H3/R3</pre>
+  <pre>Column 1   Column 2     Column 3
+  Row 1           C2/R1         C3/R1
+  Row 2           C2/R2         C3/R2
+  Row 3           C2/R3         C3/R3</pre>
 
 <div class="q-pa-md">
    Many components in Vue and Quasar use a <b>model</b>. A model is a representation of the data that applies to the component.
    The data used by the component are contained in the model and when the data in the model changes, the display will change.
-   This might seem difficult to understand at first but it is related to the concept of reactivity.
+   This might seem difficult to understand at first but it is related to the concept of <b>reactivity</b>.
    The component (such as a table) reacts to the changes in the model.
    Also, if the component is editable, changing the data inside the component will update the model.
-    This is sometimes called 2-way binding.
+    This is known as 2-way binding.
 </div>
 <div class="q-pa-md">
 Let's look at this further using our example app.
@@ -90,7 +90,7 @@ The syntax for a table looks like this and you can see the columns are assigned 
 </pre>
 
 <div class="q-pa-md">
-So the data is displayed in the table like this. Note the heading which is specified in "title" and the ':' before rows and columns which means 'look up the data from JavaScript'.
+So the data is displayed in the table as shown below. Note the heading which is specified in "title" and the ':' before rows and columns which means 'look up the data from JavaScript'.
 </div>
 
 <div class="q-pa-md full-width">
@@ -114,7 +114,7 @@ Now we have to add functions to read and write this data to local storage.
     $q.localStorage.set('rows', rows)
     $q.localStorage.set('columns', columns)
   } catch (e) {
-    // data wasn't successfully written due to
+    // data wasn't successfully saved due to
     // a Web Storage API error
     console.log('Error saving data: ' + e)
   }
@@ -126,9 +126,9 @@ function readTableData () {
     rows = $q.localStorage.getItem('rows')
     columns = $q.localStorage.getItem('columns')
   } catch (e) {
-    // data wasn't successfully saved due to
+    // data wasn't successfully read due to
     // a Web Storage API error
-    console.log('Error getting data: ' + e)
+    console.log('Error reading data: ' + e)
   }
 }
 
@@ -200,9 +200,9 @@ function readTableData () {
     rows = $q.localStorage.getItem('rows')
     columns = $q.localStorage.getItem('columns')
   } catch (e) {
-    // data wasn't successfully saved due to
+    // data wasn't successfully read due to
     // a Web Storage API error
-    console.log('Error getting data: ' + e)
+    console.log('Error reading data: ' + e)
   }
 }
 
@@ -225,4 +225,5 @@ function btnClicked () {
   alert('btnClicked')
 }
 */
+
 </script>

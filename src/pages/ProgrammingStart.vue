@@ -44,7 +44,7 @@ $ yarn create quasar
 # or:
 
 $ npm i -g @quasar/cli
-$ npm init quasar"
+$ npm init quasar
 </pre>
 
 <div class="q-pt-sm">
@@ -80,7 +80,7 @@ Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
 ✔ Pick script type: › Javascript
 ✔ Pick Quasar App CLI variant: › Quasar App CLI with Vite
 ✔ Package name: … learn-quasar
-✔ Project product name: (must start wit...) … Learn Quasar App
+✔ Project product name: (must start with...) … Learn Quasar App
 ✔ Project description: … An app to teach Quasar
 ✔ Author: … darren@paladyne.co.jp
 ✔ Pick your CSS preprocessor: › Sass with SCSS syntax

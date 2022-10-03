@@ -71,7 +71,7 @@ What we will come back to later:
 
  <div class="q-pt-sm">
     1. In the previous article we added a navigation button with a "to" element.
-     If it is not a button used for navigation, you should add "@click=<i>methodName</i>" to the button like this:
+     If the button is not used for navigation, you should add "@click=<i>methodName</i>" to the button like this:
 </div>
 
 <pre>
@@ -114,7 +114,7 @@ It looks like this.
 </pre>
 </div>
 <div class="q-pt-sm">
-The onMounted function is a special function provided by vue.
+The onMounted function is a special function provided by Vue.
  It is called when the component or page is loaded.
  It can be useful to check something or run some code when the page is first displayed.
  For example, to check whether the app is running on a mobile device, what language the device is using etc.
