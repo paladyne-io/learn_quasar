@@ -26,7 +26,7 @@ This is the order of tasks.
   2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the <b>LTS</b> installer appropriate for your computer *.
 
   <q-item-label class="q-pt-md">
-  3. <b>Install Quasar CLI</b>. To do this and the following steps you have to use the Terminal application (Mac) or the
+  3. <b>Install Quasar CLI</b>. To do this and the following steps it is necessary to use the Terminal application (Mac) or the
    <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows.)
 
     <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
@@ -63,7 +63,7 @@ $ npm i -g @quasar/cli
 </pre>
 
 <div class="q-pt-sm">
-  4. Use the QUasar CLI to Create your app by entering one of the following commands.</div>
+  4. Use the QUasar CLI to create your app by entering one of the following commands.</div>
 
 <pre>
   $ yarn create quasar
@@ -157,7 +157,7 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 <div class="row q-pt-md">
 
 <div class="row full-width text-subheader q-pt-sm">
-  <q-btn outline style="color: goldenrod" label="Previous" to="introduction" />
+  <q-btn outline style="color: goldenrod" label="Previous" to="intro" />
   <q-space />
   <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Making it your own" to="helloworld" />
 </div>
