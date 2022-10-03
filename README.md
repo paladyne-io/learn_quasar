@@ -1,6 +1,6 @@
 # learn_quasar
 
-A series of articles and interactive examples explaining how to use the Quasar framework to develop applications that can run on a variety of devices.
+A series of articles and interactive examples explaining how to use the Quasar framework https://quasar.dev to develop applications that can run on a variety of devices.
 
 This instructional app is aimed at beginners starting with preparation, including how to use Visual Studio Code.
 
@@ -9,7 +9,9 @@ https://learn-quasar-p764s.ondigitalocean.app/#/intro
 
 Features of interest:
 * Collapsible side panel menus
-* A slider using vue3-carousel https://ismail9k.github.io/vue3-carousel/
+* A slider using vue3-carousel
+https://learn-quasar-p764s.ondigitalocean.app/#/images
+https://ismail9k.github.io/vue3-carousel/
 * Dark mode (Try it in app preferences. Article to come soon.)
 * Sending emails with emailjs
 https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
@@ -23,7 +25,7 @@ based on this article:
   https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
 
 After downloading or cloning this repository...
-Open a terminal and <b>'cd '</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
+Open a terminal and <b>'cd'</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
 
 After typing 'quasar dev', your default web browser should open to display the app.
 Press Control + C to exit the development environment. Type 'code .'' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.

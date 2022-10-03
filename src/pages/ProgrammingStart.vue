@@ -24,11 +24,11 @@ This is the order of tasks.
 
   <q-item-label class="q-pt-md">
   2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a>
-  * Download and run one of the <b>LTS</b> installers appropriate for your computer.
+  Download and run one of the <b>LTS</b> installers appropriate for your computer.
   </q-item-label>
 
   <q-item-label class="q-pt-md">
-  3. <b>Install Quasar CLI and create your app</b>. To do these steps you can use the Terminal application (Mac),
+  3. <b>Install Quasar CLI and create your app</b>*. To do these steps you can use the Terminal application (Mac),
    <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows),
     or the Terminal window in Visual Studio Code.
   If you have not used the Mac Terminal or Windows Command Prompt I suggest you use the Terminal window in Visual Studio Code.
@@ -49,13 +49,13 @@ $ npm init quasar"
 
 <div class="q-pt-sm">
 Proceed with the application initialization process by answering the questions following the prompts.
-See below for an example. Of course, you can/should choose your own Project folder,
- Package name and Project product name and put your own contact information after Author.
+See below for an example. You can/should choose your own Project folder, Package name and Project product name and put your own contact information after Author.
 </div>
 
 <div class="q-pt-sm">
-* When installing Quasar you will be given the choice of using Vite or Webpack. If you don't have a strong preference,
- I recommend you choose Vite as it's faster. (Surprising or not, 'Vite' means quick in French.)
+* When creating a project with Quasar you will be given the choice of using Vite or Webpack
+ If you don't have a strong preference, I recommend you choose Vite as it's faster.
+ (Surprising or not, 'Vite' means quick in French.)
 </div>
 
 <pre>
@@ -115,14 +115,12 @@ The current working directory can be changed by typing 'cd ' ('cd' followed by a
 An easy way to get the full path to a folder is to drag and drop the folder/directory onto the Terminal window after “cd ”.
 
 <div class="q-pt-sm">
-In the directory/folder that you chose you will find a folder named after your app.
- This is your project folder. Open it in Visual Studio Code by choosing "Open folder…" from the File menu.
- Another way is to type "code ." in the terminal after the "Quasar •  SUCCESS" message to open the working directory.
+ Open your project folder in Visual Studio Code by choosing "Open folder…" from the File menu or by typing "code ." in the terminal after the "Quasar •  SUCCESS" message.
  If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program (exit the development environment).
 </div>
 <div class="q-pt-sm">
 The working directory will remain set until you close the Terminal window.
- If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
+If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.
