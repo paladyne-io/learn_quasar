@@ -23,13 +23,11 @@
 &lt;/script&gt;</pre>
 
   <div class="q-pa-md">
-   This can be a useful place to take some actions, for example to load data into our table.
-   There are various ways to accomplish this. Let's start with the easiest which is Quasar's built-in LocalStorage plugin.
-    More information is <a href="https://quasar.dev/quasar-plugins/web-storage">here</a>.
-
+   This can be a useful place to take some actions, for example, to load data into our table.
+   There are various ways to accomplish this. Let's start with the easiest which is <a href="https://quasar.dev/quasar-plugins/web-storage">Quasar's built-in LocalStorage plugin</a>.
    Just a note that this is the easiest but not necessarily the best way. It's probably not suitable if you are using a shared computer and the data will be deleted if the browser cache is cleared.
   <p></p><p></p>
-  First some setup. We have to load the Quasar plugin  by modifying the Quasar.conf file.
+  First some setup. We have to load the Quasar plugin by modifying the Quasar.conf file.
   Add 'LocalStorage' after plugins in the <b>quasar.config.js</b> file like this:
 </div>
 <pre>

@@ -62,7 +62,8 @@
           alert('Please type a message.')
           return
         }
-        alert('This is a test email from: ' + fromName.value + ' with message: ' + message.value)
+        alert('This is a test email from: ' + fromName.value +
+        ' with message: ' + message.value)
       }
     &lt;/script&gt;
   </pre>

@@ -14,5 +14,6 @@
   ],
   "[vue]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "grammarly.files.include": ["**/README.md", "**/readme.md", "**/*.txt",  "**/*.vue"]
 }
