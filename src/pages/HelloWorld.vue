@@ -3,17 +3,17 @@
 <div class="heading q-pa-md text-bold"> Making it your own</div>
 <div>
 <q-card flat q-card class="q-pa-md">
-
     <div class="text-subheader q-pt-sm">
       The world is your canvas
     </div>
 
     <div class="q-pt-sm">
-      Your mission today is to get to this:
+      Your mission today is to get to this (with any picture and text you choose):
     </div>
 
-<q-img src="images/MyAppTopPage.png" alt="Quasar default app screen" style="max-width: 600px;"> </q-img>
-
+    <div class="q-pt-sm text-center" >
+      <q-img src="images/MyAppTopPage.png" alt="Quasar default app screen" style="max-width: 500px;"/>
+    </div>
 <div class="q-pt-sm">
   This is the basic order of tasks.
 </div>
@@ -33,18 +33,18 @@
         </div>
         <div class="q-pa-sm">
           To demonstrate hot reloading, type a word such as 'Hello' before '&lt;img' and save the file.
-         In the web browser you should see the word appear to the left of the Quasar icon.
-         As you will see it requires additional work to get text to appear in the right place, with the correct size and color etc.
+         In the web browser, you should see the word appear to the left of the Quasar icon.
+         As you will see it requires additional work to get the text to appear in the right place, with the correct size and color etc.
          We will come to that later.
          </div>
       <div class="q-pt-md text-subheader" >
-        Change the image.
+        Change the image
            </div>
         <div class="q-pt-sm">
         There are two places where images can be added to the project:
        <ol>
-         <li> in the <b>public/images</b> folder (referenced in Quasar as: 'src="images/img.png')</li>
-        <li> in the <b>src/assets folder</b> (referenced in Quasar as: 'src="~assets/img.png') </li>
+         <li>in the <b>public/images</b> folder (referenced in Quasar as: 'src="images/img.png')</li>
+        <li>in the <b>src/assets folder</b> (referenced in Quasar as: 'src="~assets/img.png') </li>
       </ol>
       </div>
       You can add your own images to either of these folders and then change the code in the 'img' tag to display them, like this.
@@ -61,21 +61,26 @@
       Add some text
   </div>
  <div class="q-py-sm">
-  We'll add some text below the image to put a description, label or accreditation.
-   We add a 'div' around the text as a container to help keep it in the center of the page. The words written after 'class=' are key words Quasar recognizes to help with layout.
-</div>
-
+  We'll add some text below the image for a description, label or accreditation.
+   We add a 'div' around the text as a container to help keep it in the center of the page.
+ </div>
 <pre>
- &lt;div class="full-width text-center"&gt;
-    Quasar Image courtesy of NASA
+ &lt;div class="full-width text-center text-h6"&gt;
+    Quasar image courtesy of NASA
  &lt;/div&gt;
 </pre>
+
+<div class="q-py-sm">
+  The words written after 'class=' are keywords Quasar recognizes to help with layout.
+    Classes related to typography and layout can be found <a href=" https://quasar.dev/style/typography">on the Quasar website</a>.
+</div>
+
 </div>
   <q-item-label class="q-pt-md text-subheader" >
       Add a button
   </q-item-label>
  <div class="q-py-sm">
-   This button will allow the user to go to the new page we will create next.
+   This button will allow the user to go to a new page we will create next.
    Note the '<b>q-btn</b>' tag. This is one of Quasar's prebuilt Vue components mentioned in the introduction.
    There are many of them with descriptions and examples <a href="https://quasar.dev/vue-components">on the Quasar website</a>.
 
