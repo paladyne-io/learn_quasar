@@ -25,8 +25,7 @@
       bordered
     >
     <q-list>
-
-        <q-expansion-item
+      <q-expansion-item
         icon=""
         label="Lesson Links"
         caption="Links to tutorials in this app"
@@ -124,7 +123,7 @@ const preferencesLink = {
 const exampleLinks = [
   {
     title: 'Image Grid layout',
-    caption: 'Imagegrid demo (Colcade)',
+    caption: 'Image grid demo (Colcade)',
     icon: 'fas fa-border-all',
     link: 'examples/imagegrid'
   },
@@ -133,6 +132,12 @@ const exampleLinks = [
     caption: 'About Quasars',
     icon: 'star',
     link: 'examples/transitions'
+  },
+  {
+    title: 'Image Gallery',
+    caption: 'Quasar\'s QCarousel with transitions',
+    icon: 'fa-solid fa-images',
+    link: 'examples/qcarousel'
   }
 ]
 

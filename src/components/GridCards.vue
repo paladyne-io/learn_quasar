@@ -32,8 +32,7 @@ export default {
   },
   methods: {
     loadCards () {
-      console.log('Load cards: ' + this.$refs.cards)
-
+      // console.log('Load cards: ' + this.$refs.cards)
       this.cards = new Colcade(this.$refs.cards, {
         columns: '.col',
         items: '.q-card'

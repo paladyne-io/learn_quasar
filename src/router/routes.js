@@ -52,6 +52,7 @@ const routes = [
     component: () => import('layouts/ExamplesLayout.vue'),
     children: [
       { path: 'transitions', component: () => import('pages/QuasarTestPage.vue') },
+      { path: 'qcarousel', component: () => import('pages/QCarouselPage.vue') },
       { path: 'imagegrid', component: () => import('pages/GridCardPage.vue') }
     ]
   },

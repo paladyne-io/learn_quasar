@@ -2,6 +2,7 @@
   <q-item
     clickable
     :to=link
+
   >
     <q-item-section
       v-if="icon"
@@ -21,7 +22,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'EssentialLink',
+  name: 'AppLink',
   props: {
     title: {
       type: String,
@@ -42,6 +43,15 @@ export default defineComponent({
       type: String,
       default: ''
     }
+  },
+  methods: {
+    /* @click="itemClicked"
+    itemClicked (item) {
+      console.log('clicked: ' + item)
+      this.$emit('clicked')
+    }
+  */
   }
+
 })
 </script>

@@ -28,12 +28,14 @@
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
 -->
-        <q-route-tab name="UI Example 1" label="Transitions" to="/examples/transitions" />
-        <q-route-tab name="UI Example 2" label="ImageGrid" to="/examples/imagegrid" />
+        <q-route-tab name="UI Example 1" label="Transitions" to="/examples/transitions"  @click="hideLeftDrawer"/>
+        <q-route-tab name="UI Example 2" label="Image Grid" to="/examples/imagegrid"  @click="hideLeftDrawer"/>
+        <q-route-tab name="UI Example 3" label="Image Gallery" to="/examples/qcarousel"  @click="hideLeftDrawer"/>
 
       </q-tabs>
     </q-footer>
-
+    <!-- listening for emitted click events from AppLink component
+    not working so just listen for (@)click event directly -->
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header> Navigation</q-item-label>
@@ -41,8 +43,11 @@
            v-bind="homeLink"
         />
         <q-item-label header>Examples</q-item-label>
-        <AppLink v-for="link in appUILinks" :key="link.title" v-bind="link" />
-
+        <AppLink
+         v-for="link in ExamplesList" :key="link.title"
+           @click="toggleLeftDrawer"
+            v-bind="link"
+          />
       </q-list>
     </q-drawer>
 
@@ -52,8 +57,8 @@
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref } from 'vue'
+<script setup>
+import { ref } from 'vue' // defineComponent
 // import EssentialLink from 'components/EssentialLink.vue'
 import AppLink from 'components/AppLink.vue'
 
@@ -68,36 +73,40 @@ const ExamplesList = [
   {
     title: 'Transitions',
     caption: '',
-    icon: 'school',
+    icon: 'star',
     link: 'transitions'
+
   },
   {
-    title: 'ImageGrid',
-    caption: '',
-    icon: 'school',
+    title: 'Image Grid',
+    caption: 'Image grid demo using Colcade)',
+    icon: 'fas fa-border-all',
     link: 'imagegrid'
+  },
+  {
+    title: 'Image Gallery',
+    caption: 'Quasar\'s Carousel with transitions',
+    icon: 'fa-solid fa-images',
+    link: 'qcarousel'
   }
 ]
 
-export default defineComponent({
-  name: 'MainLayout',
+const leftDrawerOpen = ref(false)
 
-  components: {
-    AppLink
-  },
+function toggleLeftDrawer () {
+  console.log('toggleLeftDrawer')
+  leftDrawerOpen.value = !leftDrawerOpen.value
+}
 
-  setup () {
-    const leftDrawerOpen = ref(false)
+function hideLeftDrawer () {
+  console.log('hide LeftDrawer')
+  leftDrawerOpen.value = false
+}
 
-    return {
-      appUILinks: ExamplesList,
-      homeLink,
-      leftDrawerOpen,
+/*
+function itemClicked (elem) {
+  console.log('itemClicked xxx: ' + elem)
+}
+*/
 
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
 </script>

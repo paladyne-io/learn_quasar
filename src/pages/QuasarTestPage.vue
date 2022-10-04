@@ -30,15 +30,16 @@
         Quasar image courtesy of NASA
     </div>
     </transition>
-    <div class="test_btn text-center fixed-bottom">
+    <div class="test_btn text-center full-width fixed-bottom">
       <q-btn label="Test" color="green" @click="testTransition"> </q-btn>
       <q-btn class="q-ma-md" label="Menu" color="blue" to="/"> </q-btn>
     </div>
   </q-page>
+
 </template>
 
 <script>
-import { defineComponent, ref, onMounted, version } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue' // version
 
 export default defineComponent({
   name: 'IndexPage',
@@ -50,7 +51,7 @@ export default defineComponent({
     const quasarInfo = ref('A quasar is a supermassive black hole feeding on gas at the center of a distant galaxy with mass ranging from millions to tens of billions of solar masses.')
     const quasarInfo2 = ref('Quasar is short for quasi-stellar radio source, because astronomers first discovered quasars in 1963 as objects that looked like stars but emitted radio waves.')
     onMounted(() => {
-      console.log('Vue version:' + version)
+      // console.log('Vue version:' + version)
       // alert('Vue version :' + version)
       // showText2 = true
       showImage.value = true

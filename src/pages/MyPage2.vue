@@ -57,7 +57,6 @@
 &lt;/script&gt;
 </pre>
     </div>
-
     <div class="text-center q-pa-md">
       <q-btn label="Back to programming Basics" color="green" to="programming1"> </q-btn>
     </div>
