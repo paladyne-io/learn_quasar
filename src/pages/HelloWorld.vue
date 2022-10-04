@@ -25,7 +25,7 @@
         <div class="q-pa-sm">
         The first page that is displayed when your app starts up is IndexPage.vue in the src folder.
          In this exercise, we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immediately shown.
-        This speeds up programming a lot as you don't have to save, compile and restart the app each time.
+        This speeds up programming as you don't have to save, compile and restart the app each time.
         This is how the file looks in Visual Studio Code.
         </div>
         <div class="q-pa-sm">
@@ -38,7 +38,7 @@
          We will come to that later.
          </div>
       <div class="q-pt-md text-subheader" >
-        1. Change the image.
+        Change the image.
            </div>
         <div class="q-pt-sm">
         There are two places where images can be added to the project:
@@ -50,17 +50,18 @@
       You can add your own images to either of these folders and then change the code in the 'img' tag to display them, like this.
 <pre>
 &lt;img
-  alt="Quasar logo"
-  src="~assets/myimage.png" &lt;- Change this to the name of your image in the assets folder
+  alt="My image"
+  src="~assets/myimage.png" &lt;- Change this to the name of your image
   style="width: 200px; height: 200px" &lt;- Change the size here
+  &lt;!-- Either width or height can be omitted to retain proportions--&gt;
 &gt;
 </pre>
 
   <div class="q-pt-md text-subheader" >
-      2. Add some text
+      Add some text
   </div>
  <div class="q-py-sm">
-  We'll add some text below the image where we could put a description, label or accreditation.
+  We'll add some text below the image to put a description, label or accreditation.
    We add a 'div' around the text as a container to help keep it in the center of the page. The words written after 'class=' are key words Quasar recognizes to help with layout.
 </div>
 
@@ -71,17 +72,19 @@
 </pre>
 </div>
   <q-item-label class="q-pt-md text-subheader" >
-      3. Add a button
+      Add a button
   </q-item-label>
  <div class="q-py-sm">
    This button will allow the user to go to the new page we will create next.
-   Note the 'q-btn' tag. This is one of the Quasar components mentioned in the introduction.
-   There are many of them with descriptions and examples on the Quasar website. Feel free to change the color, label etc.
+   Note the '<b>q-btn</b>' tag. This is one of Quasar's prebuilt Vue components mentioned in the introduction.
+   There are many of them with descriptions and examples <a href="https://quasar.dev/vue-components">on the Quasar website</a>.
+
+    Feel free to change the color, label etc.
 </div>
 
  <pre>
   &lt;div class="text-center"&gt;
-    &lt;q-btn label="My Page" color="green" to="mypage"&gt;&lt;/q-btn&gt;
+    &lt;q-btn label="My Page" color="blue" to="mypage"&gt;&lt;/q-btn&gt;
   &lt;/div&gt;
 </pre>
 
@@ -90,11 +93,12 @@
 </q-item-label>
 
 <div class="q-pt-sm">
-1. Copy an existing page (an 'xxx.vue' file in the pages folder) or create and save a new page (file).
-It can be as simple as something like this (the default Quasar 'IndexPage.vue' page).
-The filename must have 2 or more words, like <b>'MyPage.vue'</b>. This is called Camel case.
+1. There are a few ways to create a new page, including using the command, "quasar new page <i>pagename</i>" in the CLI (Terminal).
+ I find it easiest to copy an existing page (one of the 'xxx.vue' files in the pages folder) or create and save a new file.
+The contents can be as simple as the default Quasar 'IndexPage.vue' page shown below.
+The filename must have 2 or more words joined (capitalized, without spaces) like this: <b>'MyPage.vue'</b>. This is called Camel case.
 
-<div class='note q-pt-sm'> Note. A plugin called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the EXPLORER pane.
+<div class='note q-pt-sm'> Note. An extension called 'Duplicate action' can be installed in VS Code to allow you to duplicate files in the EXPLORER panel.
  After installing the extension, right-click on a file to show a menu with "Duplicate file or directory" at the bottom.
 </div>
 <pre>
@@ -135,7 +139,7 @@ Copy and paste one of the 'children' (the line between {}), then rename the <b>p
 </div>
 
 <div class="row full-width text-subheader q-pt-sm">
-  <q-btn outline style="color: goldenrod" label="Previous" to="intro" />
+  <q-btn outline style="color: goldenrod" label="Previous" to="startprogramming" />
   <q-space />
   <q-btn outline style="color: goldenrod;text-align:right;" label="Next: Making it move" to="programming1" />
 </div>

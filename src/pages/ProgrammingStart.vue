@@ -1,9 +1,9 @@
 <template>
-<q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Start Programming</div>
+<q-page class="flex-center q-pa-sm">
+<div class="q-pa-md text-h5 text-bold">Getting started with Quasar</div>
 <q-card flat class="q-pa-md">
   <SubHeaderComponentDA
-    mytext="Getting started with Quasar (Preparation)"
+    mytext="Preparation"
 />
 
 <div class="q-pt-sm">
@@ -26,11 +26,11 @@ This is the order of tasks.
   2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the <b>LTS</b> installer appropriate for your computer *.
 
   <q-item-label class="q-pt-md">
-  3. <b>Install Quasar CLI</b>. To do this and the following steps it is necessary to use the Terminal application (Mac) or the
+  3. <b>Install Quasar CLI</b>. To perform this and the following steps it is necessary to use the Terminal application (Mac) or the
    <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows.)
 
     <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
-    <b>On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>.
+  <!-- On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>. -->
 
     <router-link to="/vscodeterminal">Click here for details</router-link>.
    <br><br>The $ character represents the shell prompt. It might appear as a %.
@@ -38,40 +38,23 @@ This is the order of tasks.
   </q-item-label>
 
 <pre>
-$ yarn global add @quasar/cli
-
-# or:
-
-$ npm i -g @quasar/cli
+<span class="disable-select">$ </span>npm i -g @quasar/cli
+<span class="disable-select">or</span>
+<span class="disable-select">$ </span>yarn global add @quasar/cli
 </pre>
 
   *If you experience problems installing Quasar on a Mac, try installing Node using nvm (Node Version Manager).
-  </q-item-label>
-<pre>
-1) Install NVM by copying and pasting the curl command below into a terminal window.
-    (Check the latest version here: <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a>)
-
-   <b> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash  </b>
-
-2) Close and reopen the terminal for the System to recognize the changes…
-
-3) check that NVM is installed
-     nvm -v
-
-4) Install the latest Long Term Support version of node
-     nvm install —lts
-</pre>
+  <router-link to="/nvm_install">Click here for details</router-link>.
+</q-item-label>
 
 <div class="q-pt-sm">
-  4. Use the QUasar CLI to create your app by entering one of the following commands.</div>
+  4. Use the Quasar CLI to create your app by entering one of the following commands.</div>
 
 <pre>
-  $ yarn create quasar
-
-  # or:
-
-  $ npm init quasar
-  </pre>
+<span class="disable-select">$ </span>npm init quasar
+<span class="disable-select">or</span>
+<span class="disable-select">$ </span>yarn create quasar
+</pre>
 
 <div class="q-pt-sm">
  5. Proceed with the Quasar initialization process by answering the questions following the prompts.
@@ -79,7 +62,7 @@ $ npm i -g @quasar/cli
 </div>
 
 <div class="q-pt-sm">
-* When creating a project with Quasar you will be given the choice of using Vite or Webpack
+* When creating a project with Quasar you will be given the choice of using Vite or Webpack.
  If you don't have a strong preference, I recommend you choose Vite as it's faster.
  (Surprising or not, 'Vite' means quick in French.)
 </div>
@@ -126,7 +109,7 @@ You're nearly done!
 </div>
 
 <div class="q-pt-sm">
-After creating your first app, and entering the above commands ("cd <i>your_project_name</i>", followed by "quasar dev"), you should see the default Quasar app screen as displayed at the top of this page.
+After creating your first app, and entering the commands after 'To get started:' ("cd <i>your_project_name</i>", followed by "quasar dev"), you should see the default Quasar app screen as displayed at the top of this page.
 </div>
 
 <div class="q-pt-sm">
@@ -142,7 +125,7 @@ An easy way to get the full path to a folder is to drag and drop the folder/dire
 
 <div class="q-pt-sm">
  Open your project folder in Visual Studio Code by choosing "Open folder…" from the File menu or by typing "code ." in the terminal after the "Quasar •  SUCCESS" message.
- If you have already entered 'quasar dev', hold down the "control" and "c" keys together to stop the program (exit the development environment).
+ If you have already entered 'quasar dev', press the "control" and "c" keys together to stop the program (exit the development environment).
 </div>
 <div class="q-pt-sm">
 The working directory will remain set until you close the Terminal window.
@@ -191,6 +174,7 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 <script>
 import { defineComponent } from 'vue'
 import SubHeaderComponentDA from 'components/SubHeaderComponentDA.vue'
+import { copyToClipboard } from 'quasar'
 // import PreComponent from 'components/PreComponent.vue'
 // import PreComponentDA from 'components/PreComponentDA.vue'
 
@@ -198,6 +182,14 @@ export default defineComponent({
   name: 'ProgrammingStartPage',
   components: { SubHeaderComponentDA } // PreComponent, PreComponentDA
 })
+
+copyToClipboard('some text')
+  .then(() => {
+    // success!
+  })
+  .catch(() => {
+    // fail
+  })
 </script>
 
 <style>
@@ -206,4 +198,13 @@ export default defineComponent({
   font-size: 16px;
   font-weight: bold;
 }
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 </style>

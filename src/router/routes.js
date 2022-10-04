@@ -19,6 +19,7 @@ const routes = [
       { path: 'github', component: () => import('pages/GitHubDeploy.vue') },
       { path: 'sendemail', component: () => import('pages/EmailSendingPage.vue') },
       { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
+      { path: 'nvm_install', component: () => import('pages/nvm_install.vue') },
       { path: 'images', component: () => import('pages/ImageCarousel.vue') },
       { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') }
     ]

@@ -2,14 +2,8 @@
 <q-page class="flex-center q-pa-md">
 <div class="heading q-pa-md"> Programming Basics</div>
 
-<div>
   <q-card flat class="q-pa-md">
-    <div class="text-subheader q-pt-sm">
-      The world is your stage
-    </div>
-
     <div class="q-pa-sm">
-
       <div class="q-pt-md text-subheader">
         Adding interactivity
    </div>
@@ -20,10 +14,17 @@
       <div class="q-pt-sm">
     Each Vue page or component (xx.vue file) can have up to 3 sections:
     <ul>
+      <li>the <b>script</b> section which is JavaScript, with some unique functions and 'hooks'</li>
       <li>the <b>template</b> section which contains html, including custom components and some vue elements</li>
-      <li>the <b>script</b> section which is javascript, with some unique functions and 'hooks'</li>
       <li>the <b>style</b> section which is css</li>
     </ul>
+
+    <q-img
+    alt="BasicVueFile"
+    src="images/BasicVueFile.png"
+    style=" width: 500px; padding:4px"
+  />
+
      </div>
     <div class="q-pt-sm">
     Simply speaking, the template is what the page contains, the script is what it does and the style is how it looks.
@@ -80,7 +81,8 @@ What we will come back to later:
    @click=&quot;btnClicked&quot;&gt;
   &lt;/q-btn&gt;"
 </pre>
-btnClicked is the name of the function that will be called in the Script section.
+</div>
+<b>btnClicked</b> is the name of the function that will be called in the Script section.
 If you are completely new to programming and would like to understand terms such as function, method, parameter, variable etc.,
 don't worry for now. The meanings of these terms should become clear over time.
 </div>
@@ -109,8 +111,7 @@ It looks like this.
     function btnClicked () {
       alert('You clicked me!')
     }
-  &lt;/script&gt;"
-/>
+  &lt;/script&gt;
 </pre>
 </div>
 <div class="q-pt-sm">
@@ -121,9 +122,9 @@ The onMounted function is a special function provided by Vue.
 </div>
 
 <div class="q-pt-sm">
-  Note the use of 'alert()' and 'console.log()' which are two useful Javascript methods.
-  alert() will display a pop-up message to the user.
-  console.log() will print a message to the JavaScript console which can be seen by choosing 'Display JavaScript Console' in your browser.
+  Note the use of <b>'console.log()</b>' and '<b>alert()</b>' which are two useful Javascript methods.
+  alert() displays a pop-up message to the user.
+  console.log() prints a message to the JavaScript console which can be seen by choosing 'Display JavaScript Console' in your browser.
 
 </div>
 
@@ -140,7 +141,6 @@ Click the button to see the whole page.
     </div>
 </div>
 
-</div>
 <div class="row full-width text-subheader q-pt-sm">
   <q-btn outline style="color: goldenrod" label="Previous" to="helloworld" />
   <q-space />
@@ -169,7 +169,7 @@ Click the button to see the whole page.
 </div>
 -->
 </q-card>
-</div>
+
 </q-page>
 </template>
 

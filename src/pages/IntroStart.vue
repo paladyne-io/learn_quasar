@@ -1,7 +1,12 @@
 <template>
-<q-page class="flex-center q-pa-md">
+<q-page class="flex-center q-pa-sm">
+  <div class="text-center q-pa-md">
+    <q-img   alt="vue_quasar_nodejs" src="images/vue_quasar_nodejs.png" />
+  </div>
 <div class="heading q-pa-md text-h5 text-bold"> Introduction </div>
-
+<div class="row full-width text-subheader q-pl-md">
+  <q-btn outline style="color: goldenrod;text-align:right;" label="Skip it" to="startprogramming" />
+</div>
 <div>
 <q-card flat class="q-pa-md">
 <div class="text-subheader q-py-sm">
