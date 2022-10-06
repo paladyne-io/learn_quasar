@@ -23,7 +23,7 @@
         1. Add your own pictures, text and a button to the main screen.
         </div>
         <div class="q-pa-sm">
-        The first page that is displayed when your app starts up is IndexPage.vue in the src folder.
+        The first page that is displayed when your app starts up is <b>IndexPage.vue</b> in the src folder.
          In this exercise, we'll modify it. One important feature of Quasar, called hot reloading, enables any changes made to this file (when saved) to be immediately shown.
         This speeds up programming as you don't have to save, compile and restart the app each time.
         This is how the file looks in Visual Studio Code.
@@ -72,7 +72,7 @@
 
 <div class="q-py-sm">
   The words written after 'class=' are keywords Quasar recognizes to help with layout.
-    Classes related to typography and layout can be found <a href=" https://quasar.dev/style/typography">on the Quasar website</a>.
+   A list of classes related to typography and layout can be found <a href=" https://quasar.dev/style/typography">on the Quasar website</a>.
 </div>
 
 </div>

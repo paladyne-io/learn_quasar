@@ -14,17 +14,7 @@
   </q-page>
 </template>
 
-<script>
-import { defineComponent, onMounted, version } from 'vue'
+<script setup>
+// import { ref } from 'vue'
 
-export default defineComponent({
-  name: 'IndexPage',
-
-  setup () {
-    onMounted(() => {
-      console.log('Vue version:' + version)
-      // alert('Vue version :' + version)
-    })
-  }
-})
 </script>

@@ -141,9 +141,8 @@ However, any new features you add could be used in another app as you gradually 
 <div class="heading text-subheader q-pt-sm">
 Break it down
 </div>
-<div class="q-pt-sm">Speaking of components, one of the real benefits of frameworks such as Vue and Quasar is that they encourage using code to build components.
-  If you don't understand what this means, don't worry.
-   Just think of lego and when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
+<div class="q-pt-sm">Speaking of components, one important benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
+  If you don't understand what this means, don't worry but when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.
     Refactoring your code periodically will reward you with a manageable code base that you can understand, even when you come back to it later.
 <!--

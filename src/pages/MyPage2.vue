@@ -33,12 +33,9 @@
      &lt;/div>
         &lt;div class="full-width text-center"&gt;
      &lt;div class="text-center"&gt;
-       &lt;q-btn label="Change picture" color="blue" @click="btnClicked"&gt;
+       &lt;q-btn label="My Page" color="blue" @click="btnClicked"&gt;
        &lt;/q-btn&gt;
      &lt;/div>
-     &lt;div class="text-center">
-      &lt;q-btn label="Home" color="green" to="/"&gt; &lt;q-btn&gt;
-     &lt;div&gt;
       &lt;/div&gt;
    &lt;/div&gt;
   &lt;/q-page&gt;

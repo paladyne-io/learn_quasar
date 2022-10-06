@@ -23,7 +23,7 @@ This is the order of tasks.
   </q-item-label>
 
   <q-item-label class="q-pt-md">
-  2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the <b>LTS</b> installer appropriate for your computer *.
+  2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the <b>LTS</b> installer appropriate for your computer.
 
   <q-item-label class="q-pt-md">
   3. <b>Install Quasar CLI</b>. To perform this and the following steps it is necessary to use the Terminal application (Mac) or the
@@ -129,7 +129,7 @@ An easy way to get the full path to a folder is to drag and drop the folder/dire
 </div>
 <div class="q-pt-sm">
 The working directory will remain set until you close the Terminal window.
-If you ever see an error such as Unknown command &quot;dev&quot; when you enter 'quasar dev' it is probably because your working directory changed.
+If you ever see an error such as Unknown command &quot;dev&quot; after entering 'quasar dev' it is probably because your working directory changed.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.

@@ -34,8 +34,9 @@
 
   <div class="q-pt-sm">
    This is an example to show how to install and import an external library.
-    Quasar provides its own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
+    Quasar provides it's own <a href="https://quasar.dev/vue-components/carousel">perfectly good carousel</a>.
     Consider this to be an exercise rather than a recommendation.
+     (You can see the Quasar Carousel in the  <router-link to="/examples/qcarousel">Examples</router-link>.)
 </div>
 
 <div class="q-pt-sm">

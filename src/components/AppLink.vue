@@ -2,7 +2,7 @@
   <q-item
     clickable
     :to=link
-
+    @click="itemClicked"
   >
     <q-item-section
       v-if="icon"
@@ -45,12 +45,11 @@ export default defineComponent({
     }
   },
   methods: {
-    /* @click="itemClicked"
+
     itemClicked (item) {
       console.log('clicked: ' + item)
       this.$emit('clicked')
     }
-  */
   }
 
 })
