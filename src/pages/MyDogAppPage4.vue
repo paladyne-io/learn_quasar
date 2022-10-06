@@ -23,7 +23,7 @@
 -->
 
       <q-carousel-slide name="image" @click="showDogStats" key="slide1">
-        <img  alt="Dog image" src="images/dog.png" key="img"/>
+        <img  alt="Dog image" src="/images/dog.png" key="img"/>
         <div class="text-center heading full-width" key="label">
           Reggie
         </div>

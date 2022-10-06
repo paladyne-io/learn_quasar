@@ -5,24 +5,24 @@
   -->
   <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh;">
     <div ref="bg" class="x-center animation-frame">
-        <div ref="rocket"  class="rocket-box image-stack">
+        <div ref="rocket" class="rocket-box image-stack">
         <div class="image-stack__item image-stack__item--bottom">
         <q-img v-if="enginesOn"
           width="90px"
           alt="Rocket with engines on - image"
-          src="images/rocket.png"
+          src="/images/rocket.png"
         />
          <q-img v-else ref="rocket" class="rocket-box"
           width="90px"
           alt="Rocket image"
-          src="images/rocket_noflame.png"
+          src="/images/rocket_noflame.png"
         />
         </div>
         <div v-if="explosion" class="image-stack__item image-stack__item--top">
         <q-img
           width="140px"
           alt="animated explosion"
-          src="images/explosion.gif"
+          src="/images/explosion.gif"
         />
         </div>
       </div>

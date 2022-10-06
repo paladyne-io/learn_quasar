@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <div class="row border full-width q-pa-md">
       <div class="col-12 col-md-6 text-center">
-        <q-img class="q-ma-md" style="height:480px; width:350px"  alt="Dog image" src="images/dog.png" />
+        <q-img class="q-ma-md" style="height:480px; width:350px"  alt="Dog image" src="/images/dog.png" />
       </div>
 
       <transition

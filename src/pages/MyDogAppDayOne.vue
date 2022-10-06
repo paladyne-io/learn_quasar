@@ -3,7 +3,7 @@
     <div>
     <q-img width="400px" class="q-ma-md"
       alt="My dog app image"
-      src="images/MyDogApp.png"/>
+      src="/images/MyDogApp.png"/>
   </div>
 
   <div class="q-pa-md">

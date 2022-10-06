@@ -9,7 +9,7 @@
       @before-transition="sgBeforeLeave($el)"
       animated>
       <q-carousel-slide name="image" class="text-center" @click="showDogStats">
-        <img  alt="Dog image" src="images/dog.png" />
+        <img  alt="Dog image" src="/images/dog.png" />
         <div class="text-center heading full-width">
           Reggie
         </div>
@@ -33,7 +33,7 @@
 
      <!-- Explanation part -->
      <div class="q-ma-md">
-      <b>Method:</b> Use a QCarousel with its built in transition triggers, 'transition-prev' and 'transition-next'.
+      <b>Method:</b> Use a QCarousel with its built-in transition triggers, 'transition-prev' and 'transition-next'.
     The transition is triggered when the slide is changed.
       </div>
   <pre>

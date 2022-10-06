@@ -4,7 +4,7 @@
       <template v-slot:front>
 
       <q-card style="height:480px; width:350px" class="q-pa-lg" @click="showStats">
-        <q-img alt="Dog image" src="images/dog.png"/>
+        <q-img alt="Dog image" src="/images/dog.png"/>
         <div class="text-center heading full-width">
           Reggie
         </div>

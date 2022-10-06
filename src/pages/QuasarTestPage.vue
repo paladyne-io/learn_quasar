@@ -6,7 +6,7 @@
      >
       <img id="quasar_image" v-show="showImage" class="quasar_image"
         alt="Quasar image"
-        src="images/nasa_images/stsci-h-2010a-d-1280x720.png"
+        src="/images/nasa_images/stsci-h-2010a-d-1280x720.png"
       />
     </transition>
     <!-- @after-leave="aboutText1Hidden"> -->

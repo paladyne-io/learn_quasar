@@ -7,7 +7,7 @@
       >
     <q-card flat v-show="imageVisible" class="col column">
       <div class="text-center">
-        <img class="q-ma-md" alt="Dog image" src="images/dog.png" @click="showDogStats"/>
+        <img class="q-ma-md" alt="Dog image" src="/images/dog.png" @click="showDogStats"/>
         <div class="heading full-width">Reggie</div>
       </div>
     </q-card>

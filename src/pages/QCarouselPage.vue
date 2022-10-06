@@ -1,6 +1,5 @@
 <template>
   <div>
-
      <q-carousel
        v-model="slide"
        animated
@@ -31,13 +30,13 @@
    To run this in your own app you will need to modify the quasar.config.js file by uncommenting <b>animations : 'all'</b>.
   (Delete the // characters at the beginning of the line and save the file.)
    <div class="q-pt-sm text-center" >
-    <q-img src="images/quasar_conf_animations.png" alt="quasar.config.js screenshot" style="max-width: 500px;"/>
+    <q-img src="/images/quasar_conf_animations.png" alt="quasar.config.js screenshot" style="max-width: 500px;"/>
   </div>
 
    <br>
    While you have the file open, you might want to do the same for <b>fontawesome-v6</b> as this allows you to use Font-Awesome icons in buttons and other components.
    <div class="q-pt-sm text-center" >
-    <q-img src="images/quasar_conf_font_awesome.png" alt="quasar.config.js screenshot 2" style="max-width: 500px;"/>
+    <q-img src="/images/quasar_conf_font_awesome.png" alt="quasar.config.js screenshot 2" style="max-width: 500px;"/>
   </div>
 
   </div>
