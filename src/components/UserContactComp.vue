@@ -57,11 +57,11 @@
 import { defineComponent, ref } from 'vue'
 import emailjs from '@emailjs/browser'
 
-const EMAILJS_SERVICE_ID_2 = process.env.EMAILJS_SERVICE_ID
-const EMAILJS_TEMPLATE_ID_2 = process.env.EMAILJS_TEMPLATE_ID
+// const EMAILJS_SERVICE_ID_2 = process.env.EMAILJS_SERVICE_ID
+// const EMAILJS_TEMPLATE_ID_2 = process.env.EMAILJS_TEMPLATE_ID
 
-const EMAILJS_SERVICE_ID_3 = process.env.EMAILJS_SERVICE
-const EMAILJS_TEMPLATE_ID_3 = process.env.EMAILJS_TEMPLATE
+// const EMAILJS_SERVICE_ID_3 = process.env.EMAILJS_SERVICE
+// const EMAILJS_TEMPLATE_ID_3 = process.env.EMAILJS_TEMPLATE
 
 export default defineComponent({
   name: 'UserContactComponnet',
@@ -104,20 +104,20 @@ export default defineComponent({
       // console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
       // console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
 
-      console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)
-      console.log('EMAILJS_TEMPLATE_ID_2: ' + EMAILJS_TEMPLATE_ID_2)
+      // console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)
+      // console.log('EMAILJS_TEMPLATE_ID_2: ' + EMAILJS_TEMPLATE_ID_2)
 
-      console.log('EMAILJS_SERVICE_ID_3: ' + EMAILJS_SERVICE_ID_3)
-      console.log('EMAILJS_TEMPLATE_ID_3: ' + EMAILJS_TEMPLATE_ID_3)
+      // console.log('EMAILJS_SERVICE_ID_3: ' + EMAILJS_SERVICE_ID_3)
+      // console.log('EMAILJS_TEMPLATE_ID_3: ' + EMAILJS_TEMPLATE_ID_3)
 
-      console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
-      console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
+      // console.log('SERVICE_ID: ' + process.env.EMAILJS_SERVICE_ID)
+      // console.log('TEMPLATE_ID: ' + process.env.EMAILJS_TEMPLATE_ID)
 
       // console.log('templateParams: ' + JSON.stringify(templateParams.value))
 
       if (!process.env.EMAILJS_PUBLIC_KEY || !process.env.EMAILJS_SERVICE_ID || !process.env.EMAILJS_TEMPLATE_ID) {
         console.log('Error. One or more email service parameters was not supplied.')
-        alert('Error. One or more email service parameters was not supplied.')
+        alert('Error. One or more email service parameters were not supplied.')
         return
       }
 

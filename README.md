@@ -5,22 +5,22 @@ A series of articles and interactive examples explaining how to use the Quasar f
 This instructional app is aimed at beginners starting with preparation, including how to use Visual Studio Code.
 
 The app is hosted here:
-https://learn-quasar-p764s.ondigitalocean.app/#/intro
+https://learn-quasar-p764s.ondigitalocean.app
 
 Features of interest:
 * Collapsible side panel menus
 * A slider using vue3-carousel
-https://learn-quasar-p764s.ondigitalocean.app/#/images
+https://learn-quasar-p764s.ondigitalocean.app/images
 https://ismail9k.github.io/vue3-carousel/
 * Dark mode (Try it in app preferences. Article to come soon.)
 * Sending emails with emailjs
-https://learn-quasar-p764s.ondigitalocean.app/#/sendemail
+https://learn-quasar-p764s.ondigitalocean.app/sendemail
 * A simple animated game (Rocket man). Can you get the craft to the moon?
-https://learn-quasar-p764s.ondigitalocean.app/#/gameapp/rm_game
+https://learn-quasar-p764s.ondigitalocean.app/gameapp/rm_game
 * How to use the Quasar LocalStorage plugin to save and read data
-https://learn-quasar-p764s.ondigitalocean.app/#/dummyapp/da_local_storage
+https://learn-quasar-p764s.ondigitalocean.app/dummyapp/da_local_storage
 * An image grid example using Colcade,
-https://learn-quasar-p764s.ondigitalocean.app/#/examples/imagegrid
+https://learn-quasar-p764s.ondigitalocean.app/examples/imagegrid
 based on this article:
   https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
 
