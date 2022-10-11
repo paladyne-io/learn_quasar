@@ -64,7 +64,7 @@ import emailjs from '@emailjs/browser'
 // const EMAILJS_TEMPLATE_ID_3 = process.env.EMAILJS_TEMPLATE
 
 export default defineComponent({
-  name: 'UserContactComponnet',
+  name: 'UserContactComponent',
 
   setup () {
     // console.log('EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
@@ -92,7 +92,7 @@ export default defineComponent({
 
   methods: {
     sendEmail () {
-      console.log('send email 2...')
+      // console.log('send email...')
 
       // const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
       // const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
@@ -150,7 +150,7 @@ export default defineComponent({
         .then(
           (result) => {
             console.log('SUCCESS!', result.text)
-            alert('email sent')
+            alert('Email sent')
             // this.notify('Email sent.')
           },
           (error) => {
