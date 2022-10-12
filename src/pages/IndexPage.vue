@@ -8,13 +8,47 @@
     <div class="full-width text-center">
         Welcome to Learn Quasar...
      </div>
+     <div class="full-width text-center">
+      <q-toggle
+      v-model="darkModeStatus"
+      label="Dark mode"
+      @click="toggled"
+    />
+  </div>
     <div class="text-center">
     <q-btn label="Introduction" color="green" to="intro"> </q-btn>
     </div>
   </q-page>
 </template>
 
-<script setup>
-// import { ref } from 'vue'
+<script>
+import { ref, defineComponent } from 'vue' //, watchEffect
+import { useQuasar } from 'quasar'
+
+export default defineComponent({
+  name: 'IndexPage',
+
+  setup () {
+    const $q = useQuasar()
+    const darkModeStatus = ref($q.dark.isActive)
+
+    function toggled () {
+      // console.log(darkModeStatus.value)
+      $q.dark.toggle()
+    }
+
+    return {
+      darkModeStatus,
+      toggled
+    }
+  }
+})
+
+/*
+watchEffect((darkModeStatus) => {
+  console.log('darkModeStatus: ' + darkModeStatus.value)
+  // useQuasar.dark.set(darkModeStatus) // or false or "auto"
+})
+*/
 
 </script>

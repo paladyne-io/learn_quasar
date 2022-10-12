@@ -36,16 +36,16 @@
       <b>Method:</b> Use a QCarousel with its built-in transition triggers, 'transition-prev' and 'transition-next'.
     The transition is triggered when the slide is changed.
       </div>
-  <pre>
-  &lt;q-carousel height="500px"
-    v-model="slides"
-      transition-prev="flip-right"
-      transition-next="flip-left"
-      transition-duration="1500"&gt;
-    &lt;q-carousel-slide name="image" @click="showDogStats"&gt;
-    &lt;/q-carousel-slide&gt;
-  &lt;/q-carousel&gt;
-  </pre>
+<pre>
+&lt;q-carousel height="500px"
+  v-model="slides"
+  transition-prev="flip-right"
+  transition-next="flip-left"
+  transition-duration="1500"&gt;
+  &lt;q-carousel-slide name="image" @click="showDogStats"&gt;
+  &lt;/q-carousel-slide&gt;
+&lt;/q-carousel&gt;
+</pre>
 
   <div class="q-pa-md">
      <b> Issues.</b> The transition is smooth but there is a delay afterwards and the top part of the stats table is visible underneath.

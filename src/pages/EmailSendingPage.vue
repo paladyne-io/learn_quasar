@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Email sending</div>
+<div class="q-pa-md text-h5 header"> Email sending</div>
 
 <div>
   <q-card flat class="q-pa-md">

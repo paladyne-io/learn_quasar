@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-sm">
-<div class="q-pa-md text-h5 text-bold">Getting started with Quasar</div>
+<div class="q-pa-md text-h5 header">Getting started with Quasar</div>
 <q-card flat class="q-pa-md">
   <SubHeaderComponentDA
     mytext="Preparation"
@@ -193,11 +193,6 @@ copyToClipboard('some text')
 </script>
 
 <style>
-.text-subheader {
-  font-family: verdana;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 .disable-select {
   user-select: none; /* supported by Chrome and Opera */

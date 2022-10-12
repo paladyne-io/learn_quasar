@@ -46,10 +46,9 @@
      More information is <a href="https://github.com/kgrandemange/vue-flip">here</a>.
      The transition can be triggered programmatically by changing the model, or automatically by adding "active-click" like below.
     </div>
-
 <pre>
  &lt;vue-flip active-click width="350px" height="480px">
- &lt;template v-slot:front&gt;
+  &lt;template v-slot:front&gt;
  &lt;/template&gt;
 </pre>
 

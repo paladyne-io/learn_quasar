@@ -8,16 +8,43 @@
 }
 */
 
+.text-subheader {
+  font-weight: 400;
+  color:darkblue;
+}
+
+.header {
+  font-weight: bold;
+  color:darkblue;
+  // color:rgb(45, 44, 44);
+}
+
+@font-face {
+  font-family: 'mulish';
+  src: url('/fonts/mulish/Mulish-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'mulish';
+  src: url('/fonts/mulish/Mulish-SemiBold.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'mulish';
+  src: url('/fonts/mulish/Mulish-Medium.ttf');
+}
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter-SemiBold.woff2');
+  src: url('/fonts/inter/Inter-SemiBold.woff2');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter-Regular.woff2');
+  src: url('/fonts/inter/Inter-Regular.woff2');
 }
 
 @font-face {
@@ -32,7 +59,7 @@
 
 // declare a class which applies it
 body {
-  font-family: 'Inter';
+  font-family: 'mulish';
 }
 
 .x-center {

@@ -53,15 +53,15 @@ In the near future, I will provide articles about how to deploy your web app and
  </div>
  August 2022
 </div>
-
+<!--
 <div class="q-pt-sm">
   <q-toggle
     v-model="darkModeStatus"
     label="Dark mode"
     @click="toggled"
   />
-
 </div>
+-->
 
 <div class="row full-width text-subheader q-pt-sm">
 <q-space />
@@ -85,53 +85,8 @@ In the near future, I will provide articles about how to deploy your web app and
 </q-page>
 </template>
 
-<script>
-import { ref, defineComponent } from 'vue' //, watchEffect
-import { useQuasar } from 'quasar'
-
-export default defineComponent({
-  name: 'ProloguePage',
-
-  setup () {
-    const $q = useQuasar()
-    const darkModeStatus = ref($q.dark.isActive)
-
-    function toggled () {
-      // console.log(darkModeStatus.value)
-      $q.dark.toggle()
-    }
-
-    return {
-      darkModeStatus,
-      toggled
-    }
-  }
-})
-
-/*
-watchEffect((darkModeStatus) => {
-  console.log('darkModeStatus: ' + darkModeStatus.value)
-  // useQuasar.dark.set(darkModeStatus) // or false or "auto"
-})
-*/
-
-</script>
-
 <style lang="scss">
-
-div {
-  // background-color: $grey-1;
-}
 div .heading {
   background-color: $grey-1;
-}
-</style>
-
-<style>
-.text-subheader {
-  font-family: verdana;
-  font-size: 16px;
-  font-weight: bold;
-  color:darkblue;
 }
 </style>

@@ -42,15 +42,15 @@
       <b>Method:</b> Same as the first example, wrap the q-card in a &lt;Transition&gt; with 'v-show' or 'v-if' and a variable (i.e 'dogStatsVisible').
     The transition is triggered when the value of the variable is changed.
     </div>
-  <pre>
-  &lt;transition
-    leave-active-class="animated flipOutY"
-    enter-active-class="animated flipInY"
-    @after-leave="imageHidden"
+<pre>
+&lt;transition
+  leave-active-class="animated flipOutY"
+  enter-active-class="animated flipInY"
+  @after-leave="imageHidden"
   &gt;
   &lt;q-card v-show="dogStatsVisible"&gt;
-  &lt;/transition &gt;
-  </pre>
+&lt;/transition&gt;
+</pre>
 
   <div class="q-pa-md">
     <b>Issues.</b>

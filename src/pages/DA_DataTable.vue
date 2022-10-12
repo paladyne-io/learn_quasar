@@ -108,11 +108,11 @@ So the data is displayed in the table as shown below. Note the heading which is 
 Now we have to add functions to read and write this data to local storage.
 </div>
 <pre>
- function saveTableData () {
+function saveTableData () {
   console.log('Saving Table Data...')
   try {
-    $q.localStorage.set('rows', rows)
-    $q.localStorage.set('columns', columns)
+    $q.localStorage.<b>set</b>('rows', rows)
+    $q.localStorage.<b>set</b>('columns', columns)
   } catch (e) {
     // data wasn't successfully saved due to
     // a Web Storage API error
@@ -123,8 +123,8 @@ Now we have to add functions to read and write this data to local storage.
 function readTableData () {
   console.log('Reading Table Data...')
   try {
-    rows = $q.localStorage.getItem('rows')
-    columns = $q.localStorage.getItem('columns')
+    rows = $q.localStorage.<b>getItem</b>('rows')
+    columns = $q.localStorage.<b>getItem</b>('columns')
   } catch (e) {
     // data wasn't successfully read due to
     // a Web Storage API error

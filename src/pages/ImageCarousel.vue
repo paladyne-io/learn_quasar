@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Image carousel </div>
+<div class="q-pa-md text-h5 header"> Image carousel </div>
 
 <div>
   <q-card flat class="q-pa-md">
@@ -218,12 +218,6 @@ export default defineComponent({
 </script>
 
 <style>
-.text-subheader {
-  font-family: verdana;
-  font-size: 16px;
-  font-weight: bold;
-  color:darkblue;
-}
 
 .np-slide-1 {
   background: url("https://unsplash.it/800?random=1");
