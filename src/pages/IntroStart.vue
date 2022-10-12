@@ -25,8 +25,9 @@ Beginner
 Quasar is built on top of <b>Vue.js</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, together with React and Angular.
 </div>
-<div class="q-pt-sm"> JavaScript is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown.
- Originally a scripting language for web pages, it has evolved and its core functionality has been extended by other libraries.
+<!-- is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown. -->
+<div class="q-pt-sm">
+ Originally a scripting language for web pages, JavaScript has evolved and its core functionality has been extended by other libraries.
  Big advances were the introduction of the <b>node.js</b> framework and <b>npm</b>, which bundles Javascript into packages and helps users to find and install them.
 </div>
 <!--
@@ -73,20 +74,19 @@ Quasar version 2 was released in 2021 and is built on Vue 3.
   Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however they would often accept this in an app.
   An app can also ask users for permission to access data and access to hardware. -->
 <div class="q-pt-sm">One of the best features of Quasar is that it allows you to choose the kind of app you build without significantly changing your code.
- You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on on a PC (Windows, Mac OS or Linux).</div>
+ You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on a PC (Windows, Mac OS or Linux).</div>
 <div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, calendars, cards and functions to speed up development.</div>
 
 <div class="text-subheader q-pt-sm">
 How much does it cost?
 </div>
 <div class="q-pt-sm">Generally you don't need to buy anything to start. You can download and install everything for free.
- However to publish your app on Apple's App Store or Google Play store you will need to pay. At the time of writing, the cost is is $100 per year to join Apple's developer program and $25 for Google.</div>
+ However to publish your app on Apple's App Store or Google Play store you will need to pay. At the time of writing, the cost is $100 per year to join Apple's developer program and $25 for Google.</div>
 <div class="text-subheader q-pt-sm">Is it difficult to make an app in Quasar and Vue?</div>
 </div>
-<div class="q-pt-sm">It depends on your experience. It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
+<div class="q-pt-sm">It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
  Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
   It generally comes down to how well you understand. Sometimes it can be frustrating but it is also rewarding.
-There are many resources and tutorials online.
 </div>
 <!--
 <div class="heading text-subheader q-pt-sm">
@@ -154,7 +154,7 @@ Break it down
 </div>
 <div class="row q-pt-md">
     <q-space />
-      <q-btn class="text-right" outline style="color: goldenrod;ext-align:right;" label="Getting started" to="startprogramming" />
+      <q-btn class="text-right" outline style="color: goldenrod;ext-align:right;" label="Get started" to="startprogramming" />
   </div>
 
 <div class="text-subheader q-pt-md">

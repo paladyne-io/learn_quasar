@@ -8,6 +8,33 @@
 }
 */
 
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-SemiBold.woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Elsa';
+  src: url('/fonts/Elsa-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Acumin';
+  src: url('/fonts/acumin-pro/Acumin-RPro.otf');
+}
+
+// declare a class which applies it
+body {
+  font-family: 'Inter';
+}
+
 .x-center {
   margin:auto
 }
@@ -16,6 +43,12 @@
   color: lightblue;
   background-color: transparent;
   text-decoration: none;
+}
+
+.body--dark a:link  {
+  color: rgb(55, 158, 223);
+  background-color: transparent;
+  // text-decoration: none;
 }
 
 .body--dark pre {

@@ -31,7 +31,7 @@
       </div >
 
         <div class="q-pt-sm">
-        For this task you need to use the terminal again.
+        For this task, you need to use the terminal again.
         Type "control c" (press the 'control' and 'c' keys at the same time) to exit the Quasar development environment.
         Then install the library by entering the following command:
         </div>
@@ -47,16 +47,16 @@
       After adding the library to your project, you have to add it to the page or component in the script section.
       If the file doesn't have a script section, add one like this:
 
-    <pre>
-    &lt;script setup&gt;
-      import { ref } from 'vue'
-      import emailjs from '@emailjs/browser'
+  <pre>
+  &lt;script setup&gt;
+    import { ref } from 'vue'
+    import emailjs from '@emailjs/browser'
 
-      const message = ref()
-      const fromName = ref('')
-      const replyTo = ref('')
+    const message = ref()
+    const fromName = ref('')
+    const replyTo = ref('')
 
-      function sendEmail () {
+    function sendEmail () {
         console.log('send email...')
         if (!message.value) {
           alert('Please type a message.')
@@ -64,9 +64,9 @@
         }
         alert('This is a test email from: ' + fromName.value +
         ' with message: ' + message.value)
-      }
-    &lt;/script&gt;
-  </pre>
+    }
+  &lt;/script&gt;
+</pre>
   </div>
 
   <div class="q-pt-md text-subheader">

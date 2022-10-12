@@ -2,8 +2,7 @@
 <q-page class="flex-center q-pa-md">
 <div class="heading q-pa-md text-h5 text-bold">Prologue</div>
 
-<div>
-<q-card flat class="q-pa-md">
+<q-card flat class="q-px-md">
 <!--
 <div class="q-pa-sm">
 If you are new to programming you are about to enter a new world.
@@ -26,7 +25,7 @@ The idea for this app came from my own experience learning Quasar.
 -->
 <div class="q-pa-sm">
   The source code for this app is <a href="https://github.com/paladyne-io/learn_quasar" target="_blank" rel="noopener noreferrer">publicly available on Github</a>.
-  Github is a huge store of open-source apps like this one.
+  Github is a large store of open-source apps like this one.
    I encourage you to download it when you are ready to use it as a basis for your own app.
 </div>
 
@@ -43,10 +42,25 @@ In the near future, I will provide articles about how to deploy your web app and
  <div class="q-pt-sm dark">
   You can contact me directly using the <router-link to="feedback">contact page</router-link>.
 </div>
- <div class="q-pt-sm">
+
+ <div class="q-py-md">
+  <div>
+<q-avatar size="110px">
+  <img src="~/assets/profile.jpg">
+</q-avatar>
+</div>
  Darren Saunders
  </div>
  August 2022
+</div>
+
+<div class="q-pt-sm">
+  <q-toggle
+    v-model="darkModeStatus"
+    label="Dark mode"
+    @click="toggled"
+  />
+
 </div>
 
 <div class="row full-width text-subheader q-pt-sm">
@@ -67,16 +81,40 @@ In the near future, I will provide articles about how to deploy your web app and
 </div>
 
 </q-card>
-</div>
+
 </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { ref, defineComponent } from 'vue' //, watchEffect
+import { useQuasar } from 'quasar'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'ProloguePage',
+
+  setup () {
+    const $q = useQuasar()
+    const darkModeStatus = ref($q.dark.isActive)
+
+    function toggled () {
+      // console.log(darkModeStatus.value)
+      $q.dark.toggle()
+    }
+
+    return {
+      darkModeStatus,
+      toggled
+    }
+  }
 })
+
+/*
+watchEffect((darkModeStatus) => {
+  console.log('darkModeStatus: ' + darkModeStatus.value)
+  // useQuasar.dark.set(darkModeStatus) // or false or "auto"
+})
+*/
+
 </script>
 
 <style lang="scss">

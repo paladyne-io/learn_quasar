@@ -32,7 +32,7 @@ This is the order of tasks.
     <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
   <!-- On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>. -->
 
-    <router-link to="/vscodeterminal">Click here for details</router-link>.
+    <a href="/vscodeterminal">Click here for details</a>.
    <br><br>The $ character represents the shell prompt. It might appear as a %.
     Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
   </q-item-label>
@@ -133,7 +133,7 @@ If you ever see an error such as Unknown command &quot;dev&quot; after entering 
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.
-<div class="q-pt-sm">If something didn't work, please use the <router-link to="feedback"> feedback form</router-link> to get help.
+<div class="q-pt-sm">If something didn't work, please use the <a href="feedback"> feedback form</a> to get help.
 </div>
 </div>
 </div>
@@ -142,7 +142,7 @@ If you made it this far, pat yourself on the back, show your friend/partner, mak
 <div class="row full-width text-subheader q-pt-sm">
   <q-btn outline style="color: goldenrod" label="Previous" to="intro" />
   <q-space />
-  <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Making it your own" to="helloworld" />
+  <q-btn outline style="color: goldenrod;text-align:right;" label=" Next: Make it your own" to="helloworld" />
 </div>
 
 <!---
