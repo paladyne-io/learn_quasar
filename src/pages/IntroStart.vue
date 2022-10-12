@@ -24,12 +24,15 @@ Beginner
 <div>
 Quasar is built on top of <b>Vue.js</b> which is based on JavaScript.
 The Vue framework was developed by Evan You and is one of the 3 most popular frameworks, together with React and Angular.
+ Recently Vue was updated to version 3 which Quasar 2 supports.
 </div>
 <!-- is a programming language that has been around for almost 30 years and has become more popular over time as the internet has grown. -->
+<!--
 <div class="q-pt-sm">
  Originally a scripting language for web pages, JavaScript has evolved and its core functionality has been extended by other libraries.
  Big advances were the introduction of the <b>node.js</b> framework and <b>npm</b>, which bundles Javascript into packages and helps users to find and install them.
 </div>
+-->
 <!--
 <q-list class="q-pa-sm">
    <q-item-section>
@@ -64,18 +67,19 @@ Which framework to learn depends on what you want to achieve.
 </div>
 -->
 <div class="q-pt-sm">
-Recently Vue was updated from version 2 to version 3.
+Quasar includes an interface for developing and building apps together with a library of Vue components such as buttons, calendars, cards as well as functions to speed up development.
+Using plugins such as Capacitor and Electron it is possible to build mobile apps and desktop applications.
 <!-- Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.-->
-Quasar version 2 was released in 2021 and is built on Vue 3.
+<!-- <div class="q-pt-sm">With Quasar you can decide the type of app to build later without significantly changing your code.
 </div>
+-->
 <div class="text-subheader q-pt-sm">What is an SPA and/or a 'web app'?</div>
 <div class="q-pt-sm">A Single Page Application (SPA) is an application that runs in a web browser and dynamically loads data as required instead of refreshing the whole page.
- <!-- A web-browser based app is easier for users to start using but the functionality is limited.
+  You can start off making an SPA and then later, build a dedicated mobile app or a desktop app that runs on a PC (Windows, Mac OS or Linux).</div>
+
+  <!-- A web-browser based app is easier for users to start using but the functionality is limited.
   Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however they would often accept this in an app.
   An app can also ask users for permission to access data and access to hardware. -->
-<div class="q-pt-sm">One of the best features of Quasar is that it allows you to choose the kind of app you build without significantly changing your code.
- You can start off making an SPA that runs in a browser and then later, build a dedicated mobile app or even a desktop app that runs on a PC (Windows, Mac OS or Linux).</div>
-<div class="q-pt-sm">Quasar also provides many prebuilt components such as buttons, calendars, cards and functions to speed up development.</div>
 
 <div class="text-subheader q-pt-sm">
 How much does it cost?
@@ -128,14 +132,16 @@ You don't need to decide these things now but it's useful to consider the scope 
  -->
  <li>What kinds of data will you store and where will you store it? (Locally - on the device, in the cloud, or both)</li>
  <li>How will you manage user data and privacy?</li>
+  <!--
  <li>Will users log in and manage their own account or profile?</li>
  <li>Do you need an administration interface? (often known as an Admin dashboard)</li>
  <li>Will your app be used for free, paid (one time) or by subscription?</li>
  <li>How will you market your app?</li>
+  -->
 </ul>
 </div>
 <div class="q-pt-sm">
-If you are not sure what features to implement, it's better to start simply. Complexity will increase as you add new features or target your app to new types of devices.
+If you are not sure which features to implement, it's better to start simply. Complexity will increase as you add new features or target your app to new types of devices.
 However, any new features you add could be used in another app as you gradually build up your own library of code and components.
 </div>
 <div class="heading text-subheader q-pt-sm">
