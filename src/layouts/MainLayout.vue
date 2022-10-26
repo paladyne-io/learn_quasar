@@ -54,7 +54,7 @@
 
       <q-expansion-item
         icon=""
-        label="Examples"
+        label="Vue Component Examples"
         caption=""
         default-opened>
 
@@ -64,6 +64,20 @@
           v-bind="link"
         />
       </q-expansion-item>
+
+      <q-expansion-item
+        icon=""
+        label="The Back-end (Database)"
+        caption=""
+        default-opened>
+
+        <AppLink
+          v-for="link in supabaseLinks"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-expansion-item>
+
       <q-list>
         <q-item-label header>
           Learn Quasar
@@ -153,6 +167,15 @@ const demoAppLinks = [
     caption: 'A simple demo game',
     icon: 'rocket',
     link: 'gameapp/rm_game'
+  }
+]
+
+const supabaseLinks = [
+  {
+    title: 'Supabase Intro',
+    caption: 'The back end',
+    icon: 'fas fa-database',
+    link: '/supabase/'
   }
 ]
 
@@ -260,6 +283,7 @@ export default defineComponent({
       essentialLinks: qlinksList,
       navigationLinks: navlinksList,
       exampleLinks,
+      supabaseLinks,
       demoAppLinks,
       leftDrawerOpen,
       feedbackLink,

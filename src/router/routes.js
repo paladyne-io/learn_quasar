@@ -51,9 +51,18 @@ const routes = [
     path: '/examples',
     component: () => import('layouts/ExamplesLayout.vue'),
     children: [
+      { path: '', component: () => import('pages/QuasarTestPage.vue') },
       { path: 'transitions', component: () => import('pages/QuasarTestPage.vue') },
       { path: 'qcarousel', component: () => import('pages/QCarouselPage.vue') },
       { path: 'imagegrid', component: () => import('pages/GridCardPage.vue') }
+    ]
+  },
+  {
+    path: '/supabase',
+    component: () => import('layouts/SupabaseLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/SupabaseIntroPage.vue') },
+      { path: 'supabase_1', component: () => import('pages/SupabaseIntroPage.vue') }
     ]
   },
 

@@ -56,7 +56,7 @@
      <b>Issues.</b> So far this is the best solution but I would prefer the text not show through the image when it starts to flip.
   </div>
   <div class="text-center q-pa-md full-width">
-      <q-btn label="How to Save and Load data" color="primary" to="da_local_storage"> </q-btn>
+      <q-btn label="How to Save and Load data" color="blue" to="da_local_storage"> </q-btn>
     </div>
     <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>

@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="heading q-pa-md"> Programming Basics</div>
+<div class="header q-pa-md"> Programming Basics</div>
 
   <q-card flat class="q-pa-md">
     <div class="q-pa-sm">
@@ -25,7 +25,7 @@
     style=" width: 500px; padding:4px"
   />
 
-     </div>
+  </div>
     <div class="q-pt-sm">
     Simply speaking, the template is what the page contains, the script is what it does and the style is how it looks.
    </div>
@@ -46,7 +46,7 @@
   <div class="q-pt-sm">
   When you integrate all 3 types of code into one file this becomes a stand-alone object that you can use in other parts of your app.
   It comes fully formed and ready to work. If you decide later to modify this component, everywhere it is used will gain the benefit of the improvements.
-  Of course this is a double-edged sword as if you do something wrong it could affect other parts of your app.
+  Of course, this is a double-edged sword as if you do something wrong it could affect other parts of your app.
   Embedding the behavior (logic) inside an object is a key principle of Object Oriented Programming.
   Thinking in terms of independent objects and their interactions will make your code more usable and easier to manage.
   Once you get used to it I don't think you will want to do it another way.
@@ -115,7 +115,7 @@ It looks like this.
 </pre>
 </div>
 <div class="q-pt-sm">
-The onMounted function is a special function provided by Vue.
+The <b>onMounted</b> function is a special function provided by Vue.
  It is called when the component or page is loaded.
  It can be useful to check something or run some code when the page is first displayed.
  For example, to check whether the app is running on a mobile device, what language the device is using etc.

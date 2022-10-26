@@ -61,7 +61,7 @@
     <div class="q-pa-md">
          We will try some alternative approaches in the next examples<router-link to="da_ui_example_3"></router-link>.
         <div class="text-center q-pa-md full-width">
-            <q-btn label="UI Example 2" color="primary" to="da_ui_example_3"> </q-btn>
+            <q-btn label="UI Example 2" color="blue" to="da_ui_example_3"> </q-btn>
       </div>
     </div>
     <div class="text-center q-pa-md">

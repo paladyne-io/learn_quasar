@@ -6,7 +6,8 @@
       style="width: 200px; height: 200px; background-color:white; padding:14px"
     >
     <div class="full-width text-center">
-        Welcome to Learn Quasar...
+        Welcome to Learn Quasar...<br>
+        Updated: {{updatedDate}}
      </div>
      <div class="full-width text-center">
       <q-toggle
@@ -15,6 +16,7 @@
       @click="toggled"
     />
   </div>
+
     <div class="text-center">
     <q-btn label="Introduction" color="green" to="intro"> </q-btn>
     </div>
@@ -32,6 +34,8 @@ export default defineComponent({
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
 
+    const updatedDate = 'October 19, 2022'
+
     function toggled () {
       // console.log(darkModeStatus.value)
       $q.dark.toggle()
@@ -39,7 +43,8 @@ export default defineComponent({
 
     return {
       darkModeStatus,
-      toggled
+      toggled,
+      updatedDate
     }
   }
 })

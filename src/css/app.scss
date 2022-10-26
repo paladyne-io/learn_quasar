@@ -13,11 +13,13 @@
   color:darkblue;
 }
 
+/*
 .header {
   font-weight: bold;
   color:darkblue;
   // color:rgb(45, 44, 44);
 }
+*/
 
 @font-face {
   font-family: 'mulish';
@@ -107,6 +109,20 @@ body {
   font-size: 16px;
   font-weight: bold;
   color:darkblue;
+}
+
+.body--dark div .header{
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #548adb;
+}
+
+.body--light div .header{
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  color:rgb(0, 30, 139);
 }
 
 .body--dark div .heading {

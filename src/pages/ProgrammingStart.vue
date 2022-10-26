@@ -7,7 +7,7 @@
 />
 
 <div class="q-pt-sm">
-    Your goal today is to get to this:
+    The goal for this lesson is to get to this:
 </div>
 
 <q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
@@ -27,12 +27,12 @@ This is the order of tasks.
 
   <q-item-label class="q-pt-md">
   3. <b>Install Quasar CLI</b>. To perform this and the following steps it is necessary to use the Terminal application (Mac) or the
-   <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows.)
+   <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command Prompt</a> or PowerShell (Windows).
 
     <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
   <!-- On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>. -->
 
-    <a href="/vscodeterminal">Click here for details</a>.
+  <a href="/vscodeterminal">Click here for details</a>.
    <br><br>The $ character represents the shell prompt. It might appear as a %.
     Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
   </q-item-label>
@@ -48,7 +48,7 @@ This is the order of tasks.
 </q-item-label>
 
 <div class="q-pt-sm">
-  4. Use the Quasar CLI to create your app by entering one of the following commands.</div>
+  4. Use the Quasar CLI to create your app by entering one of the following commands in the terminal.</div>
 
 <pre>
 <span class="disable-select">$ </span>npm init quasar
@@ -64,7 +64,7 @@ This is the order of tasks.
 <div class="q-pt-sm">
 * When creating a project with Quasar you will be given the choice of using Vite or Webpack.
  If you don't have a strong preference, I recommend you choose Vite as it's faster.
- (Surprising or not, 'Vite' means quick in French.)
+ (Surprising or not, 'vite' means quick in French.)
 </div>
 
 <pre>
@@ -120,7 +120,7 @@ If you cannot see the app, please check that the working directory is correct.
 dcs@Darrens-MacBook-Pro learn_quasar %  quasar dev
 </pre>
 
-The current working directory can be changed by typing 'cd ' ('cd' followed by a space) and then the full path.
+6. The current working directory can be changed by typing 'cd ' ('cd' followed by a space) and then the full path.
 An easy way to get the full path to a folder is to drag and drop the folder/directory onto the Terminal window after “cd ”.
 
 <div class="q-pt-sm">
@@ -129,7 +129,7 @@ An easy way to get the full path to a folder is to drag and drop the folder/dire
 </div>
 <div class="q-pt-sm">
 The working directory will remain set until you close the Terminal window.
-If you ever see an error such as Unknown command &quot;dev&quot; after entering 'quasar dev' it is probably because your working directory changed.
+If you ever see an error such as 'Unknown command &quot;dev&quot;' after entering 'quasar dev' it is probably because your working directory changed.
 </div>
 <div class="q-pt-sm">
 If you made it this far, pat yourself on the back, show your friend/partner, make a post on your social platform of choice and take a break to celebrate your progress.

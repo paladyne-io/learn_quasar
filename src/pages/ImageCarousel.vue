@@ -146,7 +146,7 @@ Finally, in the <b>template</b> section of your page or component, add the prese
 
    </div>
 <div>
-It may not be clear exactly what is happening here. For now just try to remember the steps.
+It may not be clear exactly what is happening here. For now, just try to remember the steps.
 <ol> <li> Install the library using the Terminal</li>
 <li> Import it in the component (file) where you want to use it by adding some code in the script section</li>
 <li> (If it is a GUI component), add it into the html area (template) in angle brackets like this, &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>

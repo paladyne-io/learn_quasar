@@ -17,10 +17,10 @@
    The layout also contains the side menu which has been modified as well. Examine the code in DummyAppLayout to better understand these changes.
   </div>
     <div class="text-center q-pa-md full-width">
-      <q-btn label="Get started" color="primary" to="da_ui_example_1"> </q-btn>
+      <q-btn label="Get started" color="blue" to="da_ui_example_1"></q-btn>
     </div>
     <div class="text-center q-pa-md">
-      <q-btn label="Home" color="green" to="/"> </q-btn>
+      <q-btn label="Home" color="green" to="/"></q-btn>
     </div>
   </q-page>
 </template>
