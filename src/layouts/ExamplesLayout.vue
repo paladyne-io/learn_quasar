@@ -13,6 +13,7 @@
         />
 
         <q-toolbar-title>Examples</q-toolbar-title>
+
       </q-toolbar>
     </q-header>
 

@@ -3,9 +3,8 @@
   <div class="text-center">
     <q-img style="max-width: 500px;" alt="vue_quasar_nodejs" src="images/vue_quasar_nodejs_t.png" />
   </div>
-<div class="heading q-pa-md text-h5 text-bold"> Introduction </div>
-<div class="row full-width q-pl-md">
-  <q-btn outline style="color: goldenrod;text-align:right;" label="Skip this" to="startprogramming" />
+<div class="header q-pa-md text-h5"> Introduction
+  <q-btn class=" q-ml-sm" outline style="color: goldenrod;text-align:right;" label="Skip this" to="startprogramming" />
 </div>
 <div>
 <q-card flat class="q-pa-md">
@@ -17,7 +16,7 @@ Do you want to build an app, a game or a website with interactive features?
 This series of articles and interactive examples will help you to use the <b> Quasar framework</b> to develop applications that can run on a variety of devices.
 </div>
 <div class="heading text-subheader  q-py-xs q-pt-md">Target</div>
-Anyone who wants to develop an app or interactive website.
+People who want to develop an app or interactive website.
 <div class="heading text-subheader q-py-xs q-pt-md">Level</div>
 Beginner
 <div class="heading text-subheader q-py-xs q-pt-md">Background</div>
@@ -67,7 +66,7 @@ Which framework to learn depends on what you want to achieve.
 </div>
 -->
 <div class="q-pt-sm">
-Quasar includes an interface for developing and building apps together with a library of Vue components such as buttons, calendars, cards as well as functions to speed up development.
+Quasar includes an interface for developing and building apps together with a library of Vue components including buttons, calendars and cards, as well as functions to speed up development.
 Using plugins such as Capacitor and Electron it is possible to build mobile apps and desktop applications.
 <!-- Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.-->
 <!-- <div class="q-pt-sm">With Quasar you can decide the type of app to build later without significantly changing your code.
@@ -75,22 +74,27 @@ Using plugins such as Capacitor and Electron it is possible to build mobile apps
 -->
 <div class="text-subheader q-pt-sm">What is an SPA and/or a 'web app'?</div>
 <div class="q-pt-sm">A Single Page Application (SPA) is an application that runs in a web browser and dynamically loads data as required instead of refreshing the whole page.
-  You can start off making an SPA and then later, build a dedicated mobile app or a desktop app that runs on a PC (Windows, Mac OS or Linux).</div>
+  You can start off making an SPA and then later, build a dedicated mobile app or a desktop app that runs on a PC (Windows, Mac or Linux).</div>
 
   <!-- A web-browser based app is easier for users to start using but the functionality is limited.
-  Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however they would often accept this in an app.
-  An app can also ask users for permission to access data and access to hardware. -->
+  Most users do not expect or want a web page to access personal data (such as their contacts) or access their camera, however, they would often accept this in an app.
+  An app can also ask users for permission to access data and hardware. -->
 
 <div class="text-subheader q-pt-sm">
 How much does it cost?
 </div>
 <div class="q-pt-sm">Generally you don't need to buy anything to start. You can download and install everything for free.
- However to publish your app on Apple's App Store or Google Play store you will need to pay. At the time of writing, the cost is $100 per year to join Apple's developer program and $25 for Google.</div>
+ However to publish your app on Apple's App Store or Google Play store you will need to pay a fee. At the time of writing, the cost is $100 per year to join Apple's developer program and $25 for Google.</div>
 <div class="text-subheader q-pt-sm">Is it difficult to make an app in Quasar and Vue?</div>
 </div>
-<div class="q-pt-sm">It's like learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
- Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
-  It generally comes down to how well you understand. Sometimes it can be frustrating but it is also rewarding.
+<!--
+Sometimes you will feel like you are making good progress and sometimes you will struggle to fix an issue (bug) or implement a new feature.
+It generally comes down to how well you understand, although occasionally you may run into bugs with the frameworks themselves.
+-->
+<div class="q-pt-sm">This depends on your starting point. If you have experience with other programming languages, Javascript should not be difficult.
+  Quasar and Vue create a skeleton of an app already prepared to allow you to spend more time adding your own features.
+  If you have not programmed before, learning to program is similar to learning a language or a musical instrument. It takes time, commitment, practice and perseverance.
+  Sometimes it can be frustrating but it is often rewarding.
 </div>
 <!--
 <div class="heading text-subheader q-pt-sm">
@@ -130,7 +134,7 @@ You don't need to decide these things now but it's useful to consider the scope 
  <!--
  <li>Will you implement dark mode?</li>
  -->
- <li>What kinds of data will you store and where will you store it? (Locally - on the device, in the cloud, or both)</li>
+ <li>What kinds of data will you store and where will you store it? (Locally - on the device, in the cloud, or both?)</li>
  <li>How will you manage user data and privacy?</li>
   <!--
  <li>Will users log in and manage their own account or profile?</li>
@@ -147,8 +151,8 @@ However, any new features you add could be used in another app as you gradually 
 <div class="heading text-subheader q-pt-sm">
 Break it down
 </div>
-<div class="q-pt-sm">Speaking of components, one important benefit of frameworks such as Vue and Quasar is that they encourage using code to build components.
-  If you don't understand what this means, don't worry but when you start building your app, continuously ask yourself, can I separate this code into a component that can be reused in the future?
+<div class="q-pt-sm">Speaking of components, one important benefit of frameworks such as Vue and Quasar is that they encourage building components with code.
+  If you don't understand what this means, don't worry, but as you develop your app continuously ask yourself, can I separate this code into a component that can be reused in the future?
     This process of writing and then rearranging or separating code is called refactoring.
     Refactoring your code periodically will reward you with a manageable code base that you can understand, even when you come back to it later.
 <!--

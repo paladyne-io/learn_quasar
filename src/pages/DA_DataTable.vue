@@ -149,8 +149,9 @@ When saving or writing, it is just called 'set'.
     </div>
    -->
     <div class="text-center q-pa-md">
-      <q-btn label="Home" color="green" to="/"> </q-btn>
-      <q-btn class="q-ma-md" label="Time for a  Game?" color="blue" to="../gameapp/rm_game/"> </q-btn>
+      <q-btn class="q-ma-sm"  label="Home" color="green" to="/"> </q-btn>
+      <q-btn class="q-ma-sm" label="Examples" color="orange" to="../examples/imagegrid"> </q-btn>
+      <q-btn class="q-ma-sm" label="Time for a  Game?" color="blue" to="../gameapp/rm_game/"> </q-btn>
     </div>
   </q-page>
 </template>

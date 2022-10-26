@@ -1,6 +1,6 @@
 <template>
 <q-page class="flex-center q-pa-md">
-<div class="heading q-pa-md text-bold"> Making it your own</div>
+<div class="header q-pa-md"> Making it your own</div>
 <div>
 <q-card flat q-card class="q-pa-md">
     <div class="text-subheader q-pt-sm">
@@ -126,21 +126,18 @@ The filename must have 2 or more words joined (capitalized, without spaces) like
 Locate the file "routes.js" in the router folder.
 Copy and paste one of the 'children' (the line between {}), then rename the <b>path</b> and <b>page title</b> as below.
  Make sure to add a comma after the previous child.
-<div class="q-pt-sm">
+ <pre>
+  { path: '<b>mypage</b>', component: () => import('pages/<b>MyPage.vue</b>') }
+</pre>
+</div>
+ <div class="q-pt-sm">
  If you add a child for a page that doesn't exist you will see an error when you save the Routes.js file.
 </div>
  'path' is the name that will appear after the "/" in the browser's address bar*.
 </div>
-
-<pre>
-{ path: '<b>mypage</b>', component: () => import('pages/<b>MyPage.vue</b>') }
-</pre>
-
 <div class="q-pt-sm">
-*You may notice the "#" in the address. Don't worry about it for now.
- It is the default mode and can be changed in the Quasar.conf file.
-</div>
-
+*You may notice the "#" in the address.
+ This 'hash' mode is the default and can be changed in the Quasar.conf file.
 </div>
 
 <div class="row full-width text-subheader q-pt-sm">

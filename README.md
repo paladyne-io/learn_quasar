@@ -24,6 +24,9 @@ https://learn-quasar-p764s.ondigitalocean.app/examples/imagegrid
 based on this article:
   https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
 
+
+  ![Card Grid screenshot](/public/images/learn_quasar_examples_screenshot.png)
+
 After downloading or cloning this repository...
 Open a terminal and <b>'cd'</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
 

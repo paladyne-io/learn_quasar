@@ -55,7 +55,7 @@
       Let's try another way<router-link to="da_ui_example_5"></router-link>.
   </div>
     <div class="text-center q-pa-md full-width">
-      <q-btn label="UI Example 3" color="primary" to="da_ui_example_5"> </q-btn>
+      <q-btn label="UI Example 3" color="blue" to="da_ui_example_5"> </q-btn>
     </div>
    <div class="text-center q-pa-md">
       <q-btn label="Home" color="green" to="/"> </q-btn>
