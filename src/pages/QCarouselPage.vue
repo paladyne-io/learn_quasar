@@ -11,7 +11,7 @@
   </div>
  <q-page-sticky class="z-top"
       position="top-right" :offset="[20, 20]" >
-      <q-btn fab icon="fa-solid fa-images" color="secondary" @click="showCode"/>
+      <q-btn fab icon="fa-solid fa-images" color="accent" @click="showCode"/>
     </q-page-sticky>
     <q-page-sticky class="z-top"
     position="top-right" :offset="[80, 20]" >
@@ -141,7 +141,7 @@ const slides = [
 const copied = ref(false)
 const copyLabel = ref('Copy code')
 
-const copyButtonColor = ref('primary')
+const copyButtonColor = ref('info')
 
 function copy () {
   if ($q.platform.is.mac) {
@@ -157,10 +157,9 @@ function copy () {
     // console.log('Copied to clipboard...')
     copied.value = true
     copyLabel.value = 'Copied'
-    if (copied.value) {
-      copyButtonColor.value = 'positive'
-    }
-    copyButtonColor.value = 'info'
+    copyButtonColor.value = 'positive'
+
+    // copyButtonColor.value = 'info'
   })
     .catch(() => {
       // fail

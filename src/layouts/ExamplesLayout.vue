@@ -1,7 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-
-    <q-header elevated>
+    <q-header bordered elevated>
       <q-toolbar>
         <q-btn
           flat
@@ -17,12 +16,10 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer bordered class="bg-white text-primary">
+    <q-footer bordered>
       <q-tabs
         no-caps
-        active-color="primary"
         indicator-color="transparent"
-        class="text-grey"
       >
         <!--
         <q-route-tab name="Example 1" :label="$t('example_1')" to="/2" />

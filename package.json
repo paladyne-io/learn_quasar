@@ -1,6 +1,6 @@
 {
   "name": "learn-quasar",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Try this free app to learn the Quasar framework with Vue.js, step by step.",
   "productName": "Learn Quasar App",
   "author": "darren@paladyne.co.jp",
@@ -12,11 +12,11 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@quasar/extras": "^1.0.0",
-    "@supabase/supabase-js": "^2.0.0-rc.13",
+    "@supabase/supabase-js": "^2.0.5",
     "dotenv": "^16.0.1",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
-    "vue": "^3.0.0",
+    "vue": "^3.2.41",
     "vue-chartjs": "^4.1.1",
     "vue-colcade": "^1.2.4",
     "vue-flip": "^2.2.0",

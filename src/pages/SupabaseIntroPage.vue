@@ -23,7 +23,7 @@
 <div class="q-pa-sm">
   A <a href="https://supabase.com/pricing"> trial account</a> allows you to run two projects for free.
   You can have more, but only 2 projects can be active at one time. If your project is not used/accessed for a week it will be automatically 'hibernated' but you can restart it.
-  When you are ready, the Pro account cost US$25 per month.
+  When you are ready, a Pro account costs US$25 per month.
   Perhaps not cheap but with careful management, it could be used for more than one project and provides a lot of capacity.
 </div>
 <div class="q-pa-sm">
