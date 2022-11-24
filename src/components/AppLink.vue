@@ -2,7 +2,10 @@
   <q-item
     clickable
     :to=link
+<<<<<<< Updated upstream
     @click="itemClicked"
+=======
+>>>>>>> Stashed changes
   >
     <q-item-section
       v-if="icon"
@@ -22,7 +25,11 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+<<<<<<< Updated upstream
   name: 'AppLink',
+=======
+  name: 'EssentialLink',
+>>>>>>> Stashed changes
   props: {
     title: {
       type: String,
@@ -43,6 +50,7 @@ export default defineComponent({
       type: String,
       default: ''
     }
+<<<<<<< Updated upstream
   },
   methods: {
 
@@ -52,5 +60,8 @@ export default defineComponent({
     }
   }
 
+=======
+  }
+>>>>>>> Stashed changes
 })
 </script>
