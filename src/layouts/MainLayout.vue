@@ -30,7 +30,6 @@
         label="Lesson Links"
         caption="Links to tutorials in this app"
         default-opened>
-
         <AppLink
           v-for="link in navigationLinks"
           :key="link.title"
