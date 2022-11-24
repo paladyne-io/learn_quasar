@@ -3,7 +3,7 @@
 .env*
 node_modules
 package-lock.json
-
+/src
 # /VS Code workspace folder?
 /workspace
 .editorconfig
