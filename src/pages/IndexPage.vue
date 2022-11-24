@@ -34,11 +34,7 @@ export default defineComponent({
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
 
-<<<<<<< Updated upstream
-    const updatedDate = 'October 19, 2022'
-=======
     const updatedDate = 'November 24, 2022'
->>>>>>> Stashed changes
 
     function toggled () {
       // console.log(darkModeStatus.value)
