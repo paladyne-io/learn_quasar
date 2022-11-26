@@ -21,6 +21,20 @@ module.exports = configure(function (ctx) {
       // rawOptions = {},
       warnings: true,
       errors: true
+      /*
+
+      build: {
+        extendViteConf (viteConf, { isClient, isServer }) {
+          if (ctx.mode.pwa) {
+            viteConf.plugins.push(//)
+          }
+
+          if (ctx.dev) {
+            // viteConf.plugins.push(//)
+            publicPath: process.env.NODE_ENV === "production" ? "/learn_quasar/" : "/",
+          }
+        }
+        */
     },
 
     // https://v2.quasar.dev/quasar-cli/prefetch-feature
@@ -65,7 +79,7 @@ module.exports = configure(function (ctx) {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      publicPath: '/learn_quasar/',
       // analyze: true,
       /*
       env: {
