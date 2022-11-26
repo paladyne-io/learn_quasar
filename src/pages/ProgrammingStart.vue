@@ -32,7 +32,7 @@ This is the order of tasks.
     <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio Code.
   <!-- On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>. -->
 
-  <a href="/vscodeterminal">Click here for details</a>.
+  <router-link to="/vscodeterminal">Click here for details</router-link>.
    <br><br>The $ character represents the shell prompt. It might appear as a %.
     Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
   </q-item-label>

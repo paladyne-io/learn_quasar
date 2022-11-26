@@ -66,7 +66,7 @@ Which framework to learn depends on what you want to achieve.
 </div>
 -->
 <div class="q-pt-sm">
-Quasar includes an interface for developing and building apps together with a library of Vue components including buttons, calendars and cards, as well as functions to speed up development.
+Quasar includes an interface for developing and building apps together with a library of Vue components including buttons, calendars and cards, and other functions to speed up development.
 Using plugins such as Capacitor and Electron it is possible to build mobile apps and desktop applications.
 <!-- Some libraries and tutorials may not yet have been updated so this might be confusing when looking online.-->
 <!-- <div class="q-pt-sm">With Quasar you can decide the type of app to build later without significantly changing your code.
