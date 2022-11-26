@@ -2,7 +2,7 @@
 .thumbs.db
 .env*
 node_modules
-package-lock.json
+#package-lock.json
 
 # /VS Code workspace folder?
 /workspace

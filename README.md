@@ -5,7 +5,9 @@ A series of articles and interactive examples explaining how to use the Quasar f
 This instructional app is aimed at beginners starting with preparation, including how to use Visual Studio Code.
 
 The app is hosted here:
-https://learn-quasar-p764s.ondigitalocean.app
+-- https://learn-quasar-p764s.ondigitalocean.app
+
+https://paladyne-io.github.io/learn_quasar/
 
 Features of interest:
 * Collapsible side panel menus
