@@ -9,7 +9,7 @@ package-lock.json
 .editorconfig
 
 # git files
-.git*
+#.git*
 
 # Quasar core related directories
 .quasar
