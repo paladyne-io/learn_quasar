@@ -6,19 +6,30 @@
       Welcome to Learn Quasar...<br>
       Updated: {{ updatedDate }}
     </div>
+
     <div class="full-width text-center">
       <q-toggle v-model="darkModeStatus" label="Dark mode" @click="toggled" />
     </div>
 
-    <div class="text-center">
+    <div class="full-width text-center">
       <q-btn label="Introduction" color="green" to="intro"> </q-btn>
     </div>
+
+    <div class="q-pa-md q-gutter-sm full-width center text-center">
+      <ShareNetwork v-for="(sns, index) in socialSharing.sites" :key=index class="social-btn" :network="sns"
+        :url="socialSharing.url" :title="socialSharing.title" :description="socialSharing.description" quote=''
+        hashtags=''>
+        <q-btn round flat size="lg" :class="sns.toLowerCase()" :icon="getSocialSharingIcon(sns)"></q-btn>
+      </ShareNetwork>
+    </div>
+
   </q-page>
 </template>
 
 <script>
 import { ref, defineComponent } from 'vue' //, watchEffect
 import { useQuasar } from 'quasar' //, useMeta
+// import { ShareNetwork } from 'vue-social-sharing'
 
 export default defineComponent({
   name: 'IndexPage',
@@ -26,10 +37,25 @@ export default defineComponent({
   setup() {
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
-
     const updatedDate = 'December 14, 2022'
 
+    const socialSharing = ref({ url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/', title: 'Learn Quasar app', description: 'Try this free app to learn the Quasar framework and vue.js, step by step.', sites: ['Facebook', 'Twitter', 'Linkedin'] })
+
     // useMeta(metaData)
+
+    function getSocialSharingIcon(e) {
+      console.log('getSocialSharingIcon: ' + e)
+      switch (e.toLowerCase()) {
+        case 'facebook':
+          return 'fa-brands fa-facebook'
+        case 'twitter':
+          return 'fa-brands fa-twitter'
+        case 'linkedin':
+          return 'fa-brands fa-linkedin'
+        case 'line':
+          return 'fa-brands fa-line'
+      }
+    }
 
     function toggled() {
       // console.log(darkModeStatus.value)
@@ -39,7 +65,9 @@ export default defineComponent({
     return {
       darkModeStatus,
       toggled,
-      updatedDate
+      updatedDate,
+      socialSharing,
+      getSocialSharingIcon
     }
   }
 })
@@ -52,3 +80,31 @@ watchEffect((darkModeStatus) => {
 */
 
 </script>
+
+<style>
+.social-btn:any-link {
+  text-decoration: none;
+}
+
+/* https://www.webnots.com/color-codes-for-social-networking-site-icons/
+https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
+*/
+.facebook {
+  color: #3b5998;
+}
+
+/* #55acee #00aced */
+.twitter {
+  color: #1DA1F2;
+}
+
+/* #0072b1 #007bb6 */
+.linkedin {
+  color: #0077B5;
+}
+
+/* #00c300 */
+.line {
+  color: #00B900;
+}
+</style>
