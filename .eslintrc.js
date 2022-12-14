@@ -5,7 +5,7 @@ module.exports = {
   root: true,
 
   parserOptions: {
-    ecmaVersion: '2021', // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: '2021' // Allows for the parsing of modern ECMAScript features
   },
 
   env: {
@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
     // required to lint *.vue files
-    'vue',
+    'vue'
   ],
 
   globals: {
@@ -56,7 +56,7 @@ module.exports = {
     'one-var': 'off',
     'no-void': 'off',
     'multiline-ternary': 'off',
-
+    'space-before-function-paren': 'off',
     'import/first': 'off',
     'import/named': 'error',
     'import/namespace': 'error',

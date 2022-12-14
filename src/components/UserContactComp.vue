@@ -9,47 +9,22 @@
   <div class="container q-pa-sm q-ma-md">
     <form ref="form" @submit.prevent="sendEmail">
       <div class="field">
-        <q-input
-          autogrow
-          type="textarea"
-          name="message"
-          label="Message:"
-          v-model="newMessage"
-        />
+        <q-input autogrow type="textarea" name="message" label="Message:" v-model="newMessage" />
       </div>
 
       <div class="field">
-        <q-input
-          id="from_name"
-          type="text"
-          label="Your name: "
-          v-model="fromName"
-          name="from_name"
-          placeholder="Your Name"
-        />
+        <q-input id="from_name" type="text" label="Your name: " v-model="fromName" name="from_name"
+          placeholder="Your Name" />
       </div>
 
       <div class="field">
-        <q-input
-          id="reply_to"
-          type="email"
-          label="Your email address:"
-          v-model="replyTo"
-          name="reply_to"
-          placeholder="Your email address"
-        />
+        <q-input id="reply_to" type="email" label="Your email address:" v-model="replyTo" name="reply_to"
+          placeholder="Your email address" />
       </div>
     </form>
   </div>
   <div class="text-center q-pa-md full-width">
-    <q-btn
-      class="q-ml-md"
-      label="Send email"
-      size="md"
-      icon="fa fa-paper-plane"
-      color="green"
-      @click="sendEmail"
-    />
+    <q-btn class="q-ml-md" label="Send email" size="md" icon="fa fa-paper-plane" color="green" @click="sendEmail" />
   </div>
 </template>
 
@@ -65,7 +40,7 @@ import emailjs from '@emailjs/browser'
 export default defineComponent({
   name: 'UserContactComponent',
 
-  setup () {
+  setup() {
     // console.log('EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
     // console.log('VITE EMAILJS_SERVICE_2: ' + import.meta.env.VITE_EMAILJS_SERVICE) // 123
     // console.log('EMAILJS_SERVICE: ' + import.meta.EMAILJS_SERVICE) // 123
@@ -90,17 +65,18 @@ export default defineComponent({
   },
 
   methods: {
-    sendEmail () {
-      // console.log('send email...')
+    sendEmail() {
+      console.log('send email...')
 
-      // const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
+      const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
       // const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
-      // const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
+      const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY
 
       // console.log('Process.env: ' + JSON.stringify(process.env))
 
-      // console.log('Public key: ' + process.env.EMAILJS_PUBLIC_KEY)
-      // console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
+      console.log('Public key: ' + EMAILJS_PUBLIC_KEY)
+      console.log('SERVICE_ID: ' + EMAILJS_SERVICE_ID)
+
       // console.log('TEMPLATE_ID: ' + EMAILJS_TEMPLATE_ID)
 
       // console.log('EMAILJS_SERVICE_ID_2: ' + EMAILJS_SERVICE_ID_2)

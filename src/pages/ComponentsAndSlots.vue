@@ -1,93 +1,75 @@
 <template>
-<q-page class="flex-center q-pa-md">
-<div class="q-pa-md text-h5 text-bold"> Components And Slots</div>
+  <q-page class="flex-center q-pa-md">
+    <div class="q-pa-md text-h5 text-bold"> Components And Slots</div>
 
-<div>
-<q-card flat class="q-pa-md">
-<SubHeaderComponentDA mytext="How to use Components"
-/>
+    <q-card flat class="q-pa-md">
+      <SubHeaderComponentDA mytext="How to use Components" />
 
-<div class="q-pt-sm">
-Your mission today is to get to this:
-</div>
-<q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
+      <div class="q-pt-sm">
+        For reference:
+        <a href="https://vuejs.org/guide/components/slots.html">Vue Slots</a>
+      </div>
 
-<div class="q-pt-sm">
-<div>
-For reference:
-<a href="https://vuejs.org/guide/components/slots.html">Vue Slots</a>
-</div>
+      <div class="q-pt-sm">
+        Today I learned something new that I would like to pass on.
 
-<div class="q-pt-sm">
-Today was in interesting day.
-I learned something new so I will try to pass on.
+        I added a <router-link to="/preferences">Preferences page </router-link> containing a toggle to switch to Dark
+        mode.
+        If you don't know what that is you can try it out on the page.
+        There is an explanation on Quasar's website <a href="https://quasar.dev/style/dark-mode"> too</a>.
 
-Last night I added a <router-link to="/preferences">Preferences page </router-link> containing a toggle to switch to Dark mode.
-If you don't know what that is you can try it out on the page.
-There is an explanation on Quasar's website <a href="https://quasar.dev/style/dark-mode"> too</a>.
-
-</div>
-
-<QuoteComponent
-mytext="The advantages of Dark Mode are that:
+      </div>
+      <div class="q-pt-sm">
+        <QuoteComponent
+          mytext="The advantages of Dark Mode are that:
 
 It enhances visual ergonomics by reducing eye strain.
 Provides comfort of use at night or in dark environments.
-It conserves battery power mainly if the device screen is OLED or AMOLED, thereby enabling device usage for longer periods without charging."
-/>
-</div>
+It conserves battery power mainly if the device screen is OLED or AMOLED, thereby enabling device usage for longer periods without charging." />
+      </div>
 
-<div class="q-pt-sm">
-So after spending an hour or two trying to figure out how to make a toggle switch to toggle a function...
-(Quasar can be a little frustrating sometimes - most of the component examples show how they look and the basic operation but not how to actually use them -
-I got it working and voila! (that's pronounced, 'wala'), the colors in the app are suddenly reversed.
-A great example where Quasar actually saves tons of time - giving you functionality out of the box.
-After a fleeting feeling of satisfaction, the next realization is, "but that doesn't look right".
- As the Quasar documentation says,
- &quot; All Quasar components with a dark property will have it automatically set to true. No need to do it manually.&quot;
-which raises the question, what about your own components? What about the places where you have added some colors using in-line CSS styles?
-</div>
-<div class="q-pt-sm">
-As Richard Bach famously wrote,
-“There is no such thing as a problem without a gift for you in its hands.
- You seek problems because you need their gifts.”
- </div>
-<div class="q-pt-sm">
- While I don't often seek out these problems, I have found that in general when you start trying to fix something you do a lot of learning along the way.
-So today I made a custom component that switches its appearance based on the mode. This shows the power of vue and of components.
-After making this one component I considered how to make it available to other components.
-In Java you might do this by "sub classing" and inheritance, but vue uses composition so I made a parent component that is dark mode aware with a slot for other components to fit inside.
-</div>
-<div class="q-pt-sm">
-So today I want to explain about slots and her brother, props while once again urging you to spend time understanding and thinking how to 'componentize' your app.
-</div>
+      <div class="q-pt-sm">
+        So after spending an hour or two trying to figure out how to make a toggle switch to toggle a function...
+        (Quasar can be a little frustrating sometimes - most of the component examples show how they look and the basic
+        operation but there are not many examples of how to actually use them) I got it working and, voila!, the colors
+        in the app are suddenly reversed.
+        A great example where Quasar actually saves tons of time - giving you functionality out of the box.
+        After a fleeting feeling of satisfaction, the next realization is, "but that doesn't look right".
+        As the Quasar documentation says,
+        &quot; All Quasar components with a dark property will have it automatically set to true. No need to do it
+        manually.&quot;
+        which raises the question, what about your own components? What about the places where you have added some
+        colors
+        using in-line CSS styles?
+      </div>
+      <div class="q-pt-sm">
+        I have found that in general when you start trying to fix something you do a lot of learning along the way.
+        So today I made a custom component that switches its appearance based on the mode. This shows the power of vue
+        and
+        of components.
+        After making this one component I considered how to make it available to other components.
+        In Java you might do this by "sub classing" and inheritance, but vue uses composition so I made a parent
+        component
+        that is dark mode aware with a slot for other components to fit inside.
+      </div>
+      <div class="q-pt-sm">
+        So today I want to explain about slots and the somewhat similar props while once again urging you to spend time
+        understanding and thinking how to 'componentize' your app.
+      </div>
 
-  <div class="text-center">
-     <q-btn label="My Page" color="green" to="mypage"></q-btn>
-   </div>
-
-<div class="row text-subheader q-pt-sm">
-    <q-item class="col"
-          clickable
-          v-ripple
-          to="intro"
-          @click="link = 'intro'"
-        >
-        Previous
-    </q-item>
-    <q-item class="col"
-          clickable
-          v-ripple
-          to="helloworld"
-          @click="link = 'helloworld'"
-        >
-      <div style="text-align:right" class="full-width">
+      <div class="row text-subheader q-pt-sm">
+        <q-item class="col" clickable v-ripple to="intro" @click="link = 'intro'">
+          Previous
+        </q-item>
+        <q-item class="col" clickable v-ripple to="helloworld" @click="link = 'helloworld'">
+          <div style="text-align:right" class="full-width">
             Next: Making it your own
-        </div>
-    </q-item>
-</div>
-</q-card>
-</div>
+          </div>
+        </q-item>
+      </div>
+
+    </q-card>
+
   </q-page>
 </template>
 

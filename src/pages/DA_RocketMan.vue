@@ -1,40 +1,29 @@
 <template>
-<div class="center flex-center x-center" style="min-height: inherit;">
-  <!--
+  <div class="center flex-center x-center" style="min-height: inherit;">
+    <!--
   <div class="heading q-pa-md text-center">Rocket Man</div>
   -->
-  <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh;">
-    <div ref="bg" class="x-center animation-frame">
+    <q-scroll-area ref="scrollAreaRef" class="center flex-center x-center" :visible="sbVisible" style="height: 100vh;">
+      <div ref="bg" class="x-center animation-frame">
         <div ref="rocket" class="rocket-box image-stack">
-        <div class="image-stack__item image-stack__item--bottom">
-        <q-img v-if="enginesOn"
-          width="90px"
-          alt="Rocket with engines on - image"
-          src="/images/rocket.png"
-        />
-         <q-img v-else ref="rocket" class="rocket-box"
-          width="90px"
-          alt="Rocket image"
-          src="/images/rocket_noflame.png"
-        />
+          <div class="image-stack__item image-stack__item--bottom">
+            <q-img v-if="enginesOn" width="90px" alt="Rocket with engines on - image" src="/images/rocket.png" />
+            <q-img v-else ref="rocket" class="rocket-box" width="90px" alt="Rocket image"
+              src="/images/rocket_noflame.png" />
+          </div>
+          <div v-if="explosion" class="image-stack__item image-stack__item--top">
+            <q-img width="140px" alt="animated explosion" src="/images/explosion.gif" />
+          </div>
         </div>
-        <div v-if="explosion" class="image-stack__item image-stack__item--top">
-        <q-img
-          width="140px"
-          alt="animated explosion"
-          src="/images/explosion.gif"
-        />
+        <div v-if="debug" class="text-white q-pa-sm row full-width ">
+          Rocket loc: {{ finalRocketLoc }} px
+          <br>
+          Boost: {{ boost }}
         </div>
-      </div>
-      <div v-if="debug" class="text-white q-pa-sm row full-width ">
-      Rocket loc: {{ finalRocketLoc }} px
-      <br>
-      Boost: {{ boost }}
-    </div>
 
-    </div>
-  </q-scroll-area>
-  <div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
+      </div>
+    </q-scroll-area>
+    <div v-if="controlsVisible" class="center flex-center x-center q-gutter-xs row">
       <!--
       <q-input style="max-width: 100px"
         label="Boost"
@@ -43,44 +32,27 @@
         v-model.number="launchHeight"
       />
       -->
-    <div class="q-pa-md" >
-    <q-badge class="q-pa-sm" color="pink">
-      Boost: {{ boost }} (100 to 1500)
-    </q-badge>
-    <div class="row justify-around" style="width: 360px;" >
-      <q-slider
-        v-model="boost"
-        color="red"
-        :min="100"
-        :max="1500"
-        label
-        switch-label-side
-        label-always
-      />
-    </div>
+      <div class="q-pa-md">
+        <q-badge class="q-pa-sm" color="pink">
+          Boost: {{ boost }} (100 to 1500)
+        </q-badge>
+        <div class="row justify-around" style="width: 360px;">
+          <q-slider v-model="boost" color="red" :min="100" :max="1500" label switch-label-side label-always />
+        </div>
       </div>
       <div class="row justify-around" style="width: 360px;">
-      <q-btn
-        label="Launch"
-        icon="rocket"
-        color="primary"
-        @click="launch"
-      >
-      </q-btn>
-      <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
-      </q-btn>
-      <q-btn style="max-width: 100px "
-        label="Quit"
-        color="orange"
-        @click="quit"
-        to="/"
-      />
+        <q-btn label="Launch" icon="rocket" color="blue" @click="launch">
+        </q-btn>
+        <q-btn label="Reset" icon="clear" color="secondary" @click="reset">
+        </q-btn>
+        <q-btn style="max-width: 100px " label="Quit" color="orange" @click="quit" to="/" />
 
       </div>
-         <div class="row q-pa-sm row full-width">
-         Sound Effects from&nbsp;<a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179">Pixabay</a>
+      <div class="row q-pa-sm row full-width">
+        Sound Effects from&nbsp;<a
+          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=25179">Pixabay</a>
+      </div>
     </div>
- </div>
 
   </div>
 
@@ -126,17 +98,17 @@ onMounted(() => {
   init()
 })
 
-function quit () {
+function quit() {
   console.log('quit')
   reset()
 }
 
-function stopExplosion () {
+function stopExplosion() {
   console.log('stopExplosion')
   reset()
 }
 
-function startLaunch () {
+function startLaunch() {
   console.log('startLaunch')
   launchSound.volume = 0.4
   launchSound.play()
@@ -144,14 +116,14 @@ function startLaunch () {
   controlsVisible.value = false
 }
 
-function startFall () {
+function startFall() {
   console.log('startFall')
   falling.value = true
   failureSound.volume = 0.4
   failureSound.play()
 }
 
-function explodeRocket () {
+function explodeRocket() {
   // console.log('Explode')
   explosion.value = true // shows the explosion graphic
   explosionSound.volume = 0.4
@@ -161,7 +133,7 @@ function explodeRocket () {
   // controlsVisible.value = true // or reset
 }
 
-function fallRocket () {
+function fallRocket() {
   console.log('fallRocket')
   enginesOn.value = false
   start.value = null
@@ -171,7 +143,7 @@ function fallRocket () {
   setTimeout(() => window.requestAnimationFrame(fall), 1000)
 }
 
-function explodeAndFallOver () {
+function explodeAndFallOver() {
   explosion.value = true // shows the explosion graphic
   // console.log('fallOverRocket...')
   rocket.value.classList.add('fallover')
@@ -182,7 +154,7 @@ function explodeAndFallOver () {
   setTimeout(() => reset(), 2000) // will remove fallover
 }
 
-function init () {
+function init() {
   // rocketsInitialLocation.value = rocket.value.getBoundingClientRect()
   // const yPos2 = rocket.value.getBoundingClientRect().y
   // console.log('Initial y pos: ' + yPos2 + 'px')
@@ -191,11 +163,11 @@ function init () {
   // setInterval(moveObjectToRight, 10)
 }
 
-function notifyMessage (msg) {
+function notifyMessage(msg) {
   $q.notify(msg)
 }
 
-function launch () {
+function launch() {
   reset()
 
   const i = 0
@@ -211,7 +183,7 @@ function launch () {
   }
 }
 
-function reset () {
+function reset() {
   console.log('reset...')
   rocket.value.classList.remove('fallover')
 
@@ -236,7 +208,7 @@ function reset () {
   // fallOverRocket()
 }
 
-function fall (timestamp) {
+function fall(timestamp) {
   // console.log('fall start value: ', start.value)
 
   if (start.value === undefined || (!start.value)) {
@@ -291,7 +263,7 @@ function fall (timestamp) {
   }
 }
 
-function fly (timestamp) {
+function fly(timestamp) {
   if (falling.value) {
     console.log('fly method called when falling.. Ignored')
     return
@@ -335,7 +307,7 @@ function fly (timestamp) {
     checkResult()
   }
 
-  function checkResult () {
+  function checkResult() {
     rocketLoc.value = rocket.value.getBoundingClientRect().y
     finalRocketLoc.value = rocket.value.getBoundingClientRect().y
 
@@ -365,40 +337,44 @@ function fly (timestamp) {
 </script>
 
 <style>
- .animation-frame{
-    background-image:  url("/images/background_stars.png");
-    /*
+.animation-frame {
+  background-image: url("/images/background_stars.png");
+  /*
     border: solid;
     border-color: black;
     */
-    width: 100%;
-    min-width: 414px;
-    max-width: 560px;
-    height: 100%;
-    min-height: 800px;
-    max-height: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: bottom;
-  }
+  width: 100%;
+  min-width: 414px;
+  max-width: 560px;
+  height: 100%;
+  min-height: 800px;
+  max-height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
+}
 
- /*
+/*
   .fallover {
     transform: rotate(90deg) !Important ;
     transform-origin: center, 10%;
   }
   */
 
-  .fallover {
-    transform-origin: center, 10%;
-    animation: fallover-slowly 2s;
+.fallover {
+  transform-origin: center, 10%;
+  animation: fallover-slowly 2s;
+}
+
+@keyframes fallover-slowly {
+  from {
+    transform: rotate(0deg)
   }
 
- @keyframes fallover-slowly {
-  from { transform: rotate(0deg)}
-  to { transform: rotate(90deg)
+  to {
+    transform: rotate(90deg)
   }
- }
+}
 
 /*
   @keyframes fallover-slowly {
@@ -421,13 +397,13 @@ function fly (timestamp) {
 }
 */
 
-  .rocket-box{
-     /* background: #f00; */
-     /* height:151px; */
-     margin-top: auto;
-     margin-left: auto;
-     margin-right: auto;
-  }
+.rocket-box {
+  /* background: #f00; */
+  /* height:151px; */
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* https://bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 /* https://gridbyexample.com/learn/ */
@@ -447,7 +423,7 @@ function fly (timestamp) {
   grid-row: 1;
   grid-column: 1 / span 11;
   padding-top: 50%;
-  z-index: 1; /* tells the browser to make this image on top */
+  z-index: 1;
+  /* tells the browser to make this image on top */
 }
-
 </style>
