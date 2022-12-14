@@ -9,7 +9,6 @@
         label="Dark mode"
         @click="toggled"
       />
-
 </div>
 </q-card>
 

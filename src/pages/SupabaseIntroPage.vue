@@ -28,22 +28,22 @@
 </div>
 <div class="q-pa-sm">
   Supabase is easy to integrate with front-end frameworks such as Vue/Quasar and provides a web browser interface to manage the database.
-  Supabase provides documentation explaining how to set up a project for many common frameworks including Vue. <a href="https://supabase.com/docs/guides/with-vue-3">Supabase with Vue3</a>
+  Supabase provides documentation explaining how to set up a project for many common frameworks, <a href="https://supabase.com/docs/guides/with-vue-3"> including Vue</a>.
 </div>
 
 <div class="q-pa-sm">
 There are some other tutorials online such as <a href="https://vueschool.io/articles/vuejs-tutorials/use-supabase-auth-with-vue-js-3/">this one</a>, that explain in detail how to setup and use Supabase so please refer to them as well if you want to.
 </div>
 <div class="q-pa-sm">
-  Get started by installing the current (V1) client, used by most tutorials, by running this command:
+  Get started by installing the current (V2) client, used by most tutorials, by running this command:
   <pre>npm install @supabase/supabase-js </pre>
-or the latest <a href="https://supabase.com/blog/supabase-js-v2"> V2 Release candidate JavaScript Client</a>:
- <pre>npm i @supabase/supabase-js@rc</pre>
 </div>
 
 <div class="q-pa-sm">
-  Quasar provides a unique boot file functionality to initialize code when your app starts. There are 2 steps, The first is to add the javascript boot file and the second is to 'activate' it in the boot section of the Quasar.conf (or Quasar.config) file.
-<pre>
+  Quasar provides a unique boot file functionality to initialize code when your app starts.
+  There are 2 steps, The first is to add the javascript boot file and the second is to 'activate' it in the boot section of the Quasar.conf (or Quasar.config) file.
+  You can find an example of the boot file in the source code (on Github).
+  <pre>
 // --> boot files are part of "main.js"
 // https://v2.quasar.dev/quasar-cli/boot-files
 boot: [

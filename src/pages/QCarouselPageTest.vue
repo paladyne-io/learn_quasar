@@ -1,8 +1,4 @@
 <template>
-  <!--
-  @after-enter="codeShown"
-  @after-leave="codeHidden"
-  -->
 <transition appear enter-active-class="animated slideInLeft" :duration="1000" leave-active-class="animated slideOutLeft">
 <q-card v-if="showCodeSwitch">
   <div class="q-pa-md heading">Code</div>
@@ -45,10 +41,8 @@
   const slide = ref('slide1')
 
   const slides = [
-    {id: 1, name: 'slide1', src: 'https://picsum.photos/800/600?random=1'},
-    {id: 2, name: 'slide2', src: 'https://picsum.photos/800/600?random=2'},
-    {id: 3, name: 'slide3', src: 'https://picsum.photos/800/600?random=3'},
-    {id: 4, name: 'slide4', src: 'https://picsum.photos/800/600?random=4'}
+    {id: 1, name: 'slide1', src: 'images/test/dog.jpg},
+    {id: 2, name: 'slide2', src: 'images/test/bicycle.png},
   ]
 &lt;/script&gt;
 
@@ -79,12 +73,14 @@
        transition-prev="slide-left"
        transition-next="slide-right"
        transition-duration="2500"
+       height="300px"
      >
        <q-carousel-slide
          v-for="slide in slides" :key="slide.id"
          class="my-element"
          :name="slide.name"
          :img-src="slide.src"
+         style="background-size: contain; background-repeat: no-repeat;"
        />
 
      </q-carousel>
@@ -119,14 +115,13 @@ import { ref } from 'vue'
 import { copyToClipboard, useQuasar } from 'quasar'
 
 const $q = useQuasar()
+
 // const platform = $q.platform
 
 const slide = ref('slide1')
 const codeToCopy = ref()
+
 const showCodeSwitch = ref(false)
-const copied = ref(false)
-const copyLabel = ref('Copy code')
-const copyButtonColor = ref('info')
 
 function showCode () {
   console.log('Show code')
@@ -134,10 +129,13 @@ function showCode () {
 }
 
 const slides = [
-  { id: 1, name: 'slide1', src: 'https://picsum.photos/800/600?random=1', text: 'This is Slide 1' },
-  { id: 2, name: 'slide2', src: 'https://picsum.photos/800/600?random=2', text: 'This is Slide 2' },
-  { id: 3, name: 'slide3', src: 'https://picsum.photos/800/600?random=3', text: 'This is Slide 3' },
-  { id: 4, name: 'slide4', src: 'https://picsum.photos/800/600?random=4', text: 'This is Slide 4' }]
+  { id: 1, name: 'slide1', src: '/images/test/dog.jpg', text: 'This is Slide 1' },
+  { id: 2, name: 'slide2', src: '/images/test/bicycle.png', text: 'This is Slide 2' }]
+
+const copied = ref(false)
+const copyLabel = ref('Copy code')
+
+const copyButtonColor = ref('info')
 
 function copy () {
   if ($q.platform.is.mac) {

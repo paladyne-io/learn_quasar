@@ -21,7 +21,8 @@ const routes = [
       { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
       { path: 'nvm_install', component: () => import('pages/nvm_install.vue') },
       { path: 'images', component: () => import('pages/ImageCarousel.vue') },
-      { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') }
+      { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') },
+      { path: 'codesliderpage', component: () => import('pages/CodeSliderTestPage.vue') }
     ]
   },
   {
@@ -54,6 +55,7 @@ const routes = [
       { path: '', component: () => import('pages/QuasarTestPage.vue') },
       { path: 'transitions', component: () => import('pages/QuasarTestPage.vue') },
       { path: 'qcarousel', component: () => import('pages/QCarouselPage.vue') },
+      { path: 'testcarousel', component: () => import('pages/QCarouselPageTest.vue') },
       { path: 'imagegrid', component: () => import('pages/GridCardPage.vue') }
     ]
   },

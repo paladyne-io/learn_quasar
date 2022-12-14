@@ -37,7 +37,7 @@
         />
         </q-expansion-item>
       </q-list>
-
+      <q-list>
       <q-expansion-item
         icon=""
         label="Demo apps"
@@ -50,6 +50,32 @@
           v-bind="link"
         />
       </q-expansion-item>
+
+      <q-expansion-item
+      icon=""
+      label="Course 2 Lesson Links"
+      caption="Moving forward"
+      default-opened>
+      <AppLink
+        v-for="link in course2List"
+        :key="link.title"
+        v-bind="link"
+      />
+      </q-expansion-item>
+    </q-list>
+
+    <q-expansion-item
+      icon=""
+      label="Demo apps"
+      caption=""
+      default-opened>
+
+      <AppLink
+        v-for="link in demoAppLinks"
+        :key="link.title"
+        v-bind="link"
+      />
+    </q-expansion-item>
 
       <q-expansion-item
         icon=""
@@ -178,6 +204,15 @@ const supabaseLinks = [
   }
 ]
 
+const course2List = [
+  {
+    title: 'Components',
+    caption: 'components',
+    icon: 'school',
+    link: 'components'
+  }
+]
+
 const navlinksList = [
   {
     title: 'Prologue',
@@ -221,8 +256,8 @@ const navlinksList = [
     icon: 'school',
     link: 'sendemail'
   }
-
 ]
+
 const qlinksList = [
   {
     title: 'Docs',
@@ -283,6 +318,7 @@ export default defineComponent({
       navigationLinks: navlinksList,
       exampleLinks,
       supabaseLinks,
+      course2List,
       demoAppLinks,
       leftDrawerOpen,
       feedbackLink,
