@@ -17,8 +17,7 @@
 
     <div class="q-pa-md q-gutter-sm full-width center text-center">
       <ShareNetwork v-for="(sns, index) in socialSharing.sites" :key=index class="social-btn" :network="sns"
-        :url="socialSharing.url" :title="socialSharing.title" :description="socialSharing.description" quote=''
-        hashtags=''>
+        :url="socialSharing.url" :title="socialSharing.title" :description="socialSharing.description">
         <q-btn round flat size="lg" :class="sns.toLowerCase()" :icon="getSocialSharingIcon(sns)"></q-btn>
       </ShareNetwork>
     </div>
@@ -39,7 +38,12 @@ export default defineComponent({
     const darkModeStatus = ref($q.dark.isActive)
     const updatedDate = 'December 14, 2022'
 
-    const socialSharing = ref({ url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/', title: 'Learn Quasar app', description: 'Try this free app to learn the Quasar framework and vue.js, step by step.', sites: ['Facebook', 'Twitter', 'Linkedin'] })
+    const socialSharing = ref({
+      url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/',
+      title: 'Learn Quasar app',
+      description: 'Try this free app to learn the Quasar framework and vue.js, step by step.',
+      sites: ['Facebook', 'Twitter', 'Linkedin', 'Line'] //, 'fakeblock'
+    })
 
     // useMeta(metaData)
 
@@ -54,6 +58,8 @@ export default defineComponent({
           return 'fa-brands fa-linkedin'
         case 'line':
           return 'fa-brands fa-line'
+        default:
+          return 'fa-solid fa-share-nodes'
       }
     }
 
