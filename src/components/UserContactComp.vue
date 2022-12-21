@@ -9,16 +9,16 @@
   <div class="container q-pa-sm q-ma-md">
     <form ref="form" @submit.prevent="sendEmail">
       <div class="field">
-        <q-input autogrow type="textarea" name="message" label="Message:" v-model="newMessage" />
+        <q-input maxlength="240" autogrow type="textarea" name="message" label="Message:" v-model="newMessage" />
       </div>
 
       <div class="field">
-        <q-input id="from_name" type="text" label="Your name: " v-model="fromName" name="from_name"
+        <q-input maxlength="40" id="from_name" type="text" label="Your name: " v-model="fromName" name="from_name"
           placeholder="Your Name" />
       </div>
 
       <div class="field">
-        <q-input id="reply_to" type="email" label="Your email address:" v-model="replyTo" name="reply_to"
+        <q-input maxlength="50" id="reply_to" type="email" label="Your email address:" v-model="replyTo" name="reply_to"
           placeholder="Your email address" />
       </div>
     </form>

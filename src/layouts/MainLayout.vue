@@ -2,14 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
           Learn Quasar
@@ -19,117 +12,52 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-    <q-list>
-      <q-expansion-item
-        icon=""
-        label="Lesson Links"
-        caption="Links to tutorials in this app"
-        default-opened>
-        <AppLink
-          v-for="link in navigationLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+      <q-list>
+        <q-expansion-item icon="" label="Lesson Links" caption="Links to tutorials in this app" default-opened>
+          <AppLink v-for="link in navigationLinks" :key="link.title" v-bind="link" />
         </q-expansion-item>
       </q-list>
       <q-list>
-      <q-expansion-item
-        icon=""
-        label="Demo apps"
-        caption=""
-        default-opened>
+        <q-expansion-item icon="" label="Demo apps" caption="" default-opened>
 
-        <AppLink
-          v-for="link in demoAppLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+          <AppLink v-for="link in demoAppLinks" :key="link.title" v-bind="link" />
+        </q-expansion-item>
+
+        <q-expansion-item icon="" label="Course 2 Lesson Links" caption="Moving forward" default-opened>
+          <AppLink v-for="link in course2List" :key="link.title" v-bind="link" />
+        </q-expansion-item>
+      </q-list>
+
+      <q-expansion-item icon="" label="Demo apps" caption="" default-opened>
+
+        <AppLink v-for="link in demoAppLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
-      <q-expansion-item
-      icon=""
-      label="Course 2 Lesson Links"
-      caption="Moving forward"
-      default-opened>
-      <AppLink
-        v-for="link in course2List"
-        :key="link.title"
-        v-bind="link"
-      />
-      </q-expansion-item>
-    </q-list>
+      <q-expansion-item icon="" label="Vue Component Examples" caption="" default-opened>
 
-    <q-expansion-item
-      icon=""
-      label="Demo apps"
-      caption=""
-      default-opened>
-
-      <AppLink
-        v-for="link in demoAppLinks"
-        :key="link.title"
-        v-bind="link"
-      />
-    </q-expansion-item>
-
-      <q-expansion-item
-        icon=""
-        label="Vue Component Examples"
-        caption=""
-        default-opened>
-
-        <AppLink
-          v-for="link in exampleLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <AppLink v-for="link in exampleLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
-      <q-expansion-item
-        icon=""
-        label="The Back-end (Database)"
-        caption=""
-        default-opened>
+      <q-expansion-item icon="" label="The Back-end (Database)" caption="" default-opened>
 
-        <AppLink
-          v-for="link in supabaseLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <AppLink v-for="link in supabaseLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
       <q-list>
         <q-item-label header>
           Learn Quasar
         </q-item-label>
-        <AppLink
-           v-bind= "feedbackLink"
-        />
-        <AppLink
-           v-bind= "preferencesLink"
-        />
+        <AppLink v-bind="feedbackLink" />
+        <AppLink v-bind="preferencesLink" />
       </q-list>
 
       <q-list>
         <q-item-label header>
           Other Links
         </q-item-label>
-      <q-expansion-item
-        icon=""
-        label="Quasar Links"
-        caption="Links related to Quasar"
-        default-closed
-      >
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <q-expansion-item icon="" label="Quasar Links" caption="Links related to Quasar" default-closed>
+          <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
         </q-expansion-item>
       </q-list>
     </q-drawer>
@@ -310,7 +238,7 @@ export default defineComponent({
     EssentialLink, AppLink
   },
 
-  setup () {
+  setup() {
     const leftDrawerOpen = ref(false)
 
     return {
@@ -323,7 +251,7 @@ export default defineComponent({
       leftDrawerOpen,
       feedbackLink,
       preferencesLink,
-      toggleLeftDrawer () {
+      toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
     }

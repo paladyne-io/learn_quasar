@@ -1,32 +1,37 @@
 import { boot } from 'quasar/wrappers'
-import useSupabase from './supabase'
+// import useSupabase from './supabase'
+import { createClient } from '@supabase/supabase-js'
 // import useAuthUser from 'src/composables/UseAuthUser'
-
 // import queryString from 'query-string'
 
 const supabaseUrl = process.env.SUPABASE_URL
-const supabaseKey = process.env.SUPABASE_KEY
+const supabaseKey = process.env.SUPABASE_PUBLIC_KEY
 
 if (!supabaseUrl || !supabaseKey) {
   alert('Configuration error. Please add a .env file with URL and key. Contact the author for assistance.')
 }
 
-const { supabase } = useSupabase()
+export const supabaseClient = createClient(
+  supabaseUrl,
+  supabaseKey
+)
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
 
 export default boot(async ({ app, store, router, redirect }) => {
-  supabase.auth.onAuthStateChange(async (event, session) => {
+  supabaseClient.auth.onAuthStateChange(async (event, session) => {
     // console.log('Router: ' + router)
     console.log('Event: ' + event)
 
     // This is from the original app
 
     // This attempts to download the user`s profile.
-    const { user } = session
+    // const { user } = session
+
     if (event === 'SIGNED_IN') {
       // const { user } = session
+      /*
       const {
         id,
         email,
@@ -35,16 +40,18 @@ export default boot(async ({ app, store, router, redirect }) => {
         app_metadata: { provider },
         updated_at: updatedAt
       } = user
+      */
+      /*
       const { avatar_url: avatarUrl, full_name: fullName } =
         provider === 'google' ? userMetaData : { avatar_url: 'guest_avatar.png', full_name: '' }
       console.log('Retrieving and updating profile...')
-      let resultQuery = await supabase
+      let resultQuery = await supabaseClient
         .from('profiles')
         .select()
         .eq('id', id)
       if (!resultQuery.error && !resultQuery.data) {
         console.log('Profile not found. Adding new profile...')
-        resultQuery = await supabase
+        resultQuery = await supabaseClient
           .from('profiles')
           .insert([
             {
@@ -57,6 +64,7 @@ export default boot(async ({ app, store, router, redirect }) => {
             }
           ])
       }
+      */
       // const { error, data } = resultQuery
       // if (!error && data.length) store.dispatch('user/setProfile', data)
       redirect({ path: '/' })
@@ -120,4 +128,5 @@ export default boot(async ({ app, store, router, redirect }) => {
       redirect({ path: 'login' })
     }
   })
+  return supabaseClient
 })

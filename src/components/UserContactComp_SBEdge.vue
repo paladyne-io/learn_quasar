@@ -9,59 +9,34 @@
   <div class="container q-pa-sm q-ma-md">
     <form ref="form" @submit.prevent="sendEmail">
       <div class="field">
-        <q-input
-          autogrow
-          type="textarea"
-          name="message"
-          label="Message:"
-          v-model="newMessage"
-        />
+        <q-input autogrow type="textarea" name="message" label="Message:" v-model="newMessage" />
       </div>
 
       <div class="field">
-        <q-input
-          id="from_name"
-          type="text"
-          label="Your name: "
-          v-model="fromName"
-          name="from_name"
-          placeholder="Your Name"
-        />
+        <q-input id="from_name" type="text" label="Your name: " v-model="fromName" name="from_name"
+          placeholder="Your Name" />
       </div>
 
       <div class="field">
-        <q-input
-          id="reply_to"
-          type="email"
-          label="Your email address:"
-          v-model="replyTo"
-          name="reply_to"
-          placeholder="Your email address"
-        />
+        <q-input id="reply_to" type="email" label="Your email address:" v-model="replyTo" name="reply_to"
+          placeholder="Your email address" />
       </div>
     </form>
   </div>
   <div class="text-center q-pa-md full-width">
-    <q-btn
-      class="q-ml-md"
-      label="Send email"
-      size="md"
-      icon="fa fa-paper-plane"
-      color="green"
-      @click="sendEmail"
-    />
+    <q-btn class="q-ml-md" label="Send email" size="md" icon="fa fa-paper-plane" color="green" @click="sendEmail" />
   </div>
 </template>
 
 <script>
 import { defineComponent, ref } from 'vue'
 // import emailjs from '@emailjs/browser'
-import { supabaseClient } from '../supabaseV2.js'
+// import { supabaseClient } from '../supabaseV2.js'
 
 export default defineComponent({
   name: 'UserContactComponent',
 
-  setup () {
+  setup() {
     // console.log('EMAILJS_SERVICE: ' + import.meta.env.EMAILJS_SERVICE) // 123
     // console.log('VITE EMAILJS_SERVICE_2: ' + import.meta.env.VITE_EMAILJS_SERVICE) // 123
     // console.log('EMAILJS_SERVICE: ' + import.meta.EMAILJS_SERVICE) // 123
@@ -86,7 +61,7 @@ export default defineComponent({
   },
 
   methods: {
-    async sendEmail () {
+    async sendEmail() {
       console.log('send email via Supbase edge function...')
 
       if (!this.templateParams.message) {
@@ -112,7 +87,7 @@ export default defineComponent({
       // Use SB CLient to connect
 
       // v2
-      const { data: user, error } = await supabaseClient.functions.invoke('hello-world', {
+      const { data: user, error } = await supabase.functions.invoke('hello-world', {
         body: { foo: 'tester' }
       })
 
