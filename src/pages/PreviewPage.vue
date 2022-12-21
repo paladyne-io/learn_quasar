@@ -46,7 +46,7 @@
           <q-checkbox :disable="!hasValidEmail()" v-model="emailUpdates" :label="joinMailingList" color="teal" />
         </div>
         <div class="q-py-md text-center full-width">
-          <q-btn label="Submit" type="submit" color="primary" />
+          <q-btn label="Submit" type="submit" color="green" />
         </div>
       </q-form>
 

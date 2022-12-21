@@ -12,7 +12,7 @@
     </div>
 
     <div class="full-width text-center">
-      <q-btn label="Please click here to get started" color="green" to="preview"> </q-btn>
+      <q-btn label="Get started" color="green" to="preview"> </q-btn>
     </div>
 
     <div class="q-pa-sm q-gutter-sm full-width center text-center">

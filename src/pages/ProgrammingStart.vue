@@ -40,7 +40,8 @@
             <router-link to="/vscodeterminal">Click here for details</router-link>.
             <br><br>
             Open Visual Studio Code and choose 'New Terminal' from the Terminal menu or click the 'Toggle
-            Panel' icon in the top right. Look for Terminal area at the bottom with the text that looks like that shown
+            Panel' icon in the top right. Locate the Terminal area at the bottom with the text that looks like that
+            shown
             the blue box below. The cursor should be a solid rectangle or a line at the end, indicating it is ready to
             receive
             typed commands.
