@@ -10,6 +10,7 @@ const routes = [
       { path: 'trends', component: () => import('pages/BackgroundTrendsPage.vue') },
       { path: 'preview', component: () => import('pages/PreviewPage.vue') },
       { path: 'startprogramming', component: () => import('pages/ProgrammingStart.vue') },
+      { path: 'privacy', component: () => import('pages/PrivacyPolicyPage.vue') },
       { path: 'dotenv', component: () => import('pages/DotEnvFile.vue') },
       { path: 'mypage', component: () => import('src/pages/QuasarTestPage.vue') },
       { path: 'mypage2', component: () => import('pages/MyPage2.vue') },

@@ -13,19 +13,26 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+
       <q-list>
-        <q-expansion-item icon="" label="Lesson Links" caption="Links to tutorials in this app" default-opened>
-          <AppLink v-for="link in navigationLinks" :key="link.title" v-bind="link" />
+        <q-expansion-item icon="" label="" default-opened>
+          <AppLink v-for="link in introLinks" :key="link.title" v-bind="link" />
+        </q-expansion-item>
+      </q-list>
+
+      <q-list>
+        <q-expansion-item icon="" label="Course 1 Lesson Links" caption="Links to tutorials in this app" default-opened>
+          <AppLink v-for="link in course1links" :key="link.title" v-bind="link" />
         </q-expansion-item>
       </q-list>
       <q-list>
-        <q-expansion-item icon="" label="Demo apps" caption="" default-opened>
-
-          <AppLink v-for="link in demoAppLinks" :key="link.title" v-bind="link" />
-        </q-expansion-item>
 
         <q-expansion-item icon="" label="Course 2 Lesson Links" caption="Moving forward" default-opened>
-          <AppLink v-for="link in course2List" :key="link.title" v-bind="link" />
+          <AppLink v-for="link in course2Links" :key="link.title" v-bind="link" />
+        </q-expansion-item>
+
+        <q-expansion-item icon="" label="The Back-end (Database)" caption="" default-opened>
+          <AppLink v-for="link in supabaseLinks" :key="link.title" v-bind="link" />
         </q-expansion-item>
       </q-list>
 
@@ -39,17 +46,14 @@
         <AppLink v-for="link in exampleLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
-      <q-expansion-item icon="" label="The Back-end (Database)" caption="" default-opened>
-
-        <AppLink v-for="link in supabaseLinks" :key="link.title" v-bind="link" />
-      </q-expansion-item>
-
       <q-list>
         <q-item-label header>
-          Learn Quasar
+          Learn Quasar (This app)
         </q-item-label>
         <AppLink v-bind="feedbackLink" />
         <AppLink v-bind="preferencesLink" />
+        <AppLink v-bind="privacyPageLink" />
+
       </q-list>
 
       <q-list>
@@ -85,6 +89,13 @@ const preferencesLink = {
   caption: 'App settings',
   icon: 'fa  fa-gear',
   link: 'preferences'
+}
+
+const privacyPageLink = {
+  title: 'Privacy Notice',
+  caption: '',
+  icon: 'fa-regular fa-shield',
+  link: 'privacy'
 }
 
 const exampleLinks = [
@@ -132,16 +143,16 @@ const supabaseLinks = [
   }
 ]
 
-const course2List = [
+const course2Links = [
   {
     title: 'Components',
-    caption: 'components',
+    caption: 'An introduction to Vue Single File Components',
     icon: 'school',
     link: 'components'
   }
 ]
 
-const navlinksList = [
+const introLinks = [
   {
     title: 'Prologue',
     caption: '',
@@ -153,7 +164,10 @@ const navlinksList = [
     caption: '',
     icon: 'school',
     link: 'intro'
-  },
+  }
+]
+
+const course1links = [
   {
     title: 'Lesson 1',
     caption: 'Preparation and installation',
@@ -243,14 +257,16 @@ export default defineComponent({
 
     return {
       essentialLinks: qlinksList,
-      navigationLinks: navlinksList,
+      course1links,
+      introLinks,
       exampleLinks,
       supabaseLinks,
-      course2List,
+      course2Links,
       demoAppLinks,
       leftDrawerOpen,
       feedbackLink,
       preferencesLink,
+      privacyPageLink,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }

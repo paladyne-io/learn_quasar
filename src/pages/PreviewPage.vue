@@ -55,6 +55,11 @@
       <DatabaseFrontendComponent :commit="commit" :data="learnQuasarSurveyResult" />
     </div>
   </q-page>
+  <!--
+  <button type="button" data-cc="c-settings">Show cookie settings</button>
+  <vue-cookie-comply :preferences="preferences" @on-accept-all-cookies="onAccept"
+    @on-save-cookie-preferences="onSavePreferences" />
+ -->
 </template>
 
 <script setup>
@@ -66,7 +71,7 @@ import DatabaseFrontendComponent from 'src/components/DatabaseFrontendComponent.
 const questionOne = 'What would you like to learn?'
 const questionTwo = 'What do you already know?'
 
-const joinMailingList = 'Please email me about updates to this app/website or information about related topics. (Not more than once per month).'
+const joinMailingList = 'Please email me about updates to this app/website or information about related topics. (Not more than once per month). Your email will only be used to contact you directly and will not be disclosed to third parties. See the Privacy Notice for more information.'
 
 const selectedFromGroup1 = ref(1)
 const selectedFromGroup2 = ref(1)

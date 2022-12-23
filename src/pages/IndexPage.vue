@@ -48,7 +48,7 @@ export default defineComponent({
     // useMeta(metaData)
 
     function getSocialSharingIcon(e) {
-      console.log('getSocialSharingIcon: ' + e)
+      // console.log('getSocialSharingIcon: ' + e)
       switch (e.toLowerCase()) {
         case 'facebook':
           return 'fa-brands fa-facebook'
