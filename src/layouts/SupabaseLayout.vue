@@ -3,35 +3,22 @@
 
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>Supabase</q-toolbar-title>
-
       </q-toolbar>
     </q-header>
 
-    <q-footer bordered class="bg-white text-primary">
-      <q-tabs
-        no-caps
-        active-color="primary"
-        indicator-color="transparent"
-        class="text-grey"
-      >
+    <q-footer bordered>
+      <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey">
         <!--
         <q-route-tab name="Example 1" :label="$t('example_1')" to="/2" />
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
         -->
-        <q-route-tab name="UI Example 1" label="Transitions" to="/examples/transitions"  @click="hideLeftDrawer"/>
-        <q-route-tab name="UI Example 2" label="Image Grid" to="/examples/imagegrid"  @click="hideLeftDrawer"/>
-        <q-route-tab name="UI Example 3" label="Image Gallery" to="/examples/qcarousel"  @click="hideLeftDrawer"/>
+        <q-route-tab name="UI Example 1" label="Transitions" to="/examples/transitions" @click="hideLeftDrawer" />
+        <q-route-tab name="UI Example 2" label="Image Grid" to="/examples/imagegrid" @click="hideLeftDrawer" />
+        <q-route-tab name="UI Example 3" label="Image Gallery" to="/examples/qcarousel" @click="hideLeftDrawer" />
 
       </q-tabs>
     </q-footer>
@@ -42,16 +29,10 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header>Navigation</q-item-label>
-        <AppLink
-           v-bind="homeLink"
-        />
+        <AppLink v-bind="homeLink" />
         <q-item-label header>Examples</q-item-label>
-        <AppLink
-         v-for="link in ExamplesList" :key="link.title"
-           @click="toggleLeftDrawer"
-           @clicked="testClicked"
-            v-bind="link"
-          />
+        <AppLink v-for="link in ExamplesList" :key="link.title" @click="toggleLeftDrawer" @clicked="testClicked"
+          v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -97,16 +78,16 @@ const ExamplesList = [
 
 const leftDrawerOpen = ref(false)
 
-function toggleLeftDrawer () {
+function toggleLeftDrawer() {
   console.log('toggleLeftDrawer')
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 
-function testClicked () {
+function testClicked() {
   console.log('testClicked')
 }
 
-function hideLeftDrawer () {
+function hideLeftDrawer() {
   console.log('hide LeftDrawer')
   leftDrawerOpen.value = false
 }

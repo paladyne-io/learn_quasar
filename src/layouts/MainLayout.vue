@@ -13,7 +13,6 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-
       <q-list>
         <q-expansion-item icon="" label="" default-opened>
           <AppLink v-for="link in introLinks" :key="link.title" v-bind="link" />
@@ -37,12 +36,10 @@
       </q-list>
 
       <q-expansion-item icon="" label="Demo apps" caption="" default-opened>
-
         <AppLink v-for="link in demoAppLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
       <q-expansion-item icon="" label="Vue Component Examples" caption="" default-opened>
-
         <AppLink v-for="link in exampleLinks" :key="link.title" v-bind="link" />
       </q-expansion-item>
 
@@ -53,7 +50,6 @@
         <AppLink v-bind="feedbackLink" />
         <AppLink v-bind="preferencesLink" />
         <AppLink v-bind="privacyPageLink" />
-
       </q-list>
 
       <q-list>

@@ -1,34 +1,22 @@
 <template>
-  <q-page class="flex flex-center column justify-start q-mt-lg">
-      <transition
-        leave-active-class="animated flipOutY"
-        enter-active-class="animated flipInY"
-        @after-leave="imageHidden"
-      >
-    <q-card flat v-show="imageVisible" class="col column">
-      <div class="text-center">
-        <img class="q-ma-md" alt="Dog image" src="/images/dog.png" @click="showDogStats"/>
-        <div class="heading full-width">Reggie</div>
-      </div>
-    </q-card>
+  <q-page class="q-ma-lg">
+    <transition leave-active-class="animated flipOutY" enter-active-class="animated flipInY" @after-leave="imageHidden">
+      <q-card flat v-show="imageVisible" class="col column"> gg
+        <div class="text-center">
+          <q-img class="q-ma-md" style="maxwidth:300px;" alt="Dog image" src="/images/dog.png" @click="showDogStats" />
+          <div class="heading full-width">Reggie</div>
+        </div>
+      </q-card>
     </transition>
-<!--
+    <!--
     transition-delay='1000ms'
-
     <transition
         @after-leave="statsHidden"
       >
--->
+    -->
     <q-card v-show="dogStatsVisible" flat class="col column">
       <div class="q-pa-md">
-        <q-table
-         dense
-          :title="dogStatsTitle"
-          :rows="rows"
-          :columns="columns"
-          row-key="name"
-          @click="flip"
-        />
+        <q-table dense :title="dogStatsTitle" :rows="rows" :columns="columns" row-key="name" @click="flip" />
       </div>
     </q-card>
 
@@ -38,11 +26,12 @@
       </div>
     </div>
     <!-- Explanation part -->
-     <div class="q-pa-md">
-      <b>Method:</b> Same as the first example, wrap the q-card in a &lt;Transition&gt; with 'v-show' or 'v-if' and a variable (i.e 'dogStatsVisible').
-    The transition is triggered when the value of the variable is changed.
+    <div class="q-pa-md">
+      <b>Method:</b> Same as the first example, wrap the q-card in a &lt;Transition&gt; with 'v-show' or 'v-if' and a
+      variable (i.e 'dogStatsVisible').
+      The transition is triggered when the value of the variable is changed.
     </div>
-<pre>
+    <pre>
 &lt;transition
   leave-active-class="animated flipOutY"
   enter-active-class="animated flipInY"
@@ -52,16 +41,17 @@
 &lt;/transition&gt;
 </pre>
 
-  <div class="q-pa-md">
-    <b>Issues.</b>
-     The flip transition doesn't reval the other card in a natural way.
-     This can be partially fixed by 'listening' to the imageHidden or statsHidden events that are emitted when the next card is revealed,
-     however the transition effect is still not very satisfactory.
+    <div class="q-pa-md">
+      <b>Issues.</b>
+      The flip transition doesn't reval the other card in a natural way.
+      This can be partially fixed by 'listening' to the imageHidden or statsHidden events that are emitted when the next
+      card is revealed,
+      however the transition effect is still not very satisfactory.
     </div>
     <div class="q-pa-md">
-         We will try some alternative approaches in the next examples<router-link to="da_ui_example_3"></router-link>.
-        <div class="text-center q-pa-md full-width">
-            <q-btn label="UI Example 2" color="blue" to="da_ui_example_3"> </q-btn>
+      We will try some alternative approaches in the next examples<router-link to="da_ui_example_3"></router-link>.
+      <div class="text-center q-pa-md full-width">
+        <q-btn label="UI Example 2" color="blue" to="da_ui_example_3"> </q-btn>
       </div>
     </div>
     <div class="text-center q-pa-md">
@@ -160,7 +150,7 @@ const rows = [
   }
 ]
 
-function imageHidden () {
+function imageHidden() {
   console.log('imageHidden - dogStatsVisible: ' + dogStatsVisible.value)
   dogStatsVisible.value = !dogStatsVisible.value
 }
@@ -173,7 +163,7 @@ function statsHidden () {
 }
 */
 
-function flip () {
+function flip() {
   console.log('flip')
   if (imageVisible.value) {
     imageVisible.value = false
@@ -182,11 +172,11 @@ function flip () {
     imageVisible.value = true
     dogStatsVisible.value = false
     buttonLabel.value = 'Show stats'
-  // dogStatsVisible.value = !dogStatsVisible.value
+    // dogStatsVisible.value = !dogStatsVisible.value
   }
 }
 
-function showDogStats () {
+function showDogStats() {
   console.log('showDogStats: ' + dogStatsVisible.value)
   imageVisible.value = false
   buttonLabel.value = 'Hide stats'

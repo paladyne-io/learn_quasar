@@ -21,8 +21,7 @@
         at the top right of the Terminal.
         If you experience errors when installing Node or Quasar try this (and set Command Prompt as the default).
         <div class="text-center q-pa-md">
-          <q-img style="max-width: 600px;"
-            src="https://code.visualstudio.com/assets/docs/terminal/basics/select-shell-dropdown.png"
+          <q-img style="max-width: 600px;" src="images/select-shell-dropdown.png"
             alt="Visual Studio Code Terminal select shell screenshot">
           </q-img>
         </div>
