@@ -15,10 +15,10 @@
         </div>
         <div class="q-py-sm">
 
-          While there is a lot of talk about Web 3.0 lately, the really significant changes have happened in front-end
+          While there is a lot of talk about Web 3.0 lately, many significant changes have happened in front-end
           frameworks.
 
-          As someone involved in 'front-end' application development for more than 30 years I can tell you that
+          Having developed applications for more than 30 years I know that
           programming for users on PCs was difficult and time consuming.
           Before the world wide web became widely used, most professional packaged applications were
           written in C or C++ and were closely tied
@@ -29,30 +29,32 @@
           Professional software was expensive. Shareware and freeware filled in the gaps but was of varying quality and
           without adequate payment mechanisms, was usually not well rewarded.
           One breakthrough was the game <a href="https://en.wikipedia.org/wiki/Myst" target="_blank">Myst</a> that
-          appeared in 1993. Myst, built with the ahead-of-its-time HyperCard that was available only for the Mac,
-          had to be completely rewritten for the PC platform.
+          appeared in 1993. Myst was originally built with HyperCard, which was available only for
+          the Mac,
+          so it had to be completely rewritten for the PC platform.
         </div>
         <div class=" q-py-sm">
-          An interesting aside, and one that shows how the effects can ripple far beyond the original scope,
+          An interesting aside, and one that shows how effects can ripple far beyond the original scope,
           Wikipedia says that <a href="https://en.wikipedia.org/wiki/HyperCard" target="_blank">HyperCard</a> influenced
           the design of the first web browser and Hypercard's
-          scripting language, HyperTalk, inspired JavaScript which was developed for Netscape Navigator, the browser
-          which kick-started the popularity of the world wide web.
+          scripting language, HyperTalk, inspired JavaScript.
         </div>
 
         <div class="text-subheader q-pt-md">
           The birth and rise of JavaScript
         </div>
         <div class=" q-py-sm">
+
           Since its release in 1995 <a href="https://launchschool.com/books/javascript/read/introduction"
             target="_blank">JavaScript</a> has been confused with Java - probably since it was renamed to
           compete with the fledgling language that was released by Sun Microsystems around the same time.
-
+          JavaScript was developed for Netscape Navigator, the browser
+          that kick-started the popularity of the world wide web.
           While slowed at first by competition with Microsoft, JavaScript remained under continuous development
           together with improvements in web browsers.
         </div>
 
-        <div class="q-py-sm">
+        <div class="q-px-md q-py-sm">
           &quot;Meanwhile, very important developments were occurring in open-source communities not affiliated with
           ECMA work. In 2005, Jesse James Garrett released a white paper in which he coined the term Ajax and described
           a set of technologies, of which JavaScript was the backbone, to create web applications where data can be
@@ -68,7 +70,7 @@
         </div>
 
         <div class="q-py-sm">
-          In 2009, Node.js was released extending JavaScript beyond the browser using Google's Chrome's V8 runtime.
+          In 2009, Node.js was released, extending JavaScript beyond the browser using Google's Chrome's V8 runtime.
           At the same time, web browsers gained many
           features previously only available on Desktop applications such as access to local files, drag and drop, etc.
           30 years after the launch of HyperCard and 20 after the first web browser, finally cross platform development

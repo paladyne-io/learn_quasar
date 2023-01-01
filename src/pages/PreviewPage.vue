@@ -1,6 +1,9 @@
 <template>
   <q-page class="flex-center ">
-    <div class="header q-px-sm q-py-sm"> Preview </div>
+    <div class="header q-px-lg q-py-sm"> Preview </div>
+    <div class="subheader q-px-lg q-py-sm"> Please answer these two questions to get a recommendation for where to
+      start.
+    </div>
     <div class="q-pa-sm">
 
       <q-form @submit="onSubmit" @reset="onReset" class="form-text q-gutter-md">
@@ -16,35 +19,40 @@
           {{ questionTwo }}
         </div>
         <q-option-group :options="q2AnswerOptions" type="radio" v-model="selectedFromGroup2" />
+        <q-expansion-item icon="" label="Optional" default-closed>
 
-        <q-input maxlength="120" v-model="comment" label="Type a comment...">
-          <template v-slot:prepend>
-            <q-badge class="q-py-xs" color="orange" align="middle">{{
-                "Optional"
-            }}</q-badge>
-          </template>
-        </q-input>
+          <div class="q-px-lg">
+            <q-input maxlength="120" v-model="comment" label="Type a comment...">
+              <template v-slot:prepend>
+                <q-badge class="q-py-xs" color="orange" align="middle">{{
+    "Optional"
+}}</q-badge>
+              </template>
+            </q-input>
 
-        <q-input maxlength="40" v-model="name" label="Your name...">
-          <template v-slot:prepend>
-            <q-badge class="q-py-xs" color="orange" align="middle">{{
-                "Optional"
-            }}</q-badge>
-          </template>
-        </q-input>
+            <q-input maxlength="40" v-model="name" label="Your name...">
+              <template v-slot:prepend>
+                <q-badge class="q-py-xs" color="orange" align="middle">{{
+    "Optional"
+}}</q-badge>
+              </template>
+            </q-input>
 
-        <q-input maxlength="50" v-model="email" type="email" label="Your email address..." clearable
-          :rules="[val => isValidEmail(val) || 'Email is missing']">
-          <template v-slot:prepend>
-            <q-badge class="q-py-xs" color="orange" align="middle">{{
-                "Optional"
-            }}</q-badge>
-          </template>
-        </q-input>
+            <q-input maxlength="50" v-model="email" type="email" label="Your email address..." clearable
+              :rules="[val => isValidEmail(val) || 'Email is missing']">
+              <template v-slot:prepend>
+                <q-badge class="q-py-xs" color="orange" align="middle">{{
+    "Optional"
+}}</q-badge>
+              </template>
+            </q-input>
 
-        <div class="q-py-md">
-          <q-checkbox :disable="!hasValidEmail()" v-model="emailUpdates" :label="joinMailingList" color="teal" />
-        </div>
+            <div class="q-py-md">
+              <q-checkbox :disable="!hasValidEmail()" v-model="emailUpdates" :label="joinMailingList" color="teal" />
+            </div>
+          </div>
+        </q-expansion-item>
+
         <div class="q-py-md text-center full-width">
           <q-btn label="Submit" type="submit" color="green" />
         </div>

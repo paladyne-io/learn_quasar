@@ -36,7 +36,7 @@ export default defineComponent({
   setup() {
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
-    const updatedDate = 'December 21, 2022'
+    const updatedDate = 'January 1, 2023'
 
     const socialSharing = ref({
       url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/',
@@ -112,13 +112,6 @@ https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
 .linkedin {
   color: #0077B5;
   background: no-repeat center/40% url("images/white_7x7pixel.png");
-  /* background: center / contain no-repeat url("images/white_7x7pixel.png"); */
-  /*
-  background-image: fit;
-  background-size: 40%;
-  background-image: url("/images/white_7x7pixel.png");
-  background-repeat: no-repeat
-  */
 }
 
 /* #00c300 */
