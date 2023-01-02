@@ -18,7 +18,8 @@
     <div class="q-pa-sm q-gutter-sm full-width center text-center">
       <ShareNetwork v-for="(sns, index) in socialSharing.sites" :key=index class="social-btn" :network="sns"
         :url="socialSharing.url" :title="socialSharing.title" :description="socialSharing.description">
-        <q-btn round flat size="xl" :class="sns.toLowerCase()" :icon="getSocialSharingIcon(sns)"></q-btn>
+        <q-btn round flat size="xl" :class="'share-network-' + sns.toLowerCase()"
+          :icon="getSocialSharingIcon(sns)"></q-btn>
       </ShareNetwork>
     </div>
 
@@ -36,13 +37,13 @@ export default defineComponent({
   setup() {
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
-    const updatedDate = 'January 1, 2023'
+    const updatedDate = 'January 2, 2023'
 
     const socialSharing = ref({
       url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/',
       title: 'Learn Quasar app',
       description: 'Try this free app to learn the Quasar framework and vue.js, step by step.',
-      sites: ['Facebook', 'Twitter', 'Linkedin', 'Line'] //, 'Fakeblock'
+      sites: ['Facebook', 'Twitter', 'Linkedin', 'Line', 'Reddit'] //, 'Fakeblock'
     })
 
     // useMeta(metaData)
@@ -58,6 +59,8 @@ export default defineComponent({
           return 'fa-brands fa-linkedin'
         case 'line':
           return 'fa-brands fa-line'
+        case 'reddit':
+          return 'fa-brands fa-reddit'
         default:
           return 'fa-solid fa-share-nodes'
       }
@@ -95,7 +98,7 @@ watchEffect((darkModeStatus) => {
 /* https://www.webnots.com/color-codes-for-social-networking-site-icons/
 https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
 */
-.facebook {
+.share-network-facebook {
   color: #3b5998;
   border-radius: 50%;
   background: radial-gradient(ellipse at center, #ffffff 35%, #23bc2b00 35%);
@@ -103,20 +106,24 @@ https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
 }
 
 /* #55acee #00aced */
-.twitter {
+.share-network-twitter {
   color: #1DA1F2;
-
 }
 
 /* #0072b1 #007bb6 */
-.linkedin {
+.share-network-linkedin {
   color: #0077B5;
-  background: no-repeat center/40% url("images/white_7x7pixel.png");
+  background: no-repeat center/40% url("/images/white_7x7_square.png");
+}
+
+.share-network-reddit {
+  color: #FF4500;
+  background: no-repeat center/40% url("/images/white_7x7_round.png");
 }
 
 /* #00c300 */
-.line {
+.share-network-line {
   color: #00B900;
-  background: no-repeat center/40% url("images/white_7x7pixel.png");
+  background: no-repeat center/40% url("/images/white_7x7_round.png");
 }
 </style>

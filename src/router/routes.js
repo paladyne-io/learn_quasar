@@ -24,7 +24,9 @@ const routes = [
       { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
       { path: 'nvm_install', component: () => import('pages/nvm_install.vue') },
       { path: 'images', component: () => import('pages/ImageCarousel.vue') },
-      { path: 'components', component: () => import('pages/ComponentsAndSlots.vue') },
+      { path: 'components-intro', component: () => import('pages/ComponentsIntroPage.vue') },
+      { path: 'components', component: () => import('pages/ComponentsPage.vue') },
+      { path: 'slots', component: () => import('pages/SlotsPage.vue') },
       { path: 'codesliderpage', component: () => import('pages/CodeSliderTestPage.vue') }
     ]
   },
