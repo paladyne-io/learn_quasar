@@ -92,9 +92,10 @@ Which framework to learn depends on what you want to achieve.
             How much does it cost?
           </div>
           <div class="q-pt-sm">Generally you don't need to buy anything to start. You can download and install
-            everything for free.
-            However to publish your app on Apple's App Store or Google Play store you will need to pay a fee. At the
-            time of writing, the cost is $100 per year to join Apple's developer program and $25 for Google.</div>
+            everything for free. A web app, as the name implies can be hosted on a standard web server (as a static
+            site), however to publish your app on Apple's App Store or Google Play store you will need to pay a fee.
+            At the time of writing, the cost is US$100 per year to join Apple's developer program and $25 for Google.
+          </div>
           <div class="text-subheader q-pt-sm">Is it difficult to make an app in Quasar and Vue?</div>
         </div>
         <!--

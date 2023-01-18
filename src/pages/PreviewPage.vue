@@ -25,16 +25,17 @@
             <q-input maxlength="120" v-model="comment" label="Type a comment...">
               <template v-slot:prepend>
                 <q-badge class="q-py-xs" color="orange" align="middle">{{
-    "Optional"
-}}</q-badge>
+                  "Optional"
+                }}</q-badge>
               </template>
             </q-input>
 
             <q-input maxlength="40" v-model="name" label="Your name...">
               <template v-slot:prepend>
                 <q-badge class="q-py-xs" color="orange" align="middle">{{
-    "Optional"
-}}</q-badge>
+                    "Optional"
+                }}
+                </q-badge>
               </template>
             </q-input>
 
@@ -42,8 +43,9 @@
               :rules="[val => isValidEmail(val) || 'Email is missing']">
               <template v-slot:prepend>
                 <q-badge class="q-py-xs" color="orange" align="middle">{{
-    "Optional"
-}}</q-badge>
+                  "Optional"
+                }}
+                </q-badge>
               </template>
             </q-input>
 

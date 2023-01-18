@@ -100,9 +100,8 @@ https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
 */
 .share-network-facebook {
   color: #3b5998;
-  border-radius: 50%;
   background: radial-gradient(ellipse at center, #ffffff 35%, #23bc2b00 35%);
-  /* background: no-repeat center/40% url("images/white_7x7pixel.png");*/
+  /* background: no-repeat center/44% url("/images/white_7x7_round.png"); */
 }
 
 /* #55acee #00aced */
@@ -113,17 +112,20 @@ https://gist.github.com/ksloan/d1b9ace61fddd2356ebf
 /* #0072b1 #007bb6 */
 .share-network-linkedin {
   color: #0077B5;
-  background: no-repeat center/40% url("/images/white_7x7_square.png");
-}
-
-.share-network-reddit {
-  color: #FF4500;
-  background: no-repeat center/40% url("/images/white_7x7_round.png");
+  /* background: no-repeat center/46% url("/images/white_7x7_square.png"); */
+  background: radial-gradient(ellipse at center, #ffffff 34%, #23bc2b00 32%);
 }
 
 /* #00c300 */
 .share-network-line {
   color: #00B900;
-  background: no-repeat center/40% url("/images/white_7x7_round.png");
+  /* background: no-repeat center/40% url("/images/white_7x7_square.png"); */
+  background: radial-gradient(ellipse at center, #ffffff 34%, #23bc2b00 32%);
+}
+
+.share-network-reddit {
+  color: #FF4500;
+  /* background: no-repeat center/38% url("/images/white_7x7_round.png"); */
+  background: radial-gradient(ellipse at center, #ffffff 34%, #23bc2b00 32%);
 }
 </style>
