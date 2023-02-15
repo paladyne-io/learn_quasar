@@ -44,11 +44,11 @@ are added by the DarkMode(Aware)Component
   }
 
   div .background-dark {
-    background-color: #00356B;
+    background-color: #cde6ff;
   }
 
   div .background-light {
-    background-color: #AFDBF5;
+    background-color: #cde6ff;
   }
 
   .body--light {

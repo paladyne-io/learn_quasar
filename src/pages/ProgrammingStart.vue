@@ -12,7 +12,7 @@
 
       <div class="q-pt-sm">
         This is the order of tasks. Although it might seem complicated, it should take no longer than 15 minutes (on
-        Windows installing node.js can take longer).
+        Windows installing node.js might take longer).
       </div>
 
       <div class="q-pt-sm">
@@ -46,7 +46,7 @@
             receive
             typed commands.
             <pre>
-dcs@Darrens-MacBook-Pro learn_quasar % &#9647;
+dcs@Darrens-MacBook-Pro learn_quasar
 </pre>
             The % character represents the shell prompt. By convention it is often shown as a $.
             Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.

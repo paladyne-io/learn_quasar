@@ -62,7 +62,7 @@ const props = defineProps({
 
 learnQuasarSurvey.value = toRef(props, 'data').value
 
-console.log('learnQuasarSurvey: ' + JSON.stringify(learnQuasarSurvey.value))
+// console.log('learnQuasarSurvey: ' + JSON.stringify(learnQuasarSurvey.value))
 
 // const { t } = useI18n({ useScope: 'global' })
 
@@ -110,8 +110,8 @@ function notify(msg) {
 watch(
   () => props.commit,
   (newValue, oldValue) => {
-    console.log('commit prop changed to: ', newValue, ' | was: ', oldValue)
-    console.log('Save response here')
+    // console.log('commit prop changed to: ', newValue, ' | was: ', oldValue)
+    // console.log('Save response here')
     // if (newValue === true) {
     saveResponse()
   }
@@ -122,9 +122,9 @@ onMounted(() => {
   if (!createUUID) {
     return
   }
-  console.log('this.UUD: ' + uuid.value)
+  // console.log('this.UUD: ' + uuid.value)
   uuid.value = readUUID()
-  console.log('uuid check (is null?: ' + (uuid.value === null))
+  // console.log('uuid check (is null?: ' + (uuid.value === null))
   if (uuid.value === null) {
     console.log('UUID was null. generate UUID here...')
     // generateUUID()
@@ -136,9 +136,9 @@ onMounted(() => {
 })
 
 async function saveResponse() {
-  console.log('save response...')
-  console.log('comment: ' + learnQuasarSurvey.value.comment)
-  console.log('learnQuasarSurvey: ' + JSON.stringify(learnQuasarSurvey.value))
+  // console.log('save response...')
+  // console.log('comment: ' + learnQuasarSurvey.value.comment)
+  // console.log('learnQuasarSurvey: ' + JSON.stringify(learnQuasarSurvey.value))
 
   if (!uuid.value) {
     // alert(t('save_response_error'))
@@ -146,8 +146,8 @@ async function saveResponse() {
     console.log('No UUID. Returning.')
     return
   }
-  console.log('uuid: ' + uuid.value)
-  console.log('comment: ' + learnQuasarSurvey.value.comment)
+  // console.log('uuid: ' + uuid.value)
+  // console.log('comment: ' + learnQuasarSurvey.value.comment)
 
   /*
   if (!learnQuasarSurvey.value.comment) {
@@ -267,7 +267,7 @@ function showPrivacyPolicyExpl () {
 */
 
 function writeNewUUID() {
-  console.log('writeUUID... ')
+  // console.log('writeUUID... ')
   try {
     uuid.value = uuidv4()
     $q.localStorage.set('uuid', uuid.value)
@@ -280,7 +280,7 @@ function writeNewUUID() {
 }
 
 function readUUID() {
-  console.log('readUUID... ')
+  // console.log('readUUID... ')
   let thisUuid = null
   try {
     thisUuid = $q.localStorage.getItem('uuid')

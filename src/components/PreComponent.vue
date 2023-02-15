@@ -27,7 +27,7 @@ const darkMode = ref($q.dark.isActive)
   }
 
   div .background-light {
-    background-color: #AFDBF5;
+    background-color: #cde6ff;
   }
 
 </style>

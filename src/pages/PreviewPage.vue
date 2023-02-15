@@ -19,7 +19,10 @@
           {{ questionTwo }}
         </div>
         <q-option-group :options="q2AnswerOptions" type="radio" v-model="selectedFromGroup2" />
-        <q-expansion-item icon="" label="Optional" default-closed>
+
+        <div style="max-width: 600px">
+        <q-expansion-item
+           header-class="text-purple" background="blue" icon="perm_identity" label="Optional (Comments and Contact information)" default-closed>
 
           <div class="q-px-lg">
             <q-input maxlength="120" v-model="comment" label="Type a comment...">
@@ -54,6 +57,7 @@
             </div>
           </div>
         </q-expansion-item>
+            </div>
 
         <div class="q-py-md text-center full-width">
           <q-btn label="Submit" type="submit" color="green" />
@@ -103,7 +107,7 @@ function getNavDialogState() {
 }
 
 function closed(modelValue) { // why is model value not passed?
-  console.log('closed: modelValue: ', modelValue)
+  // console.log('closed: modelValue: ', modelValue)
   navDialog.value = false
 }
 
@@ -137,16 +141,16 @@ function hasValidEmail() {
 }
 
 const q1AnswerOptions = ref([
-  { label: 'What this is about and how it fits into the IT ‘universe’ (but I don’t plan to write anything myself).', value: 1 },
-  { label: 'What is needed to start development, to see if it is worthwhile or fits my abilities and goals.', value: 2 },
+  { label: 'I\'d like to know what Vue.js and Quasar are and how they fit into the IT ‘universe’ (but I don’t plan to write anything myself).', value: 1 },
+  { label: 'What is needed to start development with Vue.js, to see if it is worthwhile or fits my abilities and goals.', value: 2 },
   { label: 'How to make my own web-app or service based website.', value: 3 }
 ])
 
 const q2AnswerOptions = ref([
-  { label: 'I don\'t know anything about it at all.', value: 1 },
+  { label: 'I don\'t know much about programming.', value: 1 },
   { label: 'I have created a few web pages or built a small website using a text editor or website builder.', value: 2 },
   { label: 'I have made a WordPress/Drupal or similar site.', value: 3 },
-  { label: 'I have written some code in another language such as C, SQL, Pascal, Java or Python...', value: 4 },
+  { label: 'I have written some code in a programming language such as C, SQL, Pascal, Java or Python...', value: 4 },
   { label: 'I have a good familiarity with web development including HTML, CSS and JavaScript.', value: 5 },
   { label: 'I have learned a JavaScript Framework such as React or Angular.', value: 6 },
   { label: 'I am a developer with hands-on experience and knowledge of Vue.js.', value: 7 }
@@ -217,7 +221,7 @@ function evaluateIt() {
       gridValue = 7
     }
   }
-  console.log('Grid value: ' + gridValue)
+  // console.log('Grid value: ' + gridValue)
 
   if (gridValue < 4) { // gridValue = 1 to 3
     groupType.value = 1
@@ -227,7 +231,7 @@ function evaluateIt() {
     groupType.value = 3
   }
 
-  console.log('groupType: ' + groupType.value)
+  // console.log('groupType: ' + groupType.value)
 
   learnQuasarSurveyResult.value.name = name
   learnQuasarSurveyResult.value.email = email
@@ -281,7 +285,7 @@ function onSubmit() {
 }
 
 function onReset() {
-  console.log('Reset (Not implmenented)')
+  console.log('Reset (Not implemented)')
 }
 
 </script>
