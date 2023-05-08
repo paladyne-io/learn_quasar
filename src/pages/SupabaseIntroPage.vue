@@ -17,8 +17,8 @@
       <div class="q-pa-sm">
         The <a href="https://supabase.com/docs">feature list for Supabase</a> is growing continuously.
 
-        It provides much of the functionality that used to require a dedicated server (and all the hassle that goes with
-        it).
+        It provides much of the functionality that previously required a dedicated server (and all the hassle that goes
+        with it).
         Supabase provides ways to register and authenticate users, a database to store information as well as storage
         for files (such as profile pictures).
         Recent additions to the service include edge functions and real-time features that enable your app to use
@@ -40,7 +40,7 @@
       </div>
 
       <div class="q-pa-sm">
-        There are some other tutorials online such as <a
+        There are some other tutorials online, such as <a
           href="https://vueschool.io/articles/vuejs-tutorials/use-supabase-auth-with-vue-js-3/">this one</a>, that
         explain in detail how to setup and use Supabase so please refer to them as well if you want to.
       </div>
@@ -49,7 +49,7 @@
         <pre>npm install @supabase/supabase-js</pre>
       </div>
 
-      Note that Supabase V1 is used by most tutorials and a few changes will be necessary with the latest version.
+      * Note that Supabase V1 is used by some older tutorials and a few changes will be necessary with the latest version.
 
       <div class="q-pa-sm">
         Quasar provides a unique boot file functionality to initialize code when your app starts.

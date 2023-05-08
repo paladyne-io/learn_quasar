@@ -16,9 +16,9 @@
         <q-route-tab name="Example 2" :label="$t('example_2')" to="/3" />
         <q-route-tab name="Example 3" :label="$t('example_3')" to="/5" />
         -->
-        <q-route-tab name="UI Example 1" label="Transitions" to="/examples/transitions" @click="hideLeftDrawer" />
-        <q-route-tab name="UI Example 2" label="Image Grid" to="/examples/imagegrid" @click="hideLeftDrawer" />
-        <q-route-tab name="UI Example 3" label="Image Gallery" to="/examples/qcarousel" @click="hideLeftDrawer" />
+        <q-route-tab name="UI Example 1" label="Transitions" to="..//examples/transitions" @click="hideLeftDrawer" />
+        <q-route-tab name="UI Example 2" label="Image Grid" to="../examples/imagegrid" @click="hideLeftDrawer" />
+        <q-route-tab name="UI Example 3" label="Image Gallery" to="../examples/qcarousel" @click="hideLeftDrawer" />
 
       </q-tabs>
     </q-footer>
@@ -59,20 +59,20 @@ const ExamplesList = [
     title: 'Transitions',
     caption: '',
     icon: 'star',
-    link: 'transitions'
+    link: '/examples/transitions'
 
   },
   {
     title: 'Image Grid',
     caption: 'Image grid demo using Colcade)',
     icon: 'fas fa-border-all',
-    link: 'imagegrid'
+    link: '/examples/imagegrid'
   },
   {
     title: 'Image Gallery',
     caption: 'Quasar\'s Carousel with transitions',
     icon: 'fa-solid fa-images',
-    link: 'qcarousel'
+    link: '/examples/qcarousel'
   }
 ]
 

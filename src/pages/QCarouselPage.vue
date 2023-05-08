@@ -91,15 +91,13 @@
 
       <br>
       While you have the file open, you might want to do the same for <b>fontawesome-v6</b> to allow you to use
-      Font-Awesome icons in buttons and other components.
-      <div class="q-pt-sm">
-        <q-img :ratio="16 / 9" src="/images/quasar_conf_font_awesome.png" alt="quasar.config.js screenshot 2"
-          style="max-width: 500px;height:400px" />
+      <a href='https://fontawesome.com'>Font-Awesome</a> icons in buttons and other components.
+      <div class="q-pt-sm text-center">
+        <q-img src="/images/quasar_conf_font_awesome.png" alt="quasar.config.js screenshot 2" style="max-width: 500px;" />
       </div>
 
     </div>
   </q-card>
-
 </template>
 
 <script setup>
