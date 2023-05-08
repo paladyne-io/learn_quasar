@@ -43,12 +43,12 @@
             Panel' icon in the top right. Locate the Terminal area at the bottom with the text that looks like that
             shown
             the blue box below. The cursor should be a solid rectangle or a line at the end, indicating it is ready to
-            receive
-            typed commands.
+            receive typed commands.
             <pre>
-dcs@Darrens-MacBook-Pro learn_quasar
-</pre>
-            The % character represents the shell prompt. By convention it is often shown as a $.
+              dcs@Darrens-MacBook-Pro learn_quasar ~ %
+            </pre>
+            The % character represents the shell prompt. By convention it is often shown as a
+            <pre>$</pre> symbol.
             Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
           </q-item-label>
           Note. To use yarn instead of npm you might have to install it using the command, 'npm install --global yarn'.

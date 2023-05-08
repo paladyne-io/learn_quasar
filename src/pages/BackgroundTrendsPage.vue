@@ -18,11 +18,11 @@
           While there is a lot of talk about Web 3.0 lately, many significant changes have happened in front-end
           frameworks.
 
-          Having developed applications for more than 30 years I know that
+          After developing applications for more than 30 years I know from personal experience that
           programming for users on PCs was difficult and time consuming.
           Before the world wide web became widely used, most professional packaged applications were
           written in C or C++ and were closely tied
-          with the types of chips they were intended to run on. The promise of cross platform development lay far in
+          to the types of chips they were intended to run on. The promise of cross platform development lay far in
           the future.
           (Java made a good run at it but its desktop GUI libraries, first the AWT and later Swing were too little, too
           late.)
@@ -81,7 +81,7 @@
 
           The first major JavaScript framework, <a href="https://jquery.com" target="_blank">JQuery</a>, simplified
           website development and became very popular.
-          JQuery allows the programmer to manipulate the Document Object Model (DOM) - which is the skeleton of the
+          JQuery enables programmers to manipulate the Document Object Model (DOM) - which is the skeleton of a
           webpage.
 
           AngularJS, developed internally and released by Google in 2010, introduced data binding and then React,
@@ -124,7 +124,7 @@
           The <a href="https://quasar.dev" target="_blank">Quasar framework</a> is a recent framework that builds on
           Vue.js, adding the Quasar Command Line Interface (CLI) and a library
           of Vue components with great documentation and many examples. Quasar makes it much easier to target other
-          platforms allowing to build Desktop and native mobile apps using the same codebase.
+          platforms enabling a developer to build Desktop and native mobile apps using the same codebase.
           A recent version of Vue.js is installed with Quasar so
           developing with Vue and Quasar is a great combination and makes it easy to
           <router-link to="/startprogramming">get started</router-link>.
