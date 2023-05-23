@@ -1,9 +1,9 @@
 <template>
   <q-page class="q-ma-lg">
     <transition leave-active-class="animated flipOutY" enter-active-class="animated flipInY" @after-leave="imageHidden">
-      <q-card flat v-show="imageVisible" class="col column"> gg
+      <q-card flat v-show="imageVisible">
         <div class="text-center">
-          <q-img class="q-ma-md" style="maxwidth:300px;" alt="Dog image" src="/images/dog.png" @click="showDogStats" />
+          <q-img class="q-ma-md" style="max-width:360px;" alt="Dog image" src="/images/dog.png" @click="showDogStats" />
           <div class="heading full-width">Reggie</div>
         </div>
       </q-card>
