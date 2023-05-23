@@ -37,7 +37,7 @@ export default defineComponent({
   setup() {
     const $q = useQuasar()
     const darkModeStatus = ref($q.dark.isActive)
-    const updatedDate = 'May 8, 2023'
+    const updatedDate = 'May 23, 2023'
 
     const socialSharing = ref({
       url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/',
