@@ -40,10 +40,18 @@ export default defineComponent({
     const updatedDate = 'May 23, 2023'
 
     const socialSharing = ref({
-      url: 'https://learn-quasar-p764s.ondigitalocean.app/learn_quasar/',
+      url: 'https://www.makeaweb.app',
       title: 'Learn Quasar app',
       description: 'Try this free app to learn the Quasar framework and vue.js, step by step.',
-      sites: ['Facebook', 'Twitter', 'Linkedin', 'Line', 'Reddit'] //, 'Fakeblock'
+      sites: ['Facebook', 'Twitter', 'Linkedin', 'Line', 'Reddit'],
+      ogImage: 'images/og/learn_to_webapp.png',
+      ogTitle: {
+        property: 'og:title',
+        // optional; similar to titleTemplate, but allows templating with other meta properties
+        template(ogTitle) {
+          return `${ogTitle} - makeaweb.app`
+        }
+      }
     })
 
     // useMeta(metaData)
