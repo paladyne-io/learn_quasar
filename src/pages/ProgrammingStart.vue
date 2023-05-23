@@ -18,16 +18,18 @@
       <div class="q-pt-sm">
 
         <q-item-label>
-          1. <a href="https://code.visualstudio.com/download"><b>Download and install Visual Studio Code</b></a> (Highly
+          <b>1</b>. <a href="https://code.visualstudio.com/download"><b>Download and install Visual Studio Code</b></a>
+          (Highly
           recommended)
         </q-item-label>
 
         <q-item-label class="q-pt-md">
-          2. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the
+          <b>2</b>. <a href="https://nodejs.org/en/download/"> <b>Install node.js</b></a> by downloading and running the
           <b>LTS</b> installer appropriate for your computer.
 
           <q-item-label class="q-pt-md">
-            3. <b>Install Quasar CLI</b>. To perform this and the following steps it is necessary to use a terminal. You
+            <b>3</b>. <b>Install Quasar CLI</b>. To perform this and the following steps it is necessary to use a
+            terminal. You
             can use the Terminal
             application (Mac) or the <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command
               Prompt</a> or PowerShell
@@ -48,8 +50,20 @@
             The % character represents the shell prompt. By convention it is often shown as a <b> &#36; </b> symbol.
             Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
           </q-item-label>
-          Note. To use yarn instead of npm you might have to install it using the command, 'npm install --global yarn'.
 
+          <div class="text-subheader q-pt-sm">
+            The word(s) after your user ID indicate the current working directory (folder) which might not be the same as
+            the one you have open on your desktop.
+            You can use the 'cd' command to change it to the directory where the project will be created.
+            Often you will need to provide a full path after cd, for example (on a
+            Mac) it will look something like: cd '/Users/mike/Dev'
+            This changes the directory to 'Dev', if that folder exists, and your Mac's name is mike. (Note capitalization
+            is important. The quotes are only necessary if there are spaces or some unusual characters in the path.)
+          </div>
+          <pre>
+<span class="disable-select">$ </span>cd '/Users/mike/Dev' // This is an example only</pre>
+          Note. The are various tools that you can use to enter commends. <b>npm</b> is installed with Node.
+          To use yarn instead of npm you might have to install it using the command, 'npm install --global yarn'.
           <pre>
 <span class="disable-select">$ </span>npm i -g @quasar/cli
 <span class="disable-select">or</span>
@@ -61,7 +75,8 @@
         </q-item-label>
 
         <div class="q-pt-sm">
-          4. Use the Quasar CLI to create your app by entering one of the following commands in the terminal.</div>
+          <b>4</b>. Use the Quasar CLI to create your app by entering one of the following commands in the terminal.
+        </div>
 
         <pre>
 <span class="disable-select">$ </span>npm init quasar
@@ -70,7 +85,7 @@
 </pre>
 
         <div class="q-pt-sm">
-          5. Proceed with the Quasar initialization process by answering the questions following the prompts.
+          <b>5</b>. Proceed with the Quasar initialization process by answering the questions following the prompts.
           See below for an example. You can/should choose your own Project folder, Package name and Project product name
           and put your own contact information after Author.
         </div>
@@ -150,8 +165,8 @@ dcs@Darrens-MacBook-Pro learn_quasar % <b>pwd</b>
         after “cd ”.
 
         <div class="q-pt-sm">
-          6. Open your project folder in Visual Studio Code by choosing "Open folder…" from the File menu or by typing
-          "code ." in the terminal after the "Quasar • SUCCESS" message.
+          <b>6</b>. Open your project folder in Visual Studio Code by choosing "Open folder…" from the File menu or by
+          typing "<b>code .</b>" in the terminal after the "Quasar • SUCCESS" message.
           If you have already entered 'quasar dev', press the "control" and "c" keys together to stop the program (exit
           the development environment).
         </div>
@@ -224,6 +239,10 @@ copyToClipboard('some text')
 </script>
 
 <style>
+ol>li::marker {
+  font-weight: bold;
+}
+
 .disable-select {
   user-select: none;
   /* supported by Chrome and Opera */
