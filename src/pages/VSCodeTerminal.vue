@@ -26,7 +26,7 @@
           </q-img>
         </div>
         <br><br>
-        <a href="https://code.visualstudio.com/docs/terminal/basics">For more information on using the terminal in
+        <a href="https://code.visualstudio.com/docs/terminal/basics">More information on using the terminal in
           Visual Studio Code...</a>
 
         <div class="row full-width text-subheader q-pt-sm">
