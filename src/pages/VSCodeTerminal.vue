@@ -15,7 +15,7 @@
             alt="New VS Code Terminal Menu screenshot"> </q-img>
         </div>
         <div class="text-center q-pa-md">
-          <q-img style="max-width: 600px;" src="images/vscode_terminal.png" alt="VS Code Terminal screenshot"> </q-img>
+          <q-img style="max-width: 600px;" src="images/vscode_terminal1.png" alt="VS Code Terminal screenshot"> </q-img>
         </div>
         On Windows, you can switch from PowerShell (default) to Command Prompt by clicking the small v (arrow) next to +
         at the top right of the Terminal.
