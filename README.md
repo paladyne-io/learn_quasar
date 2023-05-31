@@ -49,7 +49,7 @@ npm install
 quasar dev
 ```
 After typing 'quasar dev', your default web browser should open to display the app.
-Press Control + C to exit the development environment. Type 'code .'' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.
+Press Control and C keys together to exit the development environment. Type 'code .' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.
 
 Type 'quasar dev' again to renter the dev environment. Changes you make in the <b>src</b> folder should be updated in the browser without manually reloading the page.
 
