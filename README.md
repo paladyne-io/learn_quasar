@@ -14,7 +14,7 @@ I recently registered the domain www.makeaweb.app which is linked to the github 
 
 Features of interest:
 * Collapsible side panel menus
-* A slider using vue3-carousel https://ismail9k.github.io/vue3-carousel/
+* A slider using vue3-carousel `https://ismail9k.github.io/vue3-carousel/`
 
 https://www.makeaweb.app/#/images
 
