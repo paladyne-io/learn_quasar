@@ -8,23 +8,23 @@
 -->
 
 <template>
- <DarkModeComponent>
- <template #component>
- <!--
+  <DarkModeComponent>
+    <template #component>
+      <!--
   <PreComponent :text="mytext"/>
   -->
-  <div class="pre q-px-sm q-my-sm">
-  <pre>
-  {{mytext}}
+      <div class="pre q-px-sm q-my-sm">
+        <pre>
+  {{ mytext }}
   </pre>
-  </div>
-  </template>
-</DarkModeComponent>
+      </div>
+    </template>
+  </DarkModeComponent>
 </template>
 
 <script setup>
 
-import DarkModeComponent from 'components/DarkModeComponent.vue'
+import DarkModeComponent from 'components/DarkModeSwitcherComponent.vue'
 // import PreComponent from 'components/PreComponent.vue'
 
 defineProps({ mytext: String })
@@ -37,22 +37,21 @@ are added by the DarkMode(Aware)Component
 -->
 
 <style scoped>
- div .pre {
+div .pre {
   font-family: verdana;
   font-size: 14px;
   font-weight: bold;
-  }
+}
 
-  div .background-dark {
-    background-color: #cde6ff;
-  }
+div .background-dark {
+  background-color: #cde6ff;
+}
 
-  div .background-light {
-    background-color: #cde6ff;
-  }
+div .background-light {
+  background-color: #cde6ff;
+}
 
-  .body--light {
-   background-color: red;
-  }
-
+.body--light {
+  background-color: red;
+}
 </style>

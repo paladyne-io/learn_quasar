@@ -5,7 +5,10 @@
       <SubHeaderComponentDA mytext="Preparation" />
 
       <div class="q-pt-sm">
-        The goal for this lesson is to get to this:
+        The goal for this lesson is to get to this. (It might seem underwhelming but this basic window provides a layout
+        with a header and revealable side panel. The window is linked to
+        your code so when you change the source code and save, the contents of the window will be updated almost
+        instantly.)
       </div>
 
       <q-img src="images/QuasarAppTopPage.png" alt="MyApp menu screen"> </q-img>
@@ -57,8 +60,9 @@
             You can use the 'cd' command to change it to the directory where the project will be created.
             Often you will need to provide a full path after cd, for example (on a
             Mac) it will look something like: cd '/Users/mike/Dev'
-            This changes the directory to 'Dev', if that folder exists, and your Mac's name is mike. (Note capitalization
-            is important. The quotes are only necessary if there are spaces or some unusual characters in the path.)
+            This changes the directory to 'Dev', if that folder exists, and your account name is mike. (Note
+            capitalization is important. The quotes are only necessary if there are spaces or some unusual characters in
+            the path.)
           </div>
           <pre>
 <span class="disable-select">$ </span>cd '/Users/mike/Dev' // This is an example only</pre>

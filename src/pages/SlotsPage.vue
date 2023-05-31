@@ -39,7 +39,7 @@ It conserves battery power mainly if the device screen is OLED or AMOLED, thereb
       </div>
       <div class="q-pt-sm">
         In my experience, when you start trying to fix something you do a lot of learning along the way.
-        So today I made a custom component that switches its appearance based on the mode. This shows the power of vue
+        So today I made a custom component that switches its appearance based on the mode. This shows the power of Vue
         and of components.
         After making this one component I considered how to make it available to other components.
         In Java you might do this by "sub classing" and inheritance, but vue uses composition so I made a parent
@@ -54,11 +54,13 @@ It conserves battery power mainly if the device screen is OLED or AMOLED, thereb
         <q-item class="col" clickable v-ripple to="intro" @click="link = 'intro'">
           Previous
         </q-item>
+        <!--
         <q-item class="col" clickable v-ripple to="slots" @click="link = 'slots'">
           <div style="text-align:right" class="full-width">
             Next: Slots
           </div>
-        </q-item>
+         </q-item>
+        -->
       </div>
 
     </q-card>

@@ -1,19 +1,19 @@
 <template>
- <DarkModeComponent>
- <template #component>
-  <!-- <SubHeaderComponent :text="mytext"/> -->
+  <DarkModeComponent>
+    <template #component>
+      <!-- <SubHeaderComponent :text="mytext"/> -->
 
-  <div class="sub q-py-sm">
-  {{mytext}}
-  </div>
+      <div class="sub q-py-sm">
+        {{ mytext }}
+      </div>
 
-  </template>
-</DarkModeComponent>
+    </template>
+  </DarkModeComponent>
 </template>
 
 <script setup>
 
-import DarkModeComponent from 'components/DarkModeComponent.vue'
+import DarkModeComponent from 'components/DarkModeSwitcherComponent.vue'
 // import SubHeaderComponent from 'components/SubHeaderComponent.vue'
 
 defineProps({ mytext: String })
@@ -26,17 +26,17 @@ are added by the DarkMode(Aware)Component
 -->
 
 <style scoped>
- div .sub {
+div .sub {
   font-family: verdana;
   font-size: 18px;
   font-weight: bold;
-  }
+}
 
-  div .background-light {
-    color: black;
-  }
+div .background-light {
+  color: black;
+}
 
-  div .background-dark {
-    color: #AFDBF5;
-  }
+div .background-dark {
+  color: #AFDBF5;
+}
 </style>
