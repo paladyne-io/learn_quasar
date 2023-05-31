@@ -2,7 +2,7 @@
 
 A series of articles and interactive examples explaining how to use the Quasar framework https://quasar.dev to develop applications that can run on a variety of devices.
 
-This instructional app is aimed at beginners starting with preparation, including how to use Visual Studio Code.
+This is an instructional app aimed at beginners starting with preparation and including how to use Visual Studio Code.
 
 The app is hosted here:
 https://learn-quasar-p764s.ondigitalocean.app
@@ -10,7 +10,7 @@ https://learn-quasar-p764s.ondigitalocean.app
 and here:
 https://paladyne-io.github.io/learn_quasar/
 
-I recently registered the domain www.makeaweb.app which is linked to the github pages domain.
+I recently registered the domain www.makeaweb.app which is linked to the Github Pages site.
 
 Features of interest:
 * Collapsible side panel menus
