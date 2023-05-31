@@ -153,7 +153,7 @@
           </div>
           <div class="q-pt-sm">
             *You may notice the "#" in the address.
-            This 'hash' mode is the default and can be changed in the Quasar.conf file.
+            This 'hash' mode is the default and can be changed in the quasar.config.js file.
           </div>
 
           <div class="row full-width text-subheader q-pt-sm">
