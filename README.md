@@ -10,25 +10,30 @@ https://learn-quasar-p764s.ondigitalocean.app
 and here:
 https://paladyne-io.github.io/learn_quasar/
 
+I recently registered the domain www.makeaweb.app which is linked to the github pages domain.
+
 Features of interest:
 * Collapsible side panel menus
 * A slider using vue3-carousel
-https://learn-quasar-p764s.ondigitalocean.app/images
+https://www.makeaweb.app/#/images
 https://ismail9k.github.io/vue3-carousel/
 * Dark mode (Try it in app preferences. Article to come soon.)
 * Sending emails with emailjs
-https://learn-quasar-p764s.ondigitalocean.app/sendemail
+https://www.makeaweb.app/#/sendemail
 * A simple animated game (Rocket man). Can you get the craft to the moon?
-https://learn-quasar-p764s.ondigitalocean.app/gameapp/rm_game
+https://www.makeaweb.app/#/gameapp/rm_game
 * How to use the Quasar LocalStorage plugin to save and read data
-https://learn-quasar-p764s.ondigitalocean.app/dummyapp/da_local_storage
+https://www.makeaweb.app/#/dummyapp/da_local_storage
 * An image grid example using Colcade,
-https://learn-quasar-p764s.ondigitalocean.app/examples/imagegrid
+https://www.makeaweb.app/#/examples/imagegrid
 based on this article:
   https://dalezak.medium.com/reusable-component-for-responsive-grid-of-cards-in-quasar-using-colcade-e2636247b0b
 
 
   ![Card Grid screenshot](/public/images/learn_quasar_examples_screenshot.png)
+
+* An example of a simple app with visual transitions
+https://www.makeaweb.app/#/dummyapp/
 
 After downloading or cloning this repository...
 Open a terminal and <b>'cd'</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
