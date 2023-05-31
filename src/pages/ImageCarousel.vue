@@ -86,18 +86,30 @@ dcs@Darrens-MacBook-Pro learn_quasar %
 </pre>
 
           The library is now installed so you need to relaunch the Quasar development environment by typing 'quasar
-          dev'.
+          dev' and pressing enter.
           <div class="tip q-py-sm">
             <q-item-label class="bulb">Tip: Use the up/down arrow keys on your keyboard to select previous shell
               commands so you don't have to retype them.
             </q-item-label>
           </div>
+          <div>
+            Note the vulnerabilities warning. It's a fact of life when working with Vue - and other JavaScript frameworks
+            - that libraries, in addition to
+            becoming a dependency of your app, also often add their own dependencies.
+            It is necessary to keep on eye on these vulnerabilities and fix them wherever possible (by running npm audit
+            fix). Also you should remove any libraries that you no longer use by running 'npm uninstall' or <a
+              href="https://classic.yarnpkg.com/lang/en/docs/cli/remove/"> yarn remove</a>.
+          </div>
+
           <q-item-label class="q-pt-md text-subheader">
             2. Import and customize the library
           </q-item-label>
           After adding the library to your project, you have to add it to the page or component in the script section.
 
-          If your new page file doesn't have a script section, add one like this:
+          If your new page file doesn't have a script section, add one like below.
+          (It is common to use only one line to import a library.
+          This example is a little more complicated as it also imports some styling for the component from a css
+          file. It can be simplified quite a lot by using the &lt;script setup&gt; syntax.)
 
           <pre>
 &lt;script&gt;
@@ -135,7 +147,7 @@ dcs@Darrens-MacBook-Pro learn_quasar %
           </div>
 
           <pre>
-  &lt;carousel :items-to-show="1.0"&gt;
+  &lt;carousel :items-to-show="1"&gt;
     &lt;slide v-for="slide in slides" :key="slide.id"&gt;
     &lt;img :src= slide.src /&gt;
 
@@ -148,13 +160,14 @@ dcs@Darrens-MacBook-Pro learn_quasar %
 
         </div>
         <div>
-          It may not be clear exactly what is happening here. For now, just try to remember the steps.
+          It may not be clear exactly what is happening here. For now, just try to remember these steps.
           <ol>
-            <li> Install the library using the Terminal</li>
-            <li> Import it in the component (file) where you want to use it by adding some code in the script section
+            <li> Install the library using the Terminal (i.e. 'npm install _library_').</li>
+            <li> Import it in the script section of the component (file) where you want to use it (i.e. 'import {library}
+              from _library_').
             </li>
-            <li> (If it is a GUI component), add it into the html area (template) in angle brackets like this,
-              &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;.</li>
+            <li>If it is a GUI component, add it into the html area (template) in angle brackets (i.e.
+              &lt;ImportedComp&gt;...&lt;/ImportedComp&gt; or sometimes just &lt;ImportedComp/&gt;).</li>
           </ol>
         </div>
         <div class="row full-width text-subheader q-pt-sm">

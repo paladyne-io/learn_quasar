@@ -6,14 +6,8 @@
       <SubHeaderComponentDA mytext="How to use Components" />
 
       <div class="q-pt-sm">
-        For reference:
-        <a href="https://vuejs.org/guide/components/slots.html">Vue Slots</a>
-      </div>
-
-      <div class="q-pt-sm">
         Today (November 26, 2022) I added a <router-link to="/preferences">Preferences page</router-link> containing a
-        toggle to switch to Dark
-        mode.
+        toggle to switch to Dark mode.
         If you don't know what that is you can try it out on the page.
         There is an explanation on Quasar's website <a href="https://quasar.dev/style/dark-mode"> too</a>.
 

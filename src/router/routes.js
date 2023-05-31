@@ -1,4 +1,3 @@
-
 const routes = [
   {
     path: '/',
@@ -7,27 +6,59 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: 'prologue', component: () => import('pages/ProloguePage.vue') },
       { path: 'intro', component: () => import('pages/IntroStart.vue') },
-      { path: 'trends', component: () => import('pages/BackgroundTrendsPage.vue') },
+      {
+        path: 'trends',
+        component: () => import('pages/BackgroundTrendsPage.vue')
+      },
       { path: 'preview', component: () => import('pages/PreviewPage.vue') },
-      { path: 'startprogramming', component: () => import('pages/ProgrammingStart.vue') },
-      { path: 'privacy', component: () => import('pages/PrivacyPolicyPage.vue') },
+      {
+        path: 'startprogramming',
+        component: () => import('pages/ProgrammingStart.vue')
+      },
+      {
+        path: 'privacy',
+        component: () => import('pages/PrivacyPolicyPage.vue')
+      },
       { path: 'dotenv', component: () => import('pages/DotEnvFile.vue') },
-      { path: 'mypage', component: () => import('src/pages/QuasarTestPage.vue') },
+      {
+        path: 'mypage',
+        component: () => import('src/pages/QuasarTestPage.vue')
+      },
       { path: 'mypage2', component: () => import('pages/MyPage2.vue') },
       { path: 'mydogapp', component: () => import('pages/MyDogAppPage.vue') },
-      { path: 'feedback', component: () => import('pages/UserFeedbackPage.vue') },
-      { path: 'preferences', component: () => import('pages/PreferencesPage.vue') },
+      {
+        path: 'feedback',
+        component: () => import('pages/UserFeedbackPage.vue')
+      },
+      {
+        path: 'preferences',
+        component: () => import('pages/PreferencesPage.vue')
+      },
       { path: 'helloworld', component: () => import('pages/HelloWorld.vue') },
-      { path: 'programming1', component: () => import('pages/ProgrammingBasics.vue') },
+      {
+        path: 'programming1',
+        component: () => import('pages/ProgrammingBasics.vue')
+      },
       { path: 'github', component: () => import('pages/GitHubDeploy.vue') },
-      { path: 'sendemail', component: () => import('pages/EmailSendingPage.vue') },
-      { path: 'vscodeterminal', component: () => import('pages/VSCodeTerminal.vue') },
+      {
+        path: 'sendemail',
+        component: () => import('pages/EmailSendingPage.vue')
+      },
+      {
+        path: 'vscodeterminal',
+        component: () => import('pages/VSCodeTerminal.vue')
+      },
       { path: 'nvm_install', component: () => import('pages/nvm_install.vue') },
       { path: 'images', component: () => import('pages/ImageCarousel.vue') },
-      { path: 'components-intro', component: () => import('pages/ComponentsIntroPage.vue') },
-      { path: 'components', component: () => import('pages/ComponentsPage.vue') },
+      {
+        path: 'components',
+        component: () => import('pages/ComponentsPage.vue')
+      },
       { path: 'slots', component: () => import('pages/SlotsPage.vue') },
-      { path: 'codesliderpage', component: () => import('pages/CodeSliderTestPage.vue') }
+      {
+        path: 'codesliderpage',
+        component: () => import('pages/CodeSliderTestPage.vue')
+      }
     ]
   },
   {
@@ -35,15 +66,32 @@ const routes = [
     component: () => import('layouts/DummyAppLayout.vue'),
     children: [
       { path: '', component: () => import('pages/MyDogAppDayOne.vue') },
-      { path: 'da_ui_example_1', component: () => import('pages/MyDogAppPage.vue') },
-      { path: 'da_ui_example_2', component: () => import('pages/MyDogAppPage2.vue') },
-      { path: 'da_ui_example_3', component: () => import('pages/MyDogAppPage3.vue') },
-      { path: 'da_ui_example_4', component: () => import('pages/MyDogAppPage4.vue') },
-      { path: 'da_ui_example_5', component: () => import('pages/MyDogAppPage5.vue') },
-      { path: 'da_local_storage', component: () => import('pages/DA_LocalStorage.vue') },
+      {
+        path: 'da_ui_example_1',
+        component: () => import('pages/MyDogAppPage.vue')
+      },
+      {
+        path: 'da_ui_example_2',
+        component: () => import('pages/MyDogAppPage2.vue')
+      },
+      {
+        path: 'da_ui_example_3',
+        component: () => import('pages/MyDogAppPage3.vue')
+      },
+      {
+        path: 'da_ui_example_4',
+        component: () => import('pages/MyDogAppPage4.vue')
+      },
+      {
+        path: 'da_ui_example_5',
+        component: () => import('pages/MyDogAppPage5.vue')
+      },
+      {
+        path: 'da_local_storage',
+        component: () => import('pages/DA_LocalStorage.vue')
+      },
       { path: 'da_table', component: () => import('pages/DA_DataTable.vue') },
       { path: 'da_rm_game', component: () => import('pages/DA_RocketMan.vue') }
-
     ]
   },
   {
@@ -58,9 +106,15 @@ const routes = [
     component: () => import('layouts/ExamplesLayout.vue'),
     children: [
       { path: '', component: () => import('pages/QuasarTestPage.vue') },
-      { path: 'transitions', component: () => import('pages/QuasarTestPage.vue') },
+      {
+        path: 'transitions',
+        component: () => import('pages/QuasarTestPage.vue')
+      },
       { path: 'qcarousel', component: () => import('pages/QCarouselPage.vue') },
-      { path: 'testcarousel', component: () => import('pages/QCarouselPageTest.vue') },
+      {
+        path: 'testcarousel',
+        component: () => import('pages/QCarouselPageTest.vue')
+      },
       { path: 'imagegrid', component: () => import('pages/GridCardPage.vue') }
     ]
   },
@@ -69,7 +123,10 @@ const routes = [
     component: () => import('layouts/SupabaseLayout.vue'),
     children: [
       { path: '', component: () => import('pages/SupabaseIntroPage.vue') },
-      { path: 'supabase_1', component: () => import('pages/SupabaseIntroPage.vue') }
+      {
+        path: 'supabase_1',
+        component: () => import('pages/SupabaseIntroPage.vue')
+      }
     ]
   },
 
