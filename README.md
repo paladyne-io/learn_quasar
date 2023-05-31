@@ -16,6 +16,7 @@ Features of interest:
 * Collapsible side panel menus
 * A slider using vue3-carousel
 https://www.makeaweb.app/#/images
+
 https://ismail9k.github.io/vue3-carousel/
 * Dark mode (Try it in app preferences. Article to come soon.)
 * Sending emails with emailjs
