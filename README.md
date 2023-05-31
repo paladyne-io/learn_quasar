@@ -37,13 +37,6 @@ https://www.makeaweb.app/#/dummyapp/
 After downloading or cloning this repository...
 Open a terminal and <b>'cd'</b> into the directory (type 'cd' followed by a space, then drag the folder onto the terminal window and press Enter.) Then type the commands below.
 
-After typing 'quasar dev', your default web browser should open to display the app.
-Press Control + C to exit the development environment. Type 'code .'' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.
-
-Type 'quasar dev' again to renter the dev environment. Changes you make in the <b>src</b> folder should be updated in the browser without manually reloading the page.
-
-Prepare your app for hosting on a web server by running 'quasar build'.
-
 ## Install the dependencies
 ```bash
 yarn
@@ -55,6 +48,12 @@ npm install
 ```bash
 quasar dev
 ```
+After typing 'quasar dev', your default web browser should open to display the app.
+Press Control + C to exit the development environment. Type 'code .'' in the terminal and press Enter to open Visual Studio with the project folder displayed in the panel on the left.
+
+Type 'quasar dev' again to renter the dev environment. Changes you make in the <b>src</b> folder should be updated in the browser without manually reloading the page.
+
+Prepare your app for hosting on a web server by running 'quasar build'.
 
 ### Build the app for production
 ```bash
