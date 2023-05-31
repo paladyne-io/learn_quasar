@@ -35,20 +35,16 @@
             terminal. You
             can use the Terminal
             application (Mac) or the <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">Command
-              Prompt</a> or PowerShell
-            (Windows).
-
-            <br><br>If you have not used these applications before, I suggest you use the Terminal in Visual Studio
+              Prompt</a> or PowerShell (Windows).
+            If you have not used these applications before, I suggest you use the Terminal in Visual Studio
             Code.
             <!-- On Windows it is recommended to switch from the default PowerShell to the Command Prompt</b>. -->
-
-            <router-link to="/vscodeterminal">Click here for details</router-link>.
             <br><br>
             Open Visual Studio Code and choose 'New Terminal' from the Terminal menu or click the 'Toggle
             Panel' icon in the top right. Locate the Terminal area at the bottom with the text that looks like that
-            shown
-            the blue box below. The cursor should be a solid rectangle or a line at the end, indicating it is ready to
-            receive typed commands.
+            shown the blue box below. The cursor should be a solid rectangle or a line at the end, indicating it is
+            ready to receive typed commands.
+            <router-link to="/vscodeterminal">Click here for details</router-link>.
             <pre>dcs@Darrens-MacBook-Pro learn_quasar ~ %</pre>
             The % character represents the shell prompt. By convention it is often shown as a <b> &#36; </b> symbol.
             Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
@@ -60,9 +56,9 @@
             You can use the 'cd' command to change it to the directory where the project will be created.
             Often you will need to provide a full path after cd, for example (on a
             Mac) it will look something like: cd '/Users/mike/Dev'
-            This changes the directory to 'Dev', if that folder exists, and your account name is mike. (Note
-            capitalization is important. The quotes are only necessary if there are spaces or some unusual characters in
-            the path.)
+            This changes the directory to 'Dev', if that folder exists, and your account name is mike.
+            Letter case is important but quotes are only necessary if there are spaces or some unusual characters in
+            the path.
           </div>
           <pre>
 <span class="disable-select">$ </span>cd '/Users/mike/Dev' // This is an example only</pre>
