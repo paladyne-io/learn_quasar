@@ -14,11 +14,9 @@ I recently registered the domain www.makeaweb.app which is linked to the github 
 
 Features of interest:
 * Collapsible side panel menus
-* A slider using vue3-carousel `https://ismail9k.github.io/vue3-carousel/`
-
+* A slider using vue3-carousel (https://ismail9k.github.io/vue3-carousel)
 https://www.makeaweb.app/#/images
-
-* Dark mode (Try it in app preferences. Article to come soon.)
+* Dark mode switcher (Try it in app preferences.)
 * Sending emails with emailjs
 https://www.makeaweb.app/#/sendemail
 * A simple animated game (Rocket man). Can you get the craft to the moon?
