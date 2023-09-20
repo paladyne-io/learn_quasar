@@ -50,7 +50,7 @@
             Type commands after this symbol and press <b>Return</b> or <b>Enter</b> &#9166; to run them.
           </q-item-label>
 
-          <div class="text-subheader q-pt-sm">
+          <div class="text-subtitle q-pt-sm">
             The word(s) after your user ID indicate the current working directory (folder) which might not be the same as
             the one you have open on your desktop.
             You can use the 'cd' command to change it to the directory where the project will be created.

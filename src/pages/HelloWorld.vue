@@ -46,8 +46,8 @@
           <div class="q-pt-sm">
             There are two places where images can be added to the project:
             <ol>
-              <li>in the <b>public/images</b> folder (referenced in Quasar as: 'src="images/img.png')</li>
-              <li>in the <b>src/assets folder</b> (referenced in Quasar as: 'src="~assets/img.png') </li>
+              <li>in the <b>public/images</b> folder (referenced in Quasar as: src=&quot;images/img.png&quot;)</li>
+              <li>in the <b>src/assets folder</b> (referenced in Quasar as: src=&quot;~assets/img.png&quot;) </li>
             </ol>
           </div>
           You can add your own images to either of these folders and then change the code in the 'img' tag to display

@@ -27,7 +27,7 @@ It conserves battery power mainly if the device screen is OLED or AMOLED, thereb
         This is a great example where Quasar saves tons of time - giving you functionality out of the box.
         After a fleeting feeling of satisfaction, the next realization is, "but that doesn't look right".
         As the Quasar documentation says,
-        &quot; All Quasar components with a dark property will have it automatically set to true. No need to do it
+        &quot;All Quasar components with a dark property will have it automatically set to true. No need to do it
         manually.&quot; which raises the question, what about your own components? What about the places where you
         have added some colors using in-line CSS styles?
       </div>
